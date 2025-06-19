@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Box, Center, Heading, HStack, Tabs, VStack } from "@chakra-ui/react";
+import { ColorModeButton } from "./components/ui/color-mode";
+import ComboTab from "./tabs/combo-tab";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Center>
+      <VStack maxW="64em" w="100%">
+        <HStack w="100%" px={4} py={2} justifyContent="space-between">
+          <Heading>MTG combos</Heading>
+          <ColorModeButton />
+        </HStack>
+
+        <Tabs.Root w="100%" defaultValue="combos">
+          <Tabs.List>
+            <Tabs.Trigger value="combos">Combos</Tabs.Trigger>
+            <Tabs.Trigger value="results">Results</Tabs.Trigger>
+            <Tabs.Trigger value="payoffs">Payoffs</Tabs.Trigger>
+          </Tabs.List>
+          <Box px={4}>
+            <Tabs.Content value="combos">
+              <ComboTab />
+            </Tabs.Content>
+            <Tabs.Content value="results">Results</Tabs.Content>
+            <Tabs.Content value="payoffs">Payoffs</Tabs.Content>
+          </Box>
+        </Tabs.Root>
+      </VStack>
+    </Center>
+  );
 }
 
-export default App
+export default App;
