@@ -1,0 +1,113 @@
+const dndI18n = {
+  en: {
+    // Classes
+    "dnd.class.barbarian": "Barbarian",
+    "dnd.class.bard": "Bard",
+    "dnd.class.cleric": "Cleric",
+    "dnd.class.druid": "Druid",
+    "dnd.class.fighter": "Fighter",
+    "dnd.class.monk": "Monk",
+    "dnd.class.paladin": "Paladin",
+    "dnd.class.ranger": "Ranger",
+    "dnd.class.rogue": "Rogue",
+    "dnd.class.sorcerer": "Sorcerer",
+    "dnd.class.warlock": "Warlock",
+    "dnd.class.wizard": "Wizard",
+    // Magic School
+    "dnd.magic_school.abjuration": "Abjuration",
+    "dnd.magic_school.conjuration": "Conjuration",
+    "dnd.magic_school.divination": "Divination",
+    "dnd.magic_school.enchantment": "Enchantment",
+    "dnd.magic_school.evocation": "Evocation",
+    "dnd.magic_school.illusion": "Illusion",
+    "dnd.magic_school.necromancy": "Necromancy",
+    "dnd.magic_school.transmutation": "Transmutation",
+    // Spell-related
+    "dnd.spell.casting_time": "Casting time",
+    "dnd.spell.casting_time.action": "Action",
+    "dnd.spell.casting_time.bonus_action": "Bonus action",
+    "dnd.spell.casting_time.reaction": "Reaction",
+    "dnd.spell.casting_time.time": "<1> <2>", // 1 = quantity, 2 = unit
+    "dnd.spell.range": "Range",
+    "dnd.spell.range.self": "Self",
+    "dnd.spell.range.touch": "Touch",
+    "dnd.spell.range.sight": "Sight",
+    "dnd.spell.range.special": "Special",
+    "dnd.spell.range.unlimited": "Unlimited",
+    "dnd.spell.range.distance": "<1> <2>", // 1 = quantity, 2 = unit
+    "dnd.spell.components": "Components",
+    "dnd.spell.component_materials": "Materials",
+    "dnd.spell.duration": "Duration",
+    "dnd.spell.duration.instantaneous": "Instantaneous",
+    "dnd.spell.duration.special": "Special",
+    "dnd.spell.duration.until_dispelled": "Until dispelled",
+    "dnd.spell.duration.time": "<1><2><3>", // 1 = up to, 2 = quantity, 3 = concentration
+    "dnd.spell.duration.time.up_to": "Up to ",
+    "dnd.spell.duration.time.concentration": " (C)",
+    "dnd.spell.higher_levels": "Higher Levels",
+    "dnd.spell.cantrip": "cantrip",
+    "dnd.spell.level.cantrip": "cantrip",
+    "dnd.spell.level.number": "level <1>", // 1 = level
+    "dnd.spell.ritual": " or ritual",
+    // Selectors
+    "dnd.input.name.placeholder": "Name",
+    "dnd.selector.classes.placeholder": "Select classes",
+    "dnd.selector.levels.placeholder": "Select levels",
+  },
+  it: {
+    // Classes
+    "dnd.class.barbarian": "Barbaro",
+    "dnd.class.bard": "Bardo",
+    "dnd.class.cleric": "Chierico",
+    "dnd.class.druid": "Druido",
+    "dnd.class.fighter": "Guerriero",
+    "dnd.class.monk": "Monaco",
+    "dnd.class.paladin": "Paladino",
+    "dnd.class.ranger": "Ranger",
+    "dnd.class.rogue": "Ladro",
+    "dnd.class.sorcerer": "Stregone",
+    "dnd.class.warlock": "Warlock",
+    "dnd.class.wizard": "Mago",
+    // Magic School
+    "dnd.magic_school.abjuration": "Abiurazione",
+    "dnd.magic_school.conjuration": "Invocazione",
+    "dnd.magic_school.divination": "Divinazione",
+    "dnd.magic_school.enchantment": "Ammaliamento",
+    "dnd.magic_school.evocation": "Evocazione",
+    "dnd.magic_school.illusion": "Illusione",
+    "dnd.magic_school.necromancy": "Necromazia",
+    "dnd.magic_school.transmutation": "Transmutazione",
+    // Spell-related
+    "dnd.spell.casting_time": "Tempo di lancio",
+    "dnd.spell.casting_time.action": "Azione",
+    "dnd.spell.casting_time.bonus_action": "Azione bonus",
+    "dnd.spell.casting_time.reaction": "Reazione",
+    "dnd.spell.casting_time.time": "<1> <2>", // 1 = quantity, 2 = unit
+    "dnd.spell.range": "Gittata",
+    "dnd.spell.range.self": "Incantatore",
+    "dnd.spell.range.touch": "Contattp",
+    "dnd.spell.range.sight": "Vista",
+    "dnd.spell.range.special": "Speciale",
+    "dnd.spell.range.unlimited": "Illimitato",
+    "dnd.spell.range.distance": "<1> <2>", // 1 = quantity, 2 = unit
+    "dnd.spell.components": "Componenti",
+    "dnd.spell.component_materials": "Materiali",
+    "dnd.spell.duration": "Durata",
+    "dnd.spell.duration.instantaneous": "Istantaneo",
+    "dnd.spell.duration.special": "Speciale",
+    "dnd.spell.duration.until_dispelled": "Finché non viene disperso",
+    "dnd.spell.duration.time": "<1><2><3>", // 1 = up to, 2 = quantity, 3 = concentration
+    "dnd.spell.duration.time.up_to": "Fino a ",
+    "dnd.spell.duration.time.concentration": " (C)",
+    "dnd.spell.higher_levels": "Livello Superiore",
+    "dnd.spell.level.cantrip": "trucchetto",
+    "dnd.spell.level.number": "<1>˚ livello", // 1 = level
+    "dnd.spell.ritual": " o rituale",
+    // Selectors
+    "dnd.input.name.placeholder": "Nome",
+    "dnd.selector.classes.placeholder": "Seleziona classi",
+    "dnd.selector.levels.placeholder": "Seleziona livelli",
+  },
+} as const;
+
+export default dndI18n;

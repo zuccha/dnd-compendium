@@ -7,13 +7,12 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import { memo, useMemo } from "react";
+import { memo } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { dndLabelLocalization } from "../../data/dnd-localizations";
-import useLocalizationLanguage from "../../hooks/use-localization-language";
+import useI18n from "../../hooks/useI18n";
 import type { DndSpell } from "../../models/dnd";
-import localizeDndSpell from "../../utils/localize-dnd-spell";
+import useLocalizedDndSpell from "./use-localized-dnd-spell";
 
 const remarkPlugins = [remarkGfm];
 
@@ -22,7 +21,8 @@ export type DndSpellCardProps = {
 };
 
 function DndSpellCard({ spell }: DndSpellCardProps) {
-  const lang = useLocalizationLanguage();
+  const i18n = useI18n();
+
   const {
     name,
     school,
@@ -35,13 +35,13 @@ function DndSpellCard({ spell }: DndSpellCardProps) {
     range,
     components,
     componentMaterials,
-  } = useMemo(() => localizeDndSpell(spell, lang), [lang, spell]);
+  } = useLocalizedDndSpell(spell);
 
-  const castingTimeLabel = dndLabelLocalization[lang].castingTime;
-  const durationLabel = dndLabelLocalization[lang].duration;
-  const rangeLabel = dndLabelLocalization[lang].range;
-  const componentsLabel = dndLabelLocalization[lang].components;
-  const higherLevelLabel = dndLabelLocalization[lang].higherLevel;
+  const castingTimeLabel = i18n.t("dnd.spell.casting_time");
+  const durationLabel = i18n.t("dnd.spell.duration");
+  const rangeLabel = i18n.t("dnd.spell.range");
+  const componentsLabel = i18n.t("dnd.spell.components");
+  const higherLevelLabel = i18n.t("dnd.spell.higher_levels");
 
   return (
     <VStack

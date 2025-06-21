@@ -8,8 +8,7 @@ import {
 import { useMemo } from "react";
 import AppHeader from "../../components/app-header";
 import Select from "../../components/ui/select";
-import { dndClassLocalization } from "../../data/dnd-localizations";
-import useLocalizationLanguage from "../../hooks/use-localization-language";
+import useI18n from "../../hooks/useI18n";
 import { defaultClasses, defaultLevels } from "./constants";
 
 export type DndSpellsHeaderProps = {
@@ -23,26 +22,26 @@ export default function DndSpellsHeader({
   onChangeLevels,
   onChangeName,
 }: DndSpellsHeaderProps) {
-  const lang = useLocalizationLanguage();
+  const i18n = useI18n();
 
   const classesCollection = useMemo(() => {
     return createListCollection({
       items: [
-        { label: dndClassLocalization[lang]["barbarian"], value: "barbarian" },
-        { label: dndClassLocalization[lang]["bard"], value: "bard" },
-        { label: dndClassLocalization[lang]["cleric"], value: "cleric" },
-        { label: dndClassLocalization[lang]["druid"], value: "druid" },
-        { label: dndClassLocalization[lang]["fighter"], value: "fighter" },
-        { label: dndClassLocalization[lang]["monk"], value: "monk" },
-        { label: dndClassLocalization[lang]["paladin"], value: "paladin" },
-        { label: dndClassLocalization[lang]["ranger"], value: "ranger" },
-        { label: dndClassLocalization[lang]["rogue"], value: "rogue" },
-        { label: dndClassLocalization[lang]["sorcerer"], value: "sorcerer" },
-        { label: dndClassLocalization[lang]["warlock"], value: "warlock" },
-        { label: dndClassLocalization[lang]["wizard"], value: "wizard" },
+        { label: i18n.t("dnd.class.barbarian"), value: "barbarian" },
+        { label: i18n.t("dnd.class.bard"), value: "bard" },
+        { label: i18n.t("dnd.class.cleric"), value: "cleric" },
+        { label: i18n.t("dnd.class.druid"), value: "druid" },
+        { label: i18n.t("dnd.class.fighter"), value: "fighter" },
+        { label: i18n.t("dnd.class.monk"), value: "monk" },
+        { label: i18n.t("dnd.class.paladin"), value: "paladin" },
+        { label: i18n.t("dnd.class.ranger"), value: "ranger" },
+        { label: i18n.t("dnd.class.rogue"), value: "rogue" },
+        { label: i18n.t("dnd.class.sorcerer"), value: "sorcerer" },
+        { label: i18n.t("dnd.class.warlock"), value: "warlock" },
+        { label: i18n.t("dnd.class.wizard"), value: "wizard" },
       ],
     });
-  }, [lang]);
+  }, [i18n]);
 
   return (
     <VStack
@@ -59,7 +58,7 @@ export default function DndSpellsHeader({
         <HStack w="100%" pb={2} px={1}>
           <Input
             onChange={(e) => onChangeName(e.target.value)}
-            placeholder="Name"
+            placeholder={i18n.t("dnd.input.name.placeholder")}
             size="sm"
           />
           <Select
@@ -69,7 +68,7 @@ export default function DndSpellsHeader({
             onValueChange={(e) =>
               onChangeLevels(e.value.map((v) => parseInt(v)))
             }
-            placeholder={SelectPlaceholderLocalization[lang].levels}
+            placeholder={i18n.t("dnd.selector.levels.placeholder")}
             multiple
           />
           <Select
@@ -77,7 +76,7 @@ export default function DndSpellsHeader({
             size="sm"
             defaultValue={defaultClasses}
             onValueChange={(e) => onChangeClasses(e.value)}
-            placeholder={SelectPlaceholderLocalization[lang].classes}
+            placeholder={i18n.t("dnd.selector.classes.placeholder")}
             multiple
           />
         </HStack>
@@ -102,14 +101,3 @@ const levelsCollection = createListCollection({
     { label: "9", value: "9" },
   ],
 });
-
-const SelectPlaceholderLocalization = {
-  en: {
-    classes: "Select classes",
-    levels: "Select levels",
-  },
-  it: {
-    classes: "Seleziona classi",
-    levels: "Seleziona livelli",
-  },
-};
