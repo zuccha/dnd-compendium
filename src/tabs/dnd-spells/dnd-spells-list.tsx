@@ -5,9 +5,10 @@ import { memo } from "react";
 
 export type DnnSpellsListProps = {
   spells: DndSpell[];
+  zoom: number;
 };
 
-function DndSpellsList({ spells }: DnnSpellsListProps) {
+function DndSpellsList({ spells, zoom }: DnnSpellsListProps) {
   return (
     <Flex maxW="64em" w="100%" justifyContent="center">
       {spells.length === 0 ? (
@@ -18,7 +19,7 @@ function DndSpellsList({ spells }: DnnSpellsListProps) {
           gap="1em"
           w="100%"
           justifyContent="center"
-          fontSize="1em"
+          fontSize={`${zoom}em`}
         >
           {spells.map((spell) => (
             <DndSpellCard key={spell.name.en} spell={spell} />

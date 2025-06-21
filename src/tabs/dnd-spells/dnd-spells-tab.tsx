@@ -2,7 +2,7 @@ import { VStack } from "@chakra-ui/react";
 import { useMemo, useState } from "react";
 import dndSpells from "../../data/dnd-spells";
 import useDebouncedValue from "../../hooks/use-debounced-value";
-import { defaultClasses, defaultLevels } from "./constants";
+import { defaultClasses, defaultLevels, defaultZoom } from "./constants";
 import DndSpellsHeader from "./dnd-spells-header";
 import DndSpellsList from "./dnd-spells-list";
 
@@ -10,6 +10,8 @@ export default function DndSpellsTab() {
   const [name, setName] = useState("");
   const [classes, setClasses] = useState(defaultClasses);
   const [levels, setLevels] = useState(defaultLevels);
+
+  const [zoom, setZoom] = useState(defaultZoom);
 
   const filters = useMemo(
     () => ({ classes, levels, name }),
@@ -33,14 +35,15 @@ export default function DndSpellsTab() {
   }, [debouncedFilters]);
 
   return (
-    <VStack w="100%" position="relative">
+    <VStack w="100%" position="relative" gap={4}>
       <DndSpellsHeader
         onChangeClasses={setClasses}
         onChangeLevels={setLevels}
         onChangeName={setName}
+        onChangeZoom={setZoom}
       />
 
-      <DndSpellsList spells={filteredDnDSpells} />
+      <DndSpellsList spells={filteredDnDSpells} zoom={zoom} />
     </VStack>
   );
 }

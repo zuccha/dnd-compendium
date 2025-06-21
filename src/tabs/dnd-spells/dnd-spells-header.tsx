@@ -7,20 +7,23 @@ import {
 } from "@chakra-ui/react";
 import { useMemo } from "react";
 import AppHeader from "../../app-header";
+import NumberInput from "../../components/ui/number-input";
 import Select from "../../components/ui/select";
 import useI18n from "../../i18n/use-i18n";
-import { defaultClasses, defaultLevels } from "./constants";
+import { defaultClasses, defaultLevels, defaultZoom } from "./constants";
 
 export type DndSpellsHeaderProps = {
   onChangeClasses: (classes: string[]) => void;
   onChangeLevels: (levels: number[]) => void;
   onChangeName: (name: string) => void;
+  onChangeZoom: (zoom: number) => void;
 };
 
 export default function DndSpellsHeader({
   onChangeClasses,
   onChangeLevels,
   onChangeName,
+  onChangeZoom,
 }: DndSpellsHeaderProps) {
   const i18n = useI18n();
 
@@ -78,6 +81,16 @@ export default function DndSpellsHeader({
             onValueChange={(e) => onChangeClasses(e.value)}
             placeholder={i18n.t("dnd.selector.classes.placeholder")}
             multiple
+          />
+          <NumberInput
+            defaultValue={`${defaultZoom * 100}%`}
+            min={0.5}
+            max={2}
+            step={0.1}
+            size="sm"
+            w="6em"
+            onValueChange={(e) => onChangeZoom(e.valueAsNumber)}
+            formatOptions={{ style: "percent" }}
           />
         </HStack>
       </Box>
