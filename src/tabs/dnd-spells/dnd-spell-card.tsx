@@ -10,7 +10,7 @@ import {
 import { memo } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import useI18n from "../../hooks/useI18n";
+import useI18n from "../../i18n/use-i18n";
 import type { DndSpell } from "../../models/dnd";
 import useLocalizedDndSpell from "./use-localized-dnd-spell";
 

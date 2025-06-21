@@ -1,4 +1,4 @@
-import type { LocalizedDistance, LocalizedString } from "./localization";
+import type { I18nDistance, I18nString } from "./localization";
 
 //------------------------------------------------------------------------------
 // Class
@@ -75,9 +75,9 @@ export type DndSpellRaw = {
 //------------------------------------------------------------------------------
 
 export type DndSpell = {
-  name: LocalizedString;
-  description: LocalizedString;
-  higherLevel?: LocalizedString;
+  name: I18nString;
+  description: I18nString;
+  higherLevel?: I18nString;
   level: number;
   classes: DndClass[];
   school: DndMagicSchool;
@@ -92,7 +92,7 @@ export type DndSpell = {
       }
     | {
         type: "reaction";
-        reactionTo: LocalizedString;
+        reactionTo: I18nString;
       };
   ritual: boolean;
   duration:
@@ -112,7 +112,7 @@ export type DndSpell = {
       }
     | ({
         type: "distance";
-      } & LocalizedDistance)
+      } & I18nDistance)
     | ({
         type:
           | "self_circle"
@@ -121,7 +121,7 @@ export type DndSpell = {
           | "self_hemisphere"
           | "self_line"
           | "self_sphere";
-      } & LocalizedDistance);
+      } & I18nDistance);
   components: {
     somatic: boolean;
     verbal: boolean;
@@ -131,7 +131,7 @@ export type DndSpell = {
       }
     | {
         material: true;
-        materials: LocalizedString[];
+        materials: I18nString[];
       }
   );
 };

@@ -41,7 +41,7 @@ const dndI18n = {
     "dnd.spell.duration.instantaneous": "Instantaneous",
     "dnd.spell.duration.special": "Special",
     "dnd.spell.duration.until_dispelled": "Until dispelled",
-    "dnd.spell.duration.time": "<1><2><3>", // 1 = up to, 2 = quantity, 3 = concentration
+    "dnd.spell.duration.time": "<1><2> <3><4>", // 1 = up to, 2 = quantity, 3 = unit, 4 = concentration
     "dnd.spell.duration.time.up_to": "Up to ",
     "dnd.spell.duration.time.concentration": " (C)",
     "dnd.spell.higher_levels": "Higher Levels",
@@ -96,7 +96,7 @@ const dndI18n = {
     "dnd.spell.duration.instantaneous": "Istantaneo",
     "dnd.spell.duration.special": "Speciale",
     "dnd.spell.duration.until_dispelled": "Finché non viene disperso",
-    "dnd.spell.duration.time": "<1><2><3>", // 1 = up to, 2 = quantity, 3 = concentration
+    "dnd.spell.duration.time": "<1><2> <3><4>", // 1 = up to, 2 = quantity, 3 = unit, 4 = concentration
     "dnd.spell.duration.time.up_to": "Fino a ",
     "dnd.spell.duration.time.concentration": " (C)",
     "dnd.spell.higher_levels": "Livello Superiore",

@@ -6,9 +6,9 @@ import {
   createListCollection,
 } from "@chakra-ui/react";
 import { useMemo } from "react";
-import AppHeader from "../../components/app-header";
+import AppHeader from "../../app-header";
 import Select from "../../components/ui/select";
-import useI18n from "../../hooks/useI18n";
+import useI18n from "../../i18n/use-i18n";
 import { defaultClasses, defaultLevels } from "./constants";
 
 export type DndSpellsHeaderProps = {

@@ -1,18 +1,16 @@
 import { useMemo } from "react";
-import useI18n, { type I18n } from "../../hooks/useI18n";
+import useI18n, { type I18n } from "../../i18n/use-i18n";
 import type { DndSpell } from "../../models/dnd";
-import type {
-  LocalizedString,
-  LocalizationLanguage,
-} from "../../models/localization";
+import type { I18nLanguage } from "../../i18n/i18n-language";
+import type { I18nString } from "../../i18n/i18n-string";
 
 function capitalize(text: string): string {
   return text.length === 0 ? "" : text[0].toUpperCase() + text.substring(1);
 }
 
 function localizeString(
-  localizedString: LocalizedString,
-  lang: LocalizationLanguage
+  localizedString: I18nString,
+  lang: I18nLanguage
 ): string {
   return localizedString[lang] ?? localizedString.en;
 }
@@ -55,6 +53,7 @@ function localizeDuration(duration: DndSpell["duration"], i18n: I18n): string {
       return i18n.ti(
         "dnd.spell.duration.time",
         duration.upTo ? i18n.t("dnd.spell.duration.time.up_to") : "",
+        `${duration.quantity}`,
         i18n.tp(`generic.time.${duration.unit}`, duration.quantity),
         duration.concentration
           ? i18n.t("dnd.spell.duration.time.concentration")
@@ -77,7 +76,7 @@ function localizeRange(range: DndSpell["range"], i18n: I18n): string {
     case "special":
       return i18n.t("dnd.spell.range.special");
     case "distance": {
-      const localizedRange = range[i18n.lang] ?? range.en;
+      const localizedRange = range[i18n.language] ?? range.en;
       return i18n.ti(
         "dnd.spell.range.distance",
         `${localizedRange.value}`,
@@ -103,27 +102,29 @@ function localizeComponentMaterials(
 ): string | undefined {
   return components.material
     ? capitalize(
-        components.materials.map((m) => localizeString(m, i18n.lang)).join(", ")
+        components.materials
+          .map((m) => localizeString(m, i18n.language))
+          .join(", ")
       )
     : undefined;
 }
 
 function localizeDndSpell(spell: DndSpell, i18n: I18n) {
   return {
-    name: localizeString(spell.name, i18n.lang),
+    name: localizeString(spell.name, i18n.language),
     school: i18n.t(`dnd.magic_school.${spell.school}`),
     level: localizeLevel(spell.level, i18n),
     classes: spell.classes.map((c) => i18n.t(`dnd.class.${c}`)).join(", "),
-    description: localizeString(spell.description, i18n.lang),
+    description: localizeString(spell.description, i18n.language),
     higherLevel: spell.higherLevel
-      ? localizeString(spell.higherLevel, i18n.lang)
+      ? localizeString(spell.higherLevel, i18n.language)
       : undefined,
     castingTime:
       localizeCastingTime(spell.castingTime, i18n) +
       (spell.ritual ? i18n.t("dnd.spell.ritual") : ""),
     reactionTo:
       spell.castingTime.type === "reaction"
-        ? localizeString(spell.castingTime.reactionTo, i18n.lang)
+        ? localizeString(spell.castingTime.reactionTo, i18n.language)
         : undefined,
     duration: localizeDuration(spell.duration, i18n),
     range: localizeRange(spell.range, i18n),
