@@ -5,12 +5,13 @@ import { memo } from "react";
 
 export type DnnSpellsListProps = {
   spells: DndSpell[];
+  view: number;
   zoom: number;
 };
 
-function DndSpellsList({ spells, zoom }: DnnSpellsListProps) {
+function DndSpellsList({ spells, view, zoom }: DnnSpellsListProps) {
   return (
-    <Flex maxW="64em" w="100%" justifyContent="center">
+    <Flex maxW="64em" w="100%" justifyContent="center" py={4}>
       {spells.length === 0 ? (
         <Center mt="25%">No spells found</Center>
       ) : (
@@ -18,11 +19,12 @@ function DndSpellsList({ spells, zoom }: DnnSpellsListProps) {
           wrap="wrap"
           gap="1em"
           w="100%"
+          alignItems="start"
           justifyContent="center"
           fontSize={`${zoom}em`}
         >
           {spells.map((spell) => (
-            <DndSpellCard key={spell.name.en} spell={spell} />
+            <DndSpellCard key={spell.name.en} spell={spell} view={view} />
           ))}
         </Flex>
       )}

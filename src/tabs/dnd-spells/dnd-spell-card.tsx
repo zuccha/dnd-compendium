@@ -13,14 +13,16 @@ import remarkGfm from "remark-gfm";
 import useI18n from "../../i18n/use-i18n";
 import type { DndSpell } from "../../models/dnd";
 import useLocalizedDndSpell from "./use-localized-dnd-spell";
+import { SpellView } from "./constants";
 
 const remarkPlugins = [remarkGfm];
 
 export type DndSpellCardProps = {
   spell: DndSpell;
+  view: number;
 };
 
-function DndSpellCard({ spell }: DndSpellCardProps) {
+function DndSpellCard({ spell, view }: DndSpellCardProps) {
   const i18n = useI18n();
 
   const {
@@ -46,7 +48,7 @@ function DndSpellCard({ spell }: DndSpellCardProps) {
   return (
     <VStack
       w="15em"
-      h="21em"
+      h={view === SpellView.full ? "21em" : undefined}
       bgColor="#444444"
       borderRadius="0.75em"
       px="0.625em"
@@ -69,70 +71,75 @@ function DndSpellCard({ spell }: DndSpellCardProps) {
         </Text>
       </Flex>
 
-      <SimpleGrid columns={2} w="100%" gap="0.125em" borderColor="">
-        <GridCell label={castingTimeLabel} text={castingTime} />
-        <GridCell label={rangeLabel} text={range} />
-        <GridCell label={componentsLabel} text={components} />
-        <GridCell label={durationLabel} text={duration} />
-        {componentMaterials && (
-          <GridItem
-            colSpan={2}
-            bgColor="#dad5d5"
-            lineHeight={1}
-            gap="0.2em"
-            px="0.5em"
-            py="0.2em"
-          >
-            <Box fontSize="0.625em">
+      {view >= SpellView.compact && (
+        <SimpleGrid columns={2} w="100%" gap="0.125em" borderColor="">
+          <GridCell label={castingTimeLabel} text={castingTime} />
+          <GridCell label={rangeLabel} text={range} />
+          <GridCell label={componentsLabel} text={components} />
+          <GridCell label={durationLabel} text={duration} />
+          {view >= SpellView.full && componentMaterials && (
+            <GridItem
+              colSpan={2}
+              bgColor="#dad5d5"
+              lineHeight={1}
+              gap="0.2em"
+              px="0.5em"
+              py="0.2em"
+            >
+              <Box fontSize="0.625em">
+                <ReactMarkdown remarkPlugins={remarkPlugins}>
+                  {componentMaterials}
+                </ReactMarkdown>
+              </Box>
+            </GridItem>
+          )}
+        </SimpleGrid>
+      )}
+
+      {view >= SpellView.full && (
+        <VStack
+          overflow="auto"
+          bgColor="#dad5d5"
+          w="100%"
+          px="0.5em"
+          py="0.5em"
+          fontSize="0.625em"
+          lineHeight={1.1}
+          flex={1}
+          align="start"
+        >
+          {reactionTo && <Text>{reactionTo}</Text>}
+
+          <ReactMarkdown remarkPlugins={remarkPlugins}>
+            {description}
+          </ReactMarkdown>
+
+          {higherLevel && (
+            <>
+              <Text fontFamily="Mr Eaves" fontWeight="bold">
+                {higherLevelLabel}
+              </Text>
+
               <ReactMarkdown remarkPlugins={remarkPlugins}>
-                {componentMaterials}
+                {higherLevel}
               </ReactMarkdown>
-            </Box>
-          </GridItem>
-        )}
-      </SimpleGrid>
-
-      <VStack
-        overflow="auto"
-        bgColor="#dad5d5"
-        w="100%"
-        px="0.5em"
-        py="0.5em"
-        fontSize="0.625em"
-        lineHeight={1.1}
-        flex={1}
-        align="start"
-      >
-        {reactionTo && <Text>{reactionTo}</Text>}
-
-        <ReactMarkdown remarkPlugins={remarkPlugins}>
-          {description}
-        </ReactMarkdown>
-
-        {higherLevel && (
-          <>
-            <Text fontFamily="Mr Eaves" fontWeight="bold">
-              {higherLevelLabel}
-            </Text>
-
-            <ReactMarkdown remarkPlugins={remarkPlugins}>
-              {higherLevel}
-            </ReactMarkdown>
-          </>
-        )}
-      </VStack>
+            </>
+          )}
+        </VStack>
+      )}
 
       <HStack
         color="white"
         justify="space-between"
         w="100%"
         fontFamily="Mr Eaves"
-        fontSize="0.625em"
+        fontSize="0.75em"
         lineHeight={1}
         mt="-0.25em"
+        textTransform="lowercase"
       >
-        <Text>{`${school}, ${level}`}</Text>
-        <Text>D&D</Text>
+        <Text>{school}</Text>
+        <Text>{level}</Text>
       </HStack>
     </VStack>
   );

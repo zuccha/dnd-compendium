@@ -49,6 +49,9 @@ const dndI18n = {
     "dnd.spell.level.cantrip": "cantrip",
     "dnd.spell.level.number": "level <1>", // 1 = level
     "dnd.spell.ritual": " or ritual",
+    "dnd.spell.view.full": "Full",
+    "dnd.spell.view.compact": "Compact",
+    "dnd.spell.view.minimal": "Minimal",
     // Selectors
     "dnd.input.name.placeholder": "Name",
     "dnd.selector.classes.placeholder": "Select classes",
@@ -103,6 +106,9 @@ const dndI18n = {
     "dnd.spell.level.cantrip": "trucchetto",
     "dnd.spell.level.number": "<1>˚ livello", // 1 = level
     "dnd.spell.ritual": " o rituale",
+    "dnd.spell.view.full": "Intero",
+    "dnd.spell.view.compact": "Compatto",
+    "dnd.spell.view.minimal": "Minimale",
     // Selectors
     "dnd.input.name.placeholder": "Nome",
     "dnd.selector.classes.placeholder": "Seleziona classi",

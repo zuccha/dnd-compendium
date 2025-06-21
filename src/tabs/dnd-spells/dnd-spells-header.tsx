@@ -9,13 +9,20 @@ import { useMemo } from "react";
 import AppHeader from "../../app-header";
 import NumberInput from "../../components/ui/number-input";
 import Select from "../../components/ui/select";
+import SelectSimple from "../../components/ui/select-simple";
 import useI18n from "../../i18n/use-i18n";
-import { defaultClasses, defaultLevels, defaultZoom } from "./constants";
+import {
+  defaultClasses,
+  defaultLevels,
+  defaultView,
+  defaultZoom,
+} from "./constants";
 
 export type DndSpellsHeaderProps = {
   onChangeClasses: (classes: string[]) => void;
   onChangeLevels: (levels: number[]) => void;
   onChangeName: (name: string) => void;
+  onChangeView: (view: number) => void;
   onChangeZoom: (zoom: number) => void;
 };
 
@@ -23,6 +30,7 @@ export default function DndSpellsHeader({
   onChangeClasses,
   onChangeLevels,
   onChangeName,
+  onChangeView,
   onChangeZoom,
 }: DndSpellsHeaderProps) {
   const i18n = useI18n();
@@ -46,14 +54,24 @@ export default function DndSpellsHeader({
     });
   }, [i18n]);
 
+  const viewCollection = useMemo(() => {
+    return createListCollection({
+      items: [
+        { label: i18n.t("dnd.spell.view.full"), value: "2" },
+        { label: i18n.t("dnd.spell.view.compact"), value: "1" },
+        { label: i18n.t("dnd.spell.view.minimal"), value: "0" },
+      ],
+    });
+  }, [i18n]);
+
   return (
     <VStack
-      position="sticky"
-      w="100%"
-      top={0}
       bgColor="bg"
       gap={0.25}
+      position="sticky"
       shadow="sm"
+      top={0}
+      w="100%"
     >
       <Box maxW="64em" w="100%">
         <AppHeader />
@@ -66,31 +84,37 @@ export default function DndSpellsHeader({
           />
           <Select
             collection={levelsCollection}
-            size="sm"
-            defaultValue={defaultLevelsStr}
-            onValueChange={(e) =>
-              onChangeLevels(e.value.map((v) => parseInt(v)))
-            }
-            placeholder={i18n.t("dnd.selector.levels.placeholder")}
+            defaultValue={defaultLevelsAsStrings}
             multiple
+            onValueChange={(e) => onChangeLevels(e.value.map((v) => +v))}
+            placeholder={i18n.t("dnd.selector.levels.placeholder")}
+            size="sm"
           />
           <Select
             collection={classesCollection}
-            size="sm"
             defaultValue={defaultClasses}
+            multiple
             onValueChange={(e) => onChangeClasses(e.value)}
             placeholder={i18n.t("dnd.selector.classes.placeholder")}
-            multiple
+            size="sm"
+          />
+          <SelectSimple
+            collection={viewCollection}
+            defaultValue={defaultViewAsList}
+            flex={0}
+            minW="8em"
+            onValueChange={(e) => onChangeView(+e.value[0])}
+            size="sm"
           />
           <NumberInput
             defaultValue={`${defaultZoom * 100}%`}
-            min={0.5}
-            max={2}
-            step={0.1}
-            size="sm"
-            w="6em"
-            onValueChange={(e) => onChangeZoom(e.valueAsNumber)}
             formatOptions={{ style: "percent" }}
+            max={2}
+            min={0.5}
+            onValueChange={(e) => onChangeZoom(e.valueAsNumber)}
+            size="sm"
+            step={0.1}
+            w="6em"
           />
         </HStack>
       </Box>
@@ -98,7 +122,9 @@ export default function DndSpellsHeader({
   );
 }
 
-const defaultLevelsStr = defaultLevels.map((l) => `${l}`);
+const defaultLevelsAsStrings = defaultLevels.map((l) => `${l}`);
+
+const defaultViewAsList = [`${defaultView}`];
 
 const levelsCollection = createListCollection({
   items: [
