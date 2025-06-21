@@ -2,6 +2,7 @@ export const SpellView = {
   minimal: 0,
   compact: 1,
   full: 2,
+  table: 3,
 };
 
 export const defaultClasses = [

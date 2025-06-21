@@ -1,4 +1,5 @@
-import type { I18nDistance, I18nString } from "./localization";
+import type { I18nDistance } from "../i18n/i18n-distance";
+import type { I18nString } from "../i18n/i18n-string";
 
 //------------------------------------------------------------------------------
 // Class

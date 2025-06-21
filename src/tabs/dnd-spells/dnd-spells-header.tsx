@@ -16,6 +16,7 @@ import {
   defaultLevels,
   defaultView,
   defaultZoom,
+  SpellView,
 } from "./constants";
 
 export type DndSpellsHeaderProps = {
@@ -57,9 +58,22 @@ export default function DndSpellsHeader({
   const viewCollection = useMemo(() => {
     return createListCollection({
       items: [
-        { label: i18n.t("dnd.spell.view.full"), value: "2" },
-        { label: i18n.t("dnd.spell.view.compact"), value: "1" },
-        { label: i18n.t("dnd.spell.view.minimal"), value: "0" },
+        {
+          label: i18n.t("dnd.spell.view.full"),
+          value: `${SpellView.full}`,
+        },
+        {
+          label: i18n.t("dnd.spell.view.compact"),
+          value: `${SpellView.compact}`,
+        },
+        {
+          label: i18n.t("dnd.spell.view.minimal"),
+          value: `${SpellView.minimal}`,
+        },
+        {
+          label: i18n.t("dnd.spell.view.table"),
+          value: `${SpellView.table}`,
+        },
       ],
     });
   }, [i18n]);

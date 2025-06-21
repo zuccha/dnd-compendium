@@ -1,7 +1,9 @@
 import { Center, Flex } from "@chakra-ui/react";
-import DndSpellCard from "./dnd-spell-card";
-import type { DndSpell } from "../../models/dnd";
 import { memo } from "react";
+import type { DndSpell } from "../../models/dnd";
+import { SpellView } from "./constants";
+import DndSpellCard from "./dnd-spell-card";
+import DndSpellsTable from "./dnd-spells-table";
 
 export type DnnSpellsListProps = {
   spells: DndSpell[];
@@ -14,6 +16,8 @@ function DndSpellsList({ spells, view, zoom }: DnnSpellsListProps) {
     <Flex maxW="64em" w="100%" justifyContent="center" py={4}>
       {spells.length === 0 ? (
         <Center mt="25%">No spells found</Center>
+      ) : view === SpellView.table ? (
+        <DndSpellsTable spells={spells} />
       ) : (
         <Flex
           wrap="wrap"

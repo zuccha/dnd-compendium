@@ -23,11 +23,17 @@ const dndI18n = {
     "dnd.magic_school.necromancy": "Necromancy",
     "dnd.magic_school.transmutation": "Transmutation",
     // Spell-related
+    "dnd.spell.name": "Name",
+    "dnd.spell.magic_school": "School",
     "dnd.spell.casting_time": "Casting time",
     "dnd.spell.casting_time.action": "Action",
     "dnd.spell.casting_time.bonus_action": "Bonus action",
     "dnd.spell.casting_time.reaction": "Reaction",
     "dnd.spell.casting_time.time": "<1> <2>", // 1 = quantity, 2 = unit
+    "dnd.spell.concentration": "Concentration",
+    "dnd.spell.concentration@short": "Con.",
+    "dnd.spell.ritual": "Ritual",
+    "dnd.spell.ritual@short": "Rit.",
     "dnd.spell.range": "Range",
     "dnd.spell.range.self": "Self",
     "dnd.spell.range.touch": "Touch",
@@ -36,6 +42,7 @@ const dndI18n = {
     "dnd.spell.range.unlimited": "Unlimited",
     "dnd.spell.range.distance": "<1> <2>", // 1 = quantity, 2 = unit
     "dnd.spell.components": "Components",
+    "dnd.spell.components@short": "V, S, M",
     "dnd.spell.component_materials": "Materials",
     "dnd.spell.duration": "Duration",
     "dnd.spell.duration.instantaneous": "Instantaneous",
@@ -46,12 +53,14 @@ const dndI18n = {
     "dnd.spell.duration.time.concentration": " (C)",
     "dnd.spell.higher_levels": "Higher Levels",
     "dnd.spell.cantrip": "cantrip",
+    "dnd.spell.level": "Level",
     "dnd.spell.level.cantrip": "cantrip",
     "dnd.spell.level.number": "level <1>", // 1 = level
-    "dnd.spell.ritual": " or ritual",
+    "dnd.spell.or_ritual": " or ritual",
     "dnd.spell.view.full": "Full",
     "dnd.spell.view.compact": "Compact",
     "dnd.spell.view.minimal": "Minimal",
+    "dnd.spell.view.table": "Table",
     // Selectors
     "dnd.input.name.placeholder": "Name",
     "dnd.selector.classes.placeholder": "Select classes",
@@ -81,11 +90,17 @@ const dndI18n = {
     "dnd.magic_school.necromancy": "Necromazia",
     "dnd.magic_school.transmutation": "Transmutazione",
     // Spell-related
+    "dnd.spell.name": "Nome",
+    "dnd.spell.magic_school": "Scuola",
     "dnd.spell.casting_time": "Tempo di lancio",
     "dnd.spell.casting_time.action": "Azione",
     "dnd.spell.casting_time.bonus_action": "Azione bonus",
     "dnd.spell.casting_time.reaction": "Reazione",
     "dnd.spell.casting_time.time": "<1> <2>", // 1 = quantity, 2 = unit
+    "dnd.spell.concentration": "Concentrazione",
+    "dnd.spell.concentration@short": "Con.",
+    "dnd.spell.ritual": "Ritual",
+    "dnd.spell.ritual@short": "Rit.",
     "dnd.spell.range": "Gittata",
     "dnd.spell.range.self": "Incantatore",
     "dnd.spell.range.touch": "Contattp",
@@ -94,6 +109,7 @@ const dndI18n = {
     "dnd.spell.range.unlimited": "Illimitato",
     "dnd.spell.range.distance": "<1> <2>", // 1 = quantity, 2 = unit
     "dnd.spell.components": "Componenti",
+    "dnd.spell.components@short": "V, S, M",
     "dnd.spell.component_materials": "Materiali",
     "dnd.spell.duration": "Durata",
     "dnd.spell.duration.instantaneous": "Istantaneo",
@@ -103,12 +119,14 @@ const dndI18n = {
     "dnd.spell.duration.time.up_to": "Fino a ",
     "dnd.spell.duration.time.concentration": " (C)",
     "dnd.spell.higher_levels": "Livello Superiore",
+    "dnd.spell.level": "Livello",
     "dnd.spell.level.cantrip": "trucchetto",
     "dnd.spell.level.number": "<1>˚ livello", // 1 = level
-    "dnd.spell.ritual": " o rituale",
+    "dnd.spell.or_ritual": " o rituale",
     "dnd.spell.view.full": "Intero",
     "dnd.spell.view.compact": "Compatto",
     "dnd.spell.view.minimal": "Minimale",
+    "dnd.spell.view.table": "Tabella",
     // Selectors
     "dnd.input.name.placeholder": "Nome",
     "dnd.selector.classes.placeholder": "Seleziona classi",

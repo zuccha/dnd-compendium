@@ -109,7 +109,7 @@ function localizeComponentMaterials(
     : undefined;
 }
 
-function localizeDndSpell(spell: DndSpell, i18n: I18n) {
+export function localizeDndSpell(spell: DndSpell, i18n: I18n) {
   return {
     name: localizeString(spell.name, i18n.language),
     school: i18n.t(`dnd.magic_school.${spell.school}`),
@@ -121,7 +121,7 @@ function localizeDndSpell(spell: DndSpell, i18n: I18n) {
       : undefined,
     castingTime:
       localizeCastingTime(spell.castingTime, i18n) +
-      (spell.ritual ? i18n.t("dnd.spell.ritual") : ""),
+      (spell.ritual ? i18n.t("dnd.spell.or_ritual") : ""),
     reactionTo:
       spell.castingTime.type === "reaction"
         ? localizeString(spell.castingTime.reactionTo, i18n.language)
@@ -130,6 +130,8 @@ function localizeDndSpell(spell: DndSpell, i18n: I18n) {
     range: localizeRange(spell.range, i18n),
     components: localizeComponents(spell.components),
     componentMaterials: localizeComponentMaterials(spell.components, i18n),
+
+    raw: spell,
   };
 }
 
