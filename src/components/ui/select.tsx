@@ -1,8 +1,10 @@
 import {
   Select as ChakraSelect,
-  createListCollection as chakraCreateListCollection,
+  Icon,
+  useSelectContext,
 } from "@chakra-ui/react";
 import type { SelectRootProps as ChakraSelectRootProps } from "@chakra-ui/react";
+import { LuCheck } from "react-icons/lu";
 
 export type SelectProps = ChakraSelectRootProps & {
   placeholder?: string;
@@ -18,8 +20,9 @@ export default function Select(props: SelectProps) {
           <ChakraSelect.ValueText placeholder={props.placeholder} />
         </ChakraSelect.Trigger>
         <ChakraSelect.IndicatorGroup>
-          <ChakraSelect.Indicator />
+          <AllTrigger />
           <ChakraSelect.ClearTrigger />
+          <ChakraSelect.Indicator />
         </ChakraSelect.IndicatorGroup>
       </ChakraSelect.Control>
 
@@ -37,4 +40,19 @@ export default function Select(props: SelectProps) {
   );
 }
 
-export const createListCollection = chakraCreateListCollection;
+function AllTrigger() {
+  const select = useSelectContext();
+  return select.selectedItems.length === select.collection.size ? null : (
+    <Icon
+      onClick={select.selectAll}
+      color="fg.muted"
+      size="sm"
+      zIndex={1}
+      pointerEvents="auto"
+      display="block"
+      cursor="default"
+    >
+      <LuCheck />
+    </Icon>
+  );
+}

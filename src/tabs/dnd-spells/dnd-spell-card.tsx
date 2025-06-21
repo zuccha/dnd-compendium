@@ -7,7 +7,7 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import { useMemo } from "react";
+import { memo, useMemo } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { dndLabelLocalization } from "../../data/dnd-localizations";
@@ -21,7 +21,7 @@ export type DndSpellCardProps = {
   spell: DndSpell;
 };
 
-export default function DndSpellCard({ spell }: DndSpellCardProps) {
+function DndSpellCard({ spell }: DndSpellCardProps) {
   const lang = useLocalizationLanguage();
   const {
     name,
@@ -54,7 +54,6 @@ export default function DndSpellCard({ spell }: DndSpellCardProps) {
       pb="0.5em"
       color="black"
       fontFamily="Bookinsanity"
-      fontSize="1em"
       gap="0.5em"
     >
       <Flex
@@ -138,6 +137,8 @@ export default function DndSpellCard({ spell }: DndSpellCardProps) {
     </VStack>
   );
 }
+
+export default memo(DndSpellCard);
 
 function GridCell({ label, text }: { label: string; text: string }) {
   return (
