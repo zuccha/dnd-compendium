@@ -1,6 +1,7 @@
 import js from "@eslint/js";
 import globals from "globals";
 import imports from "eslint-plugin-import";
+import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 import tseslint from "typescript-eslint";
@@ -15,6 +16,7 @@ export default tseslint.config(
       globals: globals.browser,
     },
     plugins: {
+      react: react,
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
       import: imports,
@@ -31,8 +33,9 @@ export default tseslint.config(
           named: true,
         },
       ],
+      "react/jsx-sort-props": ["error"],
       "react-refresh/only-export-components": [
-        "warn",
+        "error",
         { allowConstantExport: true },
       ],
       "sort-keys": [
@@ -40,6 +43,11 @@ export default tseslint.config(
         "asc",
         { allowLineSeparatedGroups: true, caseSensitive: true, natural: true },
       ],
+    },
+    settings: {
+      react: {
+        version: "detect",
+      },
     },
   }
 );

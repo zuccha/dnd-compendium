@@ -44,13 +44,13 @@ function AllTrigger() {
   const select = useSelectContext();
   return select.selectedItems.length === select.collection.size ? null : (
     <Icon
-      onClick={select.selectAll}
       color="fg.muted"
+      cursor="default"
+      display="block"
+      onClick={select.selectAll}
+      pointerEvents="auto"
       size="sm"
       zIndex={1}
-      pointerEvents="auto"
-      display="block"
-      cursor="default"
     >
       <LuCheck />
     </Icon>

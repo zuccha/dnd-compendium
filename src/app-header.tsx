@@ -21,14 +21,14 @@ export default function AppHeader() {
   );
 
   return (
-    <HStack w="100%" px={1} py={2} justifyContent="space-between">
+    <HStack justifyContent="space-between" px={1} py={2} w="100%">
       <Heading>DnD spells</Heading>
 
       <HStack>
         <SelectSimple
           collection={langCollection}
-          size="xs"
           onValueChange={handleLanguageChange}
+          size="xs"
           value={[language]}
           w="4em"
         />

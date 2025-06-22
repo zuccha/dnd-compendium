@@ -41,7 +41,7 @@ export default function DndSpellsTab() {
   }, [debouncedFilters]);
 
   return (
-    <VStack w="100%" position="relative" gap={0}>
+    <VStack gap={0} position="relative" w="100%">
       <DndSpellsHeader
         onChangeClasses={setClasses}
         onChangeLevels={setLevels}

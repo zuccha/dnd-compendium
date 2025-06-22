@@ -90,7 +90,7 @@ export default function DndSpellsHeader({
       <Box maxW="64em" w="100%">
         <AppHeader />
 
-        <HStack w="100%" pb={2} px={1}>
+        <HStack pb={2} px={1} w="100%">
           <Input
             onChange={(e) => onChangeName(e.target.value)}
             placeholder={i18n.t("dnd.input.name.placeholder")}

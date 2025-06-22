@@ -48,24 +48,24 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
 
   return (
     <VStack
-      w="15em"
-      h={view === DndSpellView.full ? "21em" : undefined}
       bgColor="#444444"
       borderRadius="0.75em"
-      px="0.625em"
-      pt="0.625em"
-      pb="0.5em"
       color="black"
       fontFamily="Bookinsanity"
       gap="0.5em"
+      h={view === DndSpellView.full ? "21em" : undefined}
+      pb="0.5em"
+      pt="0.625em"
+      px="0.625em"
+      w="15em"
     >
       <Flex
         bgColor="#dad5d5"
-        w="100%"
-        px="0.5em"
-        py="0.25em"
         borderTopRadius="0.375em"
         lineHeight={1}
+        px="0.5em"
+        py="0.25em"
+        w="100%"
       >
         <Text fontFamily="Mr Eaves" fontSize="1em" fontWeight="bold">
           {name}
@@ -73,17 +73,17 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
       </Flex>
 
       {view >= DndSpellView.compact && (
-        <SimpleGrid columns={2} w="100%" gap="0.125em" borderColor="">
+        <SimpleGrid borderColor="" columns={2} gap="0.125em" w="100%">
           <GridCell label={castingTimeLabel} text={castingTime} />
           <GridCell label={rangeLabel} text={range} />
           <GridCell label={componentsLabel} text={components} />
           <GridCell label={durationLabel} text={duration} />
           {view >= DndSpellView.full && componentMaterials && (
             <GridItem
-              colSpan={2}
               bgColor="#dad5d5"
-              lineHeight={1}
+              colSpan={2}
               gap="0.2em"
+              lineHeight={1}
               px="0.5em"
               py="0.2em"
             >
@@ -99,15 +99,15 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
 
       {view >= DndSpellView.full && (
         <VStack
-          overflow="auto"
+          align="start"
           bgColor="#dad5d5"
-          w="100%"
-          px="0.5em"
-          py="0.5em"
+          flex={1}
           fontSize="0.625em"
           lineHeight={1.1}
-          flex={1}
-          align="start"
+          overflow="auto"
+          px="0.5em"
+          py="0.5em"
+          w="100%"
         >
           {reactionTo && <Text>{reactionTo}</Text>}
 
@@ -132,26 +132,26 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
       <VStack align="start" gap={0} w="100%">
         <HStack
           color="white"
-          justify="space-between"
-          w="100%"
           fontFamily="Mr Eaves"
           fontSize="0.75em"
+          justify="space-between"
           lineHeight={1}
           mt="-0.25em"
           textTransform="lowercase"
+          w="100%"
         >
           <Text>{classes}</Text>
         </HStack>
 
         <HStack
           color="white"
-          justify="space-between"
-          w="100%"
           fontFamily="Mr Eaves"
           fontSize="0.75em"
+          justify="space-between"
           lineHeight={1}
           mt="-0.25em"
           textTransform="lowercase"
+          w="100%"
         >
           <Text>{school}</Text>
           <Text>{level}</Text>
@@ -167,12 +167,12 @@ function GridCell({ label, text }: { label: string; text: string }) {
   return (
     <GridItem
       bgColor="#dad5d5"
-      lineHeight={1}
       gap="0.2em"
+      lineHeight={1}
       px="0.5em"
       py="0.2em"
     >
-      <Text fontFamily="Mr Eaves" textAlign="center" fontSize="0.75em">
+      <Text fontFamily="Mr Eaves" fontSize="0.75em" textAlign="center">
         {label}
       </Text>
       <Text fontSize="0.625em" textAlign="center">

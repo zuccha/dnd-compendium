@@ -58,11 +58,11 @@ export const ColorModeButton = React.forwardRef<
   return (
     <ClientOnly fallback={<Skeleton boxSize="8" />}>
       <IconButton
-        onClick={toggleColorMode}
-        variant="ghost"
         aria-label="Toggle color mode"
-        size="sm"
+        onClick={toggleColorMode}
         ref={ref}
+        size="sm"
+        variant="ghost"
         {...props}
         css={{
           _icon: {
@@ -81,11 +81,11 @@ export const LightMode = React.forwardRef<HTMLSpanElement, SpanProps>(
   function LightMode(props, ref) {
     return (
       <Span
-        color="fg"
-        display="contents"
         className="chakra-theme light"
+        color="fg"
         colorPalette="gray"
         colorScheme="light"
+        display="contents"
         ref={ref}
         {...props}
       />
@@ -97,11 +97,11 @@ export const DarkMode = React.forwardRef<HTMLSpanElement, SpanProps>(
   function DarkMode(props, ref) {
     return (
       <Span
-        color="fg"
-        display="contents"
         className="chakra-theme dark"
+        color="fg"
         colorPalette="gray"
         colorScheme="dark"
+        display="contents"
         ref={ref}
         {...props}
       />

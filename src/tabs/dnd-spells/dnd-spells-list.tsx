@@ -13,19 +13,19 @@ export type DnnSpellsListProps = {
 
 function DndSpellsList({ spells, view, zoom }: DnnSpellsListProps) {
   return (
-    <Flex maxW="64em" w="100%" justifyContent="center" py={4}>
+    <Flex justifyContent="center" maxW="64em" py={4} w="100%">
       {spells.length === 0 ? (
         <Center mt="25%">No spells found</Center>
       ) : view === DndSpellView.table ? (
         <DndSpellsTable spells={spells} />
       ) : (
         <Flex
-          wrap="wrap"
-          gap="1em"
-          w="100%"
           alignItems="start"
-          justifyContent="center"
           fontSize={`${zoom}em`}
+          gap="1em"
+          justifyContent="center"
+          w="100%"
+          wrap="wrap"
         >
           {spells.map((spell) => (
             <DndSpellCard key={spell.name.en} spell={spell} view={view} />
