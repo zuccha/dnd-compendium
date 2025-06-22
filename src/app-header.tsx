@@ -5,10 +5,10 @@ import {
   createListCollection,
 } from "@chakra-ui/react";
 import { useCallback } from "react";
-import { ColorModeButton } from "./components/ui/color-mode";
 import SelectSimple from "./components/ui/select-simple";
 import type { I18nLanguage } from "./i18n/i18n-language";
 import useI18nLanguage from "./i18n/use-i18n-language";
+import ThemeButton from "./theme/theme-button";
 
 export default function AppHeader() {
   const [language, setLanguage] = useI18nLanguage();
@@ -33,7 +33,7 @@ export default function AppHeader() {
           w="4em"
         />
 
-        <ColorModeButton />
+        <ThemeButton />
       </HStack>
     </HStack>
   );

@@ -1,13 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./app.tsx";
-import { Provider } from "./components/ui/provider";
 import "./theme/fonts.css";
+import { ThemeProvider } from "./theme/theme-provider";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Provider>
+    <ThemeProvider>
       <App />
-    </Provider>
+    </ThemeProvider>
   </StrictMode>,
 );

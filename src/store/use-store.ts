@@ -13,6 +13,8 @@ export default function useStore<T>(
   initialValue: T,
   parse: (maybeT: unknown) => T,
 ): [T, React.Dispatch<React.SetStateAction<T>>] {
+  id = `dnd/${id}`;
+
   const [value, setValue] = useState(() => Store.load(id, initialValue, parse));
 
   useEffect(() => {

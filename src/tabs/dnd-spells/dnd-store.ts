@@ -17,7 +17,7 @@ import { range } from "../../utils/array";
 //------------------------------------------------------------------------------
 
 export const useDndSpellsFilterName = () =>
-  useStoreString("dnd.spells.filter.name", "");
+  useStoreString("module[spells].filter.name", "");
 
 //------------------------------------------------------------------------------
 // Spells Filter Classes
@@ -28,7 +28,7 @@ export const dndClassesSchema = z.array(dndClassSchema);
 
 export const useDndSpellsFilterClasses = () =>
   useStore<DndClass[]>(
-    "dnd.spells.filter.classes",
+    "module[spells].filter.classes",
     dndClasses,
     dndClassesSchema.parse,
   );
@@ -42,7 +42,7 @@ export const dndSpellLevelsSchema = z.array(z.number());
 
 export const useDndSpellsFilterLevels = () =>
   useStore<number[]>(
-    "dnd.spells.filter.levels",
+    "module[spells].filter.levels",
     dndSpellLevels,
     dndSpellLevelsSchema.parse,
   );
@@ -53,7 +53,7 @@ export const useDndSpellsFilterLevels = () =>
 
 export const useDndSpellsSettingView = () =>
   useStore<DndSpellsView>(
-    "dnd.spells.setting.view",
+    "module[spells].setting.view",
     dndSpellsView.table,
     dndSpellsViewSchema.parse,
   );
@@ -63,4 +63,4 @@ export const useDndSpellsSettingView = () =>
 //------------------------------------------------------------------------------
 
 export const useDndSpellsSettingZoom = () =>
-  useStoreNumber("dnd.spells.setting.zoom", 1);
+  useStoreNumber("module[spells].setting.zoom", 1);
