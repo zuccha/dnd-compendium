@@ -37,6 +37,7 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
     range,
     components,
     componentMaterials,
+    classes,
   } = useLocalizedDndSpell(spell);
 
   const castingTimeLabel = i18n.t("dnd.spell.casting_time");
@@ -128,19 +129,34 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
         </VStack>
       )}
 
-      <HStack
-        color="white"
-        justify="space-between"
-        w="100%"
-        fontFamily="Mr Eaves"
-        fontSize="0.75em"
-        lineHeight={1}
-        mt="-0.25em"
-        textTransform="lowercase"
-      >
-        <Text>{school}</Text>
-        <Text>{level}</Text>
-      </HStack>
+      <VStack align="start" gap={0} w="100%">
+        <HStack
+          color="white"
+          justify="space-between"
+          w="100%"
+          fontFamily="Mr Eaves"
+          fontSize="0.75em"
+          lineHeight={1}
+          mt="-0.25em"
+          textTransform="lowercase"
+        >
+          <Text>{classes}</Text>
+        </HStack>
+
+        <HStack
+          color="white"
+          justify="space-between"
+          w="100%"
+          fontFamily="Mr Eaves"
+          fontSize="0.75em"
+          lineHeight={1}
+          mt="-0.25em"
+          textTransform="lowercase"
+        >
+          <Text>{school}</Text>
+          <Text>{level}</Text>
+        </HStack>
+      </VStack>
     </VStack>
   );
 }
