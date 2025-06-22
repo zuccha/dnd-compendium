@@ -10,7 +10,7 @@ function capitalize(text: string): string {
 
 function localizeString(
   localizedString: I18nString,
-  lang: I18nLanguage
+  lang: I18nLanguage,
 ): string {
   return localizedString[lang] ?? localizedString.en;
 }
@@ -23,7 +23,7 @@ function localizeLevel(level: number, i18n: I18n): string {
 
 function localizeCastingTime(
   castingTime: DndSpell["castingTime"],
-  i18n: I18n
+  i18n: I18n,
 ): string {
   switch (castingTime.type) {
     case "action":
@@ -36,7 +36,7 @@ function localizeCastingTime(
       return i18n.ti(
         "dnd.spell.casting_time.time",
         `${castingTime.quantity}`,
-        i18n.tp(`generic.time.${castingTime.unit}`, castingTime.quantity)
+        i18n.tp(`generic.time.${castingTime.unit}`, castingTime.quantity),
       );
   }
 }
@@ -57,7 +57,7 @@ function localizeDuration(duration: DndSpell["duration"], i18n: I18n): string {
         i18n.tp(`generic.time.${duration.unit}`, duration.quantity),
         duration.concentration
           ? i18n.t("dnd.spell.duration.time.concentration")
-          : ""
+          : "",
       );
     }
   }
@@ -80,7 +80,10 @@ function localizeRange(range: DndSpell["range"], i18n: I18n): string {
       return i18n.ti(
         "dnd.spell.range.distance",
         `${localizedRange.value}`,
-        i18n.tp(`generic.distance.${localizedRange.unit}`, localizedRange.value)
+        i18n.tp(
+          `generic.distance.${localizedRange.unit}`,
+          localizedRange.value,
+        ),
       );
     }
     default:
@@ -98,13 +101,13 @@ function localizeComponents(components: DndSpell["components"]): string {
 
 function localizeComponentMaterials(
   components: DndSpell["components"],
-  i18n: I18n
+  i18n: I18n,
 ): string | undefined {
   return components.material
     ? capitalize(
         components.materials
           .map((m) => localizeString(m, i18n.language))
-          .join(", ")
+          .join(", "),
       )
     : undefined;
 }
@@ -134,7 +137,7 @@ export function localizeDndSpell(spell: DndSpell, i18n: I18n) {
   };
 }
 
-export default function useLocalizedDndSpell(spell: DndSpell) {
+export default function useDndSpellLocalized(spell: DndSpell) {
   const i18n = useI18n();
   return useMemo(() => localizeDndSpell(spell, i18n), [i18n, spell]);
 }

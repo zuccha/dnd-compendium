@@ -2,7 +2,7 @@ import { Table } from "@chakra-ui/react";
 import { useMemo } from "react";
 import useI18n from "../../i18n/use-i18n";
 import type { DndSpell } from "../../models/dnd";
-import { localizeDndSpell } from "./use-localized-dnd-spell";
+import { localizeDndSpell } from "./use-dnd-spell-localized";
 
 export type DndSpellsTableProps = {
   spells: DndSpell[];

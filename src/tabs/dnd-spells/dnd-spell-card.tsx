@@ -11,9 +11,8 @@ import { memo } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import useI18n from "../../i18n/use-i18n";
-import type { DndSpell } from "../../models/dnd";
-import { DndSpellView } from "./constants";
-import useLocalizedDndSpell from "./use-localized-dnd-spell";
+import { type DndSpell, dndSpellsView } from "../../models/dnd";
+import useDndSpellLocalized from "./use-dnd-spell-localized";
 
 const remarkPlugins = [remarkGfm];
 
@@ -38,7 +37,7 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
     components,
     componentMaterials,
     classes,
-  } = useLocalizedDndSpell(spell);
+  } = useDndSpellLocalized(spell);
 
   const castingTimeLabel = i18n.t("dnd.spell.casting_time");
   const durationLabel = i18n.t("dnd.spell.duration");
@@ -53,7 +52,7 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
       color="black"
       fontFamily="Bookinsanity"
       gap="0.5em"
-      h={view === DndSpellView.full ? "21em" : undefined}
+      h={view === dndSpellsView.full ? "21em" : undefined}
       pb="0.5em"
       pt="0.625em"
       px="0.625em"
@@ -72,13 +71,13 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
         </Text>
       </Flex>
 
-      {view >= DndSpellView.compact && (
+      {view >= dndSpellsView.compact && (
         <SimpleGrid borderColor="" columns={2} gap="0.125em" w="100%">
           <GridCell label={castingTimeLabel} text={castingTime} />
           <GridCell label={rangeLabel} text={range} />
           <GridCell label={componentsLabel} text={components} />
           <GridCell label={durationLabel} text={duration} />
-          {view >= DndSpellView.full && componentMaterials && (
+          {view >= dndSpellsView.full && componentMaterials && (
             <GridItem
               bgColor="#dad5d5"
               colSpan={2}
@@ -97,7 +96,7 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
         </SimpleGrid>
       )}
 
-      {view >= DndSpellView.full && (
+      {view >= dndSpellsView.full && (
         <VStack
           align="start"
           bgColor="#dad5d5"

@@ -1,3 +1,4 @@
+import { z } from "zod";
 import type { I18nDistance } from "../i18n/i18n-distance";
 import type { I18nString } from "../i18n/i18n-string";
 
@@ -5,39 +6,63 @@ import type { I18nString } from "../i18n/i18n-string";
 // Class
 //------------------------------------------------------------------------------
 
-export const DndClass = {
-  barbarian: "barbarian",
-  bard: "bard",
-  cleric: "cleric",
-  druid: "druid",
-  fighter: "fighter",
-  monk: "monk",
-  paladin: "paladin",
-  ranger: "ranger",
-  rogue: "rogue",
-  sorcerer: "sorcerer",
-  warlock: "warlock",
-  wizard: "wizard",
-} as const;
+export const dndClassSchema = z.enum([
+  "barbarian",
+  "bard",
+  "cleric",
+  "druid",
+  "fighter",
+  "monk",
+  "paladin",
+  "ranger",
+  "rogue",
+  "sorcerer",
+  "warlock",
+  "wizard",
+]);
 
-export type DndClass = keyof typeof DndClass;
+export type DndClass = z.infer<typeof dndClassSchema>;
 
 //------------------------------------------------------------------------------
 // Spell School
 //------------------------------------------------------------------------------
 
-export const DndSpellSchool = {
-  abjuration: "abjuration",
-  conjuration: "conjuration",
-  divination: "divination",
-  enchantment: "enchantment",
-  evocation: "evocation",
-  illusion: "illusion",
-  necromancy: "necromancy",
-  transmutation: "transmutation",
-} as const;
+export const dndMagicSchoolSchema = z.enum([
+  "abjuration",
+  "conjuration",
+  "divination",
+  "enchantment",
+  "evocation",
+  "illusion",
+  "necromancy",
+  "transmutation",
+]);
 
-export type DndMagicSchool = keyof typeof DndSpellSchool;
+export const dndMagicSchool = dndMagicSchoolSchema.options;
+
+export type DndMagicSchool = z.infer<typeof dndMagicSchoolSchema>;
+
+//------------------------------------------------------------------------------
+// Spells View
+//------------------------------------------------------------------------------
+
+export const dndSpellsViewSchema = z.union([
+  z.literal(0),
+  z.literal(1),
+  z.literal(2),
+  z.literal(3),
+]);
+
+export type DndSpellsView = (typeof dndSpellsView)[keyof typeof dndSpellsView];
+
+/* eslint-disable sort-keys */
+export const dndSpellsView = {
+  minimal: 0,
+  compact: 1,
+  full: 2,
+  table: 3,
+} as const;
+/* eslint-enable sort-keys */
 
 //------------------------------------------------------------------------------
 // Spell (Raw)

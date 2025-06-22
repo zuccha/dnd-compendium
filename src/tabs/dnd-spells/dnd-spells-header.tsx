@@ -12,68 +12,46 @@ import Select from "../../components/ui/select";
 import SelectSimple from "../../components/ui/select-simple";
 import useI18n from "../../i18n/use-i18n";
 import {
-  DndSpellView,
-  defaultClasses,
-  defaultLevels,
-  defaultView,
-  defaultZoom,
-} from "./constants";
+  type DndClass,
+  type DndSpellsView,
+  dndSpellsView,
+} from "../../models/dnd";
+import {
+  dndClasses,
+  dndSpellLevels,
+  useDndSpellsFilterClasses,
+  useDndSpellsFilterLevels,
+  useDndSpellsFilterName,
+  useDndSpellsSettingView,
+  useDndSpellsSettingZoom,
+} from "./dnd-store";
 
-export type DndSpellsHeaderProps = {
-  onChangeClasses: (classes: string[]) => void;
-  onChangeLevels: (levels: number[]) => void;
-  onChangeName: (name: string) => void;
-  onChangeView: (view: number) => void;
-  onChangeZoom: (zoom: number) => void;
-};
-
-export default function DndSpellsHeader({
-  onChangeClasses,
-  onChangeLevels,
-  onChangeName,
-  onChangeView,
-  onChangeZoom,
-}: DndSpellsHeaderProps) {
+export default function DndSpellsHeader() {
   const i18n = useI18n();
+
+  const [name, setName] = useDndSpellsFilterName();
+  const [classes, setClasses] = useDndSpellsFilterClasses();
+  const [levels, setLevels] = useDndSpellsFilterLevels();
+  const [view, setView] = useDndSpellsSettingView();
+  const [zoom, setZoom] = useDndSpellsSettingZoom();
 
   const classesCollection = useMemo(() => {
     return createListCollection({
-      items: [
-        { label: i18n.t("dnd.class.barbarian"), value: "barbarian" },
-        { label: i18n.t("dnd.class.bard"), value: "bard" },
-        { label: i18n.t("dnd.class.cleric"), value: "cleric" },
-        { label: i18n.t("dnd.class.druid"), value: "druid" },
-        { label: i18n.t("dnd.class.fighter"), value: "fighter" },
-        { label: i18n.t("dnd.class.monk"), value: "monk" },
-        { label: i18n.t("dnd.class.paladin"), value: "paladin" },
-        { label: i18n.t("dnd.class.ranger"), value: "ranger" },
-        { label: i18n.t("dnd.class.rogue"), value: "rogue" },
-        { label: i18n.t("dnd.class.sorcerer"), value: "sorcerer" },
-        { label: i18n.t("dnd.class.warlock"), value: "warlock" },
-        { label: i18n.t("dnd.class.wizard"), value: "wizard" },
-      ],
+      items: dndClasses.map((dndClass) => ({
+        label: i18n.t(`dnd.class.${dndClass}`),
+        value: dndClass,
+      })),
     });
   }, [i18n]);
 
   const viewCollection = useMemo(() => {
+    const { full, compact, minimal, table } = dndSpellsView;
     return createListCollection({
       items: [
-        {
-          label: i18n.t("dnd.spell.view.full"),
-          value: `${DndSpellView.full}`,
-        },
-        {
-          label: i18n.t("dnd.spell.view.compact"),
-          value: `${DndSpellView.compact}`,
-        },
-        {
-          label: i18n.t("dnd.spell.view.minimal"),
-          value: `${DndSpellView.minimal}`,
-        },
-        {
-          label: i18n.t("dnd.spell.view.table"),
-          value: `${DndSpellView.table}`,
-        },
+        { label: i18n.t("dnd.spell.view.full"), value: `${full}` },
+        { label: i18n.t("dnd.spell.view.compact"), value: `${compact}` },
+        { label: i18n.t("dnd.spell.view.minimal"), value: `${minimal}` },
+        { label: i18n.t("dnd.spell.view.table"), value: `${table}` },
       ],
     });
   }, [i18n]);
@@ -92,43 +70,44 @@ export default function DndSpellsHeader({
 
         <HStack pb={2} px={1} w="100%">
           <Input
-            onChange={(e) => onChangeName(e.target.value)}
+            defaultValue={name}
+            onChange={(e) => setName(e.target.value)}
             placeholder={i18n.t("dnd.input.name.placeholder")}
             size="sm"
           />
           <Select
             collection={levelsCollection}
-            defaultValue={defaultLevelsAsStrings}
+            defaultValue={levels.map(String)}
             multiple
-            onValueChange={(e) => onChangeLevels(e.value.map((v) => +v))}
+            onValueChange={(e) => setLevels(e.value.map((v) => +v))}
             placeholder={i18n.t("dnd.selector.levels.placeholder")}
             size="sm"
           />
           <Select
             collection={classesCollection}
-            defaultValue={defaultClasses}
+            defaultValue={classes}
             multiple
-            onValueChange={(e) => onChangeClasses(e.value)}
+            onValueChange={(e) => setClasses(e.value as DndClass[])}
             placeholder={i18n.t("dnd.selector.classes.placeholder")}
             size="sm"
           />
           <SelectSimple
             collection={viewCollection}
-            defaultValue={defaultViewAsList}
+            defaultValue={[`${view}`]}
             flex={0}
             minW="8em"
-            onValueChange={(e) => onChangeView(+e.value[0])}
+            onValueChange={(e) => setView(+e.value[0] as DndSpellsView)}
             size="sm"
           />
           <NumberInput
-            defaultValue={`${defaultZoom * 100}%`}
+            defaultValue={`${zoom * 100}%`}
             formatOptions={{ style: "percent" }}
+            inputProps={{ w: "6em" }}
             max={2}
             min={0.5}
-            onValueChange={(e) => onChangeZoom(e.valueAsNumber)}
+            onValueChange={(e) => setZoom(e.valueAsNumber)}
             size="sm"
             step={0.1}
-            w="6em"
           />
         </HStack>
       </Box>
@@ -136,21 +115,9 @@ export default function DndSpellsHeader({
   );
 }
 
-const defaultLevelsAsStrings = defaultLevels.map((l) => `${l}`);
-
-const defaultViewAsList = [`${defaultView}`];
-
 const levelsCollection = createListCollection({
-  items: [
-    { label: "0", value: "0" },
-    { label: "1", value: "1" },
-    { label: "2", value: "2" },
-    { label: "3", value: "3" },
-    { label: "4", value: "4" },
-    { label: "5", value: "5" },
-    { label: "6", value: "6" },
-    { label: "7", value: "7" },
-    { label: "8", value: "8" },
-    { label: "9", value: "9" },
-  ],
+  items: dndSpellLevels.map((level) => ({
+    label: `${level}`,
+    value: `${level}`,
+  })),
 });
