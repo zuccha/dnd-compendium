@@ -1,8 +1,8 @@
 import { useMemo } from "react";
-import useI18n, { type I18n } from "../../i18n/use-i18n";
-import type { DndSpell } from "../../models/dnd";
 import type { I18nLanguage } from "../../i18n/i18n-language";
 import type { I18nString } from "../../i18n/i18n-string";
+import useI18n, { type I18n } from "../../i18n/use-i18n";
+import type { DndSpell } from "../../models/dnd";
 
 function capitalize(text: string): string {
   return text.length === 0 ? "" : text[0].toUpperCase() + text.substring(1);

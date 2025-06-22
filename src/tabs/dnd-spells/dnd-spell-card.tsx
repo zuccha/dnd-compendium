@@ -12,8 +12,8 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import useI18n from "../../i18n/use-i18n";
 import type { DndSpell } from "../../models/dnd";
+import { DndSpellView } from "./constants";
 import useLocalizedDndSpell from "./use-localized-dnd-spell";
-import { SpellView } from "./constants";
 
 const remarkPlugins = [remarkGfm];
 
@@ -49,7 +49,7 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
   return (
     <VStack
       w="15em"
-      h={view === SpellView.full ? "21em" : undefined}
+      h={view === DndSpellView.full ? "21em" : undefined}
       bgColor="#444444"
       borderRadius="0.75em"
       px="0.625em"
@@ -72,13 +72,13 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
         </Text>
       </Flex>
 
-      {view >= SpellView.compact && (
+      {view >= DndSpellView.compact && (
         <SimpleGrid columns={2} w="100%" gap="0.125em" borderColor="">
           <GridCell label={castingTimeLabel} text={castingTime} />
           <GridCell label={rangeLabel} text={range} />
           <GridCell label={componentsLabel} text={components} />
           <GridCell label={durationLabel} text={duration} />
-          {view >= SpellView.full && componentMaterials && (
+          {view >= DndSpellView.full && componentMaterials && (
             <GridItem
               colSpan={2}
               bgColor="#dad5d5"
@@ -97,7 +97,7 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
         </SimpleGrid>
       )}
 
-      {view >= SpellView.full && (
+      {view >= DndSpellView.full && (
         <VStack
           overflow="auto"
           bgColor="#dad5d5"

@@ -1,8 +1,8 @@
 import {
-  createListCollection,
-  Heading,
   HStack,
+  Heading,
   type SelectValueChangeDetails,
+  createListCollection,
 } from "@chakra-ui/react";
 import { useCallback } from "react";
 import { ColorModeButton } from "./components/ui/color-mode";

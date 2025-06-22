@@ -1,6 +1,6 @@
-import { useState, useMemo } from "react";
-import I18nLanguageContext from "./i18n-language-context";
+import { useMemo, useState } from "react";
 import type { I18nLanguage } from "./i18n-language";
+import I18nLanguageContext from "./i18n-language-context";
 
 export type I18nLanguageProviderProps = {
   children: React.ReactNode;

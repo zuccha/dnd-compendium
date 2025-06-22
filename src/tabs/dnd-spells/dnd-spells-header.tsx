@@ -12,11 +12,11 @@ import Select from "../../components/ui/select";
 import SelectSimple from "../../components/ui/select-simple";
 import useI18n from "../../i18n/use-i18n";
 import {
+  DndSpellView,
   defaultClasses,
   defaultLevels,
   defaultView,
   defaultZoom,
-  SpellView,
 } from "./constants";
 
 export type DndSpellsHeaderProps = {
@@ -60,19 +60,19 @@ export default function DndSpellsHeader({
       items: [
         {
           label: i18n.t("dnd.spell.view.full"),
-          value: `${SpellView.full}`,
+          value: `${DndSpellView.full}`,
         },
         {
           label: i18n.t("dnd.spell.view.compact"),
-          value: `${SpellView.compact}`,
+          value: `${DndSpellView.compact}`,
         },
         {
           label: i18n.t("dnd.spell.view.minimal"),
-          value: `${SpellView.minimal}`,
+          value: `${DndSpellView.minimal}`,
         },
         {
           label: i18n.t("dnd.spell.view.table"),
-          value: `${SpellView.table}`,
+          value: `${DndSpellView.table}`,
         },
       ],
     });
