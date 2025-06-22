@@ -1,8 +1,8 @@
-import type {
-  I18nLanguageMandatory,
-  I18nLanguageOptional,
-} from "./i18n-language";
+import z from "zod";
 
-export type I18nString = {
-  [lang in I18nLanguageMandatory]: string;
-} & Partial<Record<I18nLanguageOptional, string>>;
+export const i18nStringSchema = z.object({
+  en: z.string(),
+  it: z.string().optional(),
+});
+
+export type I18nString = z.infer<typeof i18nStringSchema>;

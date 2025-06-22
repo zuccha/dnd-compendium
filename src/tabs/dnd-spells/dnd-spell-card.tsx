@@ -25,25 +25,27 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
   const i18n = useI18n();
 
   const {
-    name,
-    school,
-    level,
-    description,
-    higherLevel,
     castingTime,
-    reactionTo,
-    duration,
-    range,
-    components,
-    componentMaterials,
     classes,
+    componentMaterials,
+    components,
+    description,
+    duration,
+    level,
+    name,
+    range,
+    school,
+    upgrade,
   } = useDndSpellLocalized(spell);
 
   const castingTimeLabel = i18n.t("dnd.spell.casting_time");
   const durationLabel = i18n.t("dnd.spell.duration");
   const rangeLabel = i18n.t("dnd.spell.range");
   const componentsLabel = i18n.t("dnd.spell.components");
-  const higherLevelLabel = i18n.t("dnd.spell.higher_levels");
+  const upgradeLabel =
+    spell.level === 0
+      ? i18n.t("dnd.spell.upgrade.cantrip")
+      : i18n.t("dnd.spell.upgrade.spell");
 
   return (
     <VStack
@@ -70,6 +72,19 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
           {name}
         </Text>
       </Flex>
+
+      <HStack
+        color="white"
+        fontFamily="Mr Eaves"
+        fontSize="0.6em"
+        justify="space-between"
+        lineHeight={1}
+        my="-0.5em"
+        textTransform="lowercase"
+        w="100%"
+      >
+        <Text>{classes}</Text>
+      </HStack>
 
       {view >= dndSpellsView.compact && (
         <SimpleGrid borderColor="" columns={2} gap="0.125em" w="100%">
@@ -108,20 +123,18 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
           py="0.5em"
           w="100%"
         >
-          {reactionTo && <Text>{reactionTo}</Text>}
-
           <ReactMarkdown remarkPlugins={remarkPlugins}>
             {description}
           </ReactMarkdown>
 
-          {higherLevel && (
+          {upgrade && (
             <>
               <Text fontFamily="Mr Eaves" fontWeight="bold">
-                {higherLevelLabel}
+                {upgradeLabel}
               </Text>
 
               <ReactMarkdown remarkPlugins={remarkPlugins}>
-                {higherLevel}
+                {upgrade}
               </ReactMarkdown>
             </>
           )}
@@ -133,19 +146,7 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
           color="white"
           fontFamily="Mr Eaves"
           fontSize="0.75em"
-          justify="space-between"
-          lineHeight={1}
-          mt="-0.25em"
-          textTransform="lowercase"
-          w="100%"
-        >
-          <Text>{classes}</Text>
-        </HStack>
-
-        <HStack
-          color="white"
-          fontFamily="Mr Eaves"
-          fontSize="0.75em"
+          gap={0}
           justify="space-between"
           lineHeight={1}
           mt="-0.25em"

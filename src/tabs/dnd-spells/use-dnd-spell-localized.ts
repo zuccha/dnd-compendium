@@ -4,10 +4,6 @@ import type { I18nString } from "../../i18n/i18n-string";
 import useI18n, { type I18n } from "../../i18n/use-i18n";
 import type { DndSpell } from "../../models/dnd";
 
-function capitalize(text: string): string {
-  return text.length === 0 ? "" : text[0].toUpperCase() + text.substring(1);
-}
-
 function localizeString(
   localizedString: I18nString,
   lang: I18nLanguage,
@@ -104,11 +100,7 @@ function localizeComponentMaterials(
   i18n: I18n,
 ): string | undefined {
   return components.material
-    ? capitalize(
-        components.materials
-          .map((m) => localizeString(m, i18n.language))
-          .join(", "),
-      )
+    ? localizeString(components.materials, i18n.language)
     : undefined;
 }
 
@@ -122,18 +114,14 @@ export function localizeDndSpell(spell: DndSpell, i18n: I18n) {
     components: localizeComponents(spell.components),
     description: localizeString(spell.description, i18n.language),
     duration: localizeDuration(spell.duration, i18n),
-    higherLevel: spell.higherLevel
-      ? localizeString(spell.higherLevel, i18n.language)
-      : undefined,
     level: localizeLevel(spell.level, i18n),
     name: localizeString(spell.name, i18n.language),
     range: localizeRange(spell.range, i18n),
     raw: spell,
-    reactionTo:
-      spell.castingTime.type === "reaction"
-        ? localizeString(spell.castingTime.reactionTo, i18n.language)
-        : undefined,
     school: i18n.t(`dnd.magic_school.${spell.school}`),
+    upgrade: spell.upgrade
+      ? localizeString(spell.upgrade, i18n.language)
+      : undefined,
   };
 }
 

@@ -1,12 +1,13 @@
 import { z } from "zod";
-import type { I18nDistance } from "../i18n/i18n-distance";
-import type { I18nString } from "../i18n/i18n-string";
+import { i18nDistanceSchema } from "../i18n/i18n-distance";
+import { i18nStringSchema } from "../i18n/i18n-string";
 
 //------------------------------------------------------------------------------
 // Class
 //------------------------------------------------------------------------------
 
 export const dndClassSchema = z.enum([
+  "artificer",
   "barbarian",
   "bard",
   "cleric",
@@ -100,64 +101,68 @@ export type DndSpellRaw = {
 // Spell
 //------------------------------------------------------------------------------
 
-export type DndSpell = {
-  name: I18nString;
-  description: I18nString;
-  higherLevel?: I18nString;
-  level: number;
-  classes: DndClass[];
-  school: DndMagicSchool;
-  castingTime:
-    | {
-        type: "action" | "bonus_action";
-      }
-    | {
-        type: "time";
-        unit: "minute" | "hour";
-        quantity: number;
-      }
-    | {
-        type: "reaction";
-        reactionTo: I18nString;
-      };
-  ritual: boolean;
-  duration:
-    | {
-        type: "instantaneous" | "until_dispelled" | "special";
-      }
-    | {
-        type: "time";
-        unit: "round" | "minute" | "hour" | "day";
-        quantity: number;
-        concentration: boolean;
-        upTo: boolean;
-      };
-  range:
-    | {
-        type: "self" | "touch" | "sight" | "unlimited" | "special";
-      }
-    | ({
-        type: "distance";
-      } & I18nDistance)
-    | ({
-        type:
-          | "self_circle"
-          | "self_cone"
-          | "self_cube"
-          | "self_hemisphere"
-          | "self_line"
-          | "self_sphere";
-      } & I18nDistance);
-  components: {
-    somatic: boolean;
-    verbal: boolean;
-  } & (
-    | {
-        material: false;
-      }
-    | {
-        material: true;
-        materials: I18nString[];
-      }
-  );
-};
+const timeSchema = z.enum(["round", "minute", "hour", "day"]);
+
+export const dndSpellSchema = z.object({
+  castingTime: z.union([
+    z.object({
+      type: z.enum(["action", "bonus_action", "reaction"]),
+    }),
+    z.object({
+      quantity: z.number(),
+      type: z.literal("time"),
+      unit: timeSchema,
+    }),
+  ]),
+  classes: z.array(dndClassSchema),
+  components: z.intersection(
+    z.object({ somatic: z.boolean(), verbal: z.boolean() }),
+    z.union([
+      z.object({ material: z.literal(false) }),
+      z.object({ material: z.literal(true), materials: i18nStringSchema }),
+    ]),
+  ),
+  description: i18nStringSchema,
+  duration: z.union([
+    z.object({
+      type: z.enum(["instantaneous", "until_dispelled", "special"]),
+    }),
+    z.object({
+      concentration: z.boolean(),
+      quantity: z.number(),
+      type: z.literal("time"),
+      unit: timeSchema,
+      upTo: z.boolean(),
+    }),
+  ]),
+  level: z.number(),
+  name: i18nStringSchema,
+  range: z.union([
+    z.object({
+      type: z.enum(["self", "touch", "sight", "unlimited", "special"]),
+    }),
+    z.intersection(
+      z.object({
+        type: z.enum([
+          "distance",
+          "self_circle",
+          "self_cone",
+          "self_cube",
+          "self_hemisphere",
+          "self_line",
+          "self_sphere",
+        ]),
+      }),
+      i18nDistanceSchema,
+    ),
+  ]),
+  ritual: z.boolean(),
+  school: dndMagicSchoolSchema,
+  source: z.object({
+    book: z.string(),
+    page: z.number(),
+  }),
+  upgrade: i18nStringSchema.optional(),
+});
+
+export type DndSpell = z.infer<typeof dndSpellSchema>;

@@ -1,6 +1,7 @@
 const dndI18n = {
   en: {
     // Classes
+    "dnd.class.artificer": "Artificer",
     "dnd.class.barbarian": "Barbarian",
     "dnd.class.bard": "Bard",
     "dnd.class.cleric": "Cleric",
@@ -42,7 +43,6 @@ const dndI18n = {
     "dnd.spell.duration.time.concentration": " (C)",
     "dnd.spell.duration.time.up_to": "Up to ",
     "dnd.spell.duration.until_dispelled": "Until dispelled",
-    "dnd.spell.higher_levels": "Higher Levels",
     "dnd.spell.level": "Level",
     "dnd.spell.level.cantrip": "cantrip",
     "dnd.spell.level.number": "level <1>", // 1 = level
@@ -58,6 +58,8 @@ const dndI18n = {
     "dnd.spell.range.unlimited": "Unlimited",
     "dnd.spell.ritual": "Ritual",
     "dnd.spell.ritual@short": "Rit.",
+    "dnd.spell.upgrade.cantrip": "Cantrip Upgrade",
+    "dnd.spell.upgrade.spell": "At Higher Levels",
     "dnd.spell.view.compact": "Compact",
     "dnd.spell.view.full": "Full",
     "dnd.spell.view.minimal": "Minimal",
@@ -70,6 +72,7 @@ const dndI18n = {
   },
   it: {
     // Classes
+    "dnd.class.artificer": "Artificere",
     "dnd.class.barbarian": "Barbaro",
     "dnd.class.bard": "Bardo",
     "dnd.class.cleric": "Chierico",
@@ -111,7 +114,6 @@ const dndI18n = {
     "dnd.spell.duration.time.concentration": " (C)",
     "dnd.spell.duration.time.up_to": "Fino a ",
     "dnd.spell.duration.until_dispelled": "Finché non viene disperso",
-    "dnd.spell.higher_levels": "Livello Superiore",
     "dnd.spell.level": "Livello",
     "dnd.spell.level.cantrip": "trucchetto",
     "dnd.spell.level.number": "<1>˚ livello", // 1 = level
@@ -127,6 +129,8 @@ const dndI18n = {
     "dnd.spell.range.unlimited": "Illimitato",
     "dnd.spell.ritual": "Ritual",
     "dnd.spell.ritual@short": "Rit.",
+    "dnd.spell.upgrade.cantrip": "Potenziamento del Trucchetto",
+    "dnd.spell.upgrade.spell": "A Livelli Superiori",
     "dnd.spell.view.compact": "Compatto",
     "dnd.spell.view.full": "Intero",
     "dnd.spell.view.minimal": "Minimale",
