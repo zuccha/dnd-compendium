@@ -35,6 +35,11 @@ export default tseslint.config(
         "warn",
         { allowConstantExport: true },
       ],
+      "sort-keys": [
+        "error",
+        "asc",
+        { allowLineSeparatedGroups: true, caseSensitive: true, natural: true },
+      ],
     },
   }
 );

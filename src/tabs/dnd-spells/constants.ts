@@ -1,9 +1,11 @@
+/* eslint-disable sort-keys */
 export const DndSpellView = {
   minimal: 0,
   compact: 1,
   full: 2,
   table: 3,
 };
+/* eslint-enable sort-keys */
 
 export const defaultClasses = [
   "barbarian",

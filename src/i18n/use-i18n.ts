@@ -36,7 +36,7 @@ export default function useI18n() {
   );
 
   return useMemo(
-    () => ({ language, t, tp, ti, tpi }),
+    () => ({ language, t, ti, tp, tpi }),
     [language, t, tp, ti, tpi]
   );
 }

@@ -7,20 +7,20 @@ const pct = (ct: string): DndSpell["castingTime"] => {
   if (/^\d+ bonus action/.test(ct)) return { type: "bonus_action" };
   if (/^\d+ reaction/.test(ct))
     return {
-      type: "reaction",
       reactionTo: { en: ct.replace(/^\d+ reaction[s]?, /, "Reaction, ") },
+      type: "reaction",
     };
   if (/^\d+ minute[s]?/.test(ct))
     return {
+      quantity: Number.parseInt(ct.replace(/ minute[s]?$/, "")),
       type: "time",
       unit: "minute",
-      quantity: Number.parseInt(ct.replace(/ minute[s]?$/, "")),
     };
   if (/^\d+ hour[s]?/.test(ct))
     return {
+      quantity: Number.parseInt(ct.replace(/ hour[s]?$/, "")),
       type: "time",
       unit: "hour",
-      quantity: Number.parseInt(ct.replace(/ hour[s]?$/, "")),
     };
   throw new Error("Failed to parse casting time");
 };
@@ -48,10 +48,10 @@ const pd = (d: string): DndSpell["duration"] => {
   if (!quantity) throw new Error("Failed to parse duration (unknown quantity)");
 
   return {
+    concentration,
+    quantity: Number.parseInt(quantity[0]),
     type: "time",
     unit,
-    quantity: Number.parseInt(quantity[0]),
-    concentration,
     upTo,
   };
 };
@@ -92,12 +92,12 @@ const pr = (r: string): DndSpell["range"] => {
 
     if (!type) throw new Error("Failed to parse duration (unknown self type)");
 
-    return { type, en: { unit, value: Number.parseInt(quantity[0]) } };
+    return { en: { unit, value: Number.parseInt(quantity[0]) }, type };
   }
 
   return {
-    type: "distance",
     en: { unit, value: Number.parseInt(quantity[0]) },
+    type: "distance",
   };
 };
 
@@ -105,18 +105,8 @@ export default function dndSpellsRawToDndSpells(
   spellsRaw: DndSpellRaw[]
 ): DndSpell[] {
   return spellsRaw.map((spell) => ({
-    name: l(spell.name),
-    description: l(spell.description),
-    ...(spell.higher_levels
-      ? { higherLevel: l(spell.higher_levels) }
-      : undefined),
-    level: spell.level === "cantrip" ? 0 : Number.parseInt(spell.level),
-    classes: spell.classes as unknown as DndSpell["classes"],
-    school: spell.school as unknown as DndSpell["school"],
     castingTime: pct(spell.casting_time),
-    ritual: spell.ritual,
-    duration: pd(spell.duration),
-    range: pr(spell.range),
+    classes: spell.classes as unknown as DndSpell["classes"],
     components: {
       somatic: spell.components.somatic,
       verbal: spell.components.verbal,
@@ -129,5 +119,15 @@ export default function dndSpellsRawToDndSpells(
             material: false,
           }),
     },
+    description: l(spell.description),
+    ...(spell.higher_levels
+      ? { higherLevel: l(spell.higher_levels) }
+      : undefined),
+    duration: pd(spell.duration),
+    level: spell.level === "cantrip" ? 0 : Number.parseInt(spell.level),
+    name: l(spell.name),
+    range: pr(spell.range),
+    ritual: spell.ritual,
+    school: spell.school as unknown as DndSpell["school"],
   }));
 }

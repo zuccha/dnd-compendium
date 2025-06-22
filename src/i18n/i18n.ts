@@ -12,6 +12,7 @@ const i18n = {
   ): string => {
     return context[lang]?.[key] ?? context.en[key] ?? "n/a";
   },
+
   tp: (
     context: Record<I18nLanguage, Record<string, string>>,
     lang: I18nLanguage,
@@ -26,6 +27,7 @@ const i18n = {
       "n/a"
     );
   },
+
   ti: (
     context: Record<I18nLanguage, Record<string, string>>,
     lang: I18nLanguage,
@@ -35,6 +37,7 @@ const i18n = {
     const text = context[lang]?.[key] ?? context.en[key] ?? "n/a";
     return i(text, ...args);
   },
+
   tpi: (
     context: Record<I18nLanguage, Record<string, string>>,
     lang: I18nLanguage,

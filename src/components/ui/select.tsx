@@ -1,6 +1,6 @@
 import {
-  Select as ChakraSelect,
   Icon,
+  Select as ChakraSelect,
   useSelectContext,
 } from "@chakra-ui/react";
 import type { SelectRootProps as ChakraSelectRootProps } from "@chakra-ui/react";

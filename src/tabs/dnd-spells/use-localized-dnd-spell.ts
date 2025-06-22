@@ -111,27 +111,26 @@ function localizeComponentMaterials(
 
 export function localizeDndSpell(spell: DndSpell, i18n: I18n) {
   return {
-    name: localizeString(spell.name, i18n.language),
-    school: i18n.t(`dnd.magic_school.${spell.school}`),
-    level: localizeLevel(spell.level, i18n),
-    classes: spell.classes.map((c) => i18n.t(`dnd.class.${c}`)).join(", "),
-    description: localizeString(spell.description, i18n.language),
-    higherLevel: spell.higherLevel
-      ? localizeString(spell.higherLevel, i18n.language)
-      : undefined,
     castingTime:
       localizeCastingTime(spell.castingTime, i18n) +
       (spell.ritual ? i18n.t("dnd.spell.or_ritual") : ""),
+    classes: spell.classes.map((c) => i18n.t(`dnd.class.${c}`)).join(", "),
+    componentMaterials: localizeComponentMaterials(spell.components, i18n),
+    components: localizeComponents(spell.components),
+    description: localizeString(spell.description, i18n.language),
+    duration: localizeDuration(spell.duration, i18n),
+    higherLevel: spell.higherLevel
+      ? localizeString(spell.higherLevel, i18n.language)
+      : undefined,
+    level: localizeLevel(spell.level, i18n),
+    name: localizeString(spell.name, i18n.language),
+    range: localizeRange(spell.range, i18n),
+    raw: spell,
     reactionTo:
       spell.castingTime.type === "reaction"
         ? localizeString(spell.castingTime.reactionTo, i18n.language)
         : undefined,
-    duration: localizeDuration(spell.duration, i18n),
-    range: localizeRange(spell.range, i18n),
-    components: localizeComponents(spell.components),
-    componentMaterials: localizeComponentMaterials(spell.components, i18n),
-
-    raw: spell,
+    school: i18n.t(`dnd.magic_school.${spell.school}`),
   };
 }
 
