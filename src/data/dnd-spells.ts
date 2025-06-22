@@ -18,6 +18,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Acid Splash",
     level: 0,
     name: {
       en: "Acid Splash",
@@ -62,6 +63,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Aid",
     level: 2,
     name: {
       en: "Aid",
@@ -108,6 +110,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Alarm",
     level: 1,
     name: {
       en: "Alarm",
@@ -146,6 +149,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Alter Self",
     level: 2,
     name: {
       en: "Alter Self",
@@ -183,6 +187,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Animal Friendship",
     level: 1,
     name: {
       en: "Animal Friendship",
@@ -227,6 +232,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Animal Messenger",
     level: 2,
     name: {
       en: "Animal Messenger",
@@ -268,6 +274,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Animal Shapes",
     level: 8,
     name: {
       en: "Animal Shapes",
@@ -307,6 +314,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Animate Dead",
     level: 3,
     name: {
       en: "Animate Dead",
@@ -348,6 +356,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Animate Objects",
     level: 5,
     name: {
       en: "Animate Objects",
@@ -389,6 +398,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Antilife Shell",
     level: 5,
     name: {
       en: "Antilife Shell",
@@ -426,6 +436,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Antimagic Field",
     level: 8,
     name: {
       en: "Antimagic Field",
@@ -465,6 +476,7 @@ const dndSpells: DndSpell[] = [
       unit: "day",
       upTo: false,
     },
+    id: "PHB'24/Antipathy/Sympathy",
     level: 8,
     name: {
       en: "Antipathy/Sympathy",
@@ -506,6 +518,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Arcane Eye",
     level: 4,
     name: {
       en: "Arcane Eye",
@@ -544,6 +557,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Arcane Gate",
     level: 6,
     name: {
       en: "Arcane Gate",
@@ -581,6 +595,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "until_dispelled",
     },
+    id: "PHB'24/Arcane Lock",
     level: 2,
     name: {
       en: "Arcane Lock",
@@ -611,6 +626,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Arcane Vigor",
     level: 2,
     name: {
       en: "Arcane Vigor",
@@ -651,6 +667,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Armor of Agathys",
     level: 1,
     name: {
       en: "Armor of Agathys",
@@ -684,6 +701,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Arms of Hadar",
     level: 1,
     name: {
       en: "Arms of Hadar",
@@ -722,6 +740,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "until_dispelled",
     },
+    id: "PHB'24/Astral Projection",
     level: 9,
     name: {
       en: "Astral Projection",
@@ -761,6 +780,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Augury",
     level: 2,
     name: {
       en: "Augury",
@@ -795,6 +815,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Aura of Life",
     level: 4,
     name: {
       en: "Aura of Life",
@@ -829,6 +850,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Aura of Purity",
     level: 4,
     name: {
       en: "Aura of Purity",
@@ -863,6 +885,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Aura of Vitality",
     level: 3,
     name: {
       en: "Aura of Vitality",
@@ -898,6 +921,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Awaken",
     level: 5,
     name: {
       en: "Awaken",
@@ -935,6 +959,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Bane",
     level: 1,
     name: {
       en: "Bane",
@@ -976,6 +1001,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Banishing Smite",
     level: 5,
     name: {
       en: "Banishing Smite",
@@ -1013,6 +1039,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Banishment",
     level: 4,
     name: {
       en: "Banishment",
@@ -1057,6 +1084,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Barkskin",
     level: 2,
     name: {
       en: "Barkskin",
@@ -1091,6 +1119,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Beacon of Hope",
     level: 3,
     name: {
       en: "Beacon of Hope",
@@ -1129,6 +1158,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Beast Sense",
     level: 2,
     name: {
       en: "Beast Sense",
@@ -1162,6 +1192,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Befuddlement",
     level: 8,
     name: {
       en: "Befuddlement",
@@ -1200,6 +1231,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Bestow Curse",
     level: 3,
     name: {
       en: "Bestow Curse",
@@ -1240,6 +1272,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Bigby's Hand",
     level: 5,
     name: {
       en: "Bigby's Hand",
@@ -1281,6 +1314,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Blade Barrier",
     level: 6,
     name: {
       en: "Blade Barrier",
@@ -1319,6 +1353,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Blade Ward",
     level: 0,
     name: {
       en: "Blade Ward",
@@ -1356,6 +1391,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Bless",
     level: 1,
     name: {
       en: "Bless",
@@ -1393,6 +1429,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Blight",
     level: 4,
     name: {
       en: "Blight",
@@ -1434,6 +1471,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Blinding Smite",
     level: 3,
     name: {
       en: "Blinding Smite",
@@ -1471,6 +1509,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Blindness/Deafness",
     level: 2,
     name: {
       en: "Blindness/Deafness",
@@ -1512,6 +1551,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Blink",
     level: 3,
     name: {
       en: "Blink",
@@ -1546,6 +1586,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Blur",
     level: 2,
     name: {
       en: "Blur",
@@ -1576,6 +1617,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Burning Hands",
     level: 1,
     name: {
       en: "Burning Hands",
@@ -1613,6 +1655,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Call Lightning",
     level: 3,
     name: {
       en: "Call Lightning",
@@ -1654,6 +1697,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Calm Emotions",
     level: 2,
     name: {
       en: "Calm Emotions",
@@ -1691,6 +1735,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Chain Lightning",
     level: 6,
     name: {
       en: "Chain Lightning",
@@ -1732,6 +1777,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Charm Monster",
     level: 4,
     name: {
       en: "Charm Monster",
@@ -1773,6 +1819,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Charm Person",
     level: 1,
     name: {
       en: "Charm Person",
@@ -1810,6 +1857,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Chill Touch",
     level: 0,
     name: {
       en: "Chill Touch",
@@ -1846,6 +1894,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Chromatic Orb",
     level: 1,
     name: {
       en: "Chromatic Orb",
@@ -1886,6 +1935,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Circle of Death",
     level: 6,
     name: {
       en: "Circle of Death",
@@ -1927,6 +1977,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Circle of Power",
     level: 5,
     name: {
       en: "Circle of Power",
@@ -1966,6 +2017,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Clairvoyance",
     level: 3,
     name: {
       en: "Clairvoyance",
@@ -2005,6 +2057,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Clone",
     level: 8,
     name: {
       en: "Clone",
@@ -2042,6 +2095,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Cloud of Daggers",
     level: 2,
     name: {
       en: "Cloud of Daggers",
@@ -2083,6 +2137,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Cloudkill",
     level: 5,
     name: {
       en: "Cloudkill",
@@ -2123,6 +2178,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Color Spray",
     level: 1,
     name: {
       en: "Color Spray",
@@ -2153,6 +2209,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Command",
     level: 1,
     name: {
       en: "Command",
@@ -2199,6 +2256,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Commune",
     level: 5,
     name: {
       en: "Commune",
@@ -2235,6 +2293,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Commune with Nature",
     level: 5,
     name: {
       en: "Commune with Nature",
@@ -2269,6 +2328,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Compelled Duel",
     level: 1,
     name: {
       en: "Compelled Duel",
@@ -2310,6 +2370,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Comprehend Languages",
     level: 1,
     name: {
       en: "Comprehend Languages",
@@ -2344,6 +2405,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Compulsion",
     level: 4,
     name: {
       en: "Compulsion",
@@ -2381,6 +2443,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Cone of Cold",
     level: 5,
     name: {
       en: "Cone of Cold",
@@ -2421,6 +2484,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Confusion",
     level: 4,
     name: {
       en: "Confusion",
@@ -2462,6 +2526,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Conjure Animals",
     level: 3,
     name: {
       en: "Conjure Animals",
@@ -2502,6 +2567,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Conjure Barrage",
     level: 3,
     name: {
       en: "Conjure Barrage",
@@ -2539,6 +2605,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Conjure Celestial",
     level: 7,
     name: {
       en: "Conjure Celestial",
@@ -2580,6 +2647,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Conjure Elemental",
     level: 5,
     name: {
       en: "Conjure Elemental",
@@ -2621,6 +2689,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Conjure Fey",
     level: 6,
     name: {
       en: "Conjure Fey",
@@ -2662,6 +2731,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Conjure Minor Elementals",
     level: 4,
     name: {
       en: "Conjure Minor Elementals",
@@ -2698,6 +2768,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Conjure Volley",
     level: 5,
     name: {
       en: "Conjure Volley",
@@ -2736,6 +2807,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Conjure Woodland Beings",
     level: 4,
     name: {
       en: "Conjure Woodland Beings",
@@ -2775,6 +2847,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Contact Other Plane",
     level: 5,
     name: {
       en: "Contact Other Plane",
@@ -2809,6 +2882,7 @@ const dndSpells: DndSpell[] = [
       unit: "day",
       upTo: false,
     },
+    id: "PHB'24/Contagion",
     level: 5,
     name: {
       en: "Contagion",
@@ -2848,6 +2922,7 @@ const dndSpells: DndSpell[] = [
       unit: "day",
       upTo: false,
     },
+    id: "PHB'24/Contingency",
     level: 6,
     name: {
       en: "Contingency",
@@ -2881,6 +2956,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "until_dispelled",
     },
+    id: "PHB'24/Continual Flame",
     level: 2,
     name: {
       en: "Continual Flame",
@@ -2918,6 +2994,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Control Water",
     level: 4,
     name: {
       en: "Control Water",
@@ -2961,6 +3038,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Control Weather",
     level: 8,
     name: {
       en: "Control Weather",
@@ -2998,6 +3076,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Cordon of Arrows",
     level: 2,
     name: {
       en: "Cordon of Arrows",
@@ -3031,6 +3110,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Counterspell",
     level: 3,
     name: {
       en: "Counterspell",
@@ -3065,6 +3145,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Create Food and Water",
     level: 3,
     name: {
       en: "Create Food and Water",
@@ -3104,6 +3185,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Create Undead",
     level: 6,
     name: {
       en: "Create Undead",
@@ -3144,6 +3226,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Create or Destroy Water",
     level: 1,
     name: {
       en: "Create or Destroy Water",
@@ -3186,6 +3269,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "special",
     },
+    id: "PHB'24/Creation",
     level: 5,
     name: {
       en: "Creation",
@@ -3227,6 +3311,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Crown of Madness",
     level: 2,
     name: {
       en: "Crown of Madness",
@@ -3265,6 +3350,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Crusader's Mantle",
     level: 3,
     name: {
       en: "Crusader's Mantle",
@@ -3295,6 +3381,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Cure Wounds",
     level: 1,
     name: {
       en: "Cure Wounds",
@@ -3335,6 +3422,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Dancing Lights",
     level: 0,
     name: {
       en: "Dancing Lights",
@@ -3376,6 +3464,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Darkness",
     level: 2,
     name: {
       en: "Darkness",
@@ -3417,6 +3506,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Darkvision",
     level: 2,
     name: {
       en: "Darkvision",
@@ -3451,6 +3541,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Daylight",
     level: 3,
     name: {
       en: "Daylight",
@@ -3489,6 +3580,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Death Ward",
     level: 4,
     name: {
       en: "Death Ward",
@@ -3526,6 +3618,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Delayed Blast Fireball",
     level: 7,
     name: {
       en: "Delayed Blast Fireball",
@@ -3567,6 +3660,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Demiplane",
     level: 8,
     name: {
       en: "Demiplane",
@@ -3601,6 +3695,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Destructive Wave",
     level: 5,
     name: {
       en: "Destructive Wave",
@@ -3635,6 +3730,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Detect Evil and Good",
     level: 1,
     name: {
       en: "Detect Evil and Good",
@@ -3679,6 +3775,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Detect Magic",
     level: 1,
     name: {
       en: "Detect Magic",
@@ -3716,6 +3813,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Detect Poison and Disease",
     level: 1,
     name: {
       en: "Detect Poison and Disease",
@@ -3753,6 +3851,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Detect Thoughts",
     level: 2,
     name: {
       en: "Detect Thoughts",
@@ -3783,6 +3882,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Dimension Door",
     level: 4,
     name: {
       en: "Dimension Door",
@@ -3821,6 +3921,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Disguise Self",
     level: 1,
     name: {
       en: "Disguise Self",
@@ -3854,6 +3955,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Disintegrate",
     level: 6,
     name: {
       en: "Disintegrate",
@@ -3898,6 +4000,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Dispel Evil and Good",
     level: 5,
     name: {
       en: "Dispel Evil and Good",
@@ -3938,6 +4041,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Dispel Magic",
     level: 3,
     name: {
       en: "Dispel Magic",
@@ -3975,6 +4079,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Dissonant Whispers",
     level: 1,
     name: {
       en: "Dissonant Whispers",
@@ -4015,6 +4120,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Divination",
     level: 4,
     name: {
       en: "Divination",
@@ -4049,6 +4155,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Divine Favor",
     level: 1,
     name: {
       en: "Divine Favor",
@@ -4079,6 +4186,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Divine Smite",
     level: 1,
     name: {
       en: "Divine Smite",
@@ -4112,6 +4220,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Divine Word",
     level: 7,
     name: {
       en: "Divine Word",
@@ -4150,6 +4259,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Dominate Beast",
     level: 4,
     name: {
       en: "Dominate Beast",
@@ -4191,6 +4301,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Dominate Monster",
     level: 8,
     name: {
       en: "Dominate Monster",
@@ -4232,6 +4343,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Dominate Person",
     level: 5,
     name: {
       en: "Dominate Person",
@@ -4276,6 +4388,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Dragon's Breath",
     level: 2,
     name: {
       en: "Dragon's Breath",
@@ -4314,6 +4427,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "until_dispelled",
     },
+    id: "PHB'24/Drawmij's Instant Summons",
     level: 6,
     name: {
       en: "Drawmij's Instant Summons",
@@ -4353,6 +4467,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Dream",
     level: 5,
     name: {
       en: "Dream",
@@ -4383,6 +4498,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Druidcraft",
     level: 0,
     name: {
       en: "Druidcraft",
@@ -4424,6 +4540,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Earthquake",
     level: 8,
     name: {
       en: "Earthquake",
@@ -4458,6 +4575,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Eldritch Blast",
     level: 0,
     name: {
       en: "Eldritch Blast",
@@ -4499,6 +4617,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Elemental Weapon",
     level: 3,
     name: {
       en: "Elemental Weapon",
@@ -4532,6 +4651,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Elementalism",
     level: 0,
     name: {
       en: "Elementalism",
@@ -4581,6 +4701,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Enhance Ability",
     level: 2,
     name: {
       en: "Enhance Ability",
@@ -4621,6 +4742,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Enlarge/Reduce",
     level: 2,
     name: {
       en: "Enlarge/Reduce",
@@ -4659,6 +4781,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Ensnaring Strike",
     level: 1,
     name: {
       en: "Ensnaring Strike",
@@ -4696,6 +4819,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Entangle",
     level: 1,
     name: {
       en: "Entangle",
@@ -4734,6 +4858,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Enthrall",
     level: 2,
     name: {
       en: "Enthrall",
@@ -4772,6 +4897,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Etherealness",
     level: 7,
     name: {
       en: "Etherealness",
@@ -4812,6 +4938,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Evard's Black Tentacles",
     level: 4,
     name: {
       en: "Evard's Black Tentacles",
@@ -4850,6 +4977,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Expeditious Retreat",
     level: 1,
     name: {
       en: "Expeditious Retreat",
@@ -4884,6 +5012,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Eyebite",
     level: 6,
     name: {
       en: "Eyebite",
@@ -4916,6 +5045,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Fabricate",
     level: 4,
     name: {
       en: "Fabricate",
@@ -4954,6 +5084,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Faerie Fire",
     level: 1,
     name: {
       en: "Faerie Fire",
@@ -4991,6 +5122,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/False Life",
     level: 1,
     name: {
       en: "False Life",
@@ -5031,6 +5163,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Fear",
     level: 3,
     name: {
       en: "Fear",
@@ -5068,6 +5201,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Feather Fall",
     level: 1,
     name: {
       en: "Feather Fall",
@@ -5109,6 +5243,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Feign Death",
     level: 3,
     name: {
       en: "Feign Death",
@@ -5144,6 +5279,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Find Familiar",
     level: 1,
     name: {
       en: "Find Familiar",
@@ -5178,6 +5314,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Find Steed",
     level: 2,
     name: {
       en: "Find Steed",
@@ -5215,6 +5352,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Find Traps",
     level: 2,
     name: {
       en: "Find Traps",
@@ -5258,6 +5396,7 @@ const dndSpells: DndSpell[] = [
       unit: "day",
       upTo: true,
     },
+    id: "PHB'24/Find the Path",
     level: 6,
     name: {
       en: "Find the Path",
@@ -5288,6 +5427,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Finger of Death",
     level: 7,
     name: {
       en: "Finger of Death",
@@ -5322,6 +5462,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Fire Bolt",
     level: 0,
     name: {
       en: "Fire Bolt",
@@ -5366,6 +5507,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Fire Shield",
     level: 4,
     name: {
       en: "Fire Shield",
@@ -5396,6 +5538,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Fire Storm",
     level: 7,
     name: {
       en: "Fire Storm",
@@ -5433,6 +5576,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Fireball",
     level: 3,
     name: {
       en: "Fireball",
@@ -5477,6 +5621,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Flame Blade",
     level: 2,
     name: {
       en: "Flame Blade",
@@ -5513,6 +5658,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Flame Strike",
     level: 5,
     name: {
       en: "Flame Strike",
@@ -5557,6 +5703,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Flaming Sphere",
     level: 2,
     name: {
       en: "Flaming Sphere",
@@ -5601,6 +5748,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Flesh to Stone",
     level: 6,
     name: {
       en: "Flesh to Stone",
@@ -5642,6 +5790,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Fly",
     level: 3,
     name: {
       en: "Fly",
@@ -5679,6 +5828,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Fog Cloud",
     level: 1,
     name: {
       en: "Fog Cloud",
@@ -5725,6 +5875,7 @@ const dndSpells: DndSpell[] = [
       unit: "day",
       upTo: false,
     },
+    id: "PHB'24/Forbiddance",
     level: 6,
     name: {
       en: "Forbiddance",
@@ -5762,6 +5913,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Forcecage",
     level: 7,
     name: {
       en: "Forcecage",
@@ -5805,6 +5957,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Foresight",
     level: 9,
     name: {
       en: "Foresight",
@@ -5839,6 +5992,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Fount of Moonlight",
     level: 4,
     name: {
       en: "Fount of Moonlight",
@@ -5876,6 +6030,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Freedom of Movement",
     level: 4,
     name: {
       en: "Freedom of Movement",
@@ -5916,6 +6071,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Friends",
     level: 0,
     name: {
       en: "Friends",
@@ -5957,6 +6113,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Gaseous Form",
     level: 3,
     name: {
       en: "Gaseous Form",
@@ -5997,6 +6154,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Gate",
     level: 9,
     name: {
       en: "Gate",
@@ -6037,6 +6195,7 @@ const dndSpells: DndSpell[] = [
       unit: "day",
       upTo: false,
     },
+    id: "PHB'24/Geas",
     level: 5,
     name: {
       en: "Geas",
@@ -6081,6 +6240,7 @@ const dndSpells: DndSpell[] = [
       unit: "day",
       upTo: false,
     },
+    id: "PHB'24/Gentle Repose",
     level: 2,
     name: {
       en: "Gentle Repose",
@@ -6115,6 +6275,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Giant Insect",
     level: 4,
     name: {
       en: "Giant Insect",
@@ -6156,6 +6317,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Glibness",
     level: 8,
     name: {
       en: "Glibness",
@@ -6193,6 +6355,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Globe of Invulnerability",
     level: 6,
     name: {
       en: "Globe of Invulnerability",
@@ -6231,6 +6394,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "until_dispelled",
     },
+    id: "PHB'24/Glyph of Warding",
     level: 3,
     name: {
       en: "Glyph of Warding",
@@ -6271,6 +6435,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Goodberry",
     level: 1,
     name: {
       en: "Goodberry",
@@ -6305,6 +6470,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Grasping Vine",
     level: 4,
     name: {
       en: "Grasping Vine",
@@ -6349,6 +6515,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Grease",
     level: 1,
     name: {
       en: "Grease",
@@ -6387,6 +6554,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Greater Invisibility",
     level: 4,
     name: {
       en: "Greater Invisibility",
@@ -6420,6 +6588,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Greater Restoration",
     level: 5,
     name: {
       en: "Greater Restoration",
@@ -6454,6 +6623,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Guardian of Faith",
     level: 4,
     name: {
       en: "Guardian of Faith",
@@ -6497,6 +6667,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Guards and Wards",
     level: 6,
     name: {
       en: "Guards and Wards",
@@ -6531,6 +6702,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Guidance",
     level: 0,
     name: {
       en: "Guidance",
@@ -6565,6 +6737,7 @@ const dndSpells: DndSpell[] = [
       unit: "round",
       upTo: false,
     },
+    id: "PHB'24/Guiding Bolt",
     level: 1,
     name: {
       en: "Guiding Bolt",
@@ -6609,6 +6782,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Gust of Wind",
     level: 2,
     name: {
       en: "Gust of Wind",
@@ -6639,6 +6813,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Hail of Thorns",
     level: 1,
     name: {
       en: "Hail of Thorns",
@@ -6677,6 +6852,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "until_dispelled",
     },
+    id: "PHB'24/Hallow",
     level: 5,
     name: {
       en: "Hallow",
@@ -6716,6 +6892,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Hallucinatory Terrain",
     level: 4,
     name: {
       en: "Hallucinatory Terrain",
@@ -6750,6 +6927,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Harm",
     level: 6,
     name: {
       en: "Harm",
@@ -6791,6 +6969,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Haste",
     level: 3,
     name: {
       en: "Haste",
@@ -6825,6 +7004,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Heal",
     level: 6,
     name: {
       en: "Heal",
@@ -6862,6 +7042,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Healing Word",
     level: 1,
     name: {
       en: "Healing Word",
@@ -6906,6 +7087,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Heat Metal",
     level: 2,
     name: {
       en: "Heat Metal",
@@ -6943,6 +7125,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Hellish Rebuke",
     level: 1,
     name: {
       en: "Hellish Rebuke",
@@ -6985,6 +7168,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Heroes' Feast",
     level: 6,
     name: {
       en: "Heroes' Feast",
@@ -7019,6 +7203,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Heroism",
     level: 1,
     name: {
       en: "Heroism",
@@ -7059,6 +7244,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Hex",
     level: 1,
     name: {
       en: "Hex",
@@ -7103,6 +7289,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Hold Monster",
     level: 5,
     name: {
       en: "Hold Monster",
@@ -7147,6 +7334,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Hold Person",
     level: 2,
     name: {
       en: "Hold Person",
@@ -7191,6 +7379,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Holy Aura",
     level: 8,
     name: {
       en: "Holy Aura",
@@ -7228,6 +7417,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Hunger of Hadar",
     level: 3,
     name: {
       en: "Hunger of Hadar",
@@ -7269,6 +7459,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Hunter's Mark",
     level: 1,
     name: {
       en: "Hunter's Mark",
@@ -7313,6 +7504,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Hypnotic Pattern",
     level: 3,
     name: {
       en: "Hypnotic Pattern",
@@ -7350,6 +7542,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Ice Knife",
     level: 1,
     name: {
       en: "Ice Knife",
@@ -7390,6 +7583,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Ice Storm",
     level: 4,
     name: {
       en: "Ice Storm",
@@ -7432,6 +7626,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Identify",
     level: 1,
     name: {
       en: "Identify",
@@ -7471,6 +7666,7 @@ const dndSpells: DndSpell[] = [
       unit: "day",
       upTo: false,
     },
+    id: "PHB'24/Illusory Script",
     level: 1,
     name: {
       en: "Illusory Script",
@@ -7506,6 +7702,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "until_dispelled",
     },
+    id: "PHB'24/Imprisonment",
     level: 9,
     name: {
       en: "Imprisonment",
@@ -7544,6 +7741,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Incendiary Cloud",
     level: 8,
     name: {
       en: "Incendiary Cloud",
@@ -7578,6 +7776,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Inflict Wounds",
     level: 1,
     name: {
       en: "Inflict Wounds",
@@ -7618,6 +7817,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Insect Plague",
     level: 5,
     name: {
       en: "Insect Plague",
@@ -7662,6 +7862,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Invisibility",
     level: 2,
     name: {
       en: "Invisibility",
@@ -7702,6 +7903,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Jallarzi's Storm of Radiance",
     level: 5,
     name: {
       en: "Jallarzi's Storm of Radiance",
@@ -7746,6 +7948,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Jump",
     level: 1,
     name: {
       en: "Jump",
@@ -7779,6 +7982,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Knock",
     level: 2,
     name: {
       en: "Knock",
@@ -7818,6 +8022,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Legend Lore",
     level: 5,
     name: {
       en: "Legend Lore",
@@ -7851,6 +8056,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "until_dispelled",
     },
+    id: "PHB'24/Leomund's Secret Chest",
     level: 4,
     name: {
       en: "Leomund's Secret Chest",
@@ -7890,6 +8096,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Leomund's Tiny Hut",
     level: 3,
     name: {
       en: "Leomund's Tiny Hut",
@@ -7920,6 +8127,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Lesser Restoration",
     level: 2,
     name: {
       en: "Lesser Restoration",
@@ -7957,6 +8165,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Levitate",
     level: 2,
     name: {
       en: "Levitate",
@@ -7998,6 +8207,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Light",
     level: 0,
     name: {
       en: "Light",
@@ -8028,6 +8238,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Lightning Arrow",
     level: 3,
     name: {
       en: "Lightning Arrow",
@@ -8064,6 +8275,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Lightning Bolt",
     level: 3,
     name: {
       en: "Lightning Bolt",
@@ -8100,6 +8312,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Locate Animals or Plants",
     level: 2,
     name: {
       en: "Locate Animals or Plants",
@@ -8137,6 +8350,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Locate Creature",
     level: 4,
     name: {
       en: "Locate Creature",
@@ -8174,6 +8388,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Locate Object",
     level: 2,
     name: {
       en: "Locate Object",
@@ -8211,6 +8426,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Longstrider",
     level: 1,
     name: {
       en: "Longstrider",
@@ -8251,6 +8467,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Mage Armor",
     level: 1,
     name: {
       en: "Mage Armor",
@@ -8285,6 +8502,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Mage Hand",
     level: 0,
     name: {
       en: "Mage Hand",
@@ -8328,6 +8546,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Magic Circle",
     level: 3,
     name: {
       en: "Magic Circle",
@@ -8370,6 +8589,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "until_dispelled",
     },
+    id: "PHB'24/Magic Jar",
     level: 6,
     name: {
       en: "Magic Jar",
@@ -8400,6 +8620,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Magic Missile",
     level: 1,
     name: {
       en: "Magic Missile",
@@ -8442,6 +8663,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "until_dispelled",
     },
+    id: "PHB'24/Magic Mouth",
     level: 2,
     name: {
       en: "Magic Mouth",
@@ -8480,6 +8702,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Magic Weapon",
     level: 2,
     name: {
       en: "Magic Weapon",
@@ -8520,6 +8743,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Major Image",
     level: 3,
     name: {
       en: "Major Image",
@@ -8557,6 +8781,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Mass Cure Wounds",
     level: 5,
     name: {
       en: "Mass Cure Wounds",
@@ -8594,6 +8819,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Mass Heal",
     level: 9,
     name: {
       en: "Mass Heal",
@@ -8628,6 +8854,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Mass Healing Word",
     level: 3,
     name: {
       en: "Mass Healing Word",
@@ -8672,6 +8899,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Mass Suggestion",
     level: 6,
     name: {
       en: "Mass Suggestion",
@@ -8713,6 +8941,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Maze",
     level: 8,
     name: {
       en: "Maze",
@@ -8751,6 +8980,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Meld into Stone",
     level: 3,
     name: {
       en: "Meld into Stone",
@@ -8784,6 +9014,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Melf's Acid Arrow",
     level: 2,
     name: {
       en: "Melf's Acid Arrow",
@@ -8826,6 +9057,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Mending",
     level: 0,
     name: {
       en: "Mending",
@@ -8863,6 +9095,7 @@ const dndSpells: DndSpell[] = [
       unit: "round",
       upTo: false,
     },
+    id: "PHB'24/Message",
     level: 0,
     name: {
       en: "Message",
@@ -8897,6 +9130,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Meteor Swarm",
     level: 9,
     name: {
       en: "Meteor Swarm",
@@ -8935,6 +9169,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Mind Blank",
     level: 8,
     name: {
       en: "Mind Blank",
@@ -8965,6 +9200,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Mind Sliver",
     level: 0,
     name: {
       en: "Mind Sliver",
@@ -9006,6 +9242,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Mind Spike",
     level: 2,
     name: {
       en: "Mind Spike",
@@ -9050,6 +9287,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Minor Illusion",
     level: 0,
     name: {
       en: "Minor Illusion",
@@ -9090,6 +9328,7 @@ const dndSpells: DndSpell[] = [
       unit: "day",
       upTo: false,
     },
+    id: "PHB'24/Mirage Arcane",
     level: 7,
     name: {
       en: "Mirage Arcane",
@@ -9124,6 +9363,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Mirror Image",
     level: 2,
     name: {
       en: "Mirror Image",
@@ -9158,6 +9398,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Mislead",
     level: 5,
     name: {
       en: "Mislead",
@@ -9188,6 +9429,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Misty Step",
     level: 2,
     name: {
       en: "Misty Step",
@@ -9222,6 +9464,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Modify Memory",
     level: 5,
     name: {
       en: "Modify Memory",
@@ -9266,6 +9509,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Moonbeam",
     level: 2,
     name: {
       en: "Moonbeam",
@@ -9310,6 +9554,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Mordenkainen's Faithful Hound",
     level: 4,
     name: {
       en: "Mordenkainen's Faithful Hound",
@@ -9353,6 +9598,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Mordenkainen's Magnificent Mansion",
     level: 7,
     name: {
       en: "Mordenkainen's Magnificent Mansion",
@@ -9396,6 +9642,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Mordenkainen's Private Sanctum",
     level: 4,
     name: {
       en: "Mordenkainen's Private Sanctum",
@@ -9440,6 +9687,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Mordenkainen's Sword",
     level: 7,
     name: {
       en: "Mordenkainen's Sword",
@@ -9481,6 +9729,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Move Earth",
     level: 6,
     name: {
       en: "Move Earth",
@@ -9522,6 +9771,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Nondetection",
     level: 3,
     name: {
       en: "Nondetection",
@@ -9559,6 +9809,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Nystul's Magic Aura",
     level: 2,
     name: {
       en: "Nystul's Magic Aura",
@@ -9592,6 +9843,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Otiluke's Freezing Sphere",
     level: 6,
     name: {
       en: "Otiluke's Freezing Sphere",
@@ -9636,6 +9888,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Otiluke's Resilient Sphere",
     level: 4,
     name: {
       en: "Otiluke's Resilient Sphere",
@@ -9674,6 +9927,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Otto's Irresistible Dance",
     level: 6,
     name: {
       en: "Otto's Irresistible Dance",
@@ -9715,6 +9969,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Pass without Trace",
     level: 2,
     name: {
       en: "Pass without Trace",
@@ -9752,6 +10007,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Passwall",
     level: 5,
     name: {
       en: "Passwall",
@@ -9793,6 +10049,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Phantasmal Force",
     level: 2,
     name: {
       en: "Phantasmal Force",
@@ -9831,6 +10088,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Phantasmal Killer",
     level: 4,
     name: {
       en: "Phantasmal Killer",
@@ -9874,6 +10132,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Phantom Steed",
     level: 3,
     name: {
       en: "Phantom Steed",
@@ -9910,6 +10169,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Planar Ally",
     level: 6,
     name: {
       en: "Planar Ally",
@@ -9953,6 +10213,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Planar Binding",
     level: 5,
     name: {
       en: "Planar Binding",
@@ -9993,6 +10254,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Plane Shift",
     level: 7,
     name: {
       en: "Plane Shift",
@@ -10023,6 +10285,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Plant Growth",
     level: 3,
     name: {
       en: "Plant Growth",
@@ -10057,6 +10320,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Poison Spray",
     level: 0,
     name: {
       en: "Poison Spray",
@@ -10101,6 +10365,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Polymorph",
     level: 4,
     name: {
       en: "Polymorph",
@@ -10135,6 +10400,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Power Word Fortify",
     level: 7,
     name: {
       en: "Power Word Fortify",
@@ -10169,6 +10435,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Power Word Heal",
     level: 9,
     name: {
       en: "Power Word Heal",
@@ -10203,6 +10470,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Power Word Kill",
     level: 9,
     name: {
       en: "Power Word Kill",
@@ -10237,6 +10505,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Power Word Stun",
     level: 8,
     name: {
       en: "Power Word Stun",
@@ -10273,6 +10542,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Prayer of Healing",
     level: 2,
     name: {
       en: "Prayer of Healing",
@@ -10314,6 +10584,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Prestidigitation",
     level: 0,
     name: {
       en: "Prestidigitation",
@@ -10348,6 +10619,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Prismatic Spray",
     level: 7,
     name: {
       en: "Prismatic Spray",
@@ -10382,6 +10654,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Prismatic Wall",
     level: 9,
     name: {
       en: "Prismatic Wall",
@@ -10420,6 +10693,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Produce Flame",
     level: 0,
     name: {
       en: "Produce Flame",
@@ -10456,6 +10730,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "until_dispelled",
     },
+    id: "PHB'24/Programmed Illusion",
     level: 6,
     name: {
       en: "Programmed Illusion",
@@ -10497,6 +10772,7 @@ const dndSpells: DndSpell[] = [
       unit: "day",
       upTo: true,
     },
+    id: "PHB'24/Project Image",
     level: 7,
     name: {
       en: "Project Image",
@@ -10535,6 +10811,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Protection from Energy",
     level: 3,
     name: {
       en: "Protection from Energy",
@@ -10572,6 +10849,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Protection from Evil and Good",
     level: 1,
     name: {
       en: "Protection from Evil and Good",
@@ -10606,6 +10884,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Protection from Poison",
     level: 2,
     name: {
       en: "Protection from Poison",
@@ -10636,6 +10915,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Purify Food and Drink",
     level: 1,
     name: {
       en: "Purify Food and Drink",
@@ -10675,6 +10955,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Raise Dead",
     level: 5,
     name: {
       en: "Raise Dead",
@@ -10712,6 +10993,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Rary's Telepathic Bond",
     level: 5,
     name: {
       en: "Rary's Telepathic Bond",
@@ -10750,6 +11032,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Ray of Enfeeblement",
     level: 2,
     name: {
       en: "Ray of Enfeeblement",
@@ -10784,6 +11067,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Ray of Frost",
     level: 0,
     name: {
       en: "Ray of Frost",
@@ -10821,6 +11105,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Ray of Sickness",
     level: 1,
     name: {
       en: "Ray of Sickness",
@@ -10867,6 +11152,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Regenerate",
     level: 7,
     name: {
       en: "Regenerate",
@@ -10902,6 +11188,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Reincarnate",
     level: 5,
     name: {
       en: "Reincarnate",
@@ -10932,6 +11219,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Remove Curse",
     level: 3,
     name: {
       en: "Remove Curse",
@@ -10966,6 +11254,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Resistance",
     level: 0,
     name: {
       en: "Resistance",
@@ -11001,6 +11290,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Resurrection",
     level: 7,
     name: {
       en: "Resurrection",
@@ -11038,6 +11328,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Reverse Gravity",
     level: 7,
     name: {
       en: "Reverse Gravity",
@@ -11075,6 +11366,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Revivify",
     level: 3,
     name: {
       en: "Revivify",
@@ -11112,6 +11404,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Rope Trick",
     level: 2,
     name: {
       en: "Rope Trick",
@@ -11142,6 +11435,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Sacred Flame",
     level: 0,
     name: {
       en: "Sacred Flame",
@@ -11186,6 +11480,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Sanctuary",
     level: 1,
     name: {
       en: "Sanctuary",
@@ -11220,6 +11515,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Scorching Ray",
     level: 2,
     name: {
       en: "Scorching Ray",
@@ -11266,6 +11562,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Scrying",
     level: 5,
     name: {
       en: "Scrying",
@@ -11300,6 +11597,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Searing Smite",
     level: 1,
     name: {
       en: "Searing Smite",
@@ -11340,6 +11638,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/See Invisibility",
     level: 2,
     name: {
       en: "See Invisibility",
@@ -11374,6 +11673,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Seeming",
     level: 5,
     name: {
       en: "Seeming",
@@ -11411,6 +11711,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Sending",
     level: 3,
     name: {
       en: "Sending",
@@ -11444,6 +11745,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "until_dispelled",
     },
+    id: "PHB'24/Sequester",
     level: 7,
     name: {
       en: "Sequester",
@@ -11481,6 +11783,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Shapechange",
     level: 9,
     name: {
       en: "Shapechange",
@@ -11514,6 +11817,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Shatter",
     level: 2,
     name: {
       en: "Shatter",
@@ -11555,6 +11859,7 @@ const dndSpells: DndSpell[] = [
       unit: "round",
       upTo: false,
     },
+    id: "PHB'24/Shield",
     level: 1,
     name: {
       en: "Shield",
@@ -11592,6 +11897,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Shield of Faith",
     level: 1,
     name: {
       en: "Shield of Faith",
@@ -11633,6 +11939,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Shillelagh",
     level: 0,
     name: {
       en: "Shillelagh",
@@ -11670,6 +11977,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Shining Smite",
     level: 2,
     name: {
       en: "Shining Smite",
@@ -11703,6 +12011,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Shocking Grasp",
     level: 0,
     name: {
       en: "Shocking Grasp",
@@ -11740,6 +12049,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Silence",
     level: 2,
     name: {
       en: "Silence",
@@ -11781,6 +12091,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Silent Image",
     level: 1,
     name: {
       en: "Silent Image",
@@ -11820,6 +12131,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "until_dispelled",
     },
+    id: "PHB'24/Simulacrum",
     level: 7,
     name: {
       en: "Simulacrum",
@@ -11857,6 +12169,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Sleep",
     level: 1,
     name: {
       en: "Sleep",
@@ -11898,6 +12211,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Sleet Storm",
     level: 3,
     name: {
       en: "Sleet Storm",
@@ -11939,6 +12253,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Slow",
     level: 3,
     name: {
       en: "Slow",
@@ -11973,6 +12288,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Sorcerous Burst",
     level: 0,
     name: {
       en: "Sorcerous Burst",
@@ -12010,6 +12326,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Spare the Dying",
     level: 0,
     name: {
       en: "Spare the Dying",
@@ -12051,6 +12368,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Speak with Animals",
     level: 1,
     name: {
       en: "Speak with Animals",
@@ -12088,6 +12406,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Speak with Dead",
     level: 3,
     name: {
       en: "Speak with Dead",
@@ -12126,6 +12445,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Speak with Plants",
     level: 3,
     name: {
       en: "Speak with Plants",
@@ -12163,6 +12483,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Spider Climb",
     level: 2,
     name: {
       en: "Spider Climb",
@@ -12203,6 +12524,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Spike Growth",
     level: 2,
     name: {
       en: "Spike Growth",
@@ -12244,6 +12566,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Spirit Guardians",
     level: 3,
     name: {
       en: "Spirit Guardians",
@@ -12281,6 +12604,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Spiritual Weapon",
     level: 2,
     name: {
       en: "Spiritual Weapon",
@@ -12318,6 +12642,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Staggering Smite",
     level: 4,
     name: {
       en: "Staggering Smite",
@@ -12351,6 +12676,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Starry Wisp",
     level: 0,
     name: {
       en: "Starry Wisp",
@@ -12391,6 +12717,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Steel Wind Strike",
     level: 5,
     name: {
       en: "Steel Wind Strike",
@@ -12432,6 +12759,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Stinking Cloud",
     level: 3,
     name: {
       en: "Stinking Cloud",
@@ -12469,6 +12797,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Stone Shape",
     level: 4,
     name: {
       en: "Stone Shape",
@@ -12506,6 +12835,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Stoneskin",
     level: 4,
     name: {
       en: "Stoneskin",
@@ -12540,6 +12870,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Storm of Vengeance",
     level: 9,
     name: {
       en: "Storm of Vengeance",
@@ -12581,6 +12912,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Suggestion",
     level: 2,
     name: {
       en: "Suggestion",
@@ -12622,6 +12954,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Summon Aberration",
     level: 4,
     name: {
       en: "Summon Aberration",
@@ -12666,6 +12999,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Summon Beast",
     level: 2,
     name: {
       en: "Summon Beast",
@@ -12710,6 +13044,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Summon Celestial",
     level: 5,
     name: {
       en: "Summon Celestial",
@@ -12754,6 +13089,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Summon Construct",
     level: 4,
     name: {
       en: "Summon Construct",
@@ -12798,6 +13134,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Summon Dragon",
     level: 5,
     name: {
       en: "Summon Dragon",
@@ -12842,6 +13179,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Summon Elemental",
     level: 4,
     name: {
       en: "Summon Elemental",
@@ -12886,6 +13224,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Summon Fey",
     level: 3,
     name: {
       en: "Summon Fey",
@@ -12930,6 +13269,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Summon Fiend",
     level: 6,
     name: {
       en: "Summon Fiend",
@@ -12974,6 +13314,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Summon Undead",
     level: 3,
     name: {
       en: "Summon Undead",
@@ -13018,6 +13359,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Sunbeam",
     level: 6,
     name: {
       en: "Sunbeam",
@@ -13051,6 +13393,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Sunburst",
     level: 8,
     name: {
       en: "Sunburst",
@@ -13092,6 +13435,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Swift Quiver",
     level: 5,
     name: {
       en: "Swift Quiver",
@@ -13127,6 +13471,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "until_dispelled",
     },
+    id: "PHB'24/Symbol",
     level: 7,
     name: {
       en: "Symbol",
@@ -13157,6 +13502,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Synaptic Static",
     level: 5,
     name: {
       en: "Synaptic Static",
@@ -13198,6 +13544,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Tasha's Bubbling Cauldron",
     level: 6,
     name: {
       en: "Tasha's Bubbling Cauldron",
@@ -13239,6 +13586,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Tasha's Hideous Laughter",
     level: 1,
     name: {
       en: "Tasha's Hideous Laughter",
@@ -13280,6 +13628,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Telekinesis",
     level: 5,
     name: {
       en: "Telekinesis",
@@ -13321,6 +13670,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Telepathy",
     level: 8,
     name: {
       en: "Telepathy",
@@ -13351,6 +13701,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Teleport",
     level: 7,
     name: {
       en: "Teleport",
@@ -13394,6 +13745,7 @@ const dndSpells: DndSpell[] = [
       unit: "round",
       upTo: false,
     },
+    id: "PHB'24/Teleportation Circle",
     level: 5,
     name: {
       en: "Teleportation Circle",
@@ -13435,6 +13787,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Tenser's Floating Disk",
     level: 1,
     name: {
       en: "Tenser's Floating Disk",
@@ -13473,6 +13826,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Thaumaturgy",
     level: 0,
     name: {
       en: "Thaumaturgy",
@@ -13510,6 +13864,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Thorn Whip",
     level: 0,
     name: {
       en: "Thorn Whip",
@@ -13547,6 +13902,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Thunderclap",
     level: 0,
     name: {
       en: "Thunderclap",
@@ -13580,6 +13936,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Thunderous Smite",
     level: 1,
     name: {
       en: "Thunderous Smite",
@@ -13613,6 +13970,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Thunderwave",
     level: 1,
     name: {
       en: "Thunderwave",
@@ -13646,6 +14004,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Time Stop",
     level: 9,
     name: {
       en: "Time Stop",
@@ -13676,6 +14035,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Toll the Dead",
     level: 0,
     name: {
       en: "Toll the Dead",
@@ -13720,6 +14080,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Tongues",
     level: 3,
     name: {
       en: "Tongues",
@@ -13754,6 +14115,7 @@ const dndSpells: DndSpell[] = [
       unit: "round",
       upTo: false,
     },
+    id: "PHB'24/Transport via Plants",
     level: 6,
     name: {
       en: "Transport via Plants",
@@ -13792,6 +14154,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Tree Stride",
     level: 5,
     name: {
       en: "Tree Stride",
@@ -13829,6 +14192,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/True Polymorph",
     level: 9,
     name: {
       en: "True Polymorph",
@@ -13868,6 +14232,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/True Resurrection",
     level: 9,
     name: {
       en: "True Resurrection",
@@ -13905,6 +14270,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/True Seeing",
     level: 6,
     name: {
       en: "True Seeing",
@@ -13938,6 +14304,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/True Strike",
     level: 0,
     name: {
       en: "True Strike",
@@ -13977,6 +14344,7 @@ const dndSpells: DndSpell[] = [
       unit: "round",
       upTo: true,
     },
+    id: "PHB'24/Tsunami",
     level: 8,
     name: {
       en: "Tsunami",
@@ -14018,6 +14386,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Unseen Servant",
     level: 1,
     name: {
       en: "Unseen Servant",
@@ -14056,6 +14425,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Vampiric Touch",
     level: 3,
     name: {
       en: "Vampiric Touch",
@@ -14089,6 +14459,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Vicious Mockery",
     level: 0,
     name: {
       en: "Vicious Mockery",
@@ -14129,6 +14500,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Vitriolic Sphere",
     level: 4,
     name: {
       en: "Vitriolic Sphere",
@@ -14173,6 +14545,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Wall of Fire",
     level: 4,
     name: {
       en: "Wall of Fire",
@@ -14217,6 +14590,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Wall of Force",
     level: 5,
     name: {
       en: "Wall of Force",
@@ -14258,6 +14632,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Wall of Ice",
     level: 6,
     name: {
       en: "Wall of Ice",
@@ -14302,6 +14677,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Wall of Stone",
     level: 5,
     name: {
       en: "Wall of Stone",
@@ -14343,6 +14719,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Wall of Thorns",
     level: 6,
     name: {
       en: "Wall of Thorns",
@@ -14387,6 +14764,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Warding Bond",
     level: 2,
     name: {
       en: "Warding Bond",
@@ -14424,6 +14802,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Water Breathing",
     level: 3,
     name: {
       en: "Water Breathing",
@@ -14465,6 +14844,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Water Walk",
     level: 3,
     name: {
       en: "Water Walk",
@@ -14506,6 +14886,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: true,
     },
+    id: "PHB'24/Web",
     level: 2,
     name: {
       en: "Web",
@@ -14544,6 +14925,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Weird",
     level: 9,
     name: {
       en: "Weird",
@@ -14587,6 +14969,7 @@ const dndSpells: DndSpell[] = [
       unit: "hour",
       upTo: false,
     },
+    id: "PHB'24/Wind Walk",
     level: 6,
     name: {
       en: "Wind Walk",
@@ -14628,6 +15011,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Wind Wall",
     level: 3,
     name: {
       en: "Wind Wall",
@@ -14662,6 +15046,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Wish",
     level: 9,
     name: {
       en: "Wish",
@@ -14699,6 +15084,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Witch Bolt",
     level: 1,
     name: {
       en: "Witch Bolt",
@@ -14739,6 +15125,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Word of Radiance",
     level: 0,
     name: {
       en: "Word of Radiance",
@@ -14772,6 +15159,7 @@ const dndSpells: DndSpell[] = [
     duration: {
       type: "instantaneous",
     },
+    id: "PHB'24/Word of Recall",
     level: 6,
     name: {
       en: "Word of Recall",
@@ -14810,6 +15198,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Wrathful Smite",
     level: 1,
     name: {
       en: "Wrathful Smite",
@@ -14850,6 +15239,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: true,
     },
+    id: "PHB'24/Yolande's Regal Presence",
     level: 5,
     name: {
       en: "Yolande's Regal Presence",
@@ -14884,6 +15274,7 @@ const dndSpells: DndSpell[] = [
       unit: "minute",
       upTo: false,
     },
+    id: "PHB'24/Zone of Truth",
     level: 2,
     name: {
       en: "Zone of Truth",

@@ -38,7 +38,7 @@ export default function DndSpellsTable({ spells }: DndSpellsTableProps) {
       </Table.Header>
       <Table.Body>
         {localizedSpells.map((spell) => (
-          <Table.Row>
+          <Table.Row key={spell.raw.id}>
             <Table.Cell>{spell.name}</Table.Cell>
             <Table.Cell>{spell.raw.level}</Table.Cell>
             <Table.Cell>{spell.school}</Table.Cell>

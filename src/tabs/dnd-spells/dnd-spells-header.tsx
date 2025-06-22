@@ -71,6 +71,7 @@ export default function DndSpellsHeader() {
         <HStack pb={2} px={1} w="100%">
           <Input
             defaultValue={name}
+            name="spells-name-filter"
             onChange={(e) => setName(e.target.value)}
             placeholder={i18n.t("dnd.input.name.placeholder")}
             size="sm"
@@ -79,6 +80,7 @@ export default function DndSpellsHeader() {
             collection={levelsCollection}
             defaultValue={levels.map(String)}
             multiple
+            name="spells-levels-filter"
             onValueChange={(e) => setLevels(e.value.map((v) => +v))}
             placeholder={i18n.t("dnd.selector.levels.placeholder")}
             size="sm"
@@ -87,6 +89,7 @@ export default function DndSpellsHeader() {
             collection={classesCollection}
             defaultValue={classes}
             multiple
+            name="spells-classes-filter"
             onValueChange={(e) => setClasses(e.value as DndClass[])}
             placeholder={i18n.t("dnd.selector.classes.placeholder")}
             size="sm"
@@ -96,6 +99,7 @@ export default function DndSpellsHeader() {
             defaultValue={[`${view}`]}
             flex={0}
             minW="8em"
+            name="spells-view-setting"
             onValueChange={(e) => setView(+e.value[0] as DndSpellsView)}
             size="sm"
           />
@@ -105,6 +109,7 @@ export default function DndSpellsHeader() {
             inputProps={{ w: "6em" }}
             max={2}
             min={0.5}
+            name="spells-zoom-setting"
             onValueChange={(e) => setZoom(e.valueAsNumber)}
             size="sm"
             step={0.1}

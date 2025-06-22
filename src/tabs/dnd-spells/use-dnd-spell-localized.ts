@@ -87,12 +87,17 @@ function localizeRange(range: DndSpell["range"], i18n: I18n): string {
   }
 }
 
-function localizeComponents(components: DndSpell["components"]): string {
+function localizeComponents(
+  components: DndSpell["components"],
+  i18n: I18n,
+): string {
   const letters: string[] = [];
   if (components.verbal) letters.push("V");
   if (components.somatic) letters.push("S");
   if (components.material) letters.push("M");
-  return letters.join(", ");
+  return letters.length === 0
+    ? i18n.t("dnd.spell.components.none")
+    : letters.join(", ");
 }
 
 function localizeComponentMaterials(
@@ -110,8 +115,11 @@ export function localizeDndSpell(spell: DndSpell, i18n: I18n) {
       localizeCastingTime(spell.castingTime, i18n) +
       (spell.ritual ? i18n.t("dnd.spell.or_ritual") : ""),
     classes: spell.classes.map((c) => i18n.t(`dnd.class.${c}`)).join(", "),
+    classesShort: spell.classes
+      .map((c) => i18n.t(`dnd.class@short.${c}`))
+      .join(" "),
     componentMaterials: localizeComponentMaterials(spell.components, i18n),
-    components: localizeComponents(spell.components),
+    components: localizeComponents(spell.components, i18n),
     description: localizeString(spell.description, i18n.language),
     duration: localizeDuration(spell.duration, i18n),
     level: localizeLevel(spell.level, i18n),

@@ -135,6 +135,7 @@ export const dndSpellSchema = z.object({
       upTo: z.boolean(),
     }),
   ]),
+  id: z.string(),
   level: z.number(),
   name: i18nStringSchema,
   range: z.union([

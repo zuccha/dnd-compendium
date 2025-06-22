@@ -27,7 +27,7 @@ function DndSpellsList({ spells, view, zoom }: DnnSpellsListProps) {
           wrap="wrap"
         >
           {spells.map((spell) => (
-            <DndSpellCard key={spell.name.en} spell={spell} view={view} />
+            <DndSpellCard key={spell.id} spell={spell} view={view} />
           ))}
         </Flex>
       )}

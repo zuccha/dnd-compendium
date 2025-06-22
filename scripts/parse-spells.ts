@@ -146,6 +146,7 @@ function parseSpell(spellCsv: SpellCsv): DndSpell {
     components: parseComponents(spellCsv),
     description: { en: spellCsv["Text"] },
     duration: parseDuration(spellCsv),
+    id: `${spellCsv["Source"]}/${spellCsv["Name"]}`,
     level:
       spellCsv["Level"] === "Cantrip" ? 0 : parsePositive(spellCsv["Level"][0]),
     name: { en: spellCsv["Name"] },
