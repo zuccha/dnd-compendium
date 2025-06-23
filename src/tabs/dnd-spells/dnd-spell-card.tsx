@@ -10,6 +10,7 @@ import {
 import { memo } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import useDownloadableDiv from "../../hooks/use-downloadable-div";
 import useI18n from "../../i18n/use-i18n";
 import { type DndSpell, dndSpellsView } from "../../models/dnd";
 import useDndSpellLocalized from "./use-dnd-spell-localized";
@@ -43,6 +44,8 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
     upgrade,
   } = useDndSpellLocalized(spell);
 
+  const downloadableDiv = useDownloadableDiv(name, 2.5, 3.5, 1000);
+
   const castingTimeLabel = i18n.t("dnd.spell.casting_time");
   const durationLabel = i18n.t("dnd.spell.duration");
   const rangeLabel = i18n.t("dnd.spell.range");
@@ -60,9 +63,11 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
       fontFamily="Bookinsanity"
       gap="0.2em"
       h={view === dndSpellsView.full ? "21em" : undefined}
+      onClick={downloadableDiv.downloadPng}
       pb="0.5em"
       pt="0.625em"
       px="0.625em"
+      ref={downloadableDiv.ref}
       w="15em"
     >
       <Flex fontFamily="Mr Eaves" fontWeight="bold" lineHeight={1} w="100%">
