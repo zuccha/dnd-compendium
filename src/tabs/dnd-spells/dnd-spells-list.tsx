@@ -14,7 +14,11 @@ export type DnnSpellsListProps = {
   zoom: number;
 };
 
-function DndSpellsList({ spells, view, zoom }: DnnSpellsListProps) {
+export default memo(function DndSpellsList({
+  spells,
+  view,
+  zoom,
+}: DnnSpellsListProps) {
   return (
     <Flex justifyContent="center" maxW="64em" py={4} w="100%">
       {spells.length === 0 ? (
@@ -31,19 +35,17 @@ function DndSpellsList({ spells, view, zoom }: DnnSpellsListProps) {
           wrap="wrap"
         >
           {spells.map((spell) => (
-            <DndSpellCard1 key={spell.id} spell={spell} view={view} />
+            <DndSpellsListItem key={spell.id} spell={spell} view={view} />
           ))}
         </Flex>
       )}
     </Flex>
   );
-}
+});
 
-export default memo(DndSpellsList);
-
-type DndSpellCard1Props = Omit<DndSpellCardProps, "onClickSpell" | "selected">;
-
-function DndSpellCard1(props: DndSpellCard1Props) {
+function DndSpellsListItem(
+  props: Omit<DndSpellCardProps, "onClickSpell" | "selected">,
+) {
   const toggle = useDndSpellsSelectionToggle(props.spell.id);
   const selected = useDndSpellsSelectionSelected(props.spell.id);
 

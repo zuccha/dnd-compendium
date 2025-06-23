@@ -140,3 +140,5 @@ export default function useDndSpellLocalized(spell: DndSpell) {
   const i18n = useI18n();
   return useMemo(() => localizeDndSpell(spell, i18n), [i18n, spell]);
 }
+
+export type DndSpellLocalized = ReturnType<typeof useDndSpellLocalized>;
