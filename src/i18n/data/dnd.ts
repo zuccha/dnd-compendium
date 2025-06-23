@@ -76,15 +76,21 @@ const dndI18n = {
     "dnd.spell.ritual@short": "Rit.",
     "dnd.spell.upgrade.cantrip": "Cantrip Upgrade",
     "dnd.spell.upgrade.spell": "At Higher Levels",
-    "dnd.spell.view.compact": "Compact",
-    "dnd.spell.view.full": "Full",
-    "dnd.spell.view.minimal": "Minimal",
+    "dnd.spell.view.compact": "Cards (compact)",
+    "dnd.spell.view.full": "Cards",
+    "dnd.spell.view.minimal": "Cards (minimal)",
     "dnd.spell.view.table": "Table",
 
-    // Selectors
-    "dnd.input.name.placeholder": "Name",
-    "dnd.selector.classes.placeholder": "Select classes",
-    "dnd.selector.levels.placeholder": "Select levels",
+    // Filters/options
+    "dnd.spells.options.button.deselect_all": "Deselect All",
+    "dnd.spells.options.button.export_selected": "Export Selected",
+    "dnd.spells.options.button.select_all": "Select All",
+    "dnd.spells.options.input.name.placeholder": "Name",
+    "dnd.spells.options.label.at": " at ",
+    "dnd.spells.options.label.display": "Display ",
+    "dnd.spells.options.label.zoom": " zoom",
+    "dnd.spells.options.select.classes.placeholder": "Select classes",
+    "dnd.spells.options.select.levels.placeholder": "Select levels",
   },
   it: {
     // Classes
@@ -163,15 +169,21 @@ const dndI18n = {
     "dnd.spell.ritual@short": "Rit.",
     "dnd.spell.upgrade.cantrip": "Potenziamento del Trucchetto",
     "dnd.spell.upgrade.spell": "A Livelli Superiori",
-    "dnd.spell.view.compact": "Compatto",
-    "dnd.spell.view.full": "Intero",
-    "dnd.spell.view.minimal": "Minimale",
+    "dnd.spell.view.compact": "Carte (compatte)",
+    "dnd.spell.view.full": "Carte",
+    "dnd.spell.view.minimal": "Carte (minimali)",
     "dnd.spell.view.table": "Tabella",
 
-    // Selectors
-    "dnd.input.name.placeholder": "Nome",
-    "dnd.selector.classes.placeholder": "Seleziona classi",
-    "dnd.selector.levels.placeholder": "Seleziona livelli",
+    // Filters/options
+    "dnd.spells.options.button.deselect_all": "Deseleziona Tutti",
+    "dnd.spells.options.button.export_selected": "Esporta Selezionati",
+    "dnd.spells.options.button.select_all": "Seleziona Tutti",
+    "dnd.spells.options.input.name.placeholder": "Nome",
+    "dnd.spells.options.label.at": " al ",
+    "dnd.spells.options.label.display": "Mostra ",
+    "dnd.spells.options.label.zoom": " zoom",
+    "dnd.spells.options.select.classes.placeholder": "Seleziona classi",
+    "dnd.spells.options.select.levels.placeholder": "Seleziona livelli",
   },
 } as const;
 
