@@ -45,7 +45,8 @@ const dndI18n = {
     "dnd.spell.casting_time.reaction": "Reaction",
     "dnd.spell.casting_time.time": "<1> <2>", // 1 = quantity, 2 = unit
     "dnd.spell.classes": "Classes",
-    "dnd.spell.component_materials": "Materials",
+    "dnd.spell.component_materials.none": "Materials: None.",
+    "dnd.spell.component_materials.present": "Materials: <1>", // 1 = materials
     "dnd.spell.components": "Components",
     "dnd.spell.components.none": "None",
     "dnd.spell.components@short": "V, S, M",
@@ -131,7 +132,8 @@ const dndI18n = {
     "dnd.spell.casting_time.reaction": "Reazione",
     "dnd.spell.casting_time.time": "<1> <2>", // 1 = quantity, 2 = unit
     "dnd.spell.classes": "Classi",
-    "dnd.spell.component_materials": "Materiali",
+    "dnd.spell.component_materials.none": "Materiali: Nessuno.",
+    "dnd.spell.component_materials.present": "Materiali: <1>", // 1 = materials
     "dnd.spell.components": "Componenti",
     "dnd.spell.components.none": "Nessuna",
     "dnd.spell.components@short": "V, S, M",

@@ -105,8 +105,11 @@ function localizeComponentMaterials(
   i18n: I18n,
 ): string | undefined {
   return components.material
-    ? localizeString(components.materials, i18n.language)
-    : undefined;
+    ? i18n.ti(
+        "dnd.spell.component_materials.present",
+        localizeString(components.materials, i18n.language),
+      )
+    : i18n.t("dnd.spell.component_materials.none");
 }
 
 export function localizeDndSpell(spell: DndSpell, i18n: I18n) {
@@ -114,7 +117,7 @@ export function localizeDndSpell(spell: DndSpell, i18n: I18n) {
     castingTime:
       localizeCastingTime(spell.castingTime, i18n) +
       (spell.ritual ? i18n.t("dnd.spell.or_ritual") : ""),
-    classes: spell.classes.map((c) => i18n.t(`dnd.class.${c}`)).join(", "),
+    classes: spell.classes.map((c) => i18n.t(`dnd.class.${c}`)).join(" "),
     classesShort: spell.classes
       .map((c) => i18n.t(`dnd.class@short.${c}`))
       .join(" "),

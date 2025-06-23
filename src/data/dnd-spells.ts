@@ -33,7 +33,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 239,
     },
     upgrade: {
@@ -78,7 +78,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 239,
     },
     upgrade: {
@@ -125,7 +125,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 239,
     },
   },
@@ -160,7 +160,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 239,
     },
   },
@@ -202,7 +202,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 239,
     },
     upgrade: {
@@ -247,7 +247,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 240,
     },
     upgrade: {
@@ -289,7 +289,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 240,
     },
   },
@@ -329,7 +329,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 240,
     },
     upgrade: {
@@ -371,7 +371,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 240,
     },
     upgrade: {
@@ -409,7 +409,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 241,
     },
   },
@@ -447,7 +447,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 241,
     },
   },
@@ -491,7 +491,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 242,
     },
   },
@@ -533,7 +533,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 242,
     },
   },
@@ -572,7 +572,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 242,
     },
   },
@@ -606,7 +606,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 242,
     },
   },
@@ -637,7 +637,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 242,
     },
     upgrade: {
@@ -678,7 +678,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 243,
     },
     upgrade: {
@@ -712,7 +712,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 243,
     },
     upgrade: {
@@ -755,7 +755,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 243,
     },
   },
@@ -791,7 +791,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 244,
     },
   },
@@ -826,7 +826,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 244,
     },
   },
@@ -861,7 +861,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 244,
     },
   },
@@ -896,7 +896,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 244,
     },
   },
@@ -932,7 +932,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 244,
     },
   },
@@ -974,7 +974,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 245,
     },
     upgrade: {
@@ -1012,7 +1012,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 245,
     },
   },
@@ -1054,7 +1054,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 245,
     },
     upgrade: {
@@ -1095,7 +1095,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 245,
     },
   },
@@ -1134,7 +1134,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 245,
     },
   },
@@ -1169,7 +1169,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 245,
     },
   },
@@ -1207,7 +1207,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 245,
     },
   },
@@ -1242,7 +1242,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 246,
     },
     upgrade: {
@@ -1287,7 +1287,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 246,
     },
     upgrade: {
@@ -1329,7 +1329,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 247,
     },
   },
@@ -1364,7 +1364,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 247,
     },
   },
@@ -1406,7 +1406,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 247,
     },
     upgrade: {
@@ -1444,7 +1444,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 247,
     },
     upgrade: {
@@ -1482,7 +1482,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 247,
     },
     upgrade: {
@@ -1524,7 +1524,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 248,
     },
     upgrade: {
@@ -1562,7 +1562,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 248,
     },
   },
@@ -1597,7 +1597,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 248,
     },
   },
@@ -1628,7 +1628,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 248,
     },
     upgrade: {
@@ -1670,7 +1670,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 248,
     },
     upgrade: {
@@ -1712,7 +1712,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 249,
     },
   },
@@ -1750,7 +1750,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 249,
     },
     upgrade: {
@@ -1792,7 +1792,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 249,
     },
     upgrade: {
@@ -1834,7 +1834,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 249,
     },
     upgrade: {
@@ -1868,7 +1868,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 249,
     },
     upgrade: {
@@ -1909,7 +1909,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 249,
     },
     upgrade: {
@@ -1950,7 +1950,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 250,
     },
     upgrade: {
@@ -1988,7 +1988,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 250,
     },
   },
@@ -2032,7 +2032,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 250,
     },
   },
@@ -2068,7 +2068,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 251,
     },
   },
@@ -2110,7 +2110,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 251,
     },
     upgrade: {
@@ -2152,7 +2152,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 251,
     },
     upgrade: {
@@ -2189,7 +2189,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 251,
     },
   },
@@ -2224,7 +2224,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 251,
     },
     upgrade: {
@@ -2267,7 +2267,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 251,
     },
   },
@@ -2304,7 +2304,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 252,
     },
   },
@@ -2343,7 +2343,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 252,
     },
   },
@@ -2381,7 +2381,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 252,
     },
   },
@@ -2420,7 +2420,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 252,
     },
   },
@@ -2454,7 +2454,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 253,
     },
     upgrade: {
@@ -2499,7 +2499,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 253,
     },
     upgrade: {
@@ -2541,7 +2541,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 254,
     },
     upgrade: {
@@ -2578,7 +2578,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 254,
     },
     upgrade: {
@@ -2620,7 +2620,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 254,
     },
     upgrade: {
@@ -2662,7 +2662,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 254,
     },
     upgrade: {
@@ -2704,7 +2704,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 255,
     },
     upgrade: {
@@ -2742,7 +2742,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 255,
     },
     upgrade: {
@@ -2783,7 +2783,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 255,
     },
   },
@@ -2818,7 +2818,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 255,
     },
     upgrade: {
@@ -2858,7 +2858,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 255,
     },
   },
@@ -2893,7 +2893,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 256,
     },
   },
@@ -2933,7 +2933,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 256,
     },
   },
@@ -2967,7 +2967,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 256,
     },
   },
@@ -3009,7 +3009,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 256,
     },
   },
@@ -3049,7 +3049,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 257,
     },
   },
@@ -3087,7 +3087,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 258,
     },
     upgrade: {
@@ -3125,7 +3125,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 258,
     },
   },
@@ -3160,7 +3160,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 258,
     },
   },
@@ -3200,7 +3200,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 258,
     },
     upgrade: {
@@ -3241,7 +3241,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 258,
     },
     upgrade: {
@@ -3284,7 +3284,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 259,
     },
     upgrade: {
@@ -3326,7 +3326,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 259,
     },
   },
@@ -3361,7 +3361,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 259,
     },
   },
@@ -3392,7 +3392,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 259,
     },
     upgrade: {
@@ -3437,7 +3437,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 259,
     },
   },
@@ -3479,7 +3479,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 260,
     },
   },
@@ -3517,7 +3517,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 260,
     },
   },
@@ -3556,7 +3556,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 260,
     },
   },
@@ -3591,7 +3591,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 261,
     },
   },
@@ -3633,7 +3633,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 261,
     },
     upgrade: {
@@ -3675,7 +3675,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 261,
     },
   },
@@ -3706,7 +3706,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 261,
     },
   },
@@ -3741,7 +3741,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 261,
     },
   },
@@ -3786,7 +3786,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 262,
     },
   },
@@ -3824,7 +3824,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 262,
     },
   },
@@ -3862,7 +3862,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 262,
     },
   },
@@ -3897,7 +3897,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 262,
     },
   },
@@ -3932,7 +3932,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 262,
     },
   },
@@ -3970,7 +3970,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 263,
     },
     upgrade: {
@@ -4011,7 +4011,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 263,
     },
   },
@@ -4056,7 +4056,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 264,
     },
     upgrade: {
@@ -4094,7 +4094,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 264,
     },
     upgrade: {
@@ -4131,7 +4131,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 264,
     },
   },
@@ -4166,7 +4166,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 265,
     },
   },
@@ -4197,7 +4197,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 265,
     },
     upgrade: {
@@ -4235,7 +4235,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 265,
     },
   },
@@ -4274,7 +4274,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 265,
     },
     upgrade: {
@@ -4316,7 +4316,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 265,
     },
     upgrade: {
@@ -4358,7 +4358,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 266,
     },
     upgrade: {
@@ -4399,7 +4399,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 266,
     },
     upgrade: {
@@ -4438,7 +4438,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 266,
     },
   },
@@ -4478,7 +4478,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 266,
     },
   },
@@ -4513,7 +4513,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 266,
     },
   },
@@ -4555,7 +4555,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 267,
     },
   },
@@ -4590,7 +4590,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 267,
     },
     upgrade: {
@@ -4628,7 +4628,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 267,
     },
     upgrade: {
@@ -4666,7 +4666,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 267,
     },
   },
@@ -4712,7 +4712,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 268,
     },
     upgrade: {
@@ -4757,7 +4757,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 268,
     },
   },
@@ -4792,7 +4792,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 268,
     },
     upgrade: {
@@ -4834,7 +4834,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 268,
     },
   },
@@ -4873,7 +4873,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 269,
     },
   },
@@ -4908,7 +4908,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 269,
     },
     upgrade: {
@@ -4953,7 +4953,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 270,
     },
   },
@@ -4988,7 +4988,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 270,
     },
   },
@@ -5023,7 +5023,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 270,
     },
   },
@@ -5060,7 +5060,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 271,
     },
   },
@@ -5099,7 +5099,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 271,
     },
   },
@@ -5133,7 +5133,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 271,
     },
     upgrade: {
@@ -5174,7 +5174,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 271,
     },
   },
@@ -5216,7 +5216,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 271,
     },
   },
@@ -5254,7 +5254,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 271,
     },
   },
@@ -5294,7 +5294,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 272,
     },
   },
@@ -5329,7 +5329,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 272,
     },
     upgrade: {
@@ -5367,7 +5367,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 273,
     },
   },
@@ -5407,7 +5407,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 273,
     },
   },
@@ -5442,7 +5442,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 273,
     },
   },
@@ -5477,7 +5477,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 274,
     },
     upgrade: {
@@ -5518,7 +5518,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 274,
     },
   },
@@ -5553,7 +5553,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 275,
     },
   },
@@ -5591,7 +5591,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 274,
     },
     upgrade: {
@@ -5632,7 +5632,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 275,
     },
     upgrade: {
@@ -5673,7 +5673,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 275,
     },
     upgrade: {
@@ -5718,7 +5718,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 275,
     },
     upgrade: {
@@ -5763,7 +5763,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 275,
     },
   },
@@ -5801,7 +5801,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 276,
     },
     upgrade: {
@@ -5843,7 +5843,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 276,
     },
     upgrade: {
@@ -5886,7 +5886,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 276,
     },
   },
@@ -5928,7 +5928,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 276,
     },
   },
@@ -5968,7 +5968,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 276,
     },
   },
@@ -6003,7 +6003,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 277,
     },
   },
@@ -6041,7 +6041,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 277,
     },
     upgrade: {
@@ -6086,7 +6086,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 277,
     },
   },
@@ -6124,7 +6124,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 277,
     },
     upgrade: {
@@ -6169,7 +6169,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 277,
     },
   },
@@ -6210,7 +6210,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 278,
     },
     upgrade: {
@@ -6251,7 +6251,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 278,
     },
   },
@@ -6290,7 +6290,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 279,
     },
     upgrade: {
@@ -6328,7 +6328,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 279,
     },
   },
@@ -6366,7 +6366,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 279,
     },
     upgrade: {
@@ -6405,7 +6405,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 279,
     },
     upgrade: {
@@ -6446,7 +6446,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 280,
     },
   },
@@ -6485,7 +6485,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 280,
     },
     upgrade: {
@@ -6530,7 +6530,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 280,
     },
   },
@@ -6565,7 +6565,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 281,
     },
   },
@@ -6599,7 +6599,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 281,
     },
   },
@@ -6638,7 +6638,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 281,
     },
   },
@@ -6678,7 +6678,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 282,
     },
   },
@@ -6713,7 +6713,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 282,
     },
   },
@@ -6752,7 +6752,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 282,
     },
     upgrade: {
@@ -6793,7 +6793,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 282,
     },
   },
@@ -6824,7 +6824,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 283,
     },
     upgrade: {
@@ -6863,7 +6863,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 283,
     },
   },
@@ -6907,7 +6907,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 283,
     },
   },
@@ -6942,7 +6942,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 283,
     },
   },
@@ -6984,7 +6984,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 284,
     },
   },
@@ -7019,7 +7019,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 284,
     },
     upgrade: {
@@ -7057,7 +7057,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 284,
     },
     upgrade: {
@@ -7102,7 +7102,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 284,
     },
     upgrade: {
@@ -7140,7 +7140,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 284,
     },
     upgrade: {
@@ -7179,7 +7179,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 284,
     },
   },
@@ -7214,7 +7214,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 285,
     },
     upgrade: {
@@ -7259,7 +7259,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 285,
     },
     upgrade: {
@@ -7304,7 +7304,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 285,
     },
     upgrade: {
@@ -7349,7 +7349,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 286,
     },
     upgrade: {
@@ -7390,7 +7390,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 286,
     },
   },
@@ -7432,7 +7432,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 286,
     },
     upgrade: {
@@ -7474,7 +7474,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 287,
     },
     upgrade: {
@@ -7519,7 +7519,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 287,
     },
   },
@@ -7557,7 +7557,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 287,
     },
     upgrade: {
@@ -7598,7 +7598,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 287,
     },
     upgrade: {
@@ -7637,7 +7637,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 287,
     },
   },
@@ -7677,7 +7677,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 288,
     },
   },
@@ -7717,7 +7717,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 288,
     },
   },
@@ -7756,7 +7756,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 288,
     },
   },
@@ -7787,7 +7787,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 288,
     },
     upgrade: {
@@ -7832,7 +7832,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 289,
     },
     upgrade: {
@@ -7873,7 +7873,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 289,
     },
     upgrade: {
@@ -7918,7 +7918,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 289,
     },
     upgrade: {
@@ -7959,7 +7959,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 290,
     },
     upgrade: {
@@ -7997,7 +7997,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 290,
     },
   },
@@ -8033,7 +8033,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 290,
     },
   },
@@ -8067,7 +8067,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 290,
     },
   },
@@ -8107,7 +8107,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 291,
     },
   },
@@ -8138,7 +8138,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 291,
     },
   },
@@ -8180,7 +8180,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 291,
     },
   },
@@ -8218,7 +8218,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 292,
     },
   },
@@ -8249,7 +8249,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 292,
     },
     upgrade: {
@@ -8286,7 +8286,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 292,
     },
     upgrade: {
@@ -8323,7 +8323,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 292,
     },
   },
@@ -8361,7 +8361,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 292,
     },
   },
@@ -8399,7 +8399,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 293,
     },
   },
@@ -8437,7 +8437,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 293,
     },
     upgrade: {
@@ -8478,7 +8478,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 293,
     },
   },
@@ -8517,7 +8517,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 293,
     },
   },
@@ -8561,7 +8561,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 293,
     },
     upgrade: {
@@ -8600,7 +8600,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 294,
     },
   },
@@ -8635,7 +8635,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 295,
     },
     upgrade: {
@@ -8678,7 +8678,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 295,
     },
   },
@@ -8713,7 +8713,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 295,
     },
     upgrade: {
@@ -8758,7 +8758,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 295,
     },
     upgrade: {
@@ -8796,7 +8796,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 296,
     },
     upgrade: {
@@ -8834,7 +8834,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 296,
     },
   },
@@ -8869,7 +8869,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 296,
     },
     upgrade: {
@@ -8914,7 +8914,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 296,
     },
     upgrade: {
@@ -8956,7 +8956,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 296,
     },
   },
@@ -8991,7 +8991,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 296,
     },
   },
@@ -9029,7 +9029,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 297,
     },
     upgrade: {
@@ -9068,7 +9068,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 297,
     },
   },
@@ -9110,7 +9110,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 298,
     },
   },
@@ -9145,7 +9145,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 298,
     },
   },
@@ -9180,7 +9180,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 298,
     },
   },
@@ -9215,7 +9215,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 298,
     },
     upgrade: {
@@ -9257,7 +9257,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 298,
     },
     upgrade: {
@@ -9302,7 +9302,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 298,
     },
   },
@@ -9339,7 +9339,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 299,
     },
   },
@@ -9374,7 +9374,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 299,
     },
   },
@@ -9409,7 +9409,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 299,
     },
   },
@@ -9440,7 +9440,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 299,
     },
   },
@@ -9479,7 +9479,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 299,
     },
     upgrade: {
@@ -9524,7 +9524,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 300,
     },
     upgrade: {
@@ -9569,7 +9569,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 300,
     },
   },
@@ -9613,7 +9613,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 300,
     },
   },
@@ -9657,7 +9657,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 301,
     },
     upgrade: {
@@ -9702,7 +9702,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 302,
     },
   },
@@ -9744,7 +9744,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 302,
     },
   },
@@ -9782,7 +9782,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 302,
     },
   },
@@ -9820,7 +9820,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 302,
     },
   },
@@ -9858,7 +9858,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 302,
     },
     upgrade: {
@@ -9903,7 +9903,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 303,
     },
   },
@@ -9942,7 +9942,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 303,
     },
   },
@@ -9980,7 +9980,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 303,
     },
   },
@@ -10022,7 +10022,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 304,
     },
   },
@@ -10064,7 +10064,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 304,
     },
   },
@@ -10103,7 +10103,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 304,
     },
     upgrade: {
@@ -10147,7 +10147,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 304,
     },
   },
@@ -10184,7 +10184,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 304,
     },
   },
@@ -10228,7 +10228,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 305,
     },
     upgrade: {
@@ -10265,7 +10265,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 305,
     },
   },
@@ -10300,7 +10300,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 305,
     },
   },
@@ -10335,7 +10335,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 306,
     },
     upgrade: {
@@ -10380,7 +10380,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 306,
     },
   },
@@ -10415,7 +10415,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 306,
     },
   },
@@ -10450,7 +10450,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 306,
     },
   },
@@ -10485,7 +10485,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 306,
     },
   },
@@ -10520,7 +10520,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 306,
     },
   },
@@ -10557,7 +10557,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 307,
     },
     upgrade: {
@@ -10599,7 +10599,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 307,
     },
   },
@@ -10630,7 +10630,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 307,
     },
   },
@@ -10669,7 +10669,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 308,
     },
   },
@@ -10704,7 +10704,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 308,
     },
     upgrade: {
@@ -10745,7 +10745,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 309,
     },
   },
@@ -10787,7 +10787,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 309,
     },
   },
@@ -10822,7 +10822,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 309,
     },
   },
@@ -10860,7 +10860,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 309,
     },
   },
@@ -10895,7 +10895,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 310,
     },
   },
@@ -10930,7 +10930,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 310,
     },
   },
@@ -10966,7 +10966,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 310,
     },
   },
@@ -11008,7 +11008,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 311,
     },
   },
@@ -11047,7 +11047,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 311,
     },
   },
@@ -11082,7 +11082,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 311,
     },
     upgrade: {
@@ -11120,7 +11120,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 311,
     },
     upgrade: {
@@ -11163,7 +11163,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 311,
     },
   },
@@ -11199,7 +11199,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 311,
     },
   },
@@ -11230,7 +11230,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 312,
     },
   },
@@ -11265,7 +11265,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 312,
     },
   },
@@ -11301,7 +11301,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 312,
     },
   },
@@ -11343,7 +11343,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 312,
     },
   },
@@ -11377,7 +11377,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 312,
     },
   },
@@ -11415,7 +11415,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 312,
     },
   },
@@ -11450,7 +11450,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 313,
     },
     upgrade: {
@@ -11495,7 +11495,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 313,
     },
   },
@@ -11530,7 +11530,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 313,
     },
     upgrade: {
@@ -11573,7 +11573,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 313,
     },
   },
@@ -11608,7 +11608,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 314,
     },
     upgrade: {
@@ -11649,7 +11649,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 314,
     },
   },
@@ -11688,7 +11688,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 314,
     },
   },
@@ -11722,7 +11722,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 314,
     },
   },
@@ -11756,7 +11756,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 315,
     },
   },
@@ -11794,7 +11794,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 315,
     },
   },
@@ -11832,7 +11832,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 316,
     },
     upgrade: {
@@ -11870,7 +11870,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 316,
     },
   },
@@ -11912,7 +11912,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 316,
     },
   },
@@ -11950,7 +11950,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 316,
     },
     upgrade: {
@@ -11988,7 +11988,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 316,
     },
     upgrade: {
@@ -12022,7 +12022,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 316,
     },
     upgrade: {
@@ -12064,7 +12064,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 316,
     },
   },
@@ -12106,7 +12106,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 317,
     },
   },
@@ -12142,7 +12142,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 317,
     },
   },
@@ -12184,7 +12184,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 317,
     },
   },
@@ -12226,7 +12226,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 317,
     },
   },
@@ -12268,7 +12268,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 318,
     },
   },
@@ -12303,7 +12303,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 318,
     },
     upgrade: {
@@ -12341,7 +12341,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 318,
     },
     upgrade: {
@@ -12379,7 +12379,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 318,
     },
   },
@@ -12421,7 +12421,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 318,
     },
   },
@@ -12456,7 +12456,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 319,
     },
   },
@@ -12494,7 +12494,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 319,
     },
     upgrade: {
@@ -12539,7 +12539,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 319,
     },
   },
@@ -12577,7 +12577,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 319,
     },
     upgrade: {
@@ -12619,7 +12619,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 319,
     },
     upgrade: {
@@ -12653,7 +12653,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 320,
     },
     upgrade: {
@@ -12691,7 +12691,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 320,
     },
     upgrade: {
@@ -12732,7 +12732,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 320,
     },
   },
@@ -12774,7 +12774,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 321,
     },
   },
@@ -12808,7 +12808,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 321,
     },
   },
@@ -12846,7 +12846,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 321,
     },
   },
@@ -12885,7 +12885,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 321,
     },
   },
@@ -12927,7 +12927,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 321,
     },
   },
@@ -12969,7 +12969,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 322,
     },
     upgrade: {
@@ -13014,7 +13014,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 322,
     },
     upgrade: {
@@ -13059,7 +13059,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 323,
     },
     upgrade: {
@@ -13104,7 +13104,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 324,
     },
     upgrade: {
@@ -13149,7 +13149,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 324,
     },
     upgrade: {
@@ -13194,7 +13194,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 325,
     },
     upgrade: {
@@ -13239,7 +13239,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 326,
     },
     upgrade: {
@@ -13284,7 +13284,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 326,
     },
     upgrade: {
@@ -13329,7 +13329,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 328,
     },
     upgrade: {
@@ -13370,7 +13370,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 329,
     },
   },
@@ -13408,7 +13408,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 329,
     },
   },
@@ -13446,7 +13446,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 329,
     },
   },
@@ -13482,7 +13482,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 329,
     },
   },
@@ -13517,7 +13517,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 330,
     },
   },
@@ -13559,7 +13559,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 330,
     },
   },
@@ -13601,7 +13601,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 331,
     },
     upgrade: {
@@ -13643,7 +13643,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 331,
     },
   },
@@ -13681,7 +13681,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 331,
     },
   },
@@ -13716,7 +13716,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 331,
     },
   },
@@ -13760,7 +13760,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 332,
     },
   },
@@ -13802,7 +13802,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 332,
     },
   },
@@ -13841,7 +13841,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 333,
     },
   },
@@ -13879,7 +13879,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 333,
     },
     upgrade: {
@@ -13913,7 +13913,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 333,
     },
     upgrade: {
@@ -13947,7 +13947,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 334,
     },
     upgrade: {
@@ -13981,7 +13981,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 334,
     },
     upgrade: {
@@ -14015,7 +14015,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 334,
     },
   },
@@ -14050,7 +14050,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 334,
     },
     upgrade: {
@@ -14091,7 +14091,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 334,
     },
   },
@@ -14130,7 +14130,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 334,
     },
   },
@@ -14165,7 +14165,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 335,
     },
   },
@@ -14207,7 +14207,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 335,
     },
   },
@@ -14243,7 +14243,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 336,
     },
   },
@@ -14281,7 +14281,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 336,
     },
   },
@@ -14315,7 +14315,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "divination",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 336,
     },
     upgrade: {
@@ -14359,7 +14359,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 336,
     },
   },
@@ -14401,7 +14401,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 336,
     },
   },
@@ -14436,7 +14436,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 337,
     },
     upgrade: {
@@ -14474,7 +14474,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 337,
     },
     upgrade: {
@@ -14515,7 +14515,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 337,
     },
     upgrade: {
@@ -14560,7 +14560,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 338,
     },
     upgrade: {
@@ -14605,7 +14605,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 338,
     },
   },
@@ -14647,7 +14647,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 339,
     },
     upgrade: {
@@ -14692,7 +14692,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 339,
     },
   },
@@ -14734,7 +14734,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 339,
     },
     upgrade: {
@@ -14775,7 +14775,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "abjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 340,
     },
   },
@@ -14817,7 +14817,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 340,
     },
   },
@@ -14859,7 +14859,7 @@ const dndSpells: DndSpell[] = [
     ritual: true,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 340,
     },
   },
@@ -14901,7 +14901,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 340,
     },
   },
@@ -14940,7 +14940,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "illusion",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 341,
     },
   },
@@ -14984,7 +14984,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "transmutation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 341,
     },
   },
@@ -15026,7 +15026,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 341,
     },
   },
@@ -15057,7 +15057,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 341,
     },
   },
@@ -15099,7 +15099,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 343,
     },
     upgrade: {
@@ -15136,7 +15136,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "evocation",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 343,
     },
     upgrade: {
@@ -15174,7 +15174,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "conjuration",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 343,
     },
   },
@@ -15209,7 +15209,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "necromancy",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 343,
     },
     upgrade: {
@@ -15250,7 +15250,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 343,
     },
   },
@@ -15289,7 +15289,7 @@ const dndSpells: DndSpell[] = [
     ritual: false,
     school: "enchantment",
     source: {
-      book: "PHB'24",
+      book: "PHB24",
       page: 343,
     },
   },

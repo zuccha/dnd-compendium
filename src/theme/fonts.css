@@ -32,3 +32,17 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Nodesto";
+  src: url("../assets/fonts/Nodesto Caps Condensed.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Zatanna";
+  src: url("../assets/fonts/Zatanna Misdirection.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}

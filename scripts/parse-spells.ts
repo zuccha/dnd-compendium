@@ -154,7 +154,7 @@ function parseSpell(spellCsv: SpellCsv): DndSpell {
     ritual: /\(ritual\)$/.test(spellCsv["School"]),
     school: spellCsv["School"].replace(/ \(.*\)$/, "").toLowerCase(),
     source: {
-      book: spellCsv["Source"],
+      book: spellCsv["Source"].replace(/'/g, ""),
       page: parsePositive(spellCsv["Page"]),
     },
     upgrade: parseUpgrade(spellCsv),
@@ -173,7 +173,7 @@ function parseSpell(spellCsv: SpellCsv): DndSpell {
 
 const spells = spellsCsv
   .map(parseSpell)
-  .filter((spell) => spell.source.book === "PHB'24");
+  .filter((spell) => spell.source.book === "PHB24");
 
 const spellsJson = JSON.stringify(spells, null, 2);
 const spellsTs = `import type { DndSpell } from "../models/dnd";

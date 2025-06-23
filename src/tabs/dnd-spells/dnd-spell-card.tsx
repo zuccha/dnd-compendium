@@ -1,5 +1,5 @@
 import {
-  Box,
+  Center,
   Flex,
   GridItem,
   HStack,
@@ -21,6 +21,12 @@ export type DndSpellCardProps = {
   view: number;
 };
 
+const cardBorderColor = "gray.700";
+const cardBackgroundColor = "orange.50";
+
+const cardTextColor = "black";
+const cardTextColorInverted = "gray.50";
+
 function DndSpellCard({ spell, view }: DndSpellCardProps) {
   const i18n = useI18n();
 
@@ -31,7 +37,6 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
     components,
     description,
     duration,
-    level,
     name,
     range,
     school,
@@ -49,41 +54,56 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
 
   return (
     <VStack
-      bgColor="#444444"
+      bgColor={cardBorderColor}
       borderRadius="0.75em"
-      color="black"
+      color={cardTextColor}
       fontFamily="Bookinsanity"
-      gap="0.5em"
+      gap="0.2em"
       h={view === dndSpellsView.full ? "21em" : undefined}
       pb="0.5em"
       pt="0.625em"
       px="0.625em"
       w="15em"
     >
-      <Flex
-        bgColor="#dad5d5"
-        borderTopRadius="0.375em"
-        lineHeight={1}
-        px="0.5em"
-        py="0.25em"
-        w="100%"
-      >
-        <Text fontFamily="Mr Eaves" fontSize="1em" fontWeight="bold">
-          {name}
-        </Text>
+      <Flex fontFamily="Mr Eaves" fontWeight="bold" lineHeight={1} w="100%">
+        <Flex
+          alignItems="center"
+          bgColor={cardBackgroundColor}
+          borderColor={cardBackgroundColor}
+          borderTopLeftRadius="0.375em"
+          borderWidth="0.1em"
+          flex={1}
+          px="0.5em"
+          py="0.25em"
+        >
+          <Text fontSize="1em">{name}</Text>
+        </Flex>
+
+        <Center
+          bgColor={cardBorderColor}
+          borderColor={cardBackgroundColor}
+          borderTopRightRadius="0.375em"
+          borderWidth="0.1em"
+          color={cardTextColorInverted}
+          px="0.5em"
+          py="0.25em"
+        >
+          <Text fontSize="1em">{spell.level}</Text>
+        </Center>
       </Flex>
 
       <HStack
-        color="white"
+        alignItems="start"
+        color={cardTextColorInverted}
         fontFamily="Mr Eaves"
         fontSize="0.6em"
         justify="space-between"
         lineHeight={1}
-        my="-0.5em"
         textTransform="lowercase"
         w="100%"
       >
         <Text>{classes}</Text>
+        <Text>{school}</Text>
       </HStack>
 
       {view >= dndSpellsView.compact && (
@@ -92,29 +112,27 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
           <GridCell label={rangeLabel} text={range} />
           <GridCell label={componentsLabel} text={components} />
           <GridCell label={durationLabel} text={duration} />
-          {view >= dndSpellsView.full && componentMaterials && (
-            <GridItem
-              bgColor="#dad5d5"
-              colSpan={2}
-              gap="0.2em"
-              lineHeight={1}
-              px="0.5em"
-              py="0.2em"
-            >
-              <Box fontSize="0.625em">
-                <ReactMarkdown remarkPlugins={remarkPlugins}>
-                  {componentMaterials}
-                </ReactMarkdown>
-              </Box>
-            </GridItem>
-          )}
         </SimpleGrid>
+      )}
+
+      {view >= dndSpellsView.full && (
+        <Text
+          color={cardTextColorInverted}
+          fontFamily="Mr Eaves"
+          fontSize="0.6em"
+          lineHeight={1}
+          textAlign="left"
+          textTransform="lowercase"
+          w="100%"
+        >
+          {componentMaterials}
+        </Text>
       )}
 
       {view >= dndSpellsView.full && (
         <VStack
           align="start"
-          bgColor="#dad5d5"
+          bgColor={cardBackgroundColor}
           flex={1}
           fontSize="0.625em"
           lineHeight={1.1}
@@ -141,22 +159,19 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
         </VStack>
       )}
 
-      <VStack align="start" gap={0} w="100%">
-        <HStack
-          color="white"
-          fontFamily="Mr Eaves"
-          fontSize="0.75em"
-          gap={0}
-          justify="space-between"
-          lineHeight={1}
-          mt="-0.25em"
-          textTransform="lowercase"
-          w="100%"
-        >
-          <Text>{school}</Text>
-          <Text>{level}</Text>
-        </HStack>
-      </VStack>
+      <HStack
+        color={cardTextColorInverted}
+        fontFamily="Mr Eaves"
+        fontSize="0.75em"
+        gap={0}
+        justify="space-between"
+        lineHeight={1}
+        textTransform="lowercase"
+        w="100%"
+      >
+        <Text>{spell.source.book}</Text>
+        <Text>{`p. ${spell.source.page}`}</Text>
+      </HStack>
     </VStack>
   );
 }
@@ -166,7 +181,7 @@ export default memo(DndSpellCard);
 function GridCell({ label, text }: { label: string; text: string }) {
   return (
     <GridItem
-      bgColor="#dad5d5"
+      bgColor={cardBackgroundColor}
       gap="0.2em"
       lineHeight={1}
       px="0.5em"
