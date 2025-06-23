@@ -1,7 +1,11 @@
 import { Center, Flex } from "@chakra-ui/react";
 import { memo } from "react";
 import { type DndSpell, dndSpellsView } from "../../models/dnd";
-import DndSpellCard from "./dnd-spell-card";
+import DndSpellCard, { type DndSpellCardProps } from "./dnd-spell-card";
+import {
+  useDndSpellsSelectionSelected,
+  useDndSpellsSelectionToggle,
+} from "./dnd-spells-selection";
 import DndSpellsTable from "./dnd-spells-table";
 
 export type DnnSpellsListProps = {
@@ -27,7 +31,7 @@ function DndSpellsList({ spells, view, zoom }: DnnSpellsListProps) {
           wrap="wrap"
         >
           {spells.map((spell) => (
-            <DndSpellCard key={spell.id} spell={spell} view={view} />
+            <DndSpellCard1 key={spell.id} spell={spell} view={view} />
           ))}
         </Flex>
       )}
@@ -36,3 +40,12 @@ function DndSpellsList({ spells, view, zoom }: DnnSpellsListProps) {
 }
 
 export default memo(DndSpellsList);
+
+type DndSpellCard1Props = Omit<DndSpellCardProps, "onClickSpell" | "selected">;
+
+function DndSpellCard1(props: DndSpellCard1Props) {
+  const toggle = useDndSpellsSelectionToggle(props.spell.id);
+  const selected = useDndSpellsSelectionSelected(props.spell.id);
+
+  return <DndSpellCard {...props} onClickSpell={toggle} selected={selected} />;
+}

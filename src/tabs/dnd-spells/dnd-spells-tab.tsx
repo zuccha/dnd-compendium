@@ -1,9 +1,13 @@
 import { VStack } from "@chakra-ui/react";
-import { useMemo } from "react";
+import { useCallback, useMemo } from "react";
 import dndSpells from "../../data/dnd-spells";
 import useDebouncedValue from "../../hooks/use-debounced-value";
 import DndSpellsHeader from "./dnd-spells-header";
 import DndSpellsList from "./dnd-spells-list";
+import {
+  DndSpellsSelectionProvider,
+  useDndSpellsSelectionContext,
+} from "./dnd-spells-selection";
 import {
   useDndSpellsFilterClasses,
   useDndSpellsFilterLevels,
@@ -12,7 +16,7 @@ import {
   useDndSpellsSettingZoom,
 } from "./dnd-store";
 
-export default function DndSpellsTab() {
+function DndSpellsTabPartial() {
   const [name] = useDndSpellsFilterName();
   const [classes] = useDndSpellsFilterClasses();
   const [levels] = useDndSpellsFilterLevels();
@@ -40,10 +44,38 @@ export default function DndSpellsTab() {
       .filter((spell) => levels.some((l) => spell.level === l));
   }, [debouncedFilters]);
 
+  const spellsSelection = useDndSpellsSelectionContext();
+
+  const deselectAll = useCallback(() => {
+    dndSpells.forEach((spell) => spellsSelection.deselect(spell.id));
+  }, [spellsSelection]);
+
+  const selectAll = useCallback(() => {
+    filteredDnDSpells.forEach((spell) => spellsSelection.select(spell.id));
+  }, [filteredDnDSpells, spellsSelection]);
+
+  const exportSelected = useCallback(() => {
+    filteredDnDSpells
+      .filter((spell) => spellsSelection.selected.has(spell.id))
+      .forEach((spell) => console.log(spell.name.en));
+  }, [filteredDnDSpells, spellsSelection]);
+
   return (
     <VStack gap={0} position="relative" w="100%">
-      <DndSpellsHeader />
+      <DndSpellsHeader
+        onDeselectAll={deselectAll}
+        onExportSelected={exportSelected}
+        onSelectAll={selectAll}
+      />
       <DndSpellsList spells={filteredDnDSpells} view={view} zoom={zoom} />
     </VStack>
+  );
+}
+
+export default function DndSpellsTab() {
+  return (
+    <DndSpellsSelectionProvider>
+      <DndSpellsTabPartial />
+    </DndSpellsSelectionProvider>
   );
 }

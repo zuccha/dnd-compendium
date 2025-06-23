@@ -18,6 +18,8 @@ import useDndSpellLocalized from "./use-dnd-spell-localized";
 const remarkPlugins = [remarkGfm];
 
 export type DndSpellCardProps = {
+  onClickSpell: () => void;
+  selected?: boolean;
   spell: DndSpell;
   view: number;
 };
@@ -28,7 +30,12 @@ const cardBackgroundColor = "orange.50";
 const cardTextColor = "black";
 const cardTextColorInverted = "gray.50";
 
-function DndSpellCard({ spell, view }: DndSpellCardProps) {
+function DndSpellCard({
+  onClickSpell,
+  selected,
+  spell,
+  view,
+}: DndSpellCardProps) {
   const i18n = useI18n();
 
   const {
@@ -63,7 +70,10 @@ function DndSpellCard({ spell, view }: DndSpellCardProps) {
       fontFamily="Bookinsanity"
       gap="0.2em"
       h={view === dndSpellsView.full ? "21em" : undefined}
-      onClick={downloadableDiv.downloadPng}
+      onClick={onClickSpell}
+      outlineColor="green.500"
+      outlineStyle="auto"
+      outlineWidth={selected ? "10em" : 0}
       pb="0.5em"
       pt="0.625em"
       px="0.625em"

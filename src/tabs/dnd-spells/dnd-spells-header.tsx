@@ -28,7 +28,17 @@ import {
   useDndSpellsSettingZoom,
 } from "./dnd-store";
 
-export default function DndSpellsHeader() {
+export type DndSpellsHeaderProps = {
+  onDeselectAll: () => void;
+  onExportSelected: () => void;
+  onSelectAll: () => void;
+};
+
+export default function DndSpellsHeader({
+  onDeselectAll,
+  onExportSelected,
+  onSelectAll,
+}: DndSpellsHeaderProps) {
   const i18n = useI18n();
 
   const [name, setName] = useDndSpellsFilterName();
@@ -103,13 +113,13 @@ export default function DndSpellsHeader() {
             </HStack>
 
             <HStack>
-              <Button size="sm" variant="outline">
+              <Button onClick={onDeselectAll} size="sm" variant="outline">
                 {i18n.t("dnd.spells.options.button.deselect_all")}
               </Button>
-              <Button size="sm" variant="outline">
+              <Button onClick={onSelectAll} size="sm" variant="outline">
                 {i18n.t("dnd.spells.options.button.select_all")}
               </Button>
-              <Button size="sm">
+              <Button onClick={onExportSelected} size="sm">
                 {i18n.t("dnd.spells.options.button.export_selected")}
               </Button>
             </HStack>
