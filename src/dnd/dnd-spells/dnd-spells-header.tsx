@@ -14,6 +14,7 @@ import Select from "../../components/ui/select";
 import SelectSimple from "../../components/ui/select-simple";
 import useI18n from "../../i18n/use-i18n";
 import type { DndClass } from "../dnd-types";
+import DndSpellsExportDialog from "./dnd-spells-export-dialog";
 import {
   useDndSpellsDeselectAll,
   useDndSpellsOptionsClasses,
@@ -84,7 +85,7 @@ export default function DndSpellsHeader() {
                 defaultValue={[`${view}`]}
                 flex={0}
                 minW="11em"
-                name="spells-view-setting"
+                name="dnd-spells-options-view"
                 onValueChange={(e) =>
                   setView(+e.value[0] as DndSpellsOptionsView)
                 }
@@ -99,7 +100,7 @@ export default function DndSpellsHeader() {
                     inputProps={{ w: "6em" }}
                     max={2}
                     min={0.5}
-                    name="spells-zoom-setting"
+                    name="dnd-spells-options-zoom"
                     onValueChange={(e) => setZoom(e.valueAsNumber)}
                     size="sm"
                     step={0.1}
@@ -116,16 +117,14 @@ export default function DndSpellsHeader() {
               <Button onClick={selectAll} size="sm" variant="outline">
                 {i18n.t("dnd.spells.options.button.select_all")}
               </Button>
-              <Button onClick={() => {}} size="sm">
-                {i18n.t("dnd.spells.options.button.export_selected")}
-              </Button>
+              <DndSpellsExportDialog />
             </HStack>
           </HStack>
 
           <HStack w="100%">
             <Input
               defaultValue={name}
-              name="spells-name-filter"
+              name="dnd-spells-options-name"
               onChange={(e) => setName(e.target.value)}
               placeholder={i18n.t("dnd.spells.options.input.name.placeholder")}
               size="sm"
@@ -134,7 +133,7 @@ export default function DndSpellsHeader() {
               collection={levelsCollection}
               defaultValue={levels.map(String)}
               multiple
-              name="spells-levels-filter"
+              name="dnd-spells-options-levels"
               onValueChange={(e) => setLevels(e.value.map((v) => +v))}
               placeholder={i18n.t(
                 "dnd.spells.options.select.levels.placeholder",
@@ -145,7 +144,7 @@ export default function DndSpellsHeader() {
               collection={classesCollection}
               defaultValue={classes}
               multiple
-              name="spells-classes-filter"
+              name="dnd-spells-options-classes"
               onValueChange={(e) => setClasses(e.value as DndClass[])}
               placeholder={i18n.t(
                 "dnd.spells.options.select.classes.placeholder",

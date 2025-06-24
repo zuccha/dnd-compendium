@@ -10,7 +10,6 @@ import {
 import { memo } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import useDownloadableDiv from "../../hooks/use-downloadable-div";
 import useI18n from "../../i18n/use-i18n";
 import { type DndSpell, dndSpellsOptionsView } from "./dnd-spells-types";
 import useDndSpellLocalized from "./use-dnd-spell-localized";
@@ -18,21 +17,23 @@ import useDndSpellLocalized from "./use-dnd-spell-localized";
 const remarkPlugins = [remarkGfm];
 
 export type DndSpellCardProps = {
-  onClickSpell: () => void;
+  onClickSpell?: () => void;
   selected?: boolean;
   spell: DndSpell;
   view: number;
 };
 
-const cardBorderColor = "gray.700";
-const cardBackgroundColor = "orange.50";
+export const dndCardBackgroundColor = "orange.50";
+export const dndCardBorderColor = "gray.700";
+export const dndCardTextColor = "black";
+export const dndCardTextColorInverted = "gray.50";
 
-const cardTextColor = "black";
-const cardTextColorInverted = "gray.50";
+export const dndCardHeight = 21;
+export const dndCardWidth = 15;
 
 export default memo(function DndSpellCard({
-  onClickSpell,
-  selected,
+  onClickSpell = () => {},
+  selected = false,
   spell,
   view,
 }: DndSpellCardProps) {
@@ -51,8 +52,6 @@ export default memo(function DndSpellCard({
     upgrade,
   } = useDndSpellLocalized(spell);
 
-  const downloadableDiv = useDownloadableDiv(name, 2.5, 3.5, 1000);
-
   const castingTimeLabel = i18n.t("dnd.spell.casting_time");
   const durationLabel = i18n.t("dnd.spell.duration");
   const rangeLabel = i18n.t("dnd.spell.range");
@@ -64,12 +63,12 @@ export default memo(function DndSpellCard({
 
   return (
     <VStack
-      bgColor={cardBorderColor}
+      bgColor={dndCardBorderColor}
       borderRadius="0.75em"
-      color={cardTextColor}
+      color={dndCardTextColor}
       fontFamily="Bookinsanity"
       gap="0.2em"
-      h={view === dndSpellsOptionsView.full ? "21em" : undefined}
+      h={view === dndSpellsOptionsView.full ? `${dndCardHeight}em` : undefined}
       onClick={onClickSpell}
       outlineColor="green.500"
       outlineStyle="auto"
@@ -77,14 +76,13 @@ export default memo(function DndSpellCard({
       pb="0.5em"
       pt="0.625em"
       px="0.625em"
-      ref={downloadableDiv.ref}
-      w="15em"
+      w={`${dndCardWidth}em`}
     >
       <Flex fontFamily="Mr Eaves" fontWeight="bold" lineHeight={1} w="100%">
         <Flex
           alignItems="center"
-          bgColor={cardBackgroundColor}
-          borderColor={cardBackgroundColor}
+          bgColor={dndCardBackgroundColor}
+          borderColor={dndCardBackgroundColor}
           borderTopLeftRadius="0.375em"
           borderWidth="0.1em"
           flex={1}
@@ -95,11 +93,11 @@ export default memo(function DndSpellCard({
         </Flex>
 
         <Center
-          bgColor={cardBorderColor}
-          borderColor={cardBackgroundColor}
+          bgColor={dndCardBorderColor}
+          borderColor={dndCardBackgroundColor}
           borderTopRightRadius="0.375em"
           borderWidth="0.1em"
-          color={cardTextColorInverted}
+          color={dndCardTextColorInverted}
           px="0.5em"
           py="0.25em"
         >
@@ -109,7 +107,7 @@ export default memo(function DndSpellCard({
 
       <HStack
         alignItems="start"
-        color={cardTextColorInverted}
+        color={dndCardTextColorInverted}
         fontFamily="Mr Eaves"
         fontSize="0.6em"
         justify="space-between"
@@ -132,7 +130,7 @@ export default memo(function DndSpellCard({
 
       {view >= dndSpellsOptionsView.full && (
         <Text
-          color={cardTextColorInverted}
+          color={dndCardTextColorInverted}
           fontFamily="Mr Eaves"
           fontSize="0.6em"
           lineHeight={1}
@@ -147,7 +145,7 @@ export default memo(function DndSpellCard({
       {view >= dndSpellsOptionsView.full && (
         <VStack
           align="start"
-          bgColor={cardBackgroundColor}
+          bgColor={dndCardBackgroundColor}
           flex={1}
           fontSize="0.625em"
           lineHeight={1.1}
@@ -175,7 +173,7 @@ export default memo(function DndSpellCard({
       )}
 
       <HStack
-        color={cardTextColorInverted}
+        color={dndCardTextColorInverted}
         fontFamily="Mr Eaves"
         fontSize="0.75em"
         gap={0}
@@ -194,7 +192,7 @@ export default memo(function DndSpellCard({
 function GridCell({ label, text }: { label: string; text: string }) {
   return (
     <GridItem
-      bgColor={cardBackgroundColor}
+      bgColor={dndCardBackgroundColor}
       gap="0.2em"
       lineHeight={1}
       px="0.5em"

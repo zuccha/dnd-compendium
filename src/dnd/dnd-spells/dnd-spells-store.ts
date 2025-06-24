@@ -41,6 +41,9 @@ const { notify: notifySelectionSize, subscribe: subscribeSelectionSize } =
 const { notify: notifySpellSelected, subscribe: subscribeSpellSelected } =
   createObservableBydId<boolean>();
 
+const { notify: notifySpellSelectedAny, subscribe: subscribeSpellSelectedAny } =
+  createObservable<boolean>();
+
 //------------------------------------------------------------------------------
 // Is Visible
 //------------------------------------------------------------------------------
@@ -75,6 +78,20 @@ const idsUnselected = (ids: string[]) =>
 export function useDndSpellIds(): string[] {
   const [ids, setIds] = useState(state.spells.ids);
   useLayoutEffect(() => subscribeIds(setIds), []);
+  return ids;
+}
+
+//------------------------------------------------------------------------------
+// Use Dnd Spell Ids Selected
+//------------------------------------------------------------------------------
+
+export function useDndSpellIdsSelected(): string[] {
+  const [ids, setIds] = useState(() => idsSelected(state.spells.ids));
+  const getIdsSelected = () => setIds(idsSelected(state.spells.ids));
+
+  useLayoutEffect(() => subscribeIds(getIdsSelected), []);
+  useLayoutEffect(() => subscribeSpellSelectedAny(getIdsSelected), []);
+
   return ids;
 }
 
@@ -196,7 +213,7 @@ export const useDndSpellsOptionsZoom = createUseOption(
 //------------------------------------------------------------------------------
 
 export function useDndSpellsSelectionSize(): number {
-  const [size, setSize] = useState(state.spells.ids.length);
+  const [size, setSize] = useState(idsSelected(state.spells.ids).length);
   useLayoutEffect(() => subscribeSelectionSize(setSize), []);
   return size;
 }
@@ -212,6 +229,7 @@ export function useDndSpellsDeselectAll(): () => void {
       const someVisible = selectedIds.some((id) => isVisible(id));
       state.selection.clear();
       selectedIds.forEach((id) => notifySpellSelected(id, false));
+      if (selectedIds.length > 0) notifySpellSelectedAny(false);
       if (someVisible) notifySelectionSize(0);
     }
   }, []);
@@ -230,6 +248,7 @@ export function useDndSpellsSelectAll(): () => void {
       unselectedIds.forEach((id) => {
         state.selection.add(id);
         notifySpellSelected(id, true);
+        notifySpellSelectedAny(true);
       });
       notifySelectionSize(selectedIds.length + unselectedIds.length);
     }
@@ -255,9 +274,11 @@ export function useDndSpellToggleSelection(id: string): () => void {
     if (state.selection.has(id)) {
       state.selection.delete(id);
       notifySpellSelected(id, false);
+      notifySpellSelectedAny(false);
     } else {
       state.selection.add(id);
       notifySpellSelected(id, true);
+      notifySpellSelectedAny(true);
     }
     if (isVisible(id))
       notifySelectionSize(idsSelected(state.spells.ids).length);

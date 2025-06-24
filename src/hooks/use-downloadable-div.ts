@@ -25,7 +25,7 @@ export default function useDownloadableDiv(
       height: outputHeight,
       width: outputWidth,
 
-      pixelRatio: 1,
+      pixelRatio: window.devicePixelRatio,
       style: {
         height: `${divHeight}px`,
         width: `${divWidth}px`,

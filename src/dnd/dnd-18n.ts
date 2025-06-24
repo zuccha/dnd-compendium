@@ -91,6 +91,15 @@ const dndI18n = {
     "dnd.spells.options.label.zoom": " zoom",
     "dnd.spells.options.select.classes.placeholder": "Select classes",
     "dnd.spells.options.select.levels.placeholder": "Select levels",
+
+    // Export spells
+    "dnd.spells.export.button.cancel": "Cancel",
+    "dnd.spells.export.button.export": "Export",
+    "dnd.spells.export.input.bleed": "Bleed",
+    "dnd.spells.export.input.dpi": "DPI",
+    "dnd.spells.export.input.height": "Height",
+    "dnd.spells.export.input.width": "Width",
+    "dnd.spells.export.title": "Preview (not actual size)",
   },
   it: {
     // Classes
@@ -184,6 +193,15 @@ const dndI18n = {
     "dnd.spells.options.label.zoom": " zoom",
     "dnd.spells.options.select.classes.placeholder": "Seleziona classi",
     "dnd.spells.options.select.levels.placeholder": "Seleziona livelli",
+
+    // Export spells
+    "dnd.spells.export.button.cancel": "Annulla",
+    "dnd.spells.export.button.export": "Esporta",
+    "dnd.spells.export.input.bleed": "Bleed",
+    "dnd.spells.export.input.dpi": "DPI",
+    "dnd.spells.export.input.height": "Altezza",
+    "dnd.spells.export.input.width": "Larghezza",
+    "dnd.spells.export.title": "Anteprima (dimensione non precisa)",
   },
 } as const;
 
