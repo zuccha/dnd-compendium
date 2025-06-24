@@ -1,48 +1,8 @@
 import { z } from "zod";
-import { i18nDistanceSchema } from "../i18n/i18n-distance";
-import { i18nStringSchema } from "../i18n/i18n-string";
-import { range } from "../utils/array";
-
-//------------------------------------------------------------------------------
-// Class
-//------------------------------------------------------------------------------
-
-export const dndClassSchema = z.enum([
-  "artificer",
-  "barbarian",
-  "bard",
-  "cleric",
-  "druid",
-  "fighter",
-  "monk",
-  "paladin",
-  "ranger",
-  "rogue",
-  "sorcerer",
-  "warlock",
-  "wizard",
-]);
-
-export type DndClass = z.infer<typeof dndClassSchema>;
-
-//------------------------------------------------------------------------------
-// Magic School
-//------------------------------------------------------------------------------
-
-export const dndMagicSchoolSchema = z.enum([
-  "abjuration",
-  "conjuration",
-  "divination",
-  "enchantment",
-  "evocation",
-  "illusion",
-  "necromancy",
-  "transmutation",
-]);
-
-export const dndMagicSchool = dndMagicSchoolSchema.options;
-
-export type DndMagicSchool = z.infer<typeof dndMagicSchoolSchema>;
+import { i18nDistanceSchema } from "../../i18n/i18n-distance";
+import { i18nStringSchema } from "../../i18n/i18n-string";
+import { range } from "../../utils/array";
+import { dndClassSchema, dndMagicSchoolSchema } from "../dnd-types";
 
 //------------------------------------------------------------------------------
 // Spell

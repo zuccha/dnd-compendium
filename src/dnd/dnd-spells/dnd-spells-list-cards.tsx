@@ -1,6 +1,5 @@
 import { Flex } from "@chakra-ui/react";
 import { memo } from "react";
-import type { DndSpellsOptionsView } from "../../models/dnd";
 import DndSpellCard from "./dnd-spell-card";
 import DndSpellsListEmpty from "./dnd-spells-list-empty";
 import {
@@ -11,6 +10,7 @@ import {
   useDndSpellsOptionsView,
   useDndSpellsOptionsZoom,
 } from "./dnd-spells-store";
+import type { DndSpellsOptionsView } from "./dnd-spells-types";
 
 export default memo(function DndSpellsList() {
   const [view] = useDndSpellsOptionsView();

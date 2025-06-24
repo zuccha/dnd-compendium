@@ -1,6 +1,13 @@
 import { useCallback, useLayoutEffect, useState } from "react";
 import { z } from "zod";
-import dndSpells from "../../data/dnd-spells";
+import { normalize } from "../../utils/normalized-list";
+import { createObservable } from "../../utils/observable";
+import { createObservableBydId } from "../../utils/observable-by-id";
+import {
+  StorePersistent,
+  useStorePersistent,
+} from "../../utils/store-persistent";
+import dndSpells from "./dnd-spells";
 import {
   type DndSpell,
   type DndSpellsOptions,
@@ -10,14 +17,7 @@ import {
   dndSpellsOptionsLevelsSchema,
   dndSpellsOptionsView,
   dndSpellsOptionsViewSchema,
-} from "../../models/dnd";
-import { normalize } from "../../utils/normalized-list";
-import { createObservable } from "../../utils/observable";
-import { createObservableBydId } from "../../utils/observable-by-id";
-import {
-  StorePersistent,
-  useStorePersistent,
-} from "../../utils/store-persistent";
+} from "./dnd-spells-types";
 
 //------------------------------------------------------------------------------
 // State

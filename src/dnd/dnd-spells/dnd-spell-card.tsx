@@ -12,7 +12,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import useDownloadableDiv from "../../hooks/use-downloadable-div";
 import useI18n from "../../i18n/use-i18n";
-import { type DndSpell, dndSpellsOptionsView } from "../../models/dnd";
+import { type DndSpell, dndSpellsOptionsView } from "./dnd-spells-types";
 import useDndSpellLocalized from "./use-dnd-spell-localized";
 
 const remarkPlugins = [remarkGfm];

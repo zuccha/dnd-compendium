@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import type { I18nLanguage } from "../../i18n/i18n-language";
 import type { I18nString } from "../../i18n/i18n-string";
 import useI18n, { type I18n } from "../../i18n/use-i18n";
-import type { DndSpell } from "../../models/dnd";
+import type { DndSpell } from "./dnd-spells-types";
 
 function localizeString(
   localizedString: I18nString,

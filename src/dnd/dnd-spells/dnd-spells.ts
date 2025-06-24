@@ -1,4 +1,4 @@
-import type { DndSpell } from "../models/dnd";
+import type { DndSpell } from "./dnd-spells-types";
 
 /* eslint-disable sort-keys */
 const dndSpells: DndSpell[] = [

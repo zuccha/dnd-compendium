@@ -1,4 +1,4 @@
-import DndSpellsTab from "./tabs/dnd-spells/dnd-spells-tab";
+import DndSpellsTab from "./dnd/dnd-spells/dnd-spells-tab";
 
 function App() {
   return <DndSpellsTab />;

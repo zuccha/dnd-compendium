@@ -13,13 +13,7 @@ import NumberInput from "../../components/ui/number-input";
 import Select from "../../components/ui/select";
 import SelectSimple from "../../components/ui/select-simple";
 import useI18n from "../../i18n/use-i18n";
-import {
-  type DndClass,
-  type DndSpellsOptionsView,
-  dndSpellsOptionsClasses,
-  dndSpellsOptionsLevels,
-  dndSpellsOptionsView,
-} from "../../models/dnd";
+import type { DndClass } from "../dnd-types";
 import {
   useDndSpellsDeselectAll,
   useDndSpellsOptionsClasses,
@@ -29,6 +23,12 @@ import {
   useDndSpellsOptionsZoom,
   useDndSpellsSelectAll,
 } from "./dnd-spells-store";
+import {
+  type DndSpellsOptionsView,
+  dndSpellsOptionsClasses,
+  dndSpellsOptionsLevels,
+  dndSpellsOptionsView,
+} from "./dnd-spells-types";
 
 export default function DndSpellsHeader() {
   const i18n = useI18n();

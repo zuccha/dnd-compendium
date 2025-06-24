@@ -1,5 +1,5 @@
 import { parse as parseCsv } from "https://deno.land/std@0.224.0/csv/mod.ts";
-import { DndSpell, dndSpellSchema } from "../src/models/dnd.ts";
+import { DndSpell, dndSpellSchema } from "../src/dnd/dnd-spells/dnd-spells-types.ts";
 import { capitalize } from "../src/utils/string.ts";
 
 // type DndSpellCsv = {
