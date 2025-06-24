@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { i18nDistanceSchema } from "../i18n/i18n-distance";
 import { i18nStringSchema } from "../i18n/i18n-string";
+import { range } from "../utils/array";
 
 //------------------------------------------------------------------------------
 // Class
@@ -25,7 +26,7 @@ export const dndClassSchema = z.enum([
 export type DndClass = z.infer<typeof dndClassSchema>;
 
 //------------------------------------------------------------------------------
-// Spell School
+// Magic School
 //------------------------------------------------------------------------------
 
 export const dndMagicSchoolSchema = z.enum([
@@ -42,60 +43,6 @@ export const dndMagicSchoolSchema = z.enum([
 export const dndMagicSchool = dndMagicSchoolSchema.options;
 
 export type DndMagicSchool = z.infer<typeof dndMagicSchoolSchema>;
-
-//------------------------------------------------------------------------------
-// Spells View
-//------------------------------------------------------------------------------
-
-export const dndSpellsViewSchema = z.union([
-  z.literal(0),
-  z.literal(1),
-  z.literal(2),
-  z.literal(3),
-]);
-
-export type DndSpellsView = (typeof dndSpellsView)[keyof typeof dndSpellsView];
-
-/* eslint-disable sort-keys */
-export const dndSpellsView = {
-  minimal: 0,
-  compact: 1,
-  full: 2,
-  table: 3,
-} as const;
-/* eslint-enable sort-keys */
-
-//------------------------------------------------------------------------------
-// Spell (Raw)
-//------------------------------------------------------------------------------
-
-export type DndSpellRaw = {
-  casting_time: string;
-  classes: DndClass[];
-  components: {
-    raw: string;
-    somatic: boolean;
-    verbal: boolean;
-  } & (
-    | {
-        material: true;
-        materials_needed: string[];
-      }
-    | {
-        material: false;
-      }
-  );
-  description: string;
-  duration: string;
-  higher_levels?: string;
-  level: string;
-  name: string;
-  range: string;
-  ritual: boolean;
-  school: DndMagicSchool;
-  tags: string[];
-  type: string;
-};
 
 //------------------------------------------------------------------------------
 // Spell
@@ -167,3 +114,57 @@ export const dndSpellSchema = z.object({
 });
 
 export type DndSpell = z.infer<typeof dndSpellSchema>;
+
+//------------------------------------------------------------------------------
+// Options - Classes
+//------------------------------------------------------------------------------
+
+export const dndSpellsOptionsClasses = dndClassSchema.options;
+
+export const dndSpellsOptionsClassesSchema = z.array(dndClassSchema);
+
+//------------------------------------------------------------------------------
+// Options - Levels
+//------------------------------------------------------------------------------
+
+export const dndSpellsOptionsLevels = range(10);
+
+export const dndSpellsOptionsLevelsSchema = z.array(z.number());
+
+//------------------------------------------------------------------------------
+// Options - View
+//------------------------------------------------------------------------------
+
+export const dndSpellsOptionsViewSchema = z.union([
+  z.literal(0),
+  z.literal(1),
+  z.literal(2),
+  z.literal(3),
+]);
+
+/* eslint-disable sort-keys */
+export const dndSpellsOptionsView = {
+  minimal: 0,
+  compact: 1,
+  full: 2,
+  table: 3,
+} as const;
+/* eslint-enable sort-keys */
+
+export type DndSpellsOptionsView =
+  (typeof dndSpellsOptionsView)[keyof typeof dndSpellsOptionsView];
+
+//------------------------------------------------------------------------------
+// Options
+//------------------------------------------------------------------------------
+
+export const dndSpellsOptionsSchema = z.object({
+  classes: dndSpellsOptionsClassesSchema,
+  levels: dndSpellsOptionsLevelsSchema,
+  name: z.string(),
+
+  view: dndSpellsOptionsViewSchema,
+  zoom: z.number(),
+});
+
+export type DndSpellsOptions = z.infer<typeof dndSpellsOptionsSchema>;

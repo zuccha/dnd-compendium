@@ -9,6 +9,7 @@ export default function SelectSimple(props: SelectSimpleProps) {
   return (
     <ChakraSelect.Root {...props}>
       <ChakraSelect.HiddenSelect />
+      <ChakraSelect.Label />
 
       <ChakraSelect.Control>
         <ChakraSelect.Trigger>

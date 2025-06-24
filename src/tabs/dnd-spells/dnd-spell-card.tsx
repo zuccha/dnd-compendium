@@ -12,7 +12,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import useDownloadableDiv from "../../hooks/use-downloadable-div";
 import useI18n from "../../i18n/use-i18n";
-import { type DndSpell, dndSpellsView } from "../../models/dnd";
+import { type DndSpell, dndSpellsOptionsView } from "../../models/dnd";
 import useDndSpellLocalized from "./use-dnd-spell-localized";
 
 const remarkPlugins = [remarkGfm];
@@ -30,7 +30,7 @@ const cardBackgroundColor = "orange.50";
 const cardTextColor = "black";
 const cardTextColorInverted = "gray.50";
 
-function DndSpellCard({
+export default memo(function DndSpellCard({
   onClickSpell,
   selected,
   spell,
@@ -69,7 +69,7 @@ function DndSpellCard({
       color={cardTextColor}
       fontFamily="Bookinsanity"
       gap="0.2em"
-      h={view === dndSpellsView.full ? "21em" : undefined}
+      h={view === dndSpellsOptionsView.full ? "21em" : undefined}
       onClick={onClickSpell}
       outlineColor="green.500"
       outlineStyle="auto"
@@ -121,7 +121,7 @@ function DndSpellCard({
         <Text>{school}</Text>
       </HStack>
 
-      {view >= dndSpellsView.compact && (
+      {view >= dndSpellsOptionsView.compact && (
         <SimpleGrid borderColor="" columns={2} gap="0.125em" w="100%">
           <GridCell label={castingTimeLabel} text={castingTime} />
           <GridCell label={rangeLabel} text={range} />
@@ -130,7 +130,7 @@ function DndSpellCard({
         </SimpleGrid>
       )}
 
-      {view >= dndSpellsView.full && (
+      {view >= dndSpellsOptionsView.full && (
         <Text
           color={cardTextColorInverted}
           fontFamily="Mr Eaves"
@@ -144,7 +144,7 @@ function DndSpellCard({
         </Text>
       )}
 
-      {view >= dndSpellsView.full && (
+      {view >= dndSpellsOptionsView.full && (
         <VStack
           align="start"
           bgColor={cardBackgroundColor}
@@ -189,9 +189,7 @@ function DndSpellCard({
       </HStack>
     </VStack>
   );
-}
-
-export default memo(DndSpellCard);
+});
 
 function GridCell({ label, text }: { label: string; text: string }) {
   return (

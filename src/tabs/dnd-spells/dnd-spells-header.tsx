@@ -15,41 +15,36 @@ import SelectSimple from "../../components/ui/select-simple";
 import useI18n from "../../i18n/use-i18n";
 import {
   type DndClass,
-  type DndSpellsView,
-  dndSpellsView,
+  type DndSpellsOptionsView,
+  dndSpellsOptionsClasses,
+  dndSpellsOptionsLevels,
+  dndSpellsOptionsView,
 } from "../../models/dnd";
 import {
-  dndClasses,
-  dndSpellLevels,
-  useDndSpellsFilterClasses,
-  useDndSpellsFilterLevels,
-  useDndSpellsFilterName,
-  useDndSpellsSettingView,
-  useDndSpellsSettingZoom,
-} from "./dnd-store";
+  useDndSpellsDeselectAll,
+  useDndSpellsOptionsClasses,
+  useDndSpellsOptionsLevels,
+  useDndSpellsOptionsName,
+  useDndSpellsOptionsView,
+  useDndSpellsOptionsZoom,
+  useDndSpellsSelectAll,
+} from "./dnd-spells-store";
 
-export type DndSpellsHeaderProps = {
-  onDeselectAll: () => void;
-  onExportSelected: () => void;
-  onSelectAll: () => void;
-};
-
-export default function DndSpellsHeader({
-  onDeselectAll,
-  onExportSelected,
-  onSelectAll,
-}: DndSpellsHeaderProps) {
+export default function DndSpellsHeader() {
   const i18n = useI18n();
 
-  const [name, setName] = useDndSpellsFilterName();
-  const [classes, setClasses] = useDndSpellsFilterClasses();
-  const [levels, setLevels] = useDndSpellsFilterLevels();
-  const [view, setView] = useDndSpellsSettingView();
-  const [zoom, setZoom] = useDndSpellsSettingZoom();
+  const [name, setName] = useDndSpellsOptionsName();
+  const [levels, setLevels] = useDndSpellsOptionsLevels();
+  const [classes, setClasses] = useDndSpellsOptionsClasses();
+  const [view, setView] = useDndSpellsOptionsView();
+  const [zoom, setZoom] = useDndSpellsOptionsZoom();
+
+  const deselectAll = useDndSpellsDeselectAll();
+  const selectAll = useDndSpellsSelectAll();
 
   const classesCollection = useMemo(() => {
     return createListCollection({
-      items: dndClasses.map((dndClass) => ({
+      items: dndSpellsOptionsClasses.map((dndClass) => ({
         label: i18n.t(`dnd.class.${dndClass}`),
         value: dndClass,
       })),
@@ -57,7 +52,7 @@ export default function DndSpellsHeader({
   }, [i18n]);
 
   const viewCollection = useMemo(() => {
-    const { full, compact, minimal, table } = dndSpellsView;
+    const { full, compact, minimal, table } = dndSpellsOptionsView;
     return createListCollection({
       items: [
         { label: i18n.t("dnd.spell.view.full"), value: `${full}` },
@@ -90,10 +85,12 @@ export default function DndSpellsHeader({
                 flex={0}
                 minW="11em"
                 name="spells-view-setting"
-                onValueChange={(e) => setView(+e.value[0] as DndSpellsView)}
+                onValueChange={(e) =>
+                  setView(+e.value[0] as DndSpellsOptionsView)
+                }
                 size="sm"
               />
-              {view !== dndSpellsView.table && (
+              {view !== dndSpellsOptionsView.table && (
                 <>
                   <Text>{i18n.t("dnd.spells.options.label.at")}</Text>
                   <NumberInput
@@ -113,13 +110,13 @@ export default function DndSpellsHeader({
             </HStack>
 
             <HStack>
-              <Button onClick={onDeselectAll} size="sm" variant="outline">
+              <Button onClick={deselectAll} size="sm" variant="outline">
                 {i18n.t("dnd.spells.options.button.deselect_all")}
               </Button>
-              <Button onClick={onSelectAll} size="sm" variant="outline">
+              <Button onClick={selectAll} size="sm" variant="outline">
                 {i18n.t("dnd.spells.options.button.select_all")}
               </Button>
-              <Button onClick={onExportSelected} size="sm">
+              <Button onClick={() => {}} size="sm">
                 {i18n.t("dnd.spells.options.button.export_selected")}
               </Button>
             </HStack>
@@ -163,7 +160,7 @@ export default function DndSpellsHeader({
 }
 
 const levelsCollection = createListCollection({
-  items: dndSpellLevels.map((level) => ({
+  items: dndSpellsOptionsLevels.map((level) => ({
     label: `${level}`,
     value: `${level}`,
   })),

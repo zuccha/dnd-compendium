@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import useStore from "../store/use-store";
+import { useStorePersistent } from "../utils/store-persistent";
 import { type Theme, themeSchema } from "./theme";
 
 export default function useTheme(): [
@@ -7,7 +7,7 @@ export default function useTheme(): [
   React.Dispatch<React.SetStateAction<Theme>>,
   () => void,
 ] {
-  const [theme, setTheme] = useStore<Theme>(
+  const [theme, setTheme] = useStorePersistent<Theme>(
     "theme",
     "light",
     themeSchema.parse,
