@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 import type { I18nLanguage } from "../../i18n/i18n-language";
 import { localizeI18nString } from "../../i18n/i18n-string";
 import { ThemeProvider } from "../../theme/theme-provider";
+import { wait } from "../../utils/promise";
 import DndSpellCardPreview, {
   type DndSpellCardPreviewHandle,
 } from "./dnd-spell-card-preview";
@@ -14,6 +15,7 @@ export default function useDndSpellsExport({
   dpi,
   height,
   lang,
+  onProgress,
   spellIds,
   width,
 }: {
@@ -21,19 +23,20 @@ export default function useDndSpellsExport({
   dpi: number;
   height: number;
   lang: I18nLanguage;
+  onProgress: (count: number) => void;
   spellIds: string[];
   width: number;
 }) {
   return useCallback(async () => {
+    const blobWriter = new BlobWriter("application/zip");
+    const writer = new ZipWriter(blobWriter);
+
     const container = document.createElement("div");
     container.style.position = "absolute";
     container.style.top = "-10000px";
     document.body.appendChild(container);
 
     const root = createRoot(container);
-
-    const blobWriter = new BlobWriter("application/zip");
-    const writer = new ZipWriter(blobWriter);
 
     const exportSpell = async (spellId: string) => {
       const ref = createRef<DndSpellCardPreviewHandle>();
@@ -51,9 +54,10 @@ export default function useDndSpellsExport({
         </ThemeProvider>,
       );
 
-      await new Promise((resolve) => setTimeout(resolve, 1));
+      await wait(1);
 
-      if (!ref.current) return Promise.reject();
+      if (!ref.current)
+        return Promise.reject(`useDndSpellsExport(${spellId}): no ref`);
 
       const spellName = localizeI18nString(dndSpells.byId[spellId].name, lang);
       const dataUrl = await ref.current.downloadPng();
@@ -61,10 +65,12 @@ export default function useDndSpellsExport({
       await writer.add(`cards/${spellName}.png`, reader);
     };
 
-    for (const spellId of spellIds) await exportSpell(spellId);
-
-    root.unmount();
-    container.remove();
+    // for (const spellId of spellIds) await exportSpell(spellId);
+    for (let i = 0; i < spellIds.length; ++i) {
+      const spellId = spellIds[i];
+      await exportSpell(spellId);
+      onProgress(i);
+    }
 
     await writer.close();
     const blob = await blobWriter.getData();
@@ -73,5 +79,8 @@ export default function useDndSpellsExport({
     link.download = `cards.zip`;
     link.href = URL.createObjectURL(blob);
     link.click();
-  }, [bleed, dpi, height, lang, spellIds, width]);
+
+    root.unmount();
+    container.remove();
+  }, [bleed, dpi, height, lang, onProgress, spellIds, width]);
 }

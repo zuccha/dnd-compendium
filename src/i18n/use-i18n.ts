@@ -1,5 +1,5 @@
 import { useCallback, useMemo } from "react";
-import dndI18n from "../dnd/dnd-18n";
+import dndI18n from "../dnd/dnd-i18n";
 import genericI18n from "./i18n-data";
 import i18n from "./i18n";
 import useI18nLanguage from "./use-i18n-language";

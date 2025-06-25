@@ -8,6 +8,7 @@ import {
   IconButton,
   Portal,
   SimpleGrid,
+  Spinner,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -31,19 +32,21 @@ export default function DndSpellsExportDialog() {
 
   const [previewIndex, setPreviewIndex] = useState(0);
 
-  const [downloading, setDownloading] = useState(false);
+  const [downloadProgress, setDownloadProgress] = useState(-1);
+  const downloading = downloadProgress !== -1;
 
   const options = { bleed, dpi, height, width };
 
   const exportSpells = useDndSpellsExport({
     ...options,
     lang: i18n.language,
+    onProgress: setDownloadProgress,
     spellIds,
   });
 
   const exportAndDownloadSpells = useCallback(() => {
-    setDownloading(true);
-    exportSpells().finally(() => setDownloading(false));
+    setDownloadProgress(0);
+    exportSpells().finally(() => setDownloadProgress(-1));
   }, [exportSpells]);
 
   return (
@@ -159,7 +162,20 @@ export default function DndSpellsExportDialog() {
                 </Button>
               </Dialog.ActionTrigger>
               <Button disabled={downloading} onClick={exportAndDownloadSpells}>
-                <Text>{i18n.t("dnd.spells.export.button.export")}</Text>
+                {downloading ? (
+                  <>
+                    <Text>
+                      {i18n.ti(
+                        "dnd.spells.export.button.prepare",
+                        `${downloadProgress + 1}`,
+                        `${spellIds.length}`,
+                      )}
+                    </Text>
+                    <Spinner size="sm" />
+                  </>
+                ) : (
+                  <Text>{i18n.t("dnd.spells.export.button.export")}</Text>
+                )}
               </Button>
             </Dialog.Footer>
 

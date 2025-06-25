@@ -95,6 +95,7 @@ const dndI18n = {
     // Export spells
     "dnd.spells.export.button.cancel": "Cancel",
     "dnd.spells.export.button.export": "Export",
+    "dnd.spells.export.button.prepare": "Prepared <1>/<2>", // 1 = prepared, 2 = total
     "dnd.spells.export.input.bleed": "Bleed",
     "dnd.spells.export.input.dpi": "DPI",
     "dnd.spells.export.input.height": "Height",
@@ -197,6 +198,7 @@ const dndI18n = {
     // Export spells
     "dnd.spells.export.button.cancel": "Annulla",
     "dnd.spells.export.button.export": "Esporta",
+    "dnd.spells.export.button.prepare": "Preparati <1>/<2>", // 1 = prepared, 2 = total
     "dnd.spells.export.input.bleed": "Bleed",
     "dnd.spells.export.input.dpi": "DPI",
     "dnd.spells.export.input.height": "Altezza",

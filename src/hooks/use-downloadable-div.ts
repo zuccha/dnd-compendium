@@ -9,7 +9,8 @@ export default function useDownloadableDiv(
   const ref = useRef<HTMLDivElement>(null);
 
   const downloadPng = useCallback(() => {
-    if (!ref.current) return Promise.reject();
+    if (!ref.current)
+      return Promise.reject("useDownloadableDiv.downloadPng: no ref");
 
     const node = ref.current;
 
