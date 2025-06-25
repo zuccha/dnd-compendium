@@ -35,7 +35,11 @@ export default function DndSpellsExportDialog() {
 
   const options = { bleed, dpi, height, width };
 
-  const exportSpells = useDndSpellsExport({ ...options, spellIds });
+  const exportSpells = useDndSpellsExport({
+    ...options,
+    lang: i18n.language,
+    spellIds,
+  });
 
   const exportAndDownloadSpells = useCallback(() => {
     setDownloading(true);

@@ -1,21 +1,26 @@
 import { BlobWriter, Data64URIReader, ZipWriter } from "@zip.js/zip.js";
 import { createRef, useCallback } from "react";
 import { createRoot } from "react-dom/client";
+import type { I18nLanguage } from "../../i18n/i18n-language";
+import { localizeI18nString } from "../../i18n/i18n-string";
 import { ThemeProvider } from "../../theme/theme-provider";
 import DndSpellCardPreview, {
   type DndSpellCardPreviewHandle,
 } from "./dnd-spell-card-preview";
+import dndSpells from "./dnd-spells";
 
 export default function useDndSpellsExport({
   bleed,
   dpi,
   height,
+  lang,
   spellIds,
   width,
 }: {
   bleed: number;
   dpi: number;
   height: number;
+  lang: I18nLanguage;
   spellIds: string[];
   width: number;
 }) {
@@ -50,9 +55,10 @@ export default function useDndSpellsExport({
 
       if (!ref.current) return Promise.reject();
 
+      const spellName = localizeI18nString(dndSpells.byId[spellId].name, lang);
       const dataUrl = await ref.current.downloadPng();
       const reader = new Data64URIReader(dataUrl);
-      await writer.add(`${spellId}.png`, reader);
+      await writer.add(`cards/${spellName}.png`, reader);
     };
 
     for (const spellId of spellIds) await exportSpell(spellId);
@@ -67,5 +73,5 @@ export default function useDndSpellsExport({
     link.download = `cards.zip`;
     link.href = URL.createObjectURL(blob);
     link.click();
-  }, [bleed, dpi, height, spellIds, width]);
+  }, [bleed, dpi, height, lang, spellIds, width]);
 }

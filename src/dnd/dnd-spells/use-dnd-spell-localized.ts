@@ -1,15 +1,7 @@
 import { useMemo } from "react";
-import type { I18nLanguage } from "../../i18n/i18n-language";
-import type { I18nString } from "../../i18n/i18n-string";
+import { localizeI18nString } from "../../i18n/i18n-string";
 import useI18n, { type I18n } from "../../i18n/use-i18n";
 import type { DndSpell } from "./dnd-spells-types";
-
-function localizeString(
-  localizedString: I18nString,
-  lang: I18nLanguage,
-): string {
-  return localizedString[lang] ?? localizedString.en;
-}
 
 function localizeLevel(level: number, i18n: I18n): string {
   return level === 0
@@ -107,7 +99,7 @@ function localizeComponentMaterials(
   return components.material
     ? i18n.ti(
         "dnd.spell.component_materials.present",
-        localizeString(components.materials, i18n.language),
+        localizeI18nString(components.materials, i18n.language),
       )
     : i18n.t("dnd.spell.component_materials.none");
 }
@@ -123,15 +115,15 @@ export function localizeDndSpell(spell: DndSpell, i18n: I18n) {
       .join(" "),
     componentMaterials: localizeComponentMaterials(spell.components, i18n),
     components: localizeComponents(spell.components, i18n),
-    description: localizeString(spell.description, i18n.language),
+    description: localizeI18nString(spell.description, i18n.language),
     duration: localizeDuration(spell.duration, i18n),
     level: localizeLevel(spell.level, i18n),
-    name: localizeString(spell.name, i18n.language),
+    name: localizeI18nString(spell.name, i18n.language),
     range: localizeRange(spell.range, i18n),
     raw: spell,
     school: i18n.t(`dnd.magic_school.${spell.school}`),
     upgrade: spell.upgrade
-      ? localizeString(spell.upgrade, i18n.language)
+      ? localizeI18nString(spell.upgrade, i18n.language)
       : undefined,
   };
 }

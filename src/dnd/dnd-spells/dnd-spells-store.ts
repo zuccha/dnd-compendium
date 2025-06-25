@@ -1,6 +1,5 @@
 import { useCallback, useLayoutEffect, useState } from "react";
 import { z } from "zod";
-import { normalize } from "../../utils/normalized-list";
 import { createObservable } from "../../utils/observable";
 import { createObservableBydId } from "../../utils/observable-by-id";
 import {
@@ -24,8 +23,8 @@ import {
 //------------------------------------------------------------------------------
 
 const state = {
+  ids: dndSpells.ids,
   selection: new Set<string>(),
-  spells: normalize(dndSpells, (spell) => spell.id),
 };
 
 //------------------------------------------------------------------------------
@@ -49,7 +48,7 @@ const { notify: notifySpellSelectedAny, subscribe: subscribeSpellSelectedAny } =
 //------------------------------------------------------------------------------
 
 function isVisible(id: string): boolean {
-  const spell = state.spells.byId[id];
+  const spell = dndSpells.byId[id];
   const name = optionsCache.name;
   const levels = optionsCache.levels;
   const classes = optionsCache.classes;
@@ -76,7 +75,7 @@ const idsUnselected = (ids: string[]) =>
 //------------------------------------------------------------------------------
 
 export function useDndSpellIds(): string[] {
-  const [ids, setIds] = useState(state.spells.ids);
+  const [ids, setIds] = useState(state.ids);
   useLayoutEffect(() => subscribeIds(setIds), []);
   return ids;
 }
@@ -86,8 +85,8 @@ export function useDndSpellIds(): string[] {
 //------------------------------------------------------------------------------
 
 export function useDndSpellIdsSelected(): string[] {
-  const [ids, setIds] = useState(() => idsSelected(state.spells.ids));
-  const getIdsSelected = () => setIds(idsSelected(state.spells.ids));
+  const [ids, setIds] = useState(() => idsSelected(state.ids));
+  const getIdsSelected = () => setIds(idsSelected(state.ids));
 
   useLayoutEffect(() => subscribeIds(getIdsSelected), []);
   useLayoutEffect(() => subscribeSpellSelectedAny(getIdsSelected), []);
@@ -100,7 +99,7 @@ export function useDndSpellIdsSelected(): string[] {
 //------------------------------------------------------------------------------
 
 export function useDndSpell(id: string): DndSpell {
-  return state.spells.byId[id];
+  return dndSpells.byId[id];
 }
 
 //------------------------------------------------------------------------------
@@ -137,9 +136,9 @@ function createUseOption<T>(
         (nextValueOrUpdateValue: T | ((prevValue: T) => T)): T => {
           const nextOption = setOption(nextValueOrUpdateValue);
           setCache(nextOption);
-          const prevIds = state.spells.ids;
-          const nextIds = dndSpells.map((spell) => spell.id).filter(isVisible);
-          state.spells.ids = nextIds;
+          const prevIds = state.ids;
+          const nextIds = dndSpells.ids.filter(isVisible);
+          state.ids = nextIds;
           notifyIds(nextIds);
           const prevSelectedIdsSize = idsSelected(prevIds).length;
           const nextSelectedIdsSize = idsSelected(nextIds).length;
@@ -213,7 +212,7 @@ export const useDndSpellsOptionsZoom = createUseOption(
 //------------------------------------------------------------------------------
 
 export function useDndSpellsSelectionSize(): number {
-  const [size, setSize] = useState(idsSelected(state.spells.ids).length);
+  const [size, setSize] = useState(idsSelected(state.ids).length);
   useLayoutEffect(() => subscribeSelectionSize(setSize), []);
   return size;
 }
@@ -241,9 +240,9 @@ export function useDndSpellsDeselectAll(): () => void {
 
 export function useDndSpellsSelectAll(): () => void {
   return useCallback(() => {
-    const selectedIds = idsSelected(state.spells.ids);
-    if (selectedIds.length < state.spells.ids.length) {
-      const unselectedIds = idsUnselected(state.spells.ids);
+    const selectedIds = idsSelected(state.ids);
+    if (selectedIds.length < state.ids.length) {
+      const unselectedIds = idsUnselected(state.ids);
 
       unselectedIds.forEach((id) => {
         state.selection.add(id);
@@ -280,8 +279,7 @@ export function useDndSpellToggleSelection(id: string): () => void {
       notifySpellSelected(id, true);
       notifySpellSelectedAny(true);
     }
-    if (isVisible(id))
-      notifySelectionSize(idsSelected(state.spells.ids).length);
+    if (isVisible(id)) notifySelectionSize(idsSelected(state.ids).length);
   }, [id]);
 }
 
@@ -289,4 +287,4 @@ export function useDndSpellToggleSelection(id: string): () => void {
 // Update Ids
 //------------------------------------------------------------------------------
 
-state.spells.ids = dndSpells.map((spell) => spell.id).filter(isVisible);
+state.ids = dndSpells.ids.filter(isVisible);
