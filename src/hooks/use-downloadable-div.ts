@@ -2,7 +2,6 @@ import { toPng } from "html-to-image";
 import { useCallback, useMemo, useRef } from "react";
 
 export default function useDownloadableDiv(
-  filename: string,
   width: number, // in inches
   height: number, // in inches
   dpi: number,
@@ -10,7 +9,8 @@ export default function useDownloadableDiv(
   const ref = useRef<HTMLDivElement>(null);
 
   const downloadPng = useCallback(() => {
-    if (!ref.current) return;
+    if (!ref.current) return Promise.reject();
+
     const node = ref.current;
 
     const divHeight = node.offsetHeight;
@@ -21,7 +21,7 @@ export default function useDownloadableDiv(
 
     const scale = outputWidth / divWidth;
 
-    toPng(node, {
+    return toPng(node, {
       height: outputHeight,
       width: outputWidth,
 
@@ -33,13 +33,8 @@ export default function useDownloadableDiv(
         transform: `scale(${scale})`,
         transformOrigin: "top left",
       },
-    }).then((dataUrl) => {
-      const link = document.createElement("a");
-      link.download = `${filename}.png`;
-      link.href = dataUrl;
-      link.click();
     });
-  }, [dpi, filename, height, width]);
+  }, [dpi, height, width]);
 
   return useMemo(() => ({ downloadPng, ref }), [ref, downloadPng]);
 }
