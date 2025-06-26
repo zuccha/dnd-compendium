@@ -45,10 +45,12 @@ export default function DndSpellsHeader() {
 
   const classesCollection = useMemo(() => {
     return createListCollection({
-      items: dndSpellsOptionsClasses.map((dndClass) => ({
-        label: i18n.t(`dnd.class.${dndClass}`),
-        value: dndClass,
-      })),
+      items: dndSpellsOptionsClasses
+        .filter((dndClass) => dndClass !== "artificer")
+        .map((dndClass) => ({
+          label: i18n.t(`dnd.class.${dndClass}`),
+          value: dndClass,
+        })),
     });
   }, [i18n]);
 
@@ -65,14 +67,7 @@ export default function DndSpellsHeader() {
   }, [i18n]);
 
   return (
-    <VStack
-      bgColor="bg"
-      gap={0.25}
-      position="sticky"
-      shadow="sm"
-      top={0}
-      w="100%"
-    >
+    <VStack bgColor="bg" gap={0.25} shadow="sm" top={0} w="100%" zIndex={1}>
       <Box maxW="64em" w="100%">
         <AppHeader />
 
