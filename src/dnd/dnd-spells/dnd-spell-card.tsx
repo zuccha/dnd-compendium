@@ -49,6 +49,7 @@ export default memo(function DndSpellCard({
     name,
     range,
     school,
+    source,
     upgrade,
   } = useDndSpellLocalized(spell);
 
@@ -182,8 +183,8 @@ export default memo(function DndSpellCard({
         textTransform="lowercase"
         w="100%"
       >
-        <Text>{spell.source.book}</Text>
-        <Text>{`p. ${spell.source.page}`}</Text>
+        <Text>{source.book}</Text>
+        <Text>{source.page}</Text>
       </HStack>
     </VStack>
   );

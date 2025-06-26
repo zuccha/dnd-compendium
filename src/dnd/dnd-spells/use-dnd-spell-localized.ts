@@ -24,7 +24,7 @@ function localizeCastingTime(
       return i18n.ti(
         "dnd.spell.casting_time.time",
         `${castingTime.quantity}`,
-        i18n.tp(`generic.time.${castingTime.unit}`, castingTime.quantity),
+        i18n.tp(`generic.time.${castingTime.unit}@short`, castingTime.quantity),
       );
   }
 }
@@ -42,7 +42,7 @@ function localizeDuration(duration: DndSpell["duration"], i18n: I18n): string {
         "dnd.spell.duration.time",
         duration.upTo ? i18n.t("dnd.spell.duration.time.up_to") : "",
         `${duration.quantity}`,
-        i18n.tp(`generic.time.${duration.unit}`, duration.quantity),
+        i18n.tp(`generic.time.${duration.unit}@short`, duration.quantity),
         duration.concentration
           ? i18n.t("dnd.spell.duration.time.concentration")
           : "",
@@ -69,7 +69,7 @@ function localizeRange(range: DndSpell["range"], i18n: I18n): string {
         "dnd.spell.range.distance",
         `${localizedRange.value}`,
         i18n.tp(
-          `generic.distance.${localizedRange.unit}`,
+          `generic.distance.${localizedRange.unit}@short`,
           localizedRange.value,
         ),
       );
@@ -95,7 +95,7 @@ function localizeComponents(
 function localizeComponentMaterials(
   components: DndSpell["components"],
   i18n: I18n,
-): string | undefined {
+): string {
   return components.material
     ? i18n.ti(
         "dnd.spell.component_materials.present",
@@ -109,9 +109,10 @@ export function localizeDndSpell(spell: DndSpell, i18n: I18n) {
     castingTime:
       localizeCastingTime(spell.castingTime, i18n) +
       (spell.ritual ? i18n.t("dnd.spell.or_ritual") : ""),
-    classes: spell.classes.map((c) => i18n.t(`dnd.class.${c}`)).join(" "),
-    classesShort: spell.classes
+    classes: spell.classes
+      .filter((c) => c !== "artificer")
       .map((c) => i18n.t(`dnd.class@short.${c}`))
+      .sort()
       .join(" "),
     componentMaterials: localizeComponentMaterials(spell.components, i18n),
     components: localizeComponents(spell.components, i18n),
@@ -122,6 +123,10 @@ export function localizeDndSpell(spell: DndSpell, i18n: I18n) {
     range: localizeRange(spell.range, i18n),
     raw: spell,
     school: i18n.t(`dnd.magic_school.${spell.school}`),
+    source: {
+      book: spell.source.book,
+      page: i18n.ti("dnd.spell.source.page", `${spell.source.page}`),
+    },
     upgrade: spell.upgrade
       ? localizeI18nString(spell.upgrade, i18n.language)
       : undefined,
