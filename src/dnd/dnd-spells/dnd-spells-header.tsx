@@ -13,13 +13,18 @@ import NumberInput from "../../components/ui/number-input";
 import Select from "../../components/ui/select";
 import SelectSimple from "../../components/ui/select-simple";
 import useI18n from "../../i18n/use-i18n";
-import type { DndClass } from "../dnd-types";
+import {
+  type DndClass,
+  type DndMagicSchool,
+  dndMagicSchool,
+} from "../dnd-types";
 import DndSpellsExportDialog from "./dnd-spells-export-dialog";
 import {
   useDndSpellsDeselectAll,
   useDndSpellsOptionsClasses,
   useDndSpellsOptionsLevels,
   useDndSpellsOptionsName,
+  useDndSpellsOptionsSchool,
   useDndSpellsOptionsView,
   useDndSpellsOptionsZoom,
   useDndSpellsSelectAll,
@@ -37,6 +42,7 @@ export default function DndSpellsHeader() {
   const [name, setName] = useDndSpellsOptionsName();
   const [levels, setLevels] = useDndSpellsOptionsLevels();
   const [classes, setClasses] = useDndSpellsOptionsClasses();
+  const [school, setSchool] = useDndSpellsOptionsSchool();
   const [view, setView] = useDndSpellsOptionsView();
   const [zoom, setZoom] = useDndSpellsOptionsZoom();
 
@@ -51,6 +57,15 @@ export default function DndSpellsHeader() {
           label: i18n.t(`dnd.class.${dndClass}`),
           value: dndClass,
         })),
+    });
+  }, [i18n]);
+
+  const schoolsCollection = useMemo(() => {
+    return createListCollection({
+      items: dndMagicSchool.map((dndSchool) => ({
+        label: i18n.t(`dnd.magic_school.${dndSchool}`),
+        value: dndSchool,
+      })),
     });
   }, [i18n]);
 
@@ -143,6 +158,16 @@ export default function DndSpellsHeader() {
               onValueChange={(e) => setClasses(e.value as DndClass[])}
               placeholder={i18n.t(
                 "dnd.spells.options.select.classes.placeholder",
+              )}
+              size="sm"
+            />
+            <Select
+              collection={schoolsCollection}
+              defaultValue={school ? [school] : []}
+              name="dnd-spells-options-schools"
+              onValueChange={(e) => setSchool(e.value?.[0] as DndMagicSchool)}
+              placeholder={i18n.t(
+                "dnd.spells.options.select.schools.placeholder",
               )}
               size="sm"
             />

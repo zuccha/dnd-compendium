@@ -92,6 +92,7 @@ const dndI18n = {
     "dnd.spells.options.label.zoom": " zoom",
     "dnd.spells.options.select.classes.placeholder": "Select classes",
     "dnd.spells.options.select.levels.placeholder": "Select levels",
+    "dnd.spells.options.select.schools.placeholder": "Select school",
 
     // Export spells
     "dnd.spells.export.button.cancel": "Cancel",
@@ -196,6 +197,7 @@ const dndI18n = {
     "dnd.spells.options.label.zoom": " zoom",
     "dnd.spells.options.select.classes.placeholder": "Seleziona classi",
     "dnd.spells.options.select.levels.placeholder": "Seleziona livelli",
+    "dnd.spells.options.select.schools.placeholder": "Seleziona scuola",
 
     // Export spells
     "dnd.spells.export.button.cancel": "Annulla",

@@ -6,6 +6,7 @@ import {
   StorePersistent,
   useStorePersistent,
 } from "../../utils/store-persistent";
+import { dndMagicSchoolSchema } from "../dnd-types";
 import dndSpells from "./dnd-spells";
 import {
   type DndSpell,
@@ -52,10 +53,12 @@ function isVisible(id: string): boolean {
   const name = optionsCache.name;
   const levels = optionsCache.levels;
   const classes = optionsCache.classes;
+  const school = optionsCache.school;
   return Boolean(
     (spell.name.en.toLowerCase().includes(name) ||
       spell.name.it?.toLowerCase().includes(name)) &&
       spell.classes.some((c) => classes.includes(c)) &&
+      (!school || spell.school === school) &&
       levels.some((l) => spell.level === l),
   );
 }
@@ -110,6 +113,7 @@ const optionsCache: DndSpellsOptions = {
   classes: [],
   levels: [],
   name: "",
+  school: undefined,
 
   view: dndSpellsOptionsView.table,
   zoom: 1,
@@ -172,6 +176,17 @@ export const useDndSpellsOptionsClasses = createUseOption(
   dndSpellsOptionsClasses,
   dndSpellsOptionsClassesSchema.parse,
   (classes) => (optionsCache.classes = classes),
+);
+
+//------------------------------------------------------------------------------
+// Use Dnd Spells Options School
+//------------------------------------------------------------------------------
+
+export const useDndSpellsOptionsSchool = createUseOption(
+  "dns.spells.options.school",
+  undefined,
+  dndMagicSchoolSchema.parse,
+  (school) => (optionsCache.school = school),
 );
 
 //------------------------------------------------------------------------------

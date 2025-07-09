@@ -20,7 +20,7 @@ export default function Select(props: SelectProps) {
           <ChakraSelect.ValueText placeholder={props.placeholder} />
         </ChakraSelect.Trigger>
         <ChakraSelect.IndicatorGroup>
-          <AllTrigger />
+          {props.multiple && <AllTrigger />}
           <ChakraSelect.ClearTrigger />
           <ChakraSelect.Indicator />
         </ChakraSelect.IndicatorGroup>

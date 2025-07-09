@@ -122,6 +122,7 @@ export const dndSpellsOptionsSchema = z.object({
   classes: dndSpellsOptionsClassesSchema,
   levels: dndSpellsOptionsLevelsSchema,
   name: z.string(),
+  school: dndMagicSchoolSchema.optional(),
 
   view: dndSpellsOptionsViewSchema,
   zoom: z.number(),
