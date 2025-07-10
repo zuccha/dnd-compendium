@@ -16,51 +16,39 @@ export const dndSpellSchema = z.object({
       type: z.enum(["action", "bonus_action", "reaction"]),
     }),
     z.object({
-      quantity: z.number(),
       type: z.literal("time"),
       unit: timeSchema,
+      value: z.number(),
     }),
   ]),
   classes: z.array(dndClassSchema),
-  components: z.intersection(
-    z.object({ somatic: z.boolean(), verbal: z.boolean() }),
-    z.union([
-      z.object({ material: z.literal(false) }),
-      z.object({ material: z.literal(true), materials: i18nStringSchema }),
-    ]),
-  ),
-  description: i18nStringSchema,
+  components: z.object({
+    m: z.boolean(),
+    s: z.boolean(),
+    v: z.boolean(),
+  }),
+  concentration: z.boolean(),
   duration: z.union([
     z.object({
       type: z.enum(["instantaneous", "until_dispelled", "special"]),
     }),
     z.object({
-      concentration: z.boolean(),
-      quantity: z.number(),
       type: z.literal("time"),
       unit: timeSchema,
       upTo: z.boolean(),
+      value: z.number(),
     }),
   ]),
   id: z.string(),
   level: z.number(),
+  materials: i18nStringSchema.optional(),
   name: i18nStringSchema,
   range: z.union([
     z.object({
       type: z.enum(["self", "touch", "sight", "unlimited", "special"]),
     }),
     z.intersection(
-      z.object({
-        type: z.enum([
-          "distance",
-          "self_circle",
-          "self_cone",
-          "self_cube",
-          "self_hemisphere",
-          "self_line",
-          "self_sphere",
-        ]),
-      }),
+      z.object({ type: z.literal("distance") }),
       i18nDistanceSchema,
     ),
   ]),
@@ -70,7 +58,10 @@ export const dndSpellSchema = z.object({
     book: z.string(),
     page: z.number(),
   }),
-  upgrade: i18nStringSchema.optional(),
+  text: z.object({
+    base: i18nStringSchema,
+    upgrade: i18nStringSchema.optional(),
+  }),
 });
 
 export type DndSpell = z.infer<typeof dndSpellSchema>;

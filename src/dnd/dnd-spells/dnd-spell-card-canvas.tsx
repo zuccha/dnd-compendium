@@ -30,13 +30,13 @@ export default function DndSpellCard2({
       ? i18n.t("dnd.spell.upgrade.cantrip")
       : i18n.t("dnd.spell.upgrade.spell");
 
-  const description = localizedSpell.upgrade
-    ? localizedSpell.description +
+  const description = localizedSpell.text.upgrade
+    ? localizedSpell.text.base +
       "\n\n" +
       upgradeLabel.toUpperCase() +
       "\n\n" +
-      localizedSpell.upgrade
-    : localizedSpell.description;
+      localizedSpell.text.upgrade
+    : localizedSpell.text.base;
 
   useEffect(() => {
     Promise.all([

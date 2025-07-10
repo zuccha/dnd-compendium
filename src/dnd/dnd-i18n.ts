@@ -135,10 +135,10 @@ const dndI18n = {
 
     // Magic School
     "dnd.magic_school.abjuration": "Abiurazione",
-    "dnd.magic_school.conjuration": "Invocazione",
+    "dnd.magic_school.conjuration": "Evocazione",
     "dnd.magic_school.divination": "Divinazione",
     "dnd.magic_school.enchantment": "Ammaliamento",
-    "dnd.magic_school.evocation": "Evocazione",
+    "dnd.magic_school.evocation": "Invocazione",
     "dnd.magic_school.illusion": "Illusione",
     "dnd.magic_school.necromancy": "Necromazia",
     "dnd.magic_school.transmutation": "Transmutazione",
@@ -175,7 +175,7 @@ const dndI18n = {
     "dnd.spell.range.self": "Incantatore",
     "dnd.spell.range.sight": "Vista",
     "dnd.spell.range.special": "Speciale",
-    "dnd.spell.range.touch": "Contattp",
+    "dnd.spell.range.touch": "Contatto",
     "dnd.spell.range.unlimited": "Illimitato",
     "dnd.spell.ritual": "Ritual",
     "dnd.spell.ritual@short": "Rit.",

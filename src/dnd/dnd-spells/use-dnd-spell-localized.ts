@@ -9,10 +9,8 @@ function localizeLevel(level: number, i18n: I18n): string {
     : i18n.ti("dnd.spell.level.number", `${level}`);
 }
 
-function localizeCastingTime(
-  castingTime: DndSpell["castingTime"],
-  i18n: I18n,
-): string {
+function localizeCastingTime(spell: DndSpell, i18n: I18n): string {
+  const { castingTime } = spell;
   switch (castingTime.type) {
     case "action":
       return i18n.t("dnd.spell.casting_time.action");
@@ -23,13 +21,14 @@ function localizeCastingTime(
     case "time":
       return i18n.ti(
         "dnd.spell.casting_time.time",
-        `${castingTime.quantity}`,
-        i18n.tp(`generic.time.${castingTime.unit}@short`, castingTime.quantity),
+        `${castingTime.value}`,
+        i18n.tp(`generic.time.${castingTime.unit}@short`, castingTime.value),
       );
   }
 }
 
-function localizeDuration(duration: DndSpell["duration"], i18n: I18n): string {
+function localizeDuration(spell: DndSpell, i18n: I18n): string {
+  const { concentration, duration } = spell;
   switch (duration.type) {
     case "instantaneous":
       return i18n.t("dnd.spell.duration.instantaneous");
@@ -41,17 +40,16 @@ function localizeDuration(duration: DndSpell["duration"], i18n: I18n): string {
       return i18n.ti(
         "dnd.spell.duration.time",
         duration.upTo ? i18n.t("dnd.spell.duration.time.up_to") : "",
-        `${duration.quantity}`,
-        i18n.tp(`generic.time.${duration.unit}@short`, duration.quantity),
-        duration.concentration
-          ? i18n.t("dnd.spell.duration.time.concentration")
-          : "",
+        `${duration.value}`,
+        i18n.tp(`generic.time.${duration.unit}@short`, duration.value),
+        concentration ? i18n.t("dnd.spell.duration.time.concentration") : "",
       );
     }
   }
 }
 
-function localizeRange(range: DndSpell["range"], i18n: I18n): string {
+function localizeRange(spell: DndSpell, i18n: I18n): string {
+  const { range } = spell;
   switch (range.type) {
     case "self":
       return i18n.t("dnd.spell.range.self");
@@ -64,7 +62,8 @@ function localizeRange(range: DndSpell["range"], i18n: I18n): string {
     case "special":
       return i18n.t("dnd.spell.range.special");
     case "distance": {
-      const localizedRange = range[i18n.language] ?? range.en;
+      const localizedRange =
+        i18n.language === "en" ? range.imperial : range.metric;
       return i18n.ti(
         "dnd.spell.range.distance",
         `${localizedRange.value}`,
@@ -79,27 +78,22 @@ function localizeRange(range: DndSpell["range"], i18n: I18n): string {
   }
 }
 
-function localizeComponents(
-  components: DndSpell["components"],
-  i18n: I18n,
-): string {
+function localizeComponents(spell: DndSpell, i18n: I18n): string {
   const letters: string[] = [];
-  if (components.verbal) letters.push("V");
-  if (components.somatic) letters.push("S");
-  if (components.material) letters.push("M");
+  if (spell.components.v) letters.push("V");
+  if (spell.components.s) letters.push("S");
+  if (spell.components.m) letters.push("M");
   return letters.length === 0
     ? i18n.t("dnd.spell.components.none")
     : letters.join(", ");
 }
 
-function localizeComponentMaterials(
-  components: DndSpell["components"],
-  i18n: I18n,
-): string {
-  return components.material
+function localizeComponentMaterials(spell: DndSpell, i18n: I18n): string {
+  const { materials } = spell;
+  return materials
     ? i18n.ti(
         "dnd.spell.component_materials.present",
-        localizeI18nString(components.materials, i18n.language),
+        localizeI18nString(materials, i18n.language),
       )
     : i18n.t("dnd.spell.component_materials.none");
 }
@@ -107,29 +101,31 @@ function localizeComponentMaterials(
 export function localizeDndSpell(spell: DndSpell, i18n: I18n) {
   return {
     castingTime:
-      localizeCastingTime(spell.castingTime, i18n) +
+      localizeCastingTime(spell, i18n) +
       (spell.ritual ? i18n.t("dnd.spell.or_ritual") : ""),
     classes: spell.classes
       .filter((c) => c !== "artificer")
       .map((c) => i18n.t(`dnd.class@short.${c}`))
       .sort()
       .join(" "),
-    componentMaterials: localizeComponentMaterials(spell.components, i18n),
-    components: localizeComponents(spell.components, i18n),
-    description: localizeI18nString(spell.description, i18n.language),
-    duration: localizeDuration(spell.duration, i18n),
+    componentMaterials: localizeComponentMaterials(spell, i18n),
+    components: localizeComponents(spell, i18n),
+    duration: localizeDuration(spell, i18n),
     level: localizeLevel(spell.level, i18n),
     name: localizeI18nString(spell.name, i18n.language),
-    range: localizeRange(spell.range, i18n),
+    range: localizeRange(spell, i18n),
     raw: spell,
     school: i18n.t(`dnd.magic_school.${spell.school}`),
     source: {
       book: spell.source.book,
       page: i18n.ti("dnd.spell.source.page", `${spell.source.page}`),
     },
-    upgrade: spell.upgrade
-      ? localizeI18nString(spell.upgrade, i18n.language)
-      : undefined,
+    text: {
+      base: localizeI18nString(spell.text.base, i18n.language),
+      upgrade: spell.text.upgrade
+        ? localizeI18nString(spell.text.upgrade, i18n.language)
+        : undefined,
+    },
   };
 }
 

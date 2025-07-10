@@ -56,16 +56,27 @@ export default function DndSpellsHeader() {
         .map((dndClass) => ({
           label: i18n.t(`dnd.class.${dndClass}`),
           value: dndClass,
-        })),
+        }))
+        .sort((c1, c2) => {
+          if (c1.label < c2.label) return -1;
+          if (c1.label > c2.label) return 1;
+          return 0;
+        }),
     });
   }, [i18n]);
 
   const schoolsCollection = useMemo(() => {
     return createListCollection({
-      items: dndMagicSchool.map((dndSchool) => ({
-        label: i18n.t(`dnd.magic_school.${dndSchool}`),
-        value: dndSchool,
-      })),
+      items: dndMagicSchool
+        .map((dndSchool) => ({
+          label: i18n.t(`dnd.magic_school.${dndSchool}`),
+          value: dndSchool,
+        }))
+        .sort((s1, s2) => {
+          if (s1.label < s2.label) return -1;
+          if (s1.label > s2.label) return 1;
+          return 0;
+        }),
     });
   }, [i18n]);
 

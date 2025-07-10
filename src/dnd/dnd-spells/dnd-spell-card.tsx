@@ -44,13 +44,12 @@ export default memo(function DndSpellCard({
     classes,
     componentMaterials,
     components,
-    description,
     duration,
     name,
     range,
     school,
     source,
-    upgrade,
+    text,
   } = useDndSpellLocalized(spell);
 
   const castingTimeLabel = i18n.t("dnd.spell.casting_time");
@@ -156,17 +155,17 @@ export default memo(function DndSpellCard({
           w="100%"
         >
           <ReactMarkdown remarkPlugins={remarkPlugins}>
-            {description}
+            {text.base}
           </ReactMarkdown>
 
-          {upgrade && (
+          {text.upgrade && (
             <>
               <Text fontFamily="Mr Eaves" fontWeight="bold">
                 {upgradeLabel}
               </Text>
 
               <ReactMarkdown remarkPlugins={remarkPlugins}>
-                {upgrade}
+                {text.upgrade}
               </ReactMarkdown>
             </>
           )}

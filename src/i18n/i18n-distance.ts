@@ -1,7 +1,7 @@
 import z from "zod";
 
 export const i18nDistanceImperialSchema = z.object({
-  unit: z.enum(["foot", "mile"]),
+  unit: z.enum(["ft", "mi"]),
   value: z.number(),
 });
 
@@ -11,8 +11,8 @@ export const i18nDistanceMetricSchema = z.object({
 });
 
 export const i18nDistanceSchema = z.object({
-  en: i18nDistanceImperialSchema,
-  it: i18nDistanceMetricSchema.optional(),
+  imperial: i18nDistanceImperialSchema,
+  metric: i18nDistanceMetricSchema,
 });
 
 export type I18nDistance = z.infer<typeof i18nDistanceSchema>;
