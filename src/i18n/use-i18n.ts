@@ -1,7 +1,8 @@
 import { useCallback, useMemo } from "react";
 import dndI18n from "../dnd/dnd-i18n";
-import genericI18n from "./i18n-data";
 import i18n from "./i18n";
+import genericI18n from "./i18n-data";
+import useI18nDistanceSystem from "./use-i18n-distance-system";
 import useI18nLanguage from "./use-i18n-language";
 
 const genericContext = {
@@ -11,6 +12,7 @@ const genericContext = {
 
 export default function useI18n() {
   const [language] = useI18nLanguage();
+  const [distanceSystem] = useI18nDistanceSystem();
 
   const t = useCallback(
     (key: string) => i18n.t(genericContext, language, key),
@@ -36,8 +38,8 @@ export default function useI18n() {
   );
 
   return useMemo(
-    () => ({ language, t, ti, tp, tpi }),
-    [language, t, tp, ti, tpi],
+    () => ({ distanceSystem, language, t, ti, tp, tpi }),
+    [distanceSystem, language, t, tp, ti, tpi],
   );
 }
 

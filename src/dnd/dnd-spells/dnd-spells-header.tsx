@@ -13,6 +13,7 @@ import NumberInput from "../../components/ui/number-input";
 import Select from "../../components/ui/select";
 import SelectSimple from "../../components/ui/select-simple";
 import useI18n from "../../i18n/use-i18n";
+import { compareLabels } from "../../utils/select-collection";
 import {
   type DndClass,
   type DndMagicSchool,
@@ -57,11 +58,7 @@ export default function DndSpellsHeader() {
           label: i18n.t(`dnd.class.${dndClass}`),
           value: dndClass,
         }))
-        .sort((c1, c2) => {
-          if (c1.label < c2.label) return -1;
-          if (c1.label > c2.label) return 1;
-          return 0;
-        }),
+        .sort(compareLabels),
     });
   }, [i18n]);
 
@@ -72,11 +69,7 @@ export default function DndSpellsHeader() {
           label: i18n.t(`dnd.magic_school.${dndSchool}`),
           value: dndSchool,
         }))
-        .sort((s1, s2) => {
-          if (s1.label < s2.label) return -1;
-          if (s1.label > s2.label) return 1;
-          return 0;
-        }),
+        .sort(compareLabels),
     });
   }, [i18n]);
 
