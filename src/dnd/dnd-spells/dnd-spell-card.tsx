@@ -42,9 +42,9 @@ export default memo(function DndSpellCard({
   const {
     castingTime,
     classes,
-    componentMaterials,
     components,
     duration,
+    materials,
     name,
     range,
     school,
@@ -138,7 +138,7 @@ export default memo(function DndSpellCard({
           textTransform="lowercase"
           w="100%"
         >
-          {componentMaterials}
+          {materials}
         </Text>
       )}
 

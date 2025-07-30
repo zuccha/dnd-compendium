@@ -18,7 +18,9 @@ import NumberInput from "../../components/ui/number-input";
 import useI18n from "../../i18n/use-i18n";
 import { inToEm } from "../../utils/units";
 import DndSpellCardPreview from "./dnd-spell-card-preview";
+import dndSpells from "./dnd-spells";
 import { useDndSpellIdsSelected } from "./dnd-spells-store";
+import { localizeDndSpell } from "./use-dnd-spell-localized";
 import useDndSpellsExport from "./use-dnd-spells-export";
 
 export default function DndSpellsExportDialog() {
@@ -43,6 +45,13 @@ export default function DndSpellsExportDialog() {
     onProgress: setDownloadProgress,
     spellIds,
   });
+
+  const copySpellsAsJson = useCallback(() => {
+    const localizedSpells = spellIds.map((spellId) =>
+      localizeDndSpell(dndSpells.byId[spellId], i18n),
+    );
+    navigator.clipboard.writeText(JSON.stringify(localizedSpells, null, 2));
+  }, [i18n, spellIds]);
 
   const exportAndDownloadSpells = useCallback(() => {
     setDownloadProgress(0);
@@ -161,6 +170,15 @@ export default function DndSpellsExportDialog() {
                   <Text>{i18n.t("dnd.spells.export.button.cancel")}</Text>
                 </Button>
               </Dialog.ActionTrigger>
+
+              <Button
+                disabled={downloading}
+                onClick={copySpellsAsJson}
+                variant="outline"
+              >
+                <Text>{i18n.t("dnd.spells.export.button.json")}</Text>
+              </Button>
+
               <Button disabled={downloading} onClick={exportAndDownloadSpells}>
                 {downloading ? (
                   <>

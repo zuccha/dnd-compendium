@@ -93,7 +93,9 @@ export default function DndSpellsHeader() {
         <VStack pb={2} px={1} w="100%">
           <HStack w="100%">
             <HStack w="100%">
-              <Text>{i18n.t("dnd.spells.options.label.display")}</Text>
+              <Text fontSize="sm">
+                {i18n.t("dnd.spells.options.label.display")}
+              </Text>
               <SelectSimple
                 collection={viewCollection}
                 defaultValue={[`${view}`]}
@@ -107,7 +109,9 @@ export default function DndSpellsHeader() {
               />
               {view !== dndSpellsOptionsView.table && (
                 <>
-                  <Text>{i18n.t("dnd.spells.options.label.at")}</Text>
+                  <Text fontSize="sm">
+                    {i18n.t("dnd.spells.options.label.at")}
+                  </Text>
                   <NumberInput
                     defaultValue={`${zoom * 100}%`}
                     formatOptions={{ style: "percent" }}
@@ -119,7 +123,9 @@ export default function DndSpellsHeader() {
                     size="sm"
                     step={0.1}
                   />
-                  <Text>{i18n.t("dnd.spells.options.label.zoom")}</Text>
+                  <Text fontSize="sm">
+                    {i18n.t("dnd.spells.options.label.zoom")}
+                  </Text>
                 </>
               )}
             </HStack>

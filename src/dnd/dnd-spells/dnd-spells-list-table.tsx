@@ -100,7 +100,7 @@ function DndSpellsTableRow({ spellId }: { spellId: string }) {
         </Flex>
       </Table.Cell>
       <Table.Cell>{spellLocalized.name}</Table.Cell>
-      <Table.Cell>{spellLocalized.raw.level}</Table.Cell>
+      <Table.Cell>{spellLocalized.level}</Table.Cell>
       <Table.Cell>{spellLocalized.school}</Table.Cell>
       <Table.Cell>{spellLocalized.castingTime}</Table.Cell>
       <Table.Cell>{spellLocalized.range}</Table.Cell>

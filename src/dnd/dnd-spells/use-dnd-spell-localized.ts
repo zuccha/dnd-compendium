@@ -3,10 +3,11 @@ import { localizeI18nString } from "../../i18n/i18n-string";
 import useI18n, { type I18n } from "../../i18n/use-i18n";
 import type { DndSpell } from "./dnd-spells-types";
 
-function localizeLevel(level: number, i18n: I18n): string {
-  return level === 0
-    ? i18n.t("dnd.spell.level.cantrip")
-    : i18n.ti("dnd.spell.level.number", `${level}`);
+function localizeLevel(level: number, _i18n: I18n): string {
+  return String(level);
+  // return level === 0
+  //   ? i18n.t("dnd.spell.level.cantrip")
+  //   : i18n.ti("dnd.spell.level.number", `${level}`);
 }
 
 function localizeCastingTime(spell: DndSpell, i18n: I18n): string {
@@ -94,7 +95,7 @@ function localizeComponentMaterials(spell: DndSpell, i18n: I18n): string {
     ? i18n.ti(
         "dnd.spell.component_materials.present",
         localizeI18nString(materials, i18n.language),
-      )
+      ) + "."
     : i18n.t("dnd.spell.component_materials.none");
 }
 
@@ -108,13 +109,12 @@ export function localizeDndSpell(spell: DndSpell, i18n: I18n) {
       .map((c) => i18n.t(`dnd.class@short.${c}`))
       .sort()
       .join(" "),
-    componentMaterials: localizeComponentMaterials(spell, i18n),
     components: localizeComponents(spell, i18n),
     duration: localizeDuration(spell, i18n),
     level: localizeLevel(spell.level, i18n),
+    materials: localizeComponentMaterials(spell, i18n),
     name: localizeI18nString(spell.name, i18n.language),
     range: localizeRange(spell, i18n),
-    raw: spell,
     school: i18n.t(`dnd.magic_school.${spell.school}`),
     source: {
       book: spell.source.book,
@@ -122,6 +122,15 @@ export function localizeDndSpell(spell: DndSpell, i18n: I18n) {
     },
     text: {
       base: localizeI18nString(spell.text.base, i18n.language),
+      full: spell.text.upgrade
+        ? localizeI18nString(spell.text.base, i18n.language) +
+          "\n\n**" +
+          (spell.level === 0
+            ? i18n.t("dnd.spell.upgrade.cantrip")
+            : i18n.t("dnd.spell.upgrade.spell")) +
+          "**\n" +
+          localizeI18nString(spell.text.upgrade, i18n.language)
+        : localizeI18nString(spell.text.base, i18n.language),
       upgrade: spell.text.upgrade
         ? localizeI18nString(spell.text.upgrade, i18n.language)
         : undefined,

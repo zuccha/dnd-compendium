@@ -72,7 +72,7 @@ export default function DndSpellCard2({
         <Text {...nameText} text={localizedSpell.name} />
 
         <Rect {...levelRect} />
-        <Text {...levelText} text={`${localizedSpell.raw.level}`} />
+        <Text {...levelText} text={`${localizedSpell.level}`} />
 
         <Text {...classesText} text={localizedSpell.classes.toLowerCase()} />
         <Text {...schoolText} text={localizedSpell.school.toLowerCase()} />
@@ -95,7 +95,7 @@ export default function DndSpellCard2({
 
         <Text
           {...infoMaterialsText}
-          text={localizedSpell.componentMaterials.toLowerCase()}
+          text={localizedSpell.materials.toLowerCase()}
         />
 
         <Rect {...descriptionRect} />

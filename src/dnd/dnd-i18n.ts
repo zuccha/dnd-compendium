@@ -97,6 +97,7 @@ const dndI18n = {
     // Export spells
     "dnd.spells.export.button.cancel": "Cancel",
     "dnd.spells.export.button.export": "Export",
+    "dnd.spells.export.button.json": "JSON",
     "dnd.spells.export.button.prepare": "Prepared <1>/<2>", // 1 = prepared, 2 = total
     "dnd.spells.export.input.bleed": "Bleed",
     "dnd.spells.export.input.dpi": "DPI",
@@ -122,7 +123,7 @@ const dndI18n = {
     "dnd.class@short.artificer": "Art.",
     "dnd.class@short.barbarian": "Brb.",
     "dnd.class@short.bard": "Brd.",
-    "dnd.class@short.cleric": "Cle.",
+    "dnd.class@short.cleric": "Chi.",
     "dnd.class@short.druid": "Dru.",
     "dnd.class@short.fighter": "Gue.",
     "dnd.class@short.monk": "Mon.",
@@ -202,6 +203,7 @@ const dndI18n = {
     // Export spells
     "dnd.spells.export.button.cancel": "Annulla",
     "dnd.spells.export.button.export": "Esporta",
+    "dnd.spells.export.button.json": "JSON",
     "dnd.spells.export.button.prepare": "Preparati <1>/<2>", // 1 = prepared, 2 = total
     "dnd.spells.export.input.bleed": "Bleed",
     "dnd.spells.export.input.dpi": "DPI",
