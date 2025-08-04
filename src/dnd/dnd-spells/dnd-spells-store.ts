@@ -1,5 +1,6 @@
 import { useCallback, useLayoutEffect, useState } from "react";
 import { z } from "zod";
+import { loadI18nLanguage } from "../../i18n/use-i18n-language";
 import { createObservable } from "../../utils/observable";
 import { createObservableBydId } from "../../utils/observable-by-id";
 import {
@@ -62,6 +63,37 @@ function isVisible(id: string): boolean {
       (!school || spell.school === school) &&
       levels.some((l) => spell.level === l),
   );
+}
+
+//------------------------------------------------------------------------------
+// Compare
+//------------------------------------------------------------------------------
+
+function compare(id1: string, id2: string): number {
+  const spell1 = dndSpells.byId[id1];
+  const spell2 = dndSpells.byId[id2];
+  const lang = loadI18nLanguage();
+  const sortBy = optionsCache.sortBy;
+  const sortOrder = optionsCache.sortOrder === "asc" ? 1 : -1;
+  switch (sortBy) {
+    case "name": {
+      const name1 = spell1.name[lang] ?? spell1.name.en;
+      const name2 = spell2.name[lang] ?? spell2.name.en;
+      if (name1 > name2) return sortOrder;
+      if (name1 < name2) return -sortOrder;
+      return 0;
+    }
+    case "level": {
+      if (spell1.level > spell2.level) return sortOrder;
+      if (spell1.level < spell2.level) return -sortOrder;
+      return 0;
+    }
+    case "school": {
+      if (spell1.school > spell2.school) return sortOrder;
+      if (spell1.school < spell2.school) return -sortOrder;
+      return 0;
+    }
+  }
 }
 
 //------------------------------------------------------------------------------
@@ -144,7 +176,7 @@ function createUseOption<T>(
           const nextOption = setOption(nextValueOrUpdateValue);
           setCache(nextOption);
           const prevIds = state.ids;
-          const nextIds = dndSpells.ids.filter(isVisible);
+          const nextIds = dndSpells.ids.filter(isVisible).sort(compare);
           state.ids = nextIds;
           notifyIds(nextIds);
           const prevSelectedIdsSize = idsSelected(prevIds).length;
@@ -327,4 +359,4 @@ export function useDndSpellToggleSelection(id: string): () => void {
 // Update Ids
 //------------------------------------------------------------------------------
 
-state.ids = dndSpells.ids.filter(isVisible);
+state.ids = dndSpells.ids.filter(isVisible).sort(compare);
