@@ -4,17 +4,15 @@ import {
   GridItem,
   HStack,
   SimpleGrid,
+  Span,
   Text,
   VStack,
 } from "@chakra-ui/react";
-import { memo } from "react";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
+import { type ReactNode, memo } from "react";
+import RichText from "../../components/ui/rich-text";
 import useI18n from "../../i18n/use-i18n";
 import { type DndSpell } from "./dnd-spells-types";
 import useDndSpellLocalized from "./use-dnd-spell-localized";
-
-const remarkPlugins = [remarkGfm];
 
 export type DndSpellCardProps = {
   onClickSpell?: () => void;
@@ -147,7 +145,11 @@ export default memo(function DndSpellCard({
         py="0.5em"
         w="100%"
       >
-        <ReactMarkdown remarkPlugins={remarkPlugins}>{text.base}</ReactMarkdown>
+        <VStack gap={1} w="full">
+          {text.base.split("\n").map((paragraph, i) => (
+            <RichText key={i} patterns={patterns} text={paragraph} />
+          ))}
+        </VStack>
 
         {text.upgrade && (
           <>
@@ -155,9 +157,11 @@ export default memo(function DndSpellCard({
               {upgradeLabel}
             </Text>
 
-            <ReactMarkdown remarkPlugins={remarkPlugins}>
-              {text.upgrade}
-            </ReactMarkdown>
+            <VStack gap={1} w="full">
+              {text.upgrade.split("\n").map((paragraph, i) => (
+                <RichText key={i} patterns={patterns} text={paragraph} />
+              ))}
+            </VStack>
           </>
         )}
       </VStack>
@@ -197,3 +201,14 @@ function GridCell({ label, text }: { label: string; text: string }) {
     </GridItem>
   );
 }
+
+const patterns = [
+  {
+    regex: /\*\*(.+?)\*\*/,
+    render: (val: ReactNode) => <Span fontWeight="bold">{val}</Span>,
+  },
+  {
+    regex: /_(.+?)_/,
+    render: (val: ReactNode) => <Span fontStyle="italic">{val}</Span>,
+  },
+];
