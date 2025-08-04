@@ -37,7 +37,6 @@ export default memo(function DndSpellsList() {
 
 function DndSpellsListItem({
   spellId,
-  view,
 }: {
   spellId: string;
   view: DndSpellsOptionsView;
@@ -47,11 +46,6 @@ function DndSpellsListItem({
   const selected = useDndSpellSelected(spellId);
 
   return (
-    <DndSpellCard
-      onClickSpell={toggle}
-      selected={selected}
-      spell={spell}
-      view={view}
-    />
+    <DndSpellCard onClickSpell={toggle} selected={selected} spell={spell} />
   );
 }
