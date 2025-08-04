@@ -1020,7 +1020,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "Whispering to the spirits of nature, you create one of the following effects within range. Weather Sensor. You create a Tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round. Bloom. You instantly make a flower blossom, a seed pod open, or a leaf bud bloom. Sensory Effect. You create a harmless sensory effect, such as falling leaves, spectral dancing fairies, a gentle breeze, the sound of an animal, or the faint odor of skunk. The effect must fit in a 5-foot Cube. Fire Play. You light or snuff out a candle, a torch, or a campfire.",
+          en: "Whispering to the spirits of nature, you create one of the following effects within range.\n**Weather Sensor.** You create a Tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.\n**Bloom.** You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.\n**Sensory Effect.** You create a harmless sensory effect, such as falling leaves, spectral dancing fairies, a gentle breeze, the sound of an animal, or the faint odor of skunk. The effect must fit in a 5-foot Cube.\n**Fire Play.** You light or snuff out a candle, a torch, or a campfire.",
+          it: "Sussurrando agli spiriti della natura, l'incantatore crea uno degli effetti seguenti entro gittata.\n**Sensore atmosferico.** L'incantatore crea un Minuscolo e innocuo effetto sensoriale che predice il tempo atmosferico nel luogo in cui si trova per le successive 24 ore. L'effetto potrebbe manifestarsi come una sfera dorata in caso di cieli tersi, una nuvola in caso di pioggia, fiocchi di neve in caso di nevicate e così via. Questo effetto permane per 1 round.\n**Fioritura.** L'incantatore fa instantaneamente sbocciare un fiore, aprire un baccello o schiudere un germoglio.\n**Effetto Sensoriale.** L'incantatore crea un effetto sensoriale innocuo, come la caduta di foglie, delle fate spettrali danzanti, una brezza leggera, il rumore di un piccolo animale o il debole odori di una puzzula. L'effetto deve poter essere contenuto in un cubo con spigolo di 1,5 metri.\n**Trucchetto col fuoco.** L'incantatore accende o spegne una candela, una torcia o un fuoco da campo.",
         },
       },
     },
@@ -2937,9 +2938,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of it must succeed on a Dexterity saving throw or take 2d6 Cold damage.",
+          it: "L'incantatore crea un frammento di ghiaccio e lo scaglia contro una creatura entro gittata, effettuando un attacco a distanza con incantesimo contro il bersaglio. Se il colpo va a segno, il bersaglio subisce 1d10 danni perforanti. Che colpisca o manchi il bersaglio, il frammento poi esplode. Il bersaglio e ogni creatura entro 1,5 metri dal punto in cui il ghiaccio è esploso devono superare un tiro salvezza su Destrezza, altrimenti subiscono 2d6 danni da freddo.",
         },
         upgrade: {
           en: "The Cold damage increases by 1d6 for each spell slot level above 1.",
+          it: "I danni da freddo aumentano di 1d6 per ogni slot di livello superiore al 1˚.",
         },
       },
     },
@@ -3845,10 +3848,12 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You do one of the following:Create Water. You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot Cube within range, extinguishing exposed flames there.Destroy Water. You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot Cube within range.",
+          en: "You do one of the following:\n**Create Water.** You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot Cube within range, extinguishing exposed flames there.\n**Destroy Water.** You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot Cube within range.",
+          it: "L'incantatore esegue una delle seguenti azioni:\n**Creare acqua.** L'incantatore crea fino a 45 litri d'acqua pulita in un contenitore aperto entro gittata. In alternativa, l'acqua cade sotto forma di pioggia in un cubo con spigolo di 9 metri entro gittata, estinguendo le fiamme presenti nell'area.\n**Distruggere acqua.** L'incantatore distrugge fino a 45 litri d'acqua in un contenitore aperto entro gittata. in alternativa, distrugge la nebbia presente in un cubo con spigolo di 9 metri entro gittata.",
         },
         upgrade: {
           en: "You create or destroy 10 additional gallons of water, or the size of the Cube increases by 5 feet, for each spell slot level above 1.",
+          it: "L'incantatore crea o distrugge 45 litri aggiuntivi d'acqua, oppure la grandeza del cubo aumenta di 1,5 metri per spigolo, per ogni slot di livello superiore al 1˚.",
         },
       },
     },
@@ -5027,7 +5032,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You exert control over the elements, creating one of the following effects within range. Beckon Air. You create a breeze strong enough to ripple cloth, stir dust, rustle leaves, and close open doors and shutters, all in a 5-foot Cube. Doors and shutters being held open by someone or something aren't affected. Beckon Earth. You create a thin shroud of dust or sand that covers surfaces in a 5-foot-square area, or you cause a single word to appear in your handwriting in a patch of dirt or sand. Beckon Fire. You create a thin cloud of harmless embers and colored, scented smoke in a 5-foot Cube. You choose the color and scent, and the embers can light candles, torches, or lamps in that area. The smoke's scent lingers for 1 minute. Beckon Water. You create a spray of cool mist that lightly dampens creatures and objects in a 5-foot Cube. Alternatively, you create 1 cup of clean water either in an open container or on a surface, and the water evaporates in 1 minute. Sculpt Element. You cause dirt, sand, fire, smoke, mist, or water that can fit in a 1-foot Cube to assume a crude shape (such as that of a creature) for 1 hour.",
+          en: "You exert control over the elements, creating one of the following effects within range.\n**Beckon Air.** You create a breeze strong enough to ripple cloth, stir dust, rustle leaves, and close open doors and shutters, all in a 5-foot Cube. Doors and shutters being held open by someone or something aren't affected.\n**Beckon Earth.** You create a thin shroud of dust or sand that covers surfaces in a 5-foot-square area, or you cause a single word to appear in your handwriting in a patch of dirt or sand. Beckon Fire. You create a thin cloud of harmless embers and colored, scented smoke in a 5-foot Cube. You choose the color and scent, and the embers can light candles, torches, or lamps in that area. The smoke's scent lingers for 1 minute.\n**Beckon Water.** You create a spray of cool mist that lightly dampens creatures and objects in a 5-foot Cube. Alternatively, you create 1 cup of clean water either in an open container or on a surface, and the water evaporates in 1 minute.\n**Sculpt Element.** You cause dirt, sand, fire, smoke, mist, or water that can fit in a 1-foot Cube to assume a crude shape (such as that of a creature) for 1 hour.",
+          it: "L'incantatore esercita il suo controllo sugli elementi, creando uno dei seguenti effetti entro gittata.\n**Richiamo del fuoco.** Nell'area di un cubo con spigolo di 1,5 metri, l'incantatore crea una piccola nube di braci non incandescenti, colorate e che emettono funo e un odore particolare. L'incantatore sceglie il colore e l'odore delle braci, che si possono usare per accendere candele, torce o lampade in quell'area. L'odore del fumo permane per 1 minuto.\n**Richiamo dell'acqua.** L'incantatore crea uno spruzzo d'acqua fresca nebulizzata che inumidisce leggermente le creature e gli oggetti all'interno di un cubo con spigolo di 1,5 metri. In alternativa, crea 1 coppa di acqua pulita da riversare all'interno di un contenitore aperto o su una superficie: l'acqua evapora dopo un minuto.\n**Richiamo della terra.** L'incantatore crea un sottile velo di polvere o sabbia che ricopre le superfici di un'area di 1,5 metri per lato, oppure fa comparire una singola parola scritta nella sua calligrafia su un lembo di terra o un letto di sabbia.\n**Scolpire elementi.** L'incantatore fa in modo che un elemento a sua scelta tra terra, sabbia, fuoco, fumo, nebbia o acqua (in una quantità tale da poter essere contenuto in un cubo con spigolo di 30 centimetri) assuma una forma rozza (come quella di una creatura) per 1 ora.",
         },
       },
     },
@@ -6559,9 +6565,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You create a vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. On a hit, the target takes 1d6 Piercing damage, and if it is Large or smaller, you can pull it up to 10 feet closer to you.",
+          it: "L'incantatore crea una frusta di simile a un rampicante e coperta di spine che, al suo comando, sferza fino a una creatura entro gittata, effettuando un attacco in mischia con incantesimo contro il bersaglio. Se il colpo va a segno, quest'ultimo subisce 1d6 danni perforanti e, se è di taglia Grande o inferiore, l'incantatore può tirarlo più vicino a sé di 3 metri.",
         },
         upgrade: {
           en: "The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
+          it: "I danni aumentano di 1d6 quando l'incantatore raggiunge il 5˚ livello (2d6), l'11˚ livello (3d6) e il 17˚ livello (4d6).",
         },
       },
     },
@@ -7092,6 +7100,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You touch a willing creature and choose a skill. Until the spell ends, the creature adds 1d4 to any ability check using the chosen skill.",
+          it: "L'incantatore tocca una creatura consenziente e sceglie un'abilità. Fino al termine dell'incantesimo, la creatura aggiunge 1d4 a qualsiasi prova di caratteristica effettuata utilizzando l'abilità scelta.",
         },
       },
     },
@@ -8988,9 +8997,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can't benefit from the Invisible condition.",
+          it: "L'incantatore lancia un globo di luce contro una creatura o un oggetto entro gittata, effettuando un attacco a distanza con incantesimo contro il bersaglio. Se il colpo va a segno, il bersaglio subisce 1d8 danni radiosi e, fino al termine del turno successivo dell'incantatore, emette luce fioca nel raggio di 3 metri e non può beneficiare della condizione di invisibilità.",
         },
         upgrade: {
           en: "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
+          it: "I danni aumentano di 1d8 quando l'incantatore raggiunge il 5˚ livello (2d8), l'11˚ livello (3d8) e il 17˚ livello (4d8).",
         },
       },
     },
@@ -9086,7 +9097,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "Objects in a 20-foot Cube within range are outlined in blue, green, or violet light (your choice). Each creature in the Cube is also outlined if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed Dim Light in a 10-foot radius and can't benefit from the Invisible condition.Attack rolls against an affected creature or object have Advantage if the attacker can see it.",
+          en: "Objects in a 20-foot Cube within range are outlined in blue, green, or violet light (your choice). Each creature in the Cube is also outlined if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed Dim Light in a 10-foot radius and can't benefit from the Invisible condition.\nAttack rolls against an affected creature or object have Advantage if the attacker can see it.",
+          it: "L'incantatore crea fino a quattro luci delle dimensioni di una torcia, facendole apparire come lanterne, torce o globi luminosi che fluttuano per la durata dell'incantesimo entro la sua gittata. In altrernativa, l'incantatore può fondere le quattro luci in un'unica forma luminosa di taglia Media di aspetto simile a quello umano. Qualunque sia la forma scelta, ogni luce proietta luce fioca entro un raggio di 3 metri.\nCome azione bonus, l'incantatore può muovere le luci per un massimo di 18 metri fino a un punto entro gittata. Ogni luce deve trovarsi entro 6 metri da un'altra luce creata da questo incantesimo. Se una delle luci supera la gittata dell'incantesimo, svanisce.",
         },
       },
     },
@@ -9363,7 +9375,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You point toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear.You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence; 1 foot of stone, metal, or wood; or a thin sheet of lead blocks the spell.",
+          en: "You point toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear.\nYou can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence; 1 foot of stone, metal, or wood; or a thin sheet of lead blocks the spell.",
+          it: "L'incantatore indica una creatura entro gittata e sussurra un messaggio. Solo il bersaglio sente il messaggio e può sussurrare una risposta che unicamente l'incantatore può sentire.\nL'incantatore può lanciare questo incantesimo attraverso oggetti solidi se il bersaglio gli è noto e sa che si trova oltre la barriera. Tuttavia, l'incantesimo viene bloccato da silenzio magico, una sottila lamina di piombo o 30 centimetri di pietra, metallo o legno.",
         },
       },
     },
@@ -10149,10 +10162,12 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You conjure spinning daggers in a 5-foot Cube centered on a point within range. Each creature in that area takes 4d4 Slashing damage. A creature also takes this damage if it enters the Cube or ends its turn there or if the Cube moves into its space. A creature takes this damage only once per turn.On your later turns, you can take a Magic action to teleport the Cube up to 30 feet.",
+          en: "You conjure spinning daggers in a 5-foot Cube centered on a point within range. Each creature in that area takes 4d4 Slashing damage. A creature also takes this damage if it enters the Cube or ends its turn there or if the Cube moves into its space. A creature takes this damage only once per turn.\nOn your later turns, you can take a Magic action to teleport the Cube up to 30 feet.",
+          it: "L'incantatore evoca pugnali turbinanti che riempiono l'area di un cubo con spigolo di 1,5 metri centrato su un punto entro gittata. Ogni creatura nell'area subisce 4d4 danni taglienti. Una creatura subisce questi danni anche se entra nel cubo o se vi termina il suo turno, o se il cubo si muove nel suo spazio. Questi danni vengono subiti solo una volta per turno.\nNei turni successivi, l'incantatore può effettuare un'azione di Magia per teletrasportare il cubo di 9 metri.",
         },
         upgrade: {
           en: "The damage increases by 2d4 for each spell slot level above 2.",
+          it: "I danni aumentano di 2d4 per ogni slot di livello superiore al 2˚.",
         },
       },
     },
@@ -10418,9 +10433,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You unleash a wave of thunderous energy. Each creature in a 15-foot Cube originating from you makes a Constitution saving throw. On a failed save, a creature takes 2d8 Thunder damage and is pushed 10 feet away from you. On a successful save, a creature takes half as much damage only.In addition, unsecured objects that are entirely within the Cube are pushed 10 feet away from you, and a thunderous boom is audible within 300 feet.",
+          it: "L'incantatore sprigiona un'ondata di energia tonante. Ogni creatura entro un cubo con spigolo di 4,5 metri originato dall'incantatore effettua un tiro salvezza su Costituzione. Se lo fallisce, subisce 2d8 danni da tuono e viene spinta a una distanza di 3 metri dall'incantatore. In caso di successo, subisce soltanto la metà di quei danni.\nInoltre, gli oggetti non fissati e situati interamente nel cubo vengono spinti a 3 metri dall'incantatore, con un boato tonante entro 90 metri.",
         },
         upgrade: {
           en: "The damage increases by 1d8 for each spell slot level above 1.",
+          it: "I danni aumentano di 1d8 per ogni slot di livello superiore al 1˚.",
         },
       },
     },
@@ -10470,7 +10487,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "For the duration, magical Darkness spreads from a point within range and fills a 15-foot-radius Sphere. Darkvision can't see through it, and nonmagical light can't illuminate it.Alternatively, you cast the spell on an object that isn't being worn or carried, causing the Darkness to fill a 15-foot Emanation originating from that object. Covering that object with something opaque, such as a bowl or helm, blocks the Darkness.If any of this spell's area overlaps with an area of Bright Light or Dim Light created by a spell of level 2 or lower, that other spell is dispelled.",
+          en: "For the duration, magical Darkness spreads from a point within range and fills a 15-foot-radius Sphere. Darkvision can't see through it, and nonmagical light can't illuminate it.\nAlternatively, you cast the spell on an object that isn't being worn or carried, causing the Darkness to fill a 15-foot Emanation originating from that object. Covering that object with something opaque, such as a bowl or helm, blocks the Darkness.\nIf any of this spell's area overlaps with an area of Bright Light or Dim Light created by a spell of level 2 or lower, that other spell is dispelled.",
+          it: "Per la durata dell'incantesimo, un'oscurità magica si estende da un punto entro gittata e riempie una sfera del raggio di 4,5 metri. Una creatura dotata di scurovisione non è in grado di vedere attraverso di essa e la luce non magica non può illuminarla.\nIn alternativa, l'incantatore lancia l'incantesimo su un oggetto che non sia indossato o trasportato, facendo sì che l'oscurità riempia un'emanazione di 4,5 metri di cui l'oggetto è il punto di origine. Coprire l'oggetto con qualcosa di opaco, come una ciotola o un elmo, blocca l'oscurità.\nSe una parte dell'area di questo incantesimo si sovrappone a un'area di luce intensa o luce fioca creata da un incantesimo di 2˚ livello o inferiore, l'incantesimo che ha creato la luce viene dissolto.",
         },
       },
     },
@@ -10611,7 +10629,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "For the duration, you can comprehend and verbally communicate with Beasts, and you can use any of the Influence action's skill options with them.Most Beasts have little to say about topics that don't pertain to survival or companionship, but at minimum, a Beast can give you information about nearby locations and monsters, including whatever it has perceived within the past day.",
+          en: "For the duration, you can comprehend and verbally communicate with Beasts, and you can use any of the Influence action's skill options with them.\nMost Beasts have little to say about topics that don't pertain to survival or companionship, but at minimum, a Beast can give you information about nearby locations and monsters, including whatever it has perceived within the past day.",
+          it: "Per la durata dell'incantesimo, l'incantatore comprende le bestie e può comunicare verbalmente con loro usando una qualunque abilità dell'azione di Influenza.\nNella maggior parte dei casi hanno ben poco da dire su temi che esulano dalla sopravvivenza o dallo spirito di squadra, ma almeno possono fornire informazioni su luoghi e mostri nelle vicinanze, oltre a tutto ciò che hanno notato nel corso dell'ultima giornata.",
         },
       },
     },
@@ -10699,7 +10718,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You imbue plants in an immobile 30-foot Emanation with limited sentience and animation, giving them the ability to communicate with you and follow your simple commands. You can question plants about events in the spell's area within the past day, gaining information about creatures that have passed, weather, and other circumstances.You can also turn Difficult Terrain caused by plant growth (such as thickets and undergrowth) into ordinary terrain that lasts for the duration. Or you can turn ordinary terrain where plants are present into Difficult Terrain that lasts for the duration.The spell doesn't enable plants to uproot themselves and move about, but they can move their branches, tendrils, and stalks for you.If a Plant creature is in the area, you can communicate with it as if you shared a common language.",
+          en: "You imbue plants in an immobile 30-foot Emanation with limited sentience and animation, giving them the ability to communicate with you and follow your simple commands. You can question plants about events in the spell's area within the past day, gaining information about creatures that have passed, weather, and other circumstances.\nYou can also turn Difficult Terrain caused by plant growth (such as thickets and undergrowth) into ordinary terrain that lasts for the duration. Or you can turn ordinary terrain where plants are present into Difficult Terrain that lasts for the duration.\nThe spell doesn't enable plants to uproot themselves and move about, but they can move their branches, tendrils, and stalks for you.\nIf a Plant creature is in the area, you can communicate with it as if you shared a common language.",
+          it: "L'incantatore infonde nei vegetali in un'emanazione fissa di 9 metri una parvenza di animazione e volontà, donando loro l'abilità di comunicare con lui e di seguire dei comandi semplici. Può interrogare i vegetali sugli eventi avvenuti nell'area dell'incantesimo nella giornata passata, ottenere informazioni riguardo alle creature transitate al suo interno, al clima e ad altre circostanze.\nPer la durata dell'incantesimo, l'incantatore può anche trasformare un terreno difficile a causa della crescita vegetale (come per esempio arbusti e sottobosco) in un terreno normale. In alternativa può trasformare un terreno normale dove siano presenti dei vegetali in un terreno difficile.\nL'incantesimo non consente alle piante di sradicarsi e deambulare, ma permette loro di muovere rami, rampicanti e viticci per l'incantatore.\nSe una creatura vegetale si trova nell'area, il personaggio può comunicarci come se entrambi condividessero una lingua comune.",
         },
       },
     },
@@ -10828,7 +10848,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You overwhelm the mind of one creature you can see within range. If the target has 150 Hit Points or fewer, it has the Stunned condition. Otherwise, its Speed is 0 until the start of your next turn.The Stunned target makes a Constitution saving throw at the end of each of its turns, ending the condition on itself on a success.",
+          en: "You overwhelm the mind of one creature you can see within range. If the target has 150 Hit Points or fewer, it has the Stunned condition. Otherwise, its Speed is 0 until the start of your next turn.\nThe Stunned target makes a Constitution saving throw at the end of each of its turns, ending the condition on itself on a success.",
+          it: "L'incantatore sconvolge la mente di una creatura situata entro gittata che è in grado di vedere. Se il bersaglio possiede 150 punti ferita o meno, è stordito. Altrimenti, la sua velocità è pari a 0 fino all'inizio del turno successivo.\nIl bersaglio stordito effettua un tiro salvezza su Costituzione alla fine di ogni suo turno e, se lo supera, pone fine alla condizione.",
         },
       },
     },
@@ -10872,6 +10893,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You compel one creature you can see within range to die. If the target has 100 Hit Points or fewer, it dies. Otherwise, it takes 12d12 Psychic damage.",
+          it: "L'incantatore costringe una creatura entro gittata che è in grado di vedere a morire. Se il bersaglio possiede 100 punti ferita o meno, muore. Altrimenti, subisce 12d12 danni psichici.",
         },
       },
     },
@@ -11001,9 +11023,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "A creature of your choice that you can see within range regains Hit Points equal to 2d4 plus your spellcasting ability modifier.",
+          it: "Una creatura scelta dall'incantatore entro gittata e che egli è in grado di vedere recupera un ammontare di punti ferita pari a 2d4 più il modificatore di caratteristica da incantatore dell'incantatore.",
         },
         upgrade: {
           en: "The healing increases by 2d4 for each spell slot level above 1.",
+          it: "La guarigione aumenta di 2d4 per ogni slot di livello superiore al 1˚.",
         },
       },
     },
@@ -11184,6 +11208,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You radiate a concealing aura in a 30-foot Emanation for the duration. While in the aura, you and each creature you choose have a +10 bonus to Dexterity (Stealth) checks and leave no tracks.",
+          it: "L'incantatore irradia un'aura occultante in un'emanazione di 9 metri per la durata dell'incantesimo. Finché si trovano nell'aura, l'incantatore e ogni creatura a sua scelta ricevono un bonus di +10 alle prove di Destrezza (Furtività) e non lasciano tracce.",
         },
       },
     },
@@ -11219,6 +11244,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space you can see.",
+          it: "L'incantatore è avvolto per un istante da una foschia argentata e si teletrasporta di un massimo di 9 metri fino a uno spazio libero che è in grado di vedere.",
         },
       },
     },
@@ -11261,9 +11287,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You touch a creature. The target's Speed increases by 10 feet until the spell ends.",
+          it: "L'incantatore tocca una creatura, la cui velocità aumenta di 3 metri fino al termine dell'incantesimo.",
         },
         upgrade: {
           en: "You can target one additional creature for each spell slot level above 1.",
+          it: "L'incantatore può bersagliare una creatura aggiuntiva per ogni slot di livello superiore al 1˚.",
         },
       },
     },
@@ -11305,7 +11333,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "Each creature in a 30-foot Cone must succeed on a Wisdom saving throw or drop whatever it is holding and have the Frightened condition for the duration.A Frightened creature takes the Dash action and moves away from you by the safest route on each of its turns unless there is nowhere to move. If the creature ends its turn in a space where it doesn't have line of sight to you, the creature makes a Wisdom saving throw. On a successful save, the spell ends on that creature.",
+          en: "Each creature in a 30-foot Cone must succeed on a Wisdom saving throw or drop whatever it is holding and have the Frightened condition for the duration.\nA Frightened creature takes the Dash action and moves away from you by the safest route on each of its turns unless there is nowhere to move. If the creature ends its turn in a space where it doesn't have line of sight to you, the creature makes a Wisdom saving throw. On a successful save, the spell ends on that creature.",
+          it: "Ogni creatura entro un cono di 9 metri deve superare un tiro salvezza su Saggezza, altrimenti lascia cadere ciò che tiene in mano e diventa spaventata per la durata dell'incantesimo.\nUna creatura spaventata effettua l'azione di Scatto e si muove a ogni suo turno per allontanarsi dall'incantatore lungo il percorso più sicuro possibile, sempre che abbia lo spazio per muoversi. Se la creatura termina il suo turno in uno spazio dove l'incantatore non è in vista, effettua un tiro salvezza su Saggezza. In caso di successo, l'incantesimo termina.",
         },
       },
     },
@@ -11348,6 +11377,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You touch a willing creature. Until the spell ends, the target's skin assumes a bark-like appearance, and the target has an Armor Class of 17 if its AC is lower than that.",
+          it: "L'incantatore tocca una creatura consenziente. Fino al termine dell'incantesimo, la pelle del bersaglio assume l'aspetto della corteccia. Inoltre, il bersaglio ha una Classe Armatura di 17 se la sua CA è inferiore a tale valore.",
         },
       },
     },
@@ -11390,6 +11420,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "Until the spell ends, one willing creature you touch has Resistance to Bludgeoning, Piercing, and Slashing damage.",
+          it: "Fino al termine dell'incantesimo, una creatura consenziente toccata dall'incantatore avrà resistenza a danni contundenti, perforanti e taglienti.",
         },
       },
     },
@@ -11428,6 +11459,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You touch a willing Beast. For the duration, you can perceive through the Beast's senses as well as your own. When perceiving through the Beast's senses, you benefit from any special senses it has.",
+          it: "L'incantatore tocca una bestia consenziente. Per la durata dell'incantesimo, l'incantatore può percepire il mondo attraverso i propri sensi e quelli della bestia. Quando lo percepisce attraverso i sensi della bestia, beneficia di tutti i sensi speciali di cui essa dispone.",
         },
       },
     },
@@ -11523,7 +11555,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: 'You teleport to a location within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as "200 feet straight downward" or "300 feet upward to the northwest at a 45-degree angle."You can also teleport one willing creature. The creature must be within 5 feet of you when you teleport, and it teleports to a space within 5 feet of your destination space.If you, the other creature, or both would arrive in a space occupied by a creature or completely filled by one or more objects, you and any creature traveling with you each take 4d6 Force damage, and the teleportation fails.',
+          en: 'You teleport to a location within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as "200 feet straight downward" or "300 feet upward to the northwest at a 45-degree angle."\nYou can also teleport one willing creature. The creature must be within 5 feet of you when you teleport, and it teleports to a space within 5 feet of your destination space.\nIf you, the other creature, or both would arrive in a space occupied by a creature or completely filled by one or more objects, you and any creature traveling with you each take 4d6 Force damage, and the teleportation fails.',
+          it: "L'incantatore si teletrasporta in un punto entro gittata arrivando precisamente nel luogo desiderato, che può essere un punto che è in grado di vedere, che riesce a visualizzare o che è in grado di descrivere dichiarandone la distanza e la direzione, come per esempio \"60 metri in linea retta verso il basso\" o \"90 metri verso nord-ovest, a un'angolazione ascendente di 45 gradi\".\nL'incantatore può anche teletrasportare una creatura consenziente. Prima che si teletrasporti, la creatura deve trovarsi entro 1,5 metri dall'incantatore, per poi teletrasportarsi in uno spazio entro 1,5 metri dalla destinazione dell'incantatore.\nSe l'incantatore, l'altra creatura o entrambi arrivano in uno spazio occupato da una creatura o riempito completamente da uno o più oggetti, l'incantatore e qualsiasi creatura che viaggia con lui subiscono 4d6 danni da forza e il teletrasporto fallisce.",
         },
       },
     },
@@ -11573,7 +11606,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You conjure a portal linking an unoccupied space you can see within range to a precise location on a different plane of existence. The portal is a circular opening, which you can make 5 to 20 feet in diameter. You can orient the portal in any direction you choose. The portal lasts for the duration, and the portal's destination is visible through it.The portal has a front and a back on each plane where it appears. Travel through the portal is possible only by moving through its front. Anything that does so is instantly transported to the other plane, appearing in the unoccupied space nearest to the portal.Deities and other planar rulers can prevent portals created by this spell from opening in their presence or anywhere within their domains.When you cast this spell, you can speak the name of a specific creature (a pseudonym, title, or nickname doesn't work). If that creature is on a plane other than the one you are on, the portal opens next to the named creature and transports it to the nearest unoccupied space on your side of the portal. You gain no special power over the creature, and it is free to act as the DM deems appropriate. It might leave, attack you, or help you.",
+          en: "You conjure a portal linking an unoccupied space you can see within range to a precise location on a different plane of existence. The portal is a circular opening, which you can make 5 to 20 feet in diameter. You can orient the portal in any direction you choose. The portal lasts for the duration, and the portal's destination is visible through it.\nThe portal has a front and a back on each plane where it appears. Travel through the portal is possible only by moving through its front. Anything that does so is instantly transported to the other plane, appearing in the unoccupied space nearest to the portal.\nDeities and other planar rulers can prevent portals created by this spell from opening in their presence or anywhere within their domains.\nWhen you cast this spell, you can speak the name of a specific creature (a pseudonym, title, or nickname doesn't work). If that creature is on a plane other than the one you are on, the portal opens next to the named creature and transports it to the nearest unoccupied space on your side of the portal. You gain no special power over the creature, and it is free to act as the DM deems appropriate. It might leave, attack you, or help you.",
+          it: "L'incantatore evoca un portale che collega uno spazio libero che è in grado di vedere entro gittata a un luogo preciso su un piano di esistenza differente. Il portale è un'apertura circolare, del diametro variabile tra 1,5 e 6 metri a scelta dell'incantatore e può essere orientato in qualsiasi direzione. Il portale permane per la durata dell'incantesimo e la sua destinazione è visibile attraverso di esso.\nIl portale ha un lato anteriore e un lato posteriore su ogni piano dove appare e i viaggi sono possibili solo attraversandolo dalla parte anteriore. Tutto ciò che lo attraversa è trasportato immediatamente sull'altro piano, apparendo nello spazio libero più vicino al portale.\nDivinità e altri sovrani planari possono impedire che i portali creati tramite questo incantesimo si aprano in loro presenza o nei loro domini.\nQuando lancia l'incantesimo, l'incantatore può pronunciare il nome di una creatura specifica (pseudonimi, titoli o soprannomi non funzionano). Se la creatura nominata si trova su un piano diverso da quello in cui si trova l'incantatore, il portale si apre nelle immediate vicinanze della creatura, trasportandola fino allo spazio libero più vicino sul lato del portale in cui si trova l'incantatore. L'incantatore non ottiene alcun potere speciale sulla creatura, che è libera di agire come il DM ritiene più appropriato: potrebbe andarsene, attaccarlo o aiutarlo.",
         },
       },
     },
@@ -11619,7 +11653,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You create linked teleportation portals. Choose two Large, unoccupied spaces on the ground that you can see, one space within range and the other one within 10 feet of you. A circular portal opens in each of those spaces and remains for the duration.The portals are two-dimensional glowing rings filled with mist that blocks sight. They hover inches from the ground and are perpendicular to it.A portal is open on only one side (you choose which). Anything entering the open side of a portal exits from the open side of the other portal as if the two were adjacent to each other. As a Bonus Action, you can change the facing of the open sides.",
+          en: "You create linked teleportation portals. Choose two Large, unoccupied spaces on the ground that you can see, one space within range and the other one within 10 feet of you. A circular portal opens in each of those spaces and remains for the duration.\nThe portals are two-dimensional glowing rings filled with mist that blocks sight. They hover inches from the ground and are perpendicular to it.\nA portal is open on only one side (you choose which). Anything entering the open side of a portal exits from the open side of the other portal as if the two were adjacent to each other. As a Bonus Action, you can change the facing of the open sides.",
+          it: "L'incantatore crea dei portali di teletrasporto collegati e sceglie due spazi liberi del terreno che è in grado di vedere, uno entro gittata e l'altro entro 3 metri da sé. In ogni spazio scelto, si apre un portale circolare che permane per la durata dell'incantesimo.\nI portali sono anelli luminosi bidimensionali al cui interno è visibile una coltre di nebbia. Fluttuano a pochi centrimetri dal suolo, perpendicolarmente al punto scelto dall'incantatore.\nI portali sono aperti solo da un lato (a scelta dell'incantatore). Tutto ciò che entra nel lato aperto di un portale esce dal lato aperto dell'altro portale come se i due fossero adiacenti. Come azione bonus, è possibile cambiare il lato di accesso.",
         },
       },
     },
@@ -11796,7 +11831,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You create a magical effect within range. Choose the effect from the options below. If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time. Sensory Effect. You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor. Fire Play. You instantaneously light or snuff out a candle, a torch, or a small campfire. Clean or Soil. You instantaneously clean or soil an object no larger than 1 cubic foot. Minor Sensation. You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour. Magic Mark. You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour. Minor Creation. You create a nonmagical trinket or an illusory image that can fit in your hand. It lasts until the end of your next turn. A trinket can deal no damage and has no monetary worth.",
+          en: "You create a magical effect within range. Choose the effect from the options below. If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time.\n**Sensory Effect.** You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.\n**Fire Play.** You instantaneously light or snuff out a candle, a torch, or a small campfire.\n**Clean or Soil.** You instantaneously clean or soil an object no larger than 1 cubic foot.\n**Minor Sensation.** You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.\n**Magic Mark.** You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.\n**Minor Creation.** You create a nonmagical trinket or an illusory image that can fit in your hand. It lasts until the end of your next turn. A trinket can deal no damage and has no monetary worth.",
+          it: "L'incantatore crea un effetto magico entro gittata, scegliendo tra quelli illustrati di seguito. Se l'incantatore lancia questo incantesimo più volte, può tenere attivi fino a tre dei suoi effetti non istantanei contemporaneamente.\n**Effetto sensoriale.** L'incantatore crea un effetto sensoriale innocuo e istantaneo, come una pioggia di scintille, una folata di vento, una tenue melodia musicale o uno strano odore.\n**Trucchetti col fuoco.** L'incantatore accende o spegne istantaneamente una candela, una torcia o un piccolo fuoco da campo.\n**Pulire o sporcare.** L'incantatore pulisce o sporca istantaneamente un oggetto non più grande di un cubo con spigolo di 30 centimetri.\n**Lieve sensazione.** L'incantatore riscalta, raffredda o condisce materiale non vivente del volume massimo di un cubo con spigolo di 30 centimetri per 1 ora.\n**Segno magico.** L\"incantatore fa comparire un colore, un piccolo segno o un simbolo su un oggetto o una superficie per 1 ora.\n**Creazione minore.** L'incantatore crea un monile non magico o un'immagine illusoria che può stare nel palmo della sua mano e che permane fino al termine del suo turno successivo. Un monile non può infliggere danni e non ha un valore monetario.",
         },
       },
     },
@@ -11841,6 +11877,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You touch a willing creature and bestow a limited ability to see into the immediate future. For the duration, the target has Advantage on D20 Tests, and other creatures have Disadvantage on attack rolls against it. The spell ends early if you cast it again.",
+          it: "L'incantatore tocca una creatura consenziente e le conferisce una capacità limitata di vedere nell'immediato futuro. Per la durata dell'incantesimo, il bersaglio dispone di vantaggio alle prove con d20. Inoltre, le altre creature subiscono svantaggio ai tiri per colpire contro di esso. L'incantesimo termina in anticipo se l'incantatore lo lancia di nuovo.",
         },
       },
     },
@@ -11879,9 +11916,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "A flickering flame appears in your hand and remains there for the duration. While there, the flame emits no heat and ignites nothing, and it sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The spell ends if you cast it again.Until the spell ends, you can take a Magic action to hurl fire at a creature or an object within 60 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 Fire damage.",
+          it: "Una fiamma tremolante  compare nella mano dell'incantatore e permane per la durata dell'incantesimo. La fiamma non emette calore e non può incendiare nulla; emana luce intensa in un raggio di 6 metri e luce fioca per ulteriori 6 metri. L'incantesimo termina se l'incantatore lo lancia di nuovo.\nFino al termine dell'incantesimo, l'incantatore può effettuare un'azione di Magia per scagliare la fiamma contro una creatura o un oggetto a 18 metri da lui, effettuando un attacco a distanza con incantesimo. Se il colpo va a segno, il bersaglio subisce 1d8 danni da fuoco.",
         },
         upgrade: {
           en: "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
+          it: "I danni di questo incantesimo aumentano di 1d8 quando l'incantatore raggiunge il 5˚ livello (2d8), l'11˚ livello (3d8) e il 17˚ livello (4d8).",
         },
       },
     },
@@ -11975,6 +12014,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You and up to eight willing creatures within range project your astral bodies into the Astral Plane (the spell ends instantly if you are already on that plane). Each target's body is left behind in a state of suspended animation; it has the Unconscious condition, doesn't need food or air, and doesn't age.A target's astral form resembles its body in almost every way, replicating its game statistics and possessions. The principal difference is the addition of a silvery cord that trails from between the shoulder blades of the astral form. The cord fades from view after 1 foot. If the cord is cut—which happens only when an effect states that it does so—the target's body and astral form both die.A target's astral form can travel through the Astral Plane. The moment an astral form leaves that plane, the target's body and possessions travel along the silver cord, causing the target to re-enter its body on the new plane.Any damage or other effects that apply to an astral form have no effect on the target's body and vice versa. If a target's body or astral form drops to 0 Hit Points, the spell ends for that target. The spell ends for all the targets if you take a Magic action to dismiss it.When the spell ends for a target who isn't dead, the target reappears in its body and exits the state of suspended animation.",
+          it: "L'incantatore e un massimo di otto creature consenzienti entro gittata proiettano i loro corpi astrali sul Piano Astrale (l'incantesimo termina immediatamente se l'incantatore si trova già su quel piano). Il corpo di ogni bersaglio cade in uno stato di animazione sospesa; ha la condizione di privo di sensi, non ha bisogno di cibo o aria e non invecchia.\nLa forma astrale di un bersaglio assomiglia in tutto e per tutto al suo corpo, replicando le sue statistiche di gioco e le sue proprietà. La differenza principale consiste nell'aggiunta di un cordone argentato che si snoda tra le scapole della forma astrale, diventandoinvisibile dopo 30 cm. Se il cordone viene reciso, cosa che può accadere solo quando un effetto lo specifica chiaramente, il corpo e la forma astrale del bersaglio muoiono entrambi.\nLa forma astrale di un bersaglio può viaggiare sul Piano Astrale. Nel momento in cui una forma astrale lascia questo piano, il corpo e le proprietà del bersaglio vengono trasportati lungo il cordone argentato, permettendogli di rientrare nel suo corponel momento in cui accede al nuovo piano.\nQualsiasi danno o altro effetto che si applichi a una forma astrale non ha effetto sul corpo del bersaglio e vice-versa. Inoltre, l'incantesimo termina se il corpo originale o la forma astrale di un bersaglio scende a 0 punti ferita. L'incantesimo termina per tutti i bersagli se l'incantatore effettua un'azione di Magia per interromperlo.\nQuando l'incantesimo termina per un bersaglio che non è morto, il bersaglio riappare nel suo corpo ed esce dallo stato di animazione sospesa.",
         },
       },
     },
@@ -12013,6 +12053,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You touch a creature and end the Poisoned condition on it. For the duration, the target has Advantage on saving throws to avoid or end the Poisoned condition, and it has Resistance to Poison damage.",
+          it: "L'incantatore tocca una creatura e pone fine alla condizione avvelenato che la affligge. Per la durata dell'incantesimo, il bersaglio dispone di vantaggio ai tiri salvezza eseguiti per evitare la condizione avvelenato, ed è resistente ai danni da veleno.",
         },
       },
     },
@@ -12055,6 +12096,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "Until the spell ends, one willing creature you touch is protected against creatures that are Aberrations, Celestials, Elementals, Fey, Fiends, or Undead. The protection grants several benefits. Creatures of those types have Disadvantage on attack rolls against the target. The target also can't be possessed by or gain the Charmed or Frightened conditions from them. If the target is already possessed, Charmed, or Frightened by such a creature, the target has Advantage on any new saving throw against the relevant effect.",
+          it: "Fino al termine dell'incantesimo, una creatura consenziente toccata dall'incantatore è protetta da certi tipi di creature: aberrazioni, celestiali, elementali, folletti, immondi o non morti. La protezione garantisce diversi vantaggi. Le creature contro cui è attiva subiscono svantaggio ai tiri per colpire indirizzati contro il bersaglio; inoltre, il bersaglio non può essere affascinato, spaventato o posseduto da creature analoghe. Se il bersaglio è già affascinato, spaventato o posseduto da una tale creatura, dispone di vantaggio a qualsiasi nuovo tiro salvezza contro il relativo effetto.",
         },
       },
     },
@@ -12093,6 +12135,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "For the duration, the willing creature you touch has Resistance to one damage type of your choice: Acid, Cold, Fire, Lightning, or Thunder.",
+          it: "Per la durata dell'incantesimo, una creatura consenziente toccata dall'incantatore dispone di resistenza a un tipo di danni a scelta di quest'ultimo: acido, freddo, fulmine, fuoco o tuono.",
         },
       },
     },
@@ -12452,6 +12495,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You remove poison and rot from nonmagical food and drink in a 5-foot-radius Sphere centered on a point within range.",
+          it: "L'incantatore rimuove veleno e marciume da cibi e bevande non magici situati in una sfera del raggio di 1,5 metri centrata su un punto entro gittata.",
         },
       },
     },
@@ -12487,9 +12531,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "As you hit the creature, this spell creates a rain of thorns that sprouts from your Ranged weapon or ammunition. The target of the attack and each creature within 5 feet of it make a Dexterity saving throw, taking 1d10 Piercing damage on a failed save or half as much damage on a successful one.",
+          it: "Quando l'incantatore colpisce una creatura, questo incantesimo crea una raffica di spine che si sprigiona dalla sua arma a distanza o dalle sue munizioni. Il bersaglio dell'attacco e ogni creatura entro 1,5 metri da esso effettua un tiro salvezza su Destrezza, subendo 1d10 danni perforanti in caso di fallimento, o la metà dei danni in caso di successo.",
         },
         upgrade: {
           en: "The damage increases by 1d10 for each spell slot level above 1.",
+          it: "I danni aumentano di 1d10 per ogni slot di livello superiore al 1˚.",
         },
       },
     },
@@ -12535,7 +12581,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "A beam of enervating energy shoots from you toward a creature within range. The target must make a Constitution saving throw. On a successful save, the target has Disadvantage on the next attack roll it makes until the start of your next turn.On a failed save, the target has Disadvantage on Strength-based D20 Tests for the duration. During that time, it also subtracts 1d8 from all its damage rolls. The target repeats the save at the end of each of its turns, ending the spell on a success.",
+          en: "A beam of enervating energy shoots from you toward a creature within range. The target must make a Constitution saving throw. On a successful save, the target has Disadvantage on the next attack roll it makes until the start of your next turn.\nOn a failed save, the target has Disadvantage on Strength-based D20 Tests for the duration. During that time, it also subtracts 1d8 from all its damage rolls. The target repeats the save at the end of each of its turns, ending the spell on a success.",
+          it: "Un raggio di energia logorante scaturisce dall'incantatore verso una creatura entro gittata. Il bersaglio deve effettuare un tiro salvezza su Costituzione. In caso di successo, fino all'inizio del turno successivo dell'incantatore, il bersaglio subisce svantaggio al suo tiro per colpire successivo.\nIn caso di fallimento, il bersaglio subisce svantaggio alle prove con d20 basate sulla Forza per la durata dell'incantesimo. Durante questo periodo, sottrae anche 1d8 da tutti i suoi tiri per i danni. Alla fine di ogni suo turno, il bersaglio ripete il tiro salvezza e, se lo supera, termina l'incantesimo.",
         },
       },
     },
@@ -12769,10 +12816,12 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You conjure a vine that sprouts from a surface in an unoccupied space that you can see within range. The vine lasts for the duration.Make a melee spell attack against a creature within 30 feet of the vine. On a hit, the target takes 4d8 Bludgeoning damage and is pulled up to 30 feet toward the vine; if the target is Huge or smaller, it has the Grappled condition (escape DC equal to your spell save DC). The vine can grapple only one creature at a time, and you can cause the vine to release a Grappled creature (no action required).As a Bonus Action on your later turns, you can repeat the attack against a creature within 30 feet of the vine.",
+          en: "You conjure a vine that sprouts from a surface in an unoccupied space that you can see within range. The vine lasts for the duration.\nMake a melee spell attack against a creature within 30 feet of the vine. On a hit, the target takes 4d8 Bludgeoning damage and is pulled up to 30 feet toward the vine; if the target is Huge or smaller, it has the Grappled condition (escape DC equal to your spell save DC). The vine can grapple only one creature at a time, and you can cause the vine to release a Grappled creature (no action required).\nAs a Bonus Action on your later turns, you can repeat the attack against a creature within 30 feet of the vine.",
+          it: "L'incantatore evoca un rampicante che spunta da una superficie in uno spazio libero entro gittata e che è in grado di vedere. Il rampicante permane per la durata dell'incantesimo.\nL'incantatore effettua un attacco in mischia con incantesimo contro una creatura entro 9 metri dal rampicante. Se il colpo va a segno, il bersaglio subisce 4d8 danni contundenti e viene trascinato fino a 9 metri verso il rampicante. Se il bersaglio è di taglia Enorme o inferiore, viene afferrato (CD per sfuggire pari alla CD del tiro salvezza sull'incantesimo dell'incantatore). Il bersaglio può afferrare solo una creatura alla volta e l'incantatore può fare in modo che il rampicante rilasci una creatura afferrata (nessuna azione richiesta).\nCome azione bonus nei suoi turni successivi, l'incantatore può ripetere l'attacco contro una creatura entro 9 metri dal rampicante.",
         },
         upgrade: {
           en: "The number of creatures the vine can grapple increases by one for each spell slot level above 4.",
+          it: "Il numero di creature che il rampicante può afferrare aumenta di uno per ogni slot di livello superiore al 4˚.",
         },
       },
     },
@@ -12814,9 +12863,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "A Club or Quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. If the attack deals damage, it can be Force damage or the weapon's normal damage type (your choice).The spell ends early if you cast it again or if you let go of the weapon.",
+          it: "Un randello o un bastone ferrato impugnato dall'incantatore è pervaso dal potere della natura. Per la durata dell'incantesimo, l'incantatore usa la propria caratteristica da incantatore anziché la Forza per i tiri per i danni e i tiri per colpire effettuati negli attacchi in mischia usando quell'arma: inoltre, i danni dell'arma sono calcolati con un d8. Se l'attacco infligge danni, possono essere danni da forza o danni normali inflitti dall'arma (a scelta dell'incantatore).\nL'incantesimo termina se l'incantatore lo lancia di nuovo se lascia andare l'arma.",
         },
         upgrade: {
           en: "The damage die changes when you reach levels 5 (d10), 11 (d12), and 17 (2d6).",
+          it: "I danni sono calcolati con un dado diverso quando l'incantatore raggiunge il 5˚ livello (d10), l'11˚ livello (d12) e il 17˚ livello (2d6).",
         },
       },
     },
@@ -12948,6 +12999,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You touch a willing creature and choose a damage type: Acid, Bludgeoning, Cold, Fire, Lightning, Necrotic, Piercing, Poison, Radiant, Slashing, or Thunder. When the creature takes damage of the chosen type before the spell ends, the creature reduces the total damage taken by 1d4. A creature can benefit from this spell only once per turn.",
+          it: "L'incantatore tocca una creatura consenziente e sceglie un tipo di danno: acido, contundente, freddo, fulmine, fuoco, necrotico, perforante, radioso, tagliente, tuono, veleno. Quando una creatura subisce danni del tipo scelto prima del termine dell'incantesimo, riduce il totale dei danni subiti di 1d4. Una creatura può beneficiare di questo incantesimo solo una volta per turno.",
         },
       },
     },
@@ -12997,6 +13049,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "This spell grants up to ten willing creatures of your choice within range the ability to breathe underwater until the spell ends. Affected creatures also retain their normal mode of respiration.",
+          it: "Questo incantesimo concede a un massimo di dieci creature consenzienti entro gittata (a scelta dell'incantatore) la capacità di respirare sott'acqua per tutta la sua durata. Le creature influenzate conservano inoltre la loro normale modalità di respirazione.",
         },
       },
     },
@@ -13169,10 +13222,12 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You call forth an aberrant spirit. It manifests in an unoccupied space that you can see within range and uses the Aberrant Spirit stat block. When you cast the spell, choose Beholderkin, Mind Flayer, or Slaad. The creature resembles an Aberration of that kind, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.The creature is an ally to you and your allies. In combat, it shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its movement to avoid danger.",
+          en: "You call forth an aberrant spirit. It manifests in an unoccupied space that you can see within range and uses the Aberrant Spirit stat block. When you cast the spell, choose Beholderkin, Mind Flayer, or Slaad. The creature resembles an Aberration of that kind, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.\nThe creature is an ally to you and your allies. In combat, it shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its movement to avoid danger.",
+          it: "L'incantatore invoca uno spirito aberrante, che si manifesta in uno spazio libero entro gittata che egli sia in grado di vedere e utilizza la scheda delle statistiche dello **Spirito Aberrante**. Al lancio dell'incantesimo, il personaggio deve scegliere tra pseudo-beholder, mind flayer o slaad. La creatura ha le sembianze delle aberrazioni e, in base a questa somiglianza, vengono determinati alcuni dettagli nella sua scheda delle statistiche. La creatura scompare quando scende a 0 punti ferita o quando l'incantesimo termina ed è un alleato per il personaggio e i suoi alleati.\nIn combattimento ha lo stesso punteggio di iniziativa dell'incantatore, ma inizia il turno immediatamente dopo il suo (nessuna azione richiesta da parte dell'incantatore). Se l'incantatore non pronuncia comandi verbali, la creatura compie l'azione di Schivata e usa il suo movimento per sottrarsi al pericolo.",
         },
         upgrade: {
           en: "Use the spell slot's level for the spell's level in the stat block.",
+          it: "Usa il livello dello slot incantesimo relativo al livello dell'incantesimo nella scheda delle statistiche.",
         },
       },
     },
@@ -13222,10 +13277,12 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You call forth a bestial spirit. It manifests in an unoccupied space that you can see within range and uses the Bestial Spirit stat block. When you cast the spell, choose an environment: Air, Land, or Water. The creature resembles an animal of your choice that is native to the chosen environment, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its movement to avoid danger.",
+          en: "You call forth a bestial spirit. It manifests in an unoccupied space that you can see within range and uses the Bestial Spirit stat block. When you cast the spell, choose an environment: Air, Land, or Water. The creature resembles an animal of your choice that is native to the chosen environment, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.\nThe creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its movement to avoid danger.",
+          it: "L'incantatore invoca uno spirito bestiale, che si manifesta in uno spazio libero entro gittata che egli sia in grado di vedere e utilizza la scheda delle statistiche dello **Spirito Bestiale**. Quando questo incantesimo viene lanciato, l'incantatore può scegliere l'ambiente da cui proviene lo spirito evocato tra aria, terra o acqua. La creatura ha le sembianze di un animale a scelta dell'incantatore proveniente da uno di questi ambienti e, in base a questa scelta, vengono determinati alcuni dettagli nella sua scheda delle statistiche. La creatura scompare quando scende a 0 punti ferita o quando l'incantesimo termina ed è un alleato per il personaggio e i suoi alleati.\nIn combattimento ha lo stesso punteggio di iniziativa dell'incantatore, ma inizia il turno immediatamente dopo il suo (nessuna azione richiesta da parte dell'incantatore). Se l'incantatore non pronuncia comandi verbali, la creatura compie l'azione di Schivata e usa il suo movimento per sottrarsi al pericolo.",
         },
         upgrade: {
           en: "Use the spell slot's level for the spell's level in the stat block.",
+          it: "Usa il livello dello slot incantesimo relativo al livello dell'incantesimo nella scheda delle statistiche.",
         },
       },
     },
@@ -13435,9 +13492,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You call forth an Elemental spirit. It manifests in an unoccupied space that you can see within range and uses the Elemental Spirit stat block. When you cast the spell, choose an element: Air, Earth, Fire, or Water. The creature resembles a bipedal form wreathed in the chosen element, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its movement to avoid danger.",
+          it: "L'incantatore invoca uno spirito elementale, che si manifesta in uno spazio libero entro gittata che egli sia in grado di vedere e utilizza la scheda delle statistiche dello **Spirito Elementale**. Quando questo incantesimo viene lanciato, l'incantatore può scegliere un elemento tra aria, terra, fuoco o acqua. La creatura ha le sembianze di una creatura bipede dal corpo costituito da uno di questi elementi e, in base a questa scelta, vengono determinati alcuni dettagli nella sua scheda delle statistiche. La creatura scompare quando scende a 0 punti ferita o quando l'incantesimo termina ed è un alleato per il personaggio e i suoi alleati.\nIn combattimento ha lo stesso punteggio di iniziativa dell'incantatore, ma inizia il turno immediatamente dopo il suo (nessuna azione richiesta da parte dell'incantatore). Se l'incantatore non pronuncia comandi verbali, la creatura compie l'azione di Schivata e usa il suo movimento per sottrarsi al pericolo.",
         },
         upgrade: {
           en: "Use the spell slot's level for the spell's level in the stat block.",
+          it: "Usa il livello dello slot incantesimo relativo al livello dell'incantesimo nella scheda delle statistiche.",
         },
       },
     },
@@ -13488,9 +13547,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You call forth a Fey spirit. It manifests in an unoccupied space that you can see within range and uses the Fey Spirit stat block. When you cast the spell, choose a mood: Fuming, Mirthful, or Tricksy. The creature resembles a Fey creature of your choice marked by the chosen mood, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its movement to avoid danger.",
+          it: "L'incantatore invoca uno spirito fatato, che si manifesta in uno spazio libero entro gittata che egli sia in grado di vedere e utilizza la scheda delle statistiche dello **Spirito Fatato**. Quando questo incantesimo viene lanciato, l'incantatore può scegliere uno stato d'animo tra rabbioso, gioioso o malandrino. La creatura ha le sembianze di uno spirito fatatoa scelta dell'incantatore che è in uno di questi tre stati d'animo e, in base a questa scelta, vengono determinati alcuni dettagli nella sua scheda delle statistiche. La creatura scompare quando scende a 0 punti ferita o quando l'incantesimo termina ed è un alleato per il personaggio e i suoi alleati.\nIn combattimento ha lo stesso punteggio di iniziativa dell'incantatore, ma inizia il turno immediatamente dopo il suo (nessuna azione richiesta da parte dell'incantatore). Se l'incantatore non pronuncia comandi verbali, la creatura compie l'azione di Schivata e usa il suo movimento per sottrarsi al pericolo.",
         },
         upgrade: {
           en: "Use the spell slot's level for the spell's level in the stat block.",
+          it: "Usa il livello dello slot incantesimo relativo al livello dell'incantesimo nella scheda delle statistiche.",
         },
       },
     },
@@ -13541,9 +13602,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You call forth a fiendish spirit. It manifests in an unoccupied space that you can see within range and uses the Fiendish Spirit stat block. When you cast the spell, choose Demon, Devil, or Yugoloth. The creature resembles a Fiend of the chosen type, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its movement to avoid danger.",
+          it: "L'incantatore invoca uno spirito demoniaco, che si manifesta in uno spazio libero entro gittata che egli sia in grado di vedere e utilizza la scheda delle statistiche dello **Spirito Demoniaco**. Quando questo incantesimo viene lanciato, l'incantatore può scegliere una creatura demoniaca tra demone, diavolo o yugoloth. La creatura ha le sembianze della creatura demoniaca selezionata e, in base a questa scelta, vengono determinati alcuni dettagli nella sua scheda delle statistiche. La creatura scompare quando scende a 0 punti ferita o quando l'incantesimo termina ed è un alleato per il personaggio e i suoi alleati.\nIn combattimento ha lo stesso punteggio di iniziativa dell'incantatore, ma inizia il turno immediatamente dopo il suo (nessuna azione richiesta da parte dell'incantatore). Se l'incantatore non pronuncia comandi verbali, la creatura compie l'azione di Schivata e usa il suo movimento per sottrarsi al pericolo.",
         },
         upgrade: {
           en: "Use the spell slot's level for the spell's level in the stat block.",
+          it: "Usa il livello dello slot incantesimo relativo al livello dell'incantesimo nella scheda delle statistiche.",
         },
       },
     },
@@ -13594,9 +13657,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You call forth an Undead spirit. It manifests in an unoccupied space that you can see within range and uses the Undead Spirit stat block. When you cast the spell, choose the creature's form: Ghostly, Putrid, or Skeletal. The spirit resembles an Undead creature with the chosen form, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its movement to avoid danger.",
+          it: "L'incantatore invoca uno spirito non morto, che si manifesta in uno spazio libero entro gittata che egli sia in grado di vedere e utilizza la scheda delle statistiche dello **Spirito Non Morto**. Quando questo incantesimo viene lanciato, l'incantatore può scegliere la forma della creatura tra spettrale, putrida o scheletrica. La creatura ha le sembianze della creatura demoniaca selezionata e, in base a questa scelta, vengono determinati alcuni dettagli nella sua scheda delle statistiche. La creatura scompare quando scende a 0 punti ferita o quando l'incantesimo termina ed è un alleato per il personaggio e i suoi alleati.\nIn combattimento ha lo stesso punteggio di iniziativa dell'incantatore, ma inizia il turno immediatamente dopo il suo (nessuna azione richiesta da parte dell'incantatore). Se l'incantatore non pronuncia comandi verbali, la creatura compie l'azione di Schivata e usa il suo movimento per sottrarsi al pericolo.",
         },
         upgrade: {
           en: "Use the spell slot's level for the spell's level in the stat block.",
+          it: "Usa il livello dello slot incantesimo relativo al livello dell'incantesimo nella scheda delle statistiche.",
         },
       },
     },
@@ -13676,6 +13741,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner's Attunement to the object so it can be removed or discarded.",
+          it: "Al tocco dell'incantatore, tutte le maledizioni che affliggono una creatura o un oggetto terminano. Nel caso di un oggetto magico maledetto, la sua maledizione permane, ma l'incantesimo spezza la sintonia del suo proprietario, consentendogli di rimuoverlo o di liberarsene.",
         },
       },
     },
@@ -13715,6 +13781,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You touch a creature that has died within the last minute. That creature revives with 1 Hit Point. This spell can't revive a creature that has died of old age, nor does it restore any missing body parts.",
+          it: "L'incantatore tocca una creatura morta nell'ultimo minuto, la quale ritorna in vita con 1 punto ferita. Questo incantesimo non può riportare in vita una creatura morta di vecchiaia e non ripristina le eventuali parti del corpo mancanti.",
         },
       },
     },
@@ -13758,9 +13825,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You point at one creature you can see within range, and the single chime of a dolorous bell is audible within 10 feet of the target. The target must succeed on a Wisdom saving throw or take 1d8 Necrotic damage. If the target is missing any of its Hit Points, it instead takes 1d12 Necrotic damage.",
+          it: "L'incantatore prende di mira una creatura entro gittata che è in grado di vedere, dopodiché si sente il singolo lugubre rintocco din una campana entro 3 metri da essa. Il bersaglio deve superare un tiro salvezza su Saggezza, altrimenti subisce 1d8 danni necrotici. Invece, se al bersaglio mancano punti ferita, subisce 1d12 danni necrotici.",
         },
         upgrade: {
           en: "The damage increases by one die when you reach levels 5 (2d8 or 2d12), 11 (3d8 or 3d12), and 17 (4d8 or 4d12).",
+          it: "I danni dell'incantesimo aumentano di un dado quando l'incantatore raggiunge il 5˚ livello (2d8 o 2d12), l'11˚ livello (3d8 o 3d12) e il 17˚ livello (4d8 o 4d12).",
         },
       },
     },
@@ -13801,7 +13870,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "This spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage.This spell can physically repair a magic item, but it can't restore magic to such an object.",
+          en: "This spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage.\nThis spell can physically repair a magic item, but it can't restore magic to such an object.",
+          it: "Questo incantesimo ripara una singola creapa o uno squarcio in un oggetto toccato dall'incantatore, come l'anello spezzato di una catena, due metà di una chiave spezzata, un mantello strappato o un otre forato. Se le dimensioni della crepa o dello squarcio non superano i 30 centimetri, l'incantatore ripara l'oggetto senza lasciare traccia del danno precedente.\nQuesto incantesimo può riparare un oggetto magico solo fisicamente, senza ripristinare la magia in esso contenuta.",
         },
       },
     },
@@ -13894,9 +13964,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "One creature of your choice that you can see within range makes a Wisdom saving throw. On a failed save, it has the Prone and Incapacitated conditions for the duration. During that time, it laughs uncontrollably if it's capable of laughter, and it can't end the Prone condition on itself.At the end of each of its turns and each time it takes damage, it makes another Wisdom saving throw. The target has Advantage on the save if the save is triggered by damage. On a successful save, the spell ends.",
+          it: "Una creatura a scelta entro gittata che l'incantatore è in grado di vedere effettua un tiro salvezza su Saggezza. Se lo fallisce, cade a terra prona ed è incapacitata per la durata dell'incantesimo. Durante quel periodo di tempo, ride incontrollabilmente (se è in grado di ridere) e non può porre fine alla condizione prono.\nIl bersaglio effettua un altro tiro salvezza su Saggezza alla fine di ogni suo turno e ogni volta che subisce danni; in quest'ultimo caso, lo effettua con vantaggio. In caso di successo, l'incantesimo termina.",
         },
         upgrade: {
           en: "You can target one additional creature for each spell slot level above 1.",
+          it: "L'incantatore può bersagliare una creatura aggiuntiva per ogni slot di livello superiore al 1˚.",
         },
       },
     },
@@ -13985,6 +14057,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You touch a creature and end one condition on it: Blinded, Deafened, Paralyzed, or Poisoned.",
+          it: "L'incantatore tocca una creatura e pone fine a una delle condizioni che la affligge tra: accecata, assordata, avvelenata o paralizzata.",
         },
       },
     },
@@ -14023,7 +14096,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You touch a creature and magically remove one of the following effects from it:1 Exhaustion levelThe Charmed or Petrified conditionA curse, including the target's Attunement to a cursed magic itemAny reduction to one of the target's ability scoresAny reduction to the target's Hit Point maximum",
+          en: "You touch a creature and magically remove one of the following effects from it:\n- 1 Exhaustion level\n- The Charmed or Petrified condition\n- A curse, including the target's Attunement to a cursed magic item\n- Any reduction to one of the target's ability scores\n- Any reduction to the target's Hit Point maximum",
+          it: "L'incantatore tocca una creatura e rimuove magicamente da essa uno dei seguenti effetti:\n- 1 livello di indebolimento\n- La condizione affascinato o pietrificato\n- Una maledizione, inclusa la sintonia del bersaglio con un oggetto magico maledetto\n- Qualsiasi riduzione di un punteggio di caratteristica del bersaglio\n- Qualsiasi riduzione dei punti ferita massimi del bersaglio",
         },
       },
     },
@@ -14103,6 +14177,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You take the Dash action, and until the spell ends, you can take that action again as a Bonus Action.",
+          it: "L'incantatore effettua un'azione di Scatto e, fino al termine dell'incantesimo, può effettuarla di nuovo come azione bonus.",
         },
       },
     },
@@ -14138,9 +14213,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "Each creature in a 5-foot Emanation originating from you must succeed on a Constitution saving throw or take 1d6 Thunder damage. The spell's thunderous sound can be heard up to 100 feet away.",
+          it: "Ogni creatura entro un'emanazione del raggio di 1,5 metri, di cui l'incantatore è punto di origine, deve superare un tiro salvezza su Costituzione, altrimenti subisce 1d6 danni da tuono. Il rombo fragoroso dell'incantesimo è udibile fino a 30 metri di distanza.",
         },
         upgrade: {
           en: "The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
+          it: "I danni aumentano di 1d6 quando l'incantatore raggiunge il 5˚ livello (2d6), l'11˚ livello (3d6) e il 17˚ livello (4d6).",
         },
       },
     },
@@ -14183,9 +14260,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You touch a willing creature. Once on each of its turns until the spell ends, that creature can jump up to 30 feet by spending 10 feet of movement.",
+          it: "L'incantatore tocca una creatura consenziente. La creatura, in ogni suo turno fino al termine dell'incantesimo, può saltare fino a 9 metri, usando 3 metri di movimento.",
         },
         upgrade: {
           en: "You can target one additional creature for each spell slot level above 1.",
+          it: "L'incantatore può bersagliare una creatura aggiuntiva per ogni slot di livello superiore al 1˚.",
         },
       },
     },
@@ -14229,9 +14308,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "Choose a creature within range that has 0 Hit Points and isn't dead. The creature becomes Stable.",
+          it: "L'incantatore sceglie una creatura entro gittata con 0 punti ferita ma che è ancora in vita, facendola diventare stabile.",
         },
         upgrade: {
           en: "The range doubles when you reach levels 5 (30 feet), 11 (60 feet), and 17 (120 feet).",
+          it: "La gittata raddoppia quando l'incantatore raggiunge il 5˚ livello (9 metri), l'11˚ livello (18 metri) e il 17˚ livello (36 metri).",
         },
       },
     },
@@ -14505,9 +14586,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You try to temporarily sliver the mind of one creature you can see within range. The target must succeed on an Intelligence saving throw or take 1d6 Psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn.",
+          it: "L'incantatore tenta di spezzare temporaneamente la mente di una creatura entro gittata che è in grado di vedere. La creatura deve superare un tiro salvezza su Intelligenza o subire 1d6 danni psichici e sottrarre 1d4 al tiro salvezza successivo che effettua prima del termine del turno successivo dell'incantatore.",
         },
         upgrade: {
           en: "The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
+          it: "I danni aumentano di 1d6 quando l'incantatore raggiunge il 5˚ livello (2d6), l'11˚ livello (3d6) e il 17˚ livello (4d6).",
         },
       },
     },
@@ -14677,6 +14760,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You sense any trap within range that is within line of sight. A trap, for the purpose of this spell, includes any object or mechanism that was created to cause damage or other danger. Thus, the spell would sense the Alarm or Glyph of Warding spell or a mechanical pit trap, but it wouldn't reveal a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole.This spell reveals that a trap is present but not its location. You do learn the general nature of the danger posed by a trap you sense.",
+          it: "L'incantatore percepisce qualsiasi trappola piazzata entro gittata e nel suo campo visivo. Ai fini di questo incantesimo, per trappola si intende qualsiasi oggetto o meccanismo creato per provocare danni o altri pericolil. Pertanto, l'incantesimo è in grado di percepire gli incantesimi _allarme_ o _glifo di interdizione_, o una fossa meccanica nascosta, ma non di rivelare un cedimento naturale del pavimento, un soffitto instabile o una voragine nascosta.\nQuesto incantesimo rivela la presenza di una trappola ma non la sua ubicazione. L'incantatore scopre solo la natura generale del pericolo che la trappola pone.",
         },
       },
     },
@@ -14720,6 +14804,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You cause psychic energy to erupt at a point within range. Each creature in a 20-foot-radius Sphere centered on that point makes an Intelligence saving throw, taking 8d6 Psychic damage on a failed save or half as much damage on a successful one.On a failed save, a target also has muddled thoughts for 1 minute. During that time, it subtracts 1d6 from all its attack rolls and ability checks, as well as any Constitution saving throws to maintain Concentration. The target makes an Intelligence saving throw at the end of each of its turns, ending the effect on itself on a success.",
+          it: "L'incantatore sprigiona un'esplosione di energia psichica da un punto entro gittata. Ogni creatura presente in una sfera dal raggio di 6 metri e centrata su quel punto deve effettuare un tiro salvezza su Intelligenza, subendo 8d6 danni psichici in caso di fallimento, o la metà dei danni in caso di successo.\nDopo un tiro salvezza fallito, inoltre, i pensieri del bersaglio restano offuscati per 1 minuto. Durante questo periodo di tempo, viene sottratto 1d6 a tutti i suoi tiri per colpire e alle sue prove di caratteristica, così come ai tiri salvezza su Costituzione per mantenere la concentrazione. Il bersaglio effettua un tiro salvezza su Intelligenza alla fine di ogni suo turno e, se lo supera, l'effetto svanisce.",
         },
       },
     },
@@ -14802,7 +14887,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You write on parchment, paper, or another suitable material and imbue it with an illusion that lasts for the duration. To you and any creatures you designate when you cast the spell, the writing appears normal, seems to be written in your hand, and conveys whatever meaning you intended when you wrote the text. To all others, the writing appears as if it were written in an unknown or magical script that is unintelligible. Alternatively, the illusion can alter the meaning, handwriting, and language of the text, though the language must be one you know.If the spell is dispelled, the original script and the illusion both disappear.A creature that has Truesight can read the hidden message.",
+          en: "You write on parchment, paper, or another suitable material and imbue it with an illusion that lasts for the duration. To you and any creatures you designate when you cast the spell, the writing appears normal, seems to be written in your hand, and conveys whatever meaning you intended when you wrote the text. To all others, the writing appears as if it were written in an unknown or magical script that is unintelligible. Alternatively, the illusion can alter the meaning, handwriting, and language of the text, though the language must be one you know.\nIf the spell is dispelled, the original script and the illusion both disappear.\nA creature that has Truesight can read the hidden message.",
+          it: "L'incantatore scrive su una pergamena, un foglio o un altro materiale adatto e infonde nello scritto un'illusione che permane per la durata dell'incantesimo. All'incantatore e a qualsiasi creatura indicata da lui al momento del lancio, lo scritto appare normale, sembra essere stilato nella calligrafia dell'incantatore e trasmette il significato inteso nel momento in cui è stato scritto. Agli occhi di tutti gli altri, il messaggio appare scritto in una lingua magica o ignota che risulta per loro incomprensibile. In alternativa, l'illusione può alterare il significato, la calligrafia e la lingua del testo, ma questa deve essere una lingua conosciuta dall'incantatore.\nSe l'incantesimo viene dissolto, il messaggio originale e l'illusione scompaiono.\nUna creatura con vista pura può leggere il messaggio nascosto.",
         },
       },
     },
@@ -14846,7 +14932,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You can see and hear a creature you choose that is on the same plane of existence as you. The target makes a Wisdom saving throw, which is modified (see the tables below) by how well you know the target and the sort of physical connection you have to it. The target doesn't know what it is making the save against, only that it feels uneasy.Your Knowledge of the Target Is...Save ModifierSecondhand (heard of the target)+5Firsthand (met the target)+0Extensive (know the target well)-5You Have the Target's...Save ModifierPicture or other likeness-2Garment or other possession-4Body part, lock of hair, or bit of nail-10On a successful save, the target isn't affected, and you can't use this spell on it again for 24 hours.On a failed save, the spell creates an Invisible, intangible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. If something can see the sensor, it appears as a luminous orb about the size of your fist.Instead of targeting a creature, you can target a location you have seen. When you do so, the sensor appears at that location and doesn't move.",
+          en: "You can see and hear a creature you choose that is on the same plane of existence as you. The target makes a Wisdom saving throw, which is modified (see the tables below) by how well you know the target and the sort of physical connection you have to it. The target doesn't know what it is making the save against, only that it feels uneasy.\n**Your Knowledge of the Target Is...**\nSecondhand (heard of the target): +5\nFirsthand (met the target): +0\nExtensive (know the target well): -5\n**You Have the Target's...**\nPicture or other likeness: -2\nGarment or other possession: -4\nBody part, lock of hair, or bit of nail: -10\nOn a successful save, the target isn't affected, and you can't use this spell on it again for 24 hours.\nOn a failed save, the spell creates an Invisible, intangible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. If something can see the sensor, it appears as a luminous orb about the size of your fist.\nInstead of targeting a creature, you can target a location you have seen. When you do so, the sensor appears at that location and doesn't move.",
+          it: "L'incantatore può vedere e udire una creatura a sua scelta situata sul suo stesso piano di esistenza. Il bersaglio effettua un tiro salvezza su Saggezza, modificato (vedi le tabelle di seguito) dalla conoscenza e dal tipo di legame fisico che l'incantatore ha nei confronti della creatura. Il bersaglio non sa contro cosa sta effettuando il tiro salvezza, avverte solo una sensazione di disagio.\n**L'incantatore conosce il bersaglio in maniera...**\nIndiretta (ha sentito parlare del bersaglio): +5\nDiretta (ha incontrato il bersaglio): +0\nApprofondita (conosce bene il bersaglio): -5\n**L'oggetto del bersaglio che l'incantatore possiede è...**\nImmagine o altra raffigurazione: -2\nAbito o altro oggetto personale: -4\nParte del corpo, ciocca di capello o pezzo di unghia: -10\nIn caso di tiro salvezza superato, il bersaglio non viene influenzato dall'incantesimo, che l'incantatore non può lanciare su di esso per 24 ore.\nIn caso di fallimento, l'incantesimo crea un  sensore invisibile e intangibile entro 3 metri dal bersaglio, attraverso cui l'incantatore può vedere e sentire come se si trovasse sul posto. Il sensore si muove insieme al bersaglio, rimanendo entro 3 metri da esso per la durata dell'incantesimo. Se qualcosa è in grado di vedere il sensore, esso appare come un globo luminoso grande all'incirca quanto un pugno umano.\nInvece di bersagliare una creatura, l'incantatore può bersagliare un luogo che ha già visto. Quando lo fa, il sensore appare in quel luogo e non si muove.",
         },
       },
     },
@@ -15019,6 +15106,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "For the duration, a willing creature you touch has Darkvision with a range of 150 feet.",
+          it: "Per la durata dell'incantesimo, una creatura consenziente toccata dall'incantatore è dotata di scurovisione fino a 45 metri.",
         },
       },
     },
@@ -15160,7 +15248,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You create a shadowy Medium door on a flat solid surface that you can see within range. This door can be opened and closed, and it leads to a demiplane that is an empty room 30 feet in each dimension, made of wood or stone (your choice).When the spell ends, the door vanishes, and any objects inside the demiplane remain there. Any creatures inside also remain unless they opt to be shunted through the door as it vanishes, landing with the Prone condition in the unoccupied spaces closest to the door's former space.Each time you cast this spell, you can create a new demiplane or connect the shadowy door to a demiplane you created with a previous casting of this spell. Additionally, if you know the nature and contents of a demiplane created by a casting of this spell by another creature, you can connect the shadowy door to that demiplane instead.",
+          en: "You create a shadowy Medium door on a flat solid surface that you can see within range. This door can be opened and closed, and it leads to a demiplane that is an empty room 30 feet in each dimension, made of wood or stone (your choice).\nWhen the spell ends, the door vanishes, and any objects inside the demiplane remain there. Any creatures inside also remain unless they opt to be shunted through the door as it vanishes, landing with the Prone condition in the unoccupied spaces closest to the door's former space.\nEach time you cast this spell, you can create a new demiplane or connect the shadowy door to a demiplane you created with a previous casting of this spell. Additionally, if you know the nature and contents of a demiplane created by a casting of this spell by another creature, you can connect the shadowy door to that demiplane instead.",
+          it: "L'incantatore crea una porta d'ombra di taglia Media su una superficie piatta e solida entro gittata che è in grado di vedere. La porta può essere aperta e chiusa, e conduce verso un semipiano che appare come una stanza vuota di legno o pietra (a scelta dell'incantatore) ampia 9 metri in ogni dimensione.\nAl termine dell'incantesimo, la porta scompare e gli oggetti al suo interno rimangono nel semipiano. Ciò si applica anche alle creature, a meno che noon scelgano di venire spinte attraverso la porta mentre questa svanisce, atterrando prone sugli spazi liberi più vicini allo spazio occupato precedentemente dalla porta.\nOgni volta che lancia questo incantesimo, l'incantatore può creare un nuovo semipiano o collegare la porta d'ombra a un semipiano da lui creato con un lancio precendente di questo incantesimo. Inoltre, se l'incantatore conosce la natura e i contenuti di un semipiano creato da un'altra creatura lanciando questo incantesimo, può fare invece in modo che la porta d'ombra si colleghi a quel semipiano.",
         },
       },
     },
@@ -15249,7 +15338,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "This spell creates an Invisible, mindless, shapeless, Medium force that performs simple tasks at your command until the spell ends. The servant springs into existence in an unoccupied space on the ground within range. It has AC 10, 1 Hit Point, and a Strength of 2, and it can't attack. If it drops to 0 Hit Points, the spell ends.Once on each of your turns as a Bonus Action, you can mentally command the servant to move up to 15 feet and interact with an object. The servant can perform simple tasks that a human could do, such as fetching things, cleaning, mending, folding clothes, lighting fires, serving food, and pouring drinks. Once you give the command, the servant performs the task to the best of its ability until it completes the task, then waits for your next command.If you command the servant to perform a task that would move it more than 60 feet away from you, the spell ends.",
+          en: "This spell creates an Invisible, mindless, shapeless, Medium force that performs simple tasks at your command until the spell ends. The servant springs into existence in an unoccupied space on the ground within range. It has AC 10, 1 Hit Point, and a Strength of 2, and it can't attack. If it drops to 0 Hit Points, the spell ends.\nOnce on each of your turns as a Bonus Action, you can mentally command the servant to move up to 15 feet and interact with an object. The servant can perform simple tasks that a human could do, such as fetching things, cleaning, mending, folding clothes, lighting fires, serving food, and pouring drinks. Once you give the command, the servant performs the task to the best of its ability until it completes the task, then waits for your next command.\nIf you command the servant to perform a task that would move it more than 60 feet away from you, the spell ends.",
+          it: "Fino al termine di questo incantesimo, una forza Media invisibile, amorfa e priva di volontà propria svolge dei compiti semplici su ordine dell'incantatore. Il servitore appare sul terreno in uno spazio libero entro gittata, ha CA 10, 1 punto ferita, Forza pari a 2 e non può attaccare. Se scende a 0 punti ferita, l'incatesimo termina.\nUna volta in ogni suo turno, come azione bonus, l'incantatore può ordinare mentalmente al servitore di spostarsi di un massimo di 4,5 metri e interagire con un oggetto. Esso può eseguire compiti semplici alla stregua di un umano, come portare oggetti, pulire, riparare, ripiegare abiti, accendere fuochi, servire pietanze e versare bevande. Una volta impartito il comando, il servitore svolge il compito al meglio delle sue capacità finché non lo porta a termine, poi attende l'ordine successivo dell'incantatore.\nSe l'incantatore ordina al servitore di eseguire un compito che lo porta a più di 18 metri da lui, l'incantesimo termina.",
         },
       },
     },
@@ -15528,7 +15618,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "For the duration, your eyes become an inky void. One creature of your choice within 60 feet of you that you can see must succeed on a Wisdom saving throw or be affected by one of the following effects of your choice for the duration.On each of your turns until the spell ends, you can take a Magic action to target another creature but can't target a creature again if it has succeeded on a save against this casting of the spell. Asleep. The target has the Unconscious condition. It wakes up if it takes any damage or if another creature takes an action to shake it awake. Panicked. The target has the Frightened condition. On each of its turns, the Frightened target must take the Dash action and move away from you by the safest and shortest route available. If the target moves to a space at least 60 feet away from you where it can't see you, this effect ends. Sickened. The target has the Poisoned condition.",
+          en: "For the duration, your eyes become an inky void. One creature of your choice within 60 feet of you that you can see must succeed on a Wisdom saving throw or be affected by one of the following effects of your choice for the duration.\nOn each of your turns until the spell ends, you can take a Magic action to target another creature but can't target a creature again if it has succeeded on a save against this casting of the spell.\n**Asleep.** The target has the Unconscious condition. It wakes up if it takes any damage or if another creature takes an action to shake it awake.\n**Panicked.** The target has the Frightened condition. On each of its turns, the Frightened target must take the Dash action and move away from you by the safest and shortest route available. If the target moves to a space at least 60 feet away from you where it can't see you, this effect ends.\n**Sickened.** The target has the Poisoned condition.",
+          it: "Per la durata dell'incantesimo, gli occhi dell'incantatore diventano neri e vacui. Una creatura a scelta dell'incantatore entro 18 metri da lui e che l'incantatore è in grado di vedere deve superare un tiro salvezza su Saggezza o essere influenzata da uno dei seguenti effetti a scelta per la durata dell'incantesimo.\nIn ogni suo turno fino al termine dell'incantesimo, l'incantatore può usare un'azione di Magia per bersagliare un'altra creatura, non potendo tuttavia bersagliare di nuovo una creatura che abbia superato un tiro salvezza contro questo lancio dell'incantesimo.\n**Addormentato.** Il bersaglio cade privo di sensi e si risveglia se subisce danni o se un'altra creatura usa un'azione per svegliarla scuotendola.\n**In preda al panico.** Il bersaglio è spaventato. In ogni suo turno, il bersaglio spaventato deve effettuare l'azione Scatto e muoversi per allontanarsi dall'incantatore lungo il percorso più sicuro e rapido possibile. Se il bersaglio si muove in un punto a più di 18 metri dall'incantatore dove non è più in grado di vederlo, l'effetto termina.\n**Nauseato.** Il bersaglio viene avvelenato.",
         },
       },
     },
@@ -15575,6 +15666,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "For the duration, no sound can be created within or pass through a 20-foot-radius Sphere centered on a point you choose within range. Any creature or object entirely inside the Sphere has Immunity to Thunder damage, and creatures have the Deafened condition while entirely inside it. Casting a spell that includes a Verbal component is impossible there.",
+          it: "L'incantatore genera una sfera del raggio di 6 metri centrata su un punto a sua scelta situtato entro gittata e, per la durata dell'incantesimo, nessun suono può essere creato all'interno di quella sfera o attraversarla. Ogni creatura o oggetto interamente all'interno della sfera è immune ai danni da tuono e ogni creatura interamente all'interno della sfera è assordata. All'interno dell'area è impossibile lanciare un incantesimo che includa una componente verbale.",
         },
       },
     },
@@ -15745,7 +15837,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You target a creature you know on the same plane of existence. You or a willing creature you touch enters a trance state to act as a dream messenger. While in the trance, the messenger is Incapacitated and has a Speed of 0.If the target is asleep, the messenger appears in the target's dreams and can converse with the target as long as it remains asleep, through the spell's duration. The messenger can also shape the dream's environment, creating landscapes, objects, and other images. The messenger can emerge from the trance at any time, ending the spell. The target recalls the dream perfectly upon waking.If the target is awake when you cast the spell, the messenger knows it and can either end the trance (and the spell) or wait for the target to sleep, at which point the messenger enters its dreams.You can make the messenger terrifying to the target. If you do so, the messenger can deliver a message of no more than ten words, and then the target makes a Wisdom saving throw. On a failed save, the target gains no benefit from its rest, and it takes 3d6 Psychic damage when it wakes up.",
+          en: "You target a creature you know on the same plane of existence. You or a willing creature you touch enters a trance state to act as a dream messenger. While in the trance, the messenger is Incapacitated and has a Speed of 0.\nIf the target is asleep, the messenger appears in the target's dreams and can converse with the target as long as it remains asleep, through the spell's duration. The messenger can also shape the dream's environment, creating landscapes, objects, and other images. The messenger can emerge from the trance at any time, ending the spell. The target recalls the dream perfectly upon waking.\nIf the target is awake when you cast the spell, the messenger knows it and can either end the trance (and the spell) or wait for the target to sleep, at which point the messenger enters its dreams.\nYou can make the messenger terrifying to the target. If you do so, the messenger can deliver a message of no more than ten words, and then the target makes a Wisdom saving throw. On a failed save, the target gains no benefit from its rest, and it takes 3d6 Psychic damage when it wakes up.",
+          it: "L'incantatore bersaglia una creatura che conosce sullo stesso piano di esistenza. L'incantatore o una creatura consenziente da lui toccata entra in uno stato di trance, assumendo il ruolo di messaggero onirico. Durante la trance, il messaggero incapacitato e la sua velocità è pari a 0.\nSe il bersaglio dorme, il messaggero gli appare in sogno e può conversare con lui finché rimane addormentato e l'incantesimo non termina. Il messaggero può anche modellare l'ambiente del sogno, creando personaggi, oggetti e altre immagini. Il messaggero può uscire dalla trance in ogni momento, terminando l'incantesimo. Al suo risveglio, il bersaglio ricorda il sogno perfettamente.\nSe il bersaglio è sveglio quando l'incantatore lancia l'incantesimo, il messaggero ne è consapevole e può terminare la trance (e l'incantesimo) o aspettare che il bersaglio si addormenti e così apparire nei suoi sogni.\nL'incantatore può fare in modo che il messaggero appaia terrificante al bersaglio. In questo caso, il messaggero può trasmettere un messaggio di massimo dieci parole e poi il bersaglio effettua un tiro salvezza su Saggezza. In caso di fallimento, il bersaglio non ottiene alcun beneficio dal suo riposo e subisce 3d6 danni psichici al risveglio.",
         },
       },
     },
@@ -15845,10 +15938,12 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You place a curse on a creature that you can see within range. Until the spell ends, you deal an extra 1d6 Necrotic damage to the target whenever you hit it with an attack roll. Also, choose one ability when you cast the spell. The target has Disadvantage on ability checks made with the chosen ability.If the target drops to 0 Hit Points before this spell ends, you can take a Bonus Action on a later turn to curse a new creature.",
+          en: "You place a curse on a creature that you can see within range. Until the spell ends, you deal an extra 1d6 Necrotic damage to the target whenever you hit it with an attack roll. Also, choose one ability when you cast the spell. The target has Disadvantage on ability checks made with the chosen ability.\nIf the target drops to 0 Hit Points before this spell ends, you can take a Bonus Action on a later turn to curse a new creature.",
+          it: "L'incantatore scaglia una maledizione su una creatura entro gittata e che è in grado di vedere. Fino al termine dell'incantesimo, l'incantatore infligge 1d6 danni necrotici extra la bersaglio ogni volta che lo colpisce con un tiro per colpire. Inoltre, quando l'incantatore lancia l'incantesimo, sceglie una caratteristica. Il bersaglio subisce svantaggio alle prove di caratteristica effettuate con la caratteristica scelta.\nSe il bersaglio scende a 0 punti feriti prima del termine dell'incantesimo, l'incantatore può effettuare un;'azione bonus in un suo turno successivo per maledire un'altra creature.",
         },
         upgrade: {
           en: "Your Concentration can last longer with a spell slot of level 2 (up to 4 hours), 3-4 (up to 8 hours), or 5+ (24 hours).",
+          it: "La concentrazione dell'incantatore può durare di più utilizzando uno slot incantesimo di 2˚ livello (fino a 4 ore), di 3˚ o 4˚ livello (fino a 8 ore), di 5˚ livello o superiore (24 ore).",
         },
       },
     },
@@ -15937,7 +16032,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the City of Brass on the Elemental Plane of Fire or the palace of Dispater on the second level of the Nine Hells, and you appear in or near that destination, as determined by the DM.Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle.",
+          en: "You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the City of Brass on the Elemental Plane of Fire or the palace of Dispater on the second level of the Nine Hells, and you appear in or near that destination, as determined by the DM.\nAlternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle.",
+          it: "L'incantatore e un massimo di otto creature consenzienti, che si tengono per mano formando un cerchio, vengono trasportati su un piano di esistenza diverso. L'incantatore può specificare la destinazione in termini generici, come la Città di Ottone sul Piano Elementale del Fuoco o il palazzo di DIspater sul secondo livello dei Nove Inferi, apparendo in quella destinazione o nelle sue immediate vicinanze, in base alla scelta del DM.\nIn alternativa, se l'incantatore conosce la sequenza di sigilli di un cerchio di teletrasporto su un altro piano di esistenza, questo incantesimo può portarlo fino a quel cerchio. Se il cerchio di teletrasporto è troppo piccolo per contenere tutte le creature trasportate dall'incantatore, esse appariranno negli spazi liberi più vicini.",
         },
       },
     },
@@ -16055,9 +16151,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You spray toxic mist at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d12 Poison damage.",
+          it: "L'incantatore spruzza una nebbia tossica contro una creatura entro gittata, effettuando un attacco a distanza con lincantesimo contro il bersaglio. Se il colpo va a segno, il bersaglio subisce 1d12 danni da veleno.",
         },
         upgrade: {
           en: "The damage increases by 1d12 when you reach levels 5 (2d12), 11 (3d12), and 17 (4d12).",
+          it: "I danni aumentano di 1d12 quando l'incantatore raggiunge il 5˚ livello (2d12), l'11˚ livello (3d12) e il 17˚ livello (4d12).",
         },
       },
     },
@@ -16191,7 +16289,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: 'You suggest a course of activity—described in no more than 25 words—to one creature you can see within range that can hear and understand you. The suggestion must sound achievable and not involve anything that would obviously deal damage to the target or its allies. For example, you could say, "Fetch the key to the cult\'s treasure vault, and give the key to me." Or you could say, "Stop fighting, leave this library peacefully, and don\'t return."The target must succeed on a Wisdom saving throw or have the Charmed condition for the duration or until you or your allies deal damage to the target. The Charmed target pursues the suggestion to the best of its ability. The suggested activity can continue for the entire duration, but if the suggested activity can be completed in a shorter time, the spell ends for the target upon completing it.',
+          en: 'You suggest a course of activity—described in no more than 25 words—to one creature you can see within range that can hear and understand you. The suggestion must sound achievable and not involve anything that would obviously deal damage to the target or its allies. For example, you could say, "Fetch the key to the cult\'s treasure vault, and give the key to me." Or you could say, "Stop fighting, leave this library peacefully, and don\'t return."\nThe target must succeed on a Wisdom saving throw or have the Charmed condition for the duration or until you or your allies deal damage to the target. The Charmed target pursues the suggestion to the best of its ability. The suggested activity can continue for the entire duration, but if the suggested activity can be completed in a shorter time, the spell ends for the target upon completing it.',
+          it: "L'incantatore suggerisce un corso d'azione da intraprendere (descritto con non più di 25 parole) a una creatura entro gittata che è in grado di vedere. Le creature devono essere in grado di comprendere l'incantatore. Il suggerimento deve apparire realizzabile e non deve comportare nulla che infligga palesemente danni al bersaglio o ai suoi alleati. Per esempio, l'incantatore potrebbe dire \"Prendi la chiave per il caveau del tesoro della setta e portamela\". Oppure \"Smetti di combattere, esci dalla biblioteca pacificamente e non tornare più\".\nIl bersaglio deve superare un tiro salvezza su Saggezza, altrimente rimane affascinato per la durata dell'incantesimo o finché l'incantatore o i suoi alleati non gli infliggono danni. Il bersaglio affascinato segue il suggerimento al meglio delle sue capacità. L'attività suggerita può continuare per l'intera durata, ma se può essere completata in un tempo più breve, l'incantesimo termina e non ha più effetto sul bersaglio una volta portata a termine.",
         },
       },
     },
@@ -16706,10 +16805,12 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You unleash a storm of flashing light and raging thunder in a 10-foot-radius, 40-foot-high Cylinder centered on a point you can see within range. While in this area, creatures have the Blinded and Deafened conditions, and they can't cast spells with a Verbal component.When the storm appears, each creature in it makes a Constitution saving throw, taking 2d10 Radiant damage and 2d10 Thunder damage on a failed save or half as much damage on a successful one. A creature also makes this save when it enters the spell's area for the first time on a turn or ends its turn there. A creature makes this save only once per turn.",
+          en: "You unleash a storm of flashing light and raging thunder in a 10-foot-radius, 40-foot-high Cylinder centered on a point you can see within range. While in this area, creatures have the Blinded and Deafened conditions, and they can't cast spells with a Verbal component.\nWhen the storm appears, each creature in it makes a Constitution saving throw, taking 2d10 Radiant damage and 2d10 Thunder damage on a failed save or half as much damage on a successful one. A creature also makes this save when it enters the spell's area for the first time on a turn or ends its turn there. A creature makes this save only once per turn.",
+          it: "L'incantatore scatena una tempesta di fulmini saettanti e tuoni rombanti in un cilindro del diametro di 3 metri e dell'altezza di 12 metri, centrato su un punto entro gittata che è in grado di vedere. Finché sono all'interno dell'area dell'incantesimo, le creature sono accecate e assordate, e non possono lanciare incantesimi con una componente verbale.\nQuando la tempesta compare, ogni creatura al suo interno effettua un tiro salvezza su Costituzione, subendo 2d10 danni da tuono e 2d10 danni radiosi in caso di fallimento, o la metà di quei danni in caso di successo. Inoltre, una creatura effettua questo tiro salvezza anche quando entra nell'area dell'incantesimo per la prima volta in un turno o quando vi termina il suo turno. Una creatura effettua questo tiro salvezza solo una volta per turno.",
         },
         upgrade: {
           en: "The Radiant and Thunder damage increase by 1d10 for each spell slot level above 5.",
+          it: "I danni da tuono e radiosi aumentano di 1d10 per ogni slot di livello superiore al 5˚.",
         },
       },
     },
@@ -16861,7 +16962,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You make natural terrain in a 150-foot Cube in range look, sound, and smell like another sort of natural terrain. Thus, open fields or a road can be made to resemble a swamp, hill, crevasse, or some other difficult or impassable terrain. A pond can be made to seem like a grassy meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road. Manufactured structures, equipment, and creatures within the area aren't changed.The tactile characteristics of the terrain are unchanged, so creatures entering the area are likely to notice the illusion. If the difference isn't obvious by touch, a creature examining the illusion can take the Study action to make an Intelligence (Investigation) check against your spell save DC to disbelieve it. If a creature discerns that the terrain is illusory, the creature sees a vague image superimposed on the real terrain.",
+          en: "You make natural terrain in a 150-foot Cube in range look, sound, and smell like another sort of natural terrain. Thus, open fields or a road can be made to resemble a swamp, hill, crevasse, or some other difficult or impassable terrain. A pond can be made to seem like a grassy meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road. Manufactured structures, equipment, and creatures within the area aren't changed.\nThe tactile characteristics of the terrain are unchanged, so creatures entering the area are likely to notice the illusion. If the difference isn't obvious by touch, a creature examining the illusion can take the Study action to make an Intelligence (Investigation) check against your spell save DC to disbelieve it. If a creature discerns that the terrain is illusory, the creature sees a vague image superimposed on the real terrain.",
+          it: "L'incantatore fa in modo che un terreno naturale in un cubo con spigolo di 45 metri entro gittata abbia l'aspetto, i suoni e gli odori di un altro tipo di terreno naturale. Un campo aperto o una strada potrebbe così sembrare una palude, una collina, un crepaccio o qualche altro tipo di terreno difficile e invalicabile. Allo stesso modo, uno stagno potrebbe apparire come un prato erboso, un precipizio come un dolce pendio o un fosso irto di rocce come una strada ampia e accogliente. Tuttavia, le strutture artificiali, l'equipaggiamento e le creature all'interno dell'area non cambiano.\nInoltre, le caratteristiche tattili del terreno rimangono invariate, quindi le creature che entrano nell'area hanno buone probabilità di accorgersi dell'illusione. Se la differenza non è ovvia al tatto, una creatura che esamina l'illusione può effettuare l'azione di Studio per effettuare una prova di Intelligenza (Indagare) contro la CD del tiro salvezza sull'incantesimo per non essere tratta in inganno. Se una creatura si accorge che il terreno è illusorio, vede un'immagine indistinta sovrapposta al terreno reale.",
         },
       },
     },
@@ -16899,10 +17001,12 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against one creature within reach. On a hit, the target takes 3d6 Necrotic damage, and you regain Hit Points equal to half the amount of Necrotic damage dealt.Until the spell ends, you can make the attack again on each of your turns as a Magic action, targeting the same creature or a different one.",
+          en: "The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against one creature within reach. On a hit, the target takes 3d6 Necrotic damage, and you regain Hit Points equal to half the amount of Necrotic damage dealt.\nUntil the spell ends, you can make the attack again on each of your turns as a Magic action, targeting the same creature or a different one.",
+          it: "Il tocco della mano dell'incantatore, avviluppata in una cortina d'ombra, può risucchiare l'energia vitale delle altre creature per curare le proprie ferite. Effettua un attacco con incantesimo in mischia contro una creatura a portata. Se il colpo va a segno, il bersaglio subisce 3d6 danni necrotici e l'incantatore recupera una quantità di punti ferita pari alla metà dei danni necrotici inflitti.\nFino al termine dell'incantesimo, come azione di Magia, l'incantatore può effettuare di nuovo l'attacco a ogni suo turno, prendendo di mira la stessa creatura o un'altra.",
         },
         upgrade: {
           en: "The damage increases by 1d6 for each spell slot level above 3.",
+          it: "I danni aumentano di 1d6 per ogni slot di livello superiore al 3˚.",
         },
       },
     },
@@ -16938,9 +17042,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "Channeling the chill of the grave, make a melee spell attack against a target within reach. On a hit, the target takes 1d10 Necrotic damage, and it can't regain Hit Points until the end of your next turn.",
+          it: "Incanalando un flusso di gelo sepolcrale, l'incantatore effettua un attacco con incantesimo in mischia contro un bersaglio a portata. Se il colpo va a segno, il bersaglio subisce 1d10 danni necrotici e non può recuperare punti ferita fino al termine del turno successivo dell'incantatore.",
         },
         upgrade: {
           en: "The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).",
+          it: "I danni aumentano di 1d10 quando l'incantatore raggiunge il 5˚ livello (2d10), l'11˚ livello (3d10) e il 17˚ livello (4d10).",
         },
       },
     },
@@ -16990,7 +17096,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You create a twisting pattern of colors in a 30-foot Cube within range. The pattern appears for a moment and vanishes. Each creature in the area who can see the pattern must succeed on a Wisdom saving throw or have the Charmed condition for the duration. While Charmed, the creature has the Incapacitated condition and a Speed of 0.The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor.",
+          en: "You create a twisting pattern of colors in a 30-foot Cube within range. The pattern appears for a moment and vanishes. Each creature in the area who can see the pattern must succeed on a Wisdom saving throw or have the Charmed condition for the duration. While Charmed, the creature has the Incapacitated condition and a Speed of 0.\nThe spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor.",
+          it: "All'interno di un cubo con spigolo di 9 metri entro gittata, l'incantatore crea un intreccio di colori serpeggianti che appare per qualche secondo prima di svanire. Ogni creatura all'interno dell'area i grado di vedere l'intreccio deve superare un tiro salvezza su Saggezza, altrimenti rimane affascinata per la durata dell'incantesimo. Finché è affascinata, la creatura è incapacitata e la sua velocità è 0.\nL'incantesimo su una creatura influenzata termina se questa subisce danni o se qualcuno usa un'azione per scuoterla, destandola al suo stato confusionale.",
         },
       },
     },
@@ -17070,7 +17177,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet. Both trees must be living and at least the same size as you. You must use 5 feet of movement to enter a tree. You instantly know the location of all other trees of the same kind within 500 feet and, as part of the move used to enter the tree, can either pass into one of those trees or step out of the tree you're in. You appear in a spot of your choice within 5 feet of the destination tree, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the tree you entered.You can use this transportation ability only once on each of your turns. You must end each turn outside a tree.",
+          en: "You gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet. Both trees must be living and at least the same size as you. You must use 5 feet of movement to enter a tree. You instantly know the location of all other trees of the same kind within 500 feet and, as part of the move used to enter the tree, can either pass into one of those trees or step out of the tree you're in. You appear in a spot of your choice within 5 feet of the destination tree, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the tree you entered.\nYou can use this transportation ability only once on each of your turns. You must end each turn outside a tree.",
+          it: "L'incantatore ottiene la capacità di entrare in un albero e muoversi al suo interno dino ad arrivare a un altro albero dello stesso tipo posto entro 150 metri. Entrambi gli alberi devono essere vivi e di tagli pari o superiore a quella dell'incantatore, che deve usare 1,5 metri di movimento per entrare in uno di essi. L'incantatore apprende immediatamente l'ubicazione di tutti gli altri alberi dello stesso tipo entro 150 metri e, come parte del movimento usato per entrare nell'albero, può scegliere se passare in uno di quegli alberi o riemergere da quello in cui si trova. L'incantatore ricompare in un punto a sua scelta entro 1,5 metri dall'albero di destinazione, usando ulteriori 1,5 metri di movimento. Se non gli rimane più alcun movimento, ricompare entro 1,5 metri dall'albero in cui è entrato.\nQuest'abilità di trasporto è utilizzabile una sola volta per turno. Inoltre, l'incantatore deve concludere ogni suo turno fuori dall'albero.",
         },
       },
     },
@@ -17348,7 +17456,8 @@ const dndSpells = normalize<DndSpell>(
       },
       text: {
         base: {
-          en: "You flourish the weapon used in the casting and then vanish to strike like the wind. Choose up to five creatures you can see within range. Make a melee spell attack against each target. On a hit, a target takes 6d10 Force damage.You then teleport to an unoccupied space you can see within 5 feet of one of the targets.",
+          en: "You flourish the weapon used in the casting and then vanish to strike like the wind. Choose up to five creatures you can see within range. Make a melee spell attack against each target. On a hit, a target takes 6d10 Force damage.\nYou then teleport to an unoccupied space you can see within 5 feet of one of the targets.",
+          it: "L'incantatore brandisce l'arma utilizzata per lanciare l'incantesimo e poi svanisce per colpire veloce come il vento: sceglie fino a cinque creature entro gittata che è in grado di vedere, effettuando un attacco in mischia con incantesimo contro ogni bersaglio. Se il colpo va a segno, il bersaglio subisce 6d10 danni da forza.\nL'incantatore poi si teletrasporta in uno spazio libero che è in grado di vedere entro 1,5 metri da uno dei bersagli.",
         },
       },
     },
@@ -17657,6 +17766,7 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "For the duration, the willing creature you touch has Truesight with a range of 120 feet.",
+          it: "Per la durata dell'incantesimo, una creatura consenziente toccata dall'incantatore è dotata di vista pura fino a 36 metri.",
         },
       },
     },
@@ -17741,9 +17851,11 @@ const dndSpells = normalize<DndSpell>(
       text: {
         base: {
           en: "You touch a willing creature. For the duration, the target gains a Fly Speed of 60 feet and can hover. When the spell ends, the target falls if it is still aloft unless it can stop the fall.",
+          it: "L'incantatore tocca una creatura consenziente. Per la durata dell'incantesimo, il bersaglio ottiene una velocità di volo di 18 metri e può fluttuare. Al termine dell'incantesimo, il bersaglio ancora sospeso in aria cade, sempre che non abbia modo di impedire la caduta.",
         },
         upgrade: {
           en: "You can target one additional creature for each spell slot level above 3.",
+          it: "L'incantatore può bersagliare una creatura aggiuntiva per ogni slot di livello superiore al 3˚.",
         },
       },
     },
