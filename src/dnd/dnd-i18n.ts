@@ -87,10 +87,16 @@ const dndI18n = {
     "dnd.spells.options.input.name.placeholder": "Name",
     "dnd.spells.options.label.at": " at ",
     "dnd.spells.options.label.display": "Display spells as ",
+    "dnd.spells.options.label.sort": " sorted by ",
     "dnd.spells.options.label.zoom": " zoom",
     "dnd.spells.options.select.classes.placeholder": "Select classes",
     "dnd.spells.options.select.levels.placeholder": "Select levels",
     "dnd.spells.options.select.schools.placeholder": "Select school",
+    "dnd.spells.options.sort_by.level": "Level",
+    "dnd.spells.options.sort_by.name": "Name",
+    "dnd.spells.options.sort_by.school": "School",
+    "dnd.spells.options.sort_order.asc": "Asc",
+    "dnd.spells.options.sort_order.desc": "Desc",
 
     // Export spells
     "dnd.spells.export.button.cancel": "Cancel",
@@ -191,10 +197,16 @@ const dndI18n = {
     "dnd.spells.options.input.name.placeholder": "Nome",
     "dnd.spells.options.label.at": " al ",
     "dnd.spells.options.label.display": "Mostra incantesimi come ",
+    "dnd.spells.options.label.sort": " ordinati per ",
     "dnd.spells.options.label.zoom": " zoom",
     "dnd.spells.options.select.classes.placeholder": "Seleziona classi",
     "dnd.spells.options.select.levels.placeholder": "Seleziona livelli",
     "dnd.spells.options.select.schools.placeholder": "Seleziona scuola",
+    "dnd.spells.options.sort_by.level": "Livello",
+    "dnd.spells.options.sort_by.name": "Nome",
+    "dnd.spells.options.sort_by.school": "Scuola",
+    "dnd.spells.options.sort_order.asc": "Asc",
+    "dnd.spells.options.sort_order.desc": "Desc",
 
     // Export spells
     "dnd.spells.export.button.cancel": "Annulla",

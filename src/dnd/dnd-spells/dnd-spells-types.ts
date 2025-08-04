@@ -93,6 +93,32 @@ export const dndSpellsOptionsViewOptions = dndSpellsOptionsViewSchema.options;
 export type DndSpellsOptionsView = z.infer<typeof dndSpellsOptionsViewSchema>;
 
 //------------------------------------------------------------------------------
+// Options - Sort By
+//------------------------------------------------------------------------------
+
+export const dndSpellsOptionsSortBySchema = z.enum(["name", "level", "school"]);
+
+export const dndSpellsOptionsSortByOptions =
+  dndSpellsOptionsSortBySchema.options;
+
+export type DndSpellsOptionsSortBy = z.infer<
+  typeof dndSpellsOptionsSortBySchema
+>;
+
+//------------------------------------------------------------------------------
+// Options - Sort Order
+//------------------------------------------------------------------------------
+
+export const dndSpellsOptionsSortOrderSchema = z.enum(["asc", "desc"]);
+
+export const dndSpellsOptionsSortOrderOptions =
+  dndSpellsOptionsSortOrderSchema.options;
+
+export type DndSpellsOptionsSortOrder = z.infer<
+  typeof dndSpellsOptionsSortOrderSchema
+>;
+
+//------------------------------------------------------------------------------
 // Options
 //------------------------------------------------------------------------------
 
@@ -102,6 +128,8 @@ export const dndSpellsOptionsSchema = z.object({
   name: z.string(),
   school: dndMagicSchoolSchema.optional(),
 
+  sortBy: dndSpellsOptionsSortBySchema,
+  sortOrder: dndSpellsOptionsSortOrderSchema,
   view: dndSpellsOptionsViewSchema,
   zoom: z.number(),
 });

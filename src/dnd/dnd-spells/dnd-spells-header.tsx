@@ -29,14 +29,20 @@ import {
   useDndSpellsOptionsLevels,
   useDndSpellsOptionsName,
   useDndSpellsOptionsSchool,
+  useDndSpellsOptionsSortBy,
+  useDndSpellsOptionsSortOrder,
   useDndSpellsOptionsView,
   useDndSpellsOptionsZoom,
   useDndSpellsSelectAll,
 } from "./dnd-spells-store";
 import {
+  type DndSpellsOptionsSortBy,
+  type DndSpellsOptionsSortOrder,
   type DndSpellsOptionsView,
   dndSpellsOptionsClasses,
   dndSpellsOptionsLevels,
+  dndSpellsOptionsSortByOptions,
+  dndSpellsOptionsSortOrderOptions,
   dndSpellsOptionsViewOptions,
 } from "./dnd-spells-types";
 import { localizeDndSpell } from "./use-dnd-spell-localized";
@@ -48,6 +54,8 @@ export default function DndSpellsHeader() {
   const [levels, setLevels] = useDndSpellsOptionsLevels();
   const [classes, setClasses] = useDndSpellsOptionsClasses();
   const [school, setSchool] = useDndSpellsOptionsSchool();
+  const [sortBy, setSortBy] = useDndSpellsOptionsSortBy();
+  const [sortOrder, setSortOrder] = useDndSpellsOptionsSortOrder();
   const [view, setView] = useDndSpellsOptionsView();
   const [zoom, setZoom] = useDndSpellsOptionsZoom();
 
@@ -86,6 +94,24 @@ export default function DndSpellsHeader() {
     });
   }, [i18n]);
 
+  const sortByCollection = useMemo(() => {
+    return createListCollection({
+      items: dndSpellsOptionsSortByOptions.map((option) => ({
+        label: i18n.t(`dnd.spells.options.sort_by.${option}`),
+        value: option,
+      })),
+    });
+  }, [i18n]);
+
+  const sortOrderCollection = useMemo(() => {
+    return createListCollection({
+      items: dndSpellsOptionsSortOrderOptions.map((option) => ({
+        label: i18n.t(`dnd.spells.options.sort_order.${option}`),
+        value: option,
+      })),
+    });
+  }, [i18n]);
+
   return (
     <VStack bgColor="bg" gap={0.25} shadow="sm" top={0} w="100%" zIndex={1}>
       <Box maxW="64em" w="100%">
@@ -99,7 +125,7 @@ export default function DndSpellsHeader() {
               </Text>
               <SelectSimple
                 collection={viewCollection}
-                defaultValue={[`${view}`]}
+                defaultValue={[view]}
                 flex={0}
                 minW="6em"
                 name="dnd-spells-options-view"
@@ -108,6 +134,34 @@ export default function DndSpellsHeader() {
                 }
                 size="sm"
               />
+
+              <Text fontSize="sm">
+                {i18n.t("dnd.spells.options.label.sort")}
+              </Text>
+              <SelectSimple
+                collection={sortByCollection}
+                defaultValue={[sortBy]}
+                flex={0}
+                minW="6em"
+                name="dnd-spells-options-sort-by"
+                onValueChange={(e) =>
+                  setSortBy(e.value[0] as DndSpellsOptionsSortBy)
+                }
+                size="sm"
+              />
+              <Text fontSize="sm">{" : "}</Text>
+              <SelectSimple
+                collection={sortOrderCollection}
+                defaultValue={[sortOrder]}
+                flex={0}
+                minW="5em"
+                name="dnd-spells-options-sort-order"
+                onValueChange={(e) =>
+                  setSortOrder(e.value[0] as DndSpellsOptionsSortOrder)
+                }
+                size="sm"
+              />
+
               {view === "cards" && (
                 <>
                   <Text fontSize="sm">

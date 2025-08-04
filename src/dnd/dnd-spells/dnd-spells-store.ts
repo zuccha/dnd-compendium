@@ -15,6 +15,8 @@ import {
   dndSpellsOptionsClassesSchema,
   dndSpellsOptionsLevels,
   dndSpellsOptionsLevelsSchema,
+  dndSpellsOptionsSortBySchema,
+  dndSpellsOptionsSortOrderSchema,
   dndSpellsOptionsViewSchema,
 } from "./dnd-spells-types";
 
@@ -114,6 +116,8 @@ const optionsCache: DndSpellsOptions = {
   name: "",
   school: undefined,
 
+  sortBy: "name",
+  sortOrder: "asc",
   view: "table",
   zoom: 1,
 };
@@ -208,6 +212,28 @@ export const useDndSpellsOptionsView = createUseOption(
   "table",
   dndSpellsOptionsViewSchema.parse,
   (view) => (optionsCache.view = view),
+);
+
+//------------------------------------------------------------------------------
+// Use Dnd Spells Options Sort By
+//------------------------------------------------------------------------------
+
+export const useDndSpellsOptionsSortBy = createUseOption(
+  "dns.spells.options.sort_by",
+  "name",
+  dndSpellsOptionsSortBySchema.parse,
+  (view) => (optionsCache.sortBy = view),
+);
+
+//------------------------------------------------------------------------------
+// Use Dnd Spells Options Sort Order
+//------------------------------------------------------------------------------
+
+export const useDndSpellsOptionsSortOrder = createUseOption(
+  "dns.spells.options.sort_order",
+  "asc",
+  dndSpellsOptionsSortOrderSchema.parse,
+  (view) => (optionsCache.sortOrder = view),
 );
 
 //------------------------------------------------------------------------------
