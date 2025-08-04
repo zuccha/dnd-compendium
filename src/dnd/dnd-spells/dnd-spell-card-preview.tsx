@@ -4,7 +4,6 @@ import useDownloadableDiv from "../../hooks/use-downloadable-div";
 import { inToEm } from "../../utils/units";
 import DndSpellCard, { dndCardBorderColor } from "./dnd-spell-card";
 import { useDndSpell } from "./dnd-spells-store";
-import { dndSpellsOptionsView } from "./dnd-spells-types";
 
 export type DndSpellCardPreviewHandle = {
   downloadPng: () => Promise<string>;
@@ -38,7 +37,7 @@ export default forwardRef<DndSpellCardPreviewHandle, DndSpellCardPreviewProps>(
         p={inToEm(bleed)}
         ref={downloadableDiv.ref}
       >
-        <DndSpellCard spell={spell} view={dndSpellsOptionsView.full} />
+        <DndSpellCard spell={spell} />
       </Center>
     );
   },

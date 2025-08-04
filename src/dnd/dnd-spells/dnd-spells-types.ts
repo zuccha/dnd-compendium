@@ -86,24 +86,11 @@ export const dndSpellsOptionsLevelsSchema = z.array(z.number());
 // Options - View
 //------------------------------------------------------------------------------
 
-export const dndSpellsOptionsViewSchema = z.union([
-  z.literal(0),
-  z.literal(1),
-  z.literal(2),
-  z.literal(3),
-]);
+export const dndSpellsOptionsViewSchema = z.enum(["cards", "table"]);
 
-/* eslint-disable sort-keys */
-export const dndSpellsOptionsView = {
-  minimal: 0,
-  compact: 1,
-  full: 2,
-  table: 3,
-} as const;
-/* eslint-enable sort-keys */
+export const dndSpellsOptionsViewOptions = dndSpellsOptionsViewSchema.options;
 
-export type DndSpellsOptionsView =
-  (typeof dndSpellsOptionsView)[keyof typeof dndSpellsOptionsView];
+export type DndSpellsOptionsView = z.infer<typeof dndSpellsOptionsViewSchema>;
 
 //------------------------------------------------------------------------------
 // Options

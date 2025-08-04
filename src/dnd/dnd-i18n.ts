@@ -77,9 +77,7 @@ const dndI18n = {
     "dnd.spell.source.page": "p. <1>", // 1 = page
     "dnd.spell.upgrade.cantrip": "Cantrip Upgrade",
     "dnd.spell.upgrade.spell": "At Higher Levels",
-    "dnd.spell.view.compact": "Cards (compact)",
-    "dnd.spell.view.full": "Cards",
-    "dnd.spell.view.minimal": "Cards (minimal)",
+    "dnd.spell.view.cards": "Cards",
     "dnd.spell.view.table": "Table",
 
     // Filters/options
@@ -183,9 +181,7 @@ const dndI18n = {
     "dnd.spell.source.page": "p. <1>", // 1 = page
     "dnd.spell.upgrade.cantrip": "Potenziamento del Trucchetto",
     "dnd.spell.upgrade.spell": "A Livelli Superiori",
-    "dnd.spell.view.compact": "Carte (compatte)",
-    "dnd.spell.view.full": "Carte",
-    "dnd.spell.view.minimal": "Carte (minimali)",
+    "dnd.spell.view.cards": "Carte",
     "dnd.spell.view.table": "Tabella",
 
     // Filters/options

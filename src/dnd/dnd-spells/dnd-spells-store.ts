@@ -15,7 +15,6 @@ import {
   dndSpellsOptionsClassesSchema,
   dndSpellsOptionsLevels,
   dndSpellsOptionsLevelsSchema,
-  dndSpellsOptionsView,
   dndSpellsOptionsViewSchema,
 } from "./dnd-spells-types";
 
@@ -115,7 +114,7 @@ const optionsCache: DndSpellsOptions = {
   name: "",
   school: undefined,
 
-  view: dndSpellsOptionsView.table,
+  view: "table",
   zoom: 1,
 };
 
@@ -206,7 +205,7 @@ export const useDndSpellsOptionsLevels = createUseOption(
 
 export const useDndSpellsOptionsView = createUseOption(
   "dns.spells.options.view",
-  dndSpellsOptionsView.table,
+  "table",
   dndSpellsOptionsViewSchema.parse,
   (view) => (optionsCache.view = view),
 );

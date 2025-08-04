@@ -11,7 +11,7 @@ import { memo } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import useI18n from "../../i18n/use-i18n";
-import { type DndSpell, dndSpellsOptionsView } from "./dnd-spells-types";
+import { type DndSpell } from "./dnd-spells-types";
 import useDndSpellLocalized from "./use-dnd-spell-localized";
 
 const remarkPlugins = [remarkGfm];
@@ -20,7 +20,6 @@ export type DndSpellCardProps = {
   onClickSpell?: () => void;
   selected?: boolean;
   spell: DndSpell;
-  view: number;
 };
 
 export const dndCardBackgroundColor = "orange.50";
@@ -35,7 +34,6 @@ export default memo(function DndSpellCard({
   onClickSpell = () => {},
   selected = false,
   spell,
-  view,
 }: DndSpellCardProps) {
   const i18n = useI18n();
 
@@ -68,7 +66,7 @@ export default memo(function DndSpellCard({
       color={dndCardTextColor}
       fontFamily="Bookinsanity"
       gap="0.2em"
-      h={view === dndSpellsOptionsView.full ? `${dndCardHeight}em` : undefined}
+      h={`${dndCardHeight}em`}
       onClick={onClickSpell}
       outlineColor="green.500"
       outlineStyle="auto"
@@ -119,58 +117,50 @@ export default memo(function DndSpellCard({
         <Text>{school}</Text>
       </HStack>
 
-      {view >= dndSpellsOptionsView.compact && (
-        <SimpleGrid borderColor="" columns={2} gap="0.125em" w="100%">
-          <GridCell label={castingTimeLabel} text={castingTime} />
-          <GridCell label={rangeLabel} text={range} />
-          <GridCell label={componentsLabel} text={components} />
-          <GridCell label={durationLabel} text={duration} />
-        </SimpleGrid>
-      )}
+      <SimpleGrid borderColor="" columns={2} gap="0.125em" w="100%">
+        <GridCell label={castingTimeLabel} text={castingTime} />
+        <GridCell label={rangeLabel} text={range} />
+        <GridCell label={componentsLabel} text={components} />
+        <GridCell label={durationLabel} text={duration} />
+      </SimpleGrid>
 
-      {view >= dndSpellsOptionsView.full && (
-        <Text
-          color={dndCardTextColorInverted}
-          fontFamily="Mr Eaves"
-          fontSize="0.6em"
-          lineHeight={1}
-          textAlign="left"
-          textTransform="lowercase"
-          w="100%"
-        >
-          {materials}
-        </Text>
-      )}
+      <Text
+        color={dndCardTextColorInverted}
+        fontFamily="Mr Eaves"
+        fontSize="0.6em"
+        lineHeight={1}
+        textAlign="left"
+        textTransform="lowercase"
+        w="100%"
+      >
+        {materials}
+      </Text>
 
-      {view >= dndSpellsOptionsView.full && (
-        <VStack
-          align="start"
-          bgColor={dndCardBackgroundColor}
-          flex={1}
-          fontSize="0.625em"
-          lineHeight={1.1}
-          overflow="auto"
-          px="0.5em"
-          py="0.5em"
-          w="100%"
-        >
-          <ReactMarkdown remarkPlugins={remarkPlugins}>
-            {text.base}
-          </ReactMarkdown>
+      <VStack
+        align="start"
+        bgColor={dndCardBackgroundColor}
+        flex={1}
+        fontSize="0.625em"
+        lineHeight={1.1}
+        overflow="auto"
+        px="0.5em"
+        py="0.5em"
+        w="100%"
+      >
+        <ReactMarkdown remarkPlugins={remarkPlugins}>{text.base}</ReactMarkdown>
 
-          {text.upgrade && (
-            <>
-              <Text fontFamily="Mr Eaves" fontWeight="bold">
-                {upgradeLabel}
-              </Text>
+        {text.upgrade && (
+          <>
+            <Text fontFamily="Mr Eaves" fontWeight="bold">
+              {upgradeLabel}
+            </Text>
 
-              <ReactMarkdown remarkPlugins={remarkPlugins}>
-                {text.upgrade}
-              </ReactMarkdown>
-            </>
-          )}
-        </VStack>
-      )}
+            <ReactMarkdown remarkPlugins={remarkPlugins}>
+              {text.upgrade}
+            </ReactMarkdown>
+          </>
+        )}
+      </VStack>
 
       <HStack
         color={dndCardTextColorInverted}

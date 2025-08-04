@@ -34,7 +34,7 @@ import {
   type DndSpellsOptionsView,
   dndSpellsOptionsClasses,
   dndSpellsOptionsLevels,
-  dndSpellsOptionsView,
+  dndSpellsOptionsViewOptions,
 } from "./dnd-spells-types";
 
 export default function DndSpellsHeader() {
@@ -74,14 +74,11 @@ export default function DndSpellsHeader() {
   }, [i18n]);
 
   const viewCollection = useMemo(() => {
-    const { full, compact, minimal, table } = dndSpellsOptionsView;
     return createListCollection({
-      items: [
-        { label: i18n.t("dnd.spell.view.full"), value: `${full}` },
-        { label: i18n.t("dnd.spell.view.compact"), value: `${compact}` },
-        { label: i18n.t("dnd.spell.view.minimal"), value: `${minimal}` },
-        { label: i18n.t("dnd.spell.view.table"), value: `${table}` },
-      ],
+      items: dndSpellsOptionsViewOptions.map((option) => ({
+        label: i18n.t(`dnd.spell.view.${option}`),
+        value: option,
+      })),
     });
   }, [i18n]);
 
@@ -100,14 +97,14 @@ export default function DndSpellsHeader() {
                 collection={viewCollection}
                 defaultValue={[`${view}`]}
                 flex={0}
-                minW="11em"
+                minW="6em"
                 name="dnd-spells-options-view"
                 onValueChange={(e) =>
-                  setView(+e.value[0] as DndSpellsOptionsView)
+                  setView(e.value[0] as DndSpellsOptionsView)
                 }
                 size="sm"
               />
-              {view !== dndSpellsOptionsView.table && (
+              {view === "cards" && (
                 <>
                   <Text fontSize="sm">
                     {i18n.t("dnd.spells.options.label.at")}
