@@ -1,17 +1,19 @@
 import {
   Box,
-  Button,
   HStack,
+  IconButton,
   Input,
   Text,
   VStack,
   createListCollection,
 } from "@chakra-ui/react";
-import { useMemo } from "react";
+import { useCallback, useMemo } from "react";
+import { LuCopy, LuSquareCheck, LuSquareX } from "react-icons/lu";
 import AppHeader from "../../app-header";
 import NumberInput from "../../components/ui/number-input";
 import Select from "../../components/ui/select";
 import SelectSimple from "../../components/ui/select-simple";
+import { toaster } from "../../components/ui/toaster";
 import useI18n from "../../i18n/use-i18n";
 import { compareLabels } from "../../utils/select-collection";
 import {
@@ -19,8 +21,9 @@ import {
   type DndMagicSchool,
   dndMagicSchool,
 } from "../dnd-types";
-import DndSpellsExportDialog from "./dnd-spells-export-dialog";
+import dndSpells from "./dnd-spells";
 import {
+  useDndSpellIdsSelected,
   useDndSpellsDeselectAll,
   useDndSpellsOptionsClasses,
   useDndSpellsOptionsLevels,
@@ -36,6 +39,7 @@ import {
   dndSpellsOptionsLevels,
   dndSpellsOptionsViewOptions,
 } from "./dnd-spells-types";
+import { localizeDndSpell } from "./use-dnd-spell-localized";
 
 export default function DndSpellsHeader() {
   const i18n = useI18n();
@@ -128,13 +132,25 @@ export default function DndSpellsHeader() {
             </HStack>
 
             <HStack>
-              <Button onClick={deselectAll} size="sm" variant="outline">
-                {i18n.t("dnd.spells.options.button.deselect_all")}
-              </Button>
-              <Button onClick={selectAll} size="sm" variant="outline">
-                {i18n.t("dnd.spells.options.button.select_all")}
-              </Button>
-              <DndSpellsExportDialog />
+              <IconButton
+                aria-label={i18n.t("dnd.spells.options.button.deselect_all")}
+                onClick={deselectAll}
+                size="sm"
+                variant="outline"
+              >
+                <LuSquareX />
+              </IconButton>
+
+              <IconButton
+                aria-label={i18n.t("dnd.spells.options.button.select_all")}
+                onClick={selectAll}
+                size="sm"
+                variant="outline"
+              >
+                <LuSquareCheck />
+              </IconButton>
+
+              <CopySelectedSpellsToClipboard />
             </HStack>
           </HStack>
 
@@ -191,3 +207,27 @@ const levelsCollection = createListCollection({
     value: `${level}`,
   })),
 });
+
+function CopySelectedSpellsToClipboard() {
+  const i18n = useI18n();
+  const spellIds = useDndSpellIdsSelected();
+
+  const copySpellsAsJson = useCallback(async () => {
+    const localizedSpells = spellIds.map((id) =>
+      localizeDndSpell(dndSpells.byId[id], i18n),
+    );
+    const json = JSON.stringify(localizedSpells, null, 2);
+    await navigator.clipboard.writeText(json);
+    toaster.success({ title: "Spells copied to clipboard." });
+  }, [i18n, spellIds]);
+
+  return (
+    <IconButton
+      disabled={spellIds.length === 0}
+      onClick={copySpellsAsJson}
+      size="sm"
+    >
+      <LuCopy />
+    </IconButton>
+  );
+}
