@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import z from "zod";
+import z from "zod/v4";
 
 type Callback<T> = (value: T) => void;
 

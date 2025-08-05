@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from "zod/v4";
 import { i18nDistanceSchema } from "../../i18n/i18n-distance";
 import { i18nStringSchema } from "../../i18n/i18n-string";
 import { range } from "../../utils/array";

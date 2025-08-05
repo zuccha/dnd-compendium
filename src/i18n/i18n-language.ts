@@ -1,4 +1,4 @@
-import z from "zod";
+import z from "zod/v4";
 
 export const i18nLanguageMandatorySchema = z.literal("en");
 export type I18nLanguageMandatory = z.infer<typeof i18nLanguageMandatorySchema>;

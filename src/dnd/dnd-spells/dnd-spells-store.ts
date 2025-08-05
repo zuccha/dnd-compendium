@@ -1,5 +1,5 @@
 import { useCallback, useLayoutEffect, useState } from "react";
-import { z } from "zod";
+import { z } from "zod/v4";
 import { loadI18nLanguage } from "../../i18n/use-i18n-language";
 import { createObservable } from "../../utils/observable";
 import { createObservableBydId } from "../../utils/observable-by-id";

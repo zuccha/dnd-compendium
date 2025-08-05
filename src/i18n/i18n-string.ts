@@ -1,4 +1,4 @@
-import z from "zod";
+import z from "zod/v4";
 import type { I18nLanguage } from "./i18n-language";
 
 export const i18nStringSchema = z.object({
