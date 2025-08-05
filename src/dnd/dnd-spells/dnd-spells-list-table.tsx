@@ -2,18 +2,18 @@ import { Checkbox, Flex, Table } from "@chakra-ui/react";
 import useI18n from "../../i18n/use-i18n";
 import DndSpellsListEmpty from "./dnd-spells-list-empty";
 import {
+  deselectAllVisibleDndSpells,
+  selectAllVisibleDndSpells,
+  toggleDndSpellSelection,
   useDndSpell,
-  useDndSpellIds,
-  useDndSpellSelected,
-  useDndSpellToggleSelection,
-  useDndSpellsDeselectAll,
-  useDndSpellsSelectAll,
-  useDndSpellsSelectionSize,
+  useIsDndSpellSelected,
+  useSelectedVisibleSpellsCount,
+  useVisibleDndSpellIds,
 } from "./dnd-spells-store";
 import useDndSpellLocalized from "./use-dnd-spell-localized";
 
 export default function DndSpellsListTable() {
-  const spellIds = useDndSpellIds();
+  const spellIds = useVisibleDndSpellIds();
 
   if (spellIds.length === 0) return <DndSpellsListEmpty />;
 
@@ -33,9 +33,7 @@ export default function DndSpellsListTable() {
 
 function DndSpellsTableHeader({ size }: { size: number }) {
   const i18n = useI18n();
-  const deselectAll = useDndSpellsDeselectAll();
-  const selectAll = useDndSpellsSelectAll();
-  const selectedSize = useDndSpellsSelectionSize();
+  const count = useSelectedVisibleSpellsCount();
 
   return (
     <Table.Row>
@@ -43,13 +41,13 @@ function DndSpellsTableHeader({ size }: { size: number }) {
         <Flex alignItems="center">
           <Checkbox.Root
             checked={
-              selectedSize === size
-                ? true
-                : selectedSize === 0
-                  ? false
-                  : "indeterminate"
+              count === size ? true : count === 0 ? false : "indeterminate"
             }
-            onCheckedChange={selectedSize === size ? deselectAll : selectAll}
+            onCheckedChange={
+              count === size
+                ? deselectAllVisibleDndSpells
+                : selectAllVisibleDndSpells
+            }
             position="static"
             size="sm"
           >
@@ -61,9 +59,7 @@ function DndSpellsTableHeader({ size }: { size: number }) {
       </Table.ColumnHeader>
       <Table.ColumnHeader>{i18n.t("dnd.spell.name")}</Table.ColumnHeader>
       <Table.ColumnHeader>{i18n.t("dnd.spell.level")}</Table.ColumnHeader>
-      <Table.ColumnHeader>
-        {i18n.t("dnd.spell.magic_school")}
-      </Table.ColumnHeader>
+      <Table.ColumnHeader>{i18n.t("dnd.spell.school")}</Table.ColumnHeader>
       <Table.ColumnHeader>
         {i18n.t("dnd.spell.casting_time")}
       </Table.ColumnHeader>
@@ -80,8 +76,7 @@ function DndSpellsTableRow({ spellId }: { spellId: string }) {
   const spell = useDndSpell(spellId);
   const spellLocalized = useDndSpellLocalized(spell);
 
-  const selected = useDndSpellSelected(spellId);
-  const toggle = useDndSpellToggleSelection(spellId);
+  const selected = useIsDndSpellSelected(spellId);
 
   return (
     <Table.Row>
@@ -89,7 +84,7 @@ function DndSpellsTableRow({ spellId }: { spellId: string }) {
         <Flex alignItems="center">
           <Checkbox.Root
             checked={selected}
-            onCheckedChange={toggle}
+            onCheckedChange={() => toggleDndSpellSelection(spellId)}
             position="static"
             size="sm"
           >

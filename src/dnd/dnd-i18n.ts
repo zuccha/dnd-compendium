@@ -28,15 +28,15 @@ const dndI18n = {
     "dnd.class@short.warlock": "War.",
     "dnd.class@short.wizard": "Wiz.",
 
-    // Magic School
-    "dnd.magic_school.abjuration": "Abjuration",
-    "dnd.magic_school.conjuration": "Conjuration",
-    "dnd.magic_school.divination": "Divination",
-    "dnd.magic_school.enchantment": "Enchantment",
-    "dnd.magic_school.evocation": "Evocation",
-    "dnd.magic_school.illusion": "Illusion",
-    "dnd.magic_school.necromancy": "Necromancy",
-    "dnd.magic_school.transmutation": "Transmutation",
+    // Spell School
+    "dnd.spell_school.abjuration": "Abjuration",
+    "dnd.spell_school.conjuration": "Conjuration",
+    "dnd.spell_school.divination": "Divination",
+    "dnd.spell_school.enchantment": "Enchantment",
+    "dnd.spell_school.evocation": "Evocation",
+    "dnd.spell_school.illusion": "Illusion",
+    "dnd.spell_school.necromancy": "Necromancy",
+    "dnd.spell_school.transmutation": "Transmutation",
 
     // Spell-related
     "dnd.spell.casting_time": "Casting time",
@@ -62,7 +62,6 @@ const dndI18n = {
     "dnd.spell.level": "Level",
     "dnd.spell.level.cantrip": "cantrip",
     "dnd.spell.level.number": "level <1>", // 1 = level
-    "dnd.spell.magic_school": "School",
     "dnd.spell.name": "Name",
     "dnd.spell.or_ritual": " or ritual",
     "dnd.spell.range": "Range",
@@ -74,40 +73,29 @@ const dndI18n = {
     "dnd.spell.range.unlimited": "Unlimited",
     "dnd.spell.ritual": "Ritual",
     "dnd.spell.ritual@short": "Rit.",
+    "dnd.spell.school": "School",
     "dnd.spell.source.page": "p. <1>", // 1 = page
     "dnd.spell.upgrade.cantrip": "Cantrip Upgrade",
     "dnd.spell.upgrade.spell": "At Higher Levels",
     "dnd.spell.view.cards": "Cards",
     "dnd.spell.view.table": "Table",
 
-    // Filters/options
-    "dnd.spells.options.button.deselect_all": "Deselect All",
-    "dnd.spells.options.button.export_selected": "Export Selected",
-    "dnd.spells.options.button.select_all": "Select All",
-    "dnd.spells.options.input.name.placeholder": "Name",
-    "dnd.spells.options.label.at": " at ",
-    "dnd.spells.options.label.display": "Display spells as ",
-    "dnd.spells.options.label.sort": " sorted by ",
-    "dnd.spells.options.label.zoom": " zoom",
-    "dnd.spells.options.select.classes.placeholder": "Select classes",
-    "dnd.spells.options.select.levels.placeholder": "Select levels",
-    "dnd.spells.options.select.schools.placeholder": "Select school",
-    "dnd.spells.options.sort_by.level": "Level",
-    "dnd.spells.options.sort_by.name": "Name",
-    "dnd.spells.options.sort_by.school": "School",
-    "dnd.spells.options.sort_order.asc": "Asc",
-    "dnd.spells.options.sort_order.desc": "Desc",
+    // View
+    "dnd.spells.view.label.at": " at ",
+    "dnd.spells.view.label.display": "Display spells as ",
+    "dnd.spells.view.label.sort": " sorted by ",
+    "dnd.spells.view.label.zoom": " zoom",
+    "dnd.spells.view.sort_by.level": "Level",
+    "dnd.spells.view.sort_by.name": "Name",
+    "dnd.spells.view.sort_by.school": "School",
+    "dnd.spells.view.sort_order.asc": "Asc",
+    "dnd.spells.view.sort_order.desc": "Desc",
 
-    // Export spells
-    "dnd.spells.export.button.cancel": "Cancel",
-    "dnd.spells.export.button.export": "Export",
-    "dnd.spells.export.button.json": "JSON",
-    "dnd.spells.export.button.prepare": "Prepared <1>/<2>", // 1 = prepared, 2 = total
-    "dnd.spells.export.input.bleed": "Bleed",
-    "dnd.spells.export.input.dpi": "DPI",
-    "dnd.spells.export.input.height": "Height",
-    "dnd.spells.export.input.width": "Width",
-    "dnd.spells.export.title": "Preview (not actual size)",
+    // Filters
+    "dnd.spells.filters.input.name.placeholder": "Name",
+    "dnd.spells.filters.select.classes.placeholder": "Select classes",
+    "dnd.spells.filters.select.levels.placeholder": "Select levels",
+    "dnd.spells.filters.select.schools.placeholder": "Select school",
   },
   it: {
     // Classes
@@ -138,15 +126,15 @@ const dndI18n = {
     "dnd.class@short.warlock": "War.",
     "dnd.class@short.wizard": "Mag.",
 
-    // Magic School
-    "dnd.magic_school.abjuration": "Abiurazione",
-    "dnd.magic_school.conjuration": "Evocazione",
-    "dnd.magic_school.divination": "Divinazione",
-    "dnd.magic_school.enchantment": "Ammaliamento",
-    "dnd.magic_school.evocation": "Invocazione",
-    "dnd.magic_school.illusion": "Illusione",
-    "dnd.magic_school.necromancy": "Necromazia",
-    "dnd.magic_school.transmutation": "Transmutazione",
+    // Spell School
+    "dnd.spell_school.abjuration": "Abiurazione",
+    "dnd.spell_school.conjuration": "Evocazione",
+    "dnd.spell_school.divination": "Divinazione",
+    "dnd.spell_school.enchantment": "Ammaliamento",
+    "dnd.spell_school.evocation": "Invocazione",
+    "dnd.spell_school.illusion": "Illusione",
+    "dnd.spell_school.necromancy": "Necromazia",
+    "dnd.spell_school.transmutation": "Transmutazione",
 
     // Spell-related
     "dnd.spell.casting_time": "Tempo di lancio",
@@ -172,7 +160,6 @@ const dndI18n = {
     "dnd.spell.level": "Livello",
     "dnd.spell.level.cantrip": "trucchetto",
     "dnd.spell.level.number": "<1>˚ livello", // 1 = level
-    "dnd.spell.magic_school": "Scuola",
     "dnd.spell.name": "Nome",
     "dnd.spell.or_ritual": " o rituale",
     "dnd.spell.range": "Gittata",
@@ -184,40 +171,29 @@ const dndI18n = {
     "dnd.spell.range.unlimited": "Illimitato",
     "dnd.spell.ritual": "Ritual",
     "dnd.spell.ritual@short": "Rit.",
+    "dnd.spell.school": "Scuola",
     "dnd.spell.source.page": "p. <1>", // 1 = page
     "dnd.spell.upgrade.cantrip": "Potenziamento del Trucchetto",
     "dnd.spell.upgrade.spell": "A Livelli Superiori",
     "dnd.spell.view.cards": "Carte",
     "dnd.spell.view.table": "Tabella",
 
-    // Filters/options
-    "dnd.spells.options.button.deselect_all": "Deseleziona Tutti",
-    "dnd.spells.options.button.export_selected": "Esporta Selezionati",
-    "dnd.spells.options.button.select_all": "Seleziona Tutti",
-    "dnd.spells.options.input.name.placeholder": "Nome",
-    "dnd.spells.options.label.at": " al ",
-    "dnd.spells.options.label.display": "Mostra incantesimi come ",
-    "dnd.spells.options.label.sort": " ordinati per ",
-    "dnd.spells.options.label.zoom": " zoom",
-    "dnd.spells.options.select.classes.placeholder": "Seleziona classi",
-    "dnd.spells.options.select.levels.placeholder": "Seleziona livelli",
-    "dnd.spells.options.select.schools.placeholder": "Seleziona scuola",
-    "dnd.spells.options.sort_by.level": "Livello",
-    "dnd.spells.options.sort_by.name": "Nome",
-    "dnd.spells.options.sort_by.school": "Scuola",
-    "dnd.spells.options.sort_order.asc": "Asc",
-    "dnd.spells.options.sort_order.desc": "Desc",
+    // View
+    "dnd.spells.view.label.at": " al ",
+    "dnd.spells.view.label.display": "Mostra incantesimi come ",
+    "dnd.spells.view.label.sort": " ordinati per ",
+    "dnd.spells.view.label.zoom": " zoom",
+    "dnd.spells.view.sort_by.level": "Livello",
+    "dnd.spells.view.sort_by.name": "Nome",
+    "dnd.spells.view.sort_by.school": "Scuola",
+    "dnd.spells.view.sort_order.asc": "Asc",
+    "dnd.spells.view.sort_order.desc": "Desc",
 
-    // Export spells
-    "dnd.spells.export.button.cancel": "Annulla",
-    "dnd.spells.export.button.export": "Esporta",
-    "dnd.spells.export.button.json": "JSON",
-    "dnd.spells.export.button.prepare": "Preparati <1>/<2>", // 1 = prepared, 2 = total
-    "dnd.spells.export.input.bleed": "Bleed",
-    "dnd.spells.export.input.dpi": "DPI",
-    "dnd.spells.export.input.height": "Altezza",
-    "dnd.spells.export.input.width": "Larghezza",
-    "dnd.spells.export.title": "Anteprima (dimensione non precisa)",
+    // Filters
+    "dnd.spells.filters.input.name.placeholder": "Nome",
+    "dnd.spells.filters.select.classes.placeholder": "Seleziona classi",
+    "dnd.spells.filters.select.levels.placeholder": "Seleziona livelli",
+    "dnd.spells.filters.select.schools.placeholder": "Seleziona scuola",
   },
 } as const;
 

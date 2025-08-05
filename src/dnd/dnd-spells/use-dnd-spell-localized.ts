@@ -1,13 +1,10 @@
 import { useMemo } from "react";
 import { localizeI18nString } from "../../i18n/i18n-string";
 import useI18n, { type I18n } from "../../i18n/use-i18n";
-import type { DndSpell } from "./dnd-spells-types";
+import type { DndSpell } from "../models/dnd";
 
 function localizeLevel(level: number, _i18n: I18n): string {
   return String(level);
-  // return level === 0
-  //   ? i18n.t("dnd.spell.level.cantrip")
-  //   : i18n.ti("dnd.spell.level.number", `${level}`);
 }
 
 function localizeCastingTime(spell: DndSpell, i18n: I18n): string {
@@ -115,7 +112,7 @@ export function localizeDndSpell(spell: DndSpell, i18n: I18n) {
     materials: localizeComponentMaterials(spell, i18n),
     name: localizeI18nString(spell.name, i18n.language),
     range: localizeRange(spell, i18n),
-    school: i18n.t(`dnd.magic_school.${spell.school}`),
+    school: i18n.t(`dnd.spell_school.${spell.school}`),
     source: {
       book: spell.source.book,
       page: i18n.ti("dnd.spell.source.page", `${spell.source.page}`),

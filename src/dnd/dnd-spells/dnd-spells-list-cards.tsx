@@ -1,51 +1,45 @@
 import { Flex } from "@chakra-ui/react";
-import { memo } from "react";
 import DndSpellCard from "./dnd-spell-card";
 import DndSpellsListEmpty from "./dnd-spells-list-empty";
 import {
+  toggleDndSpellSelection,
   useDndSpell,
-  useDndSpellIds,
-  useDndSpellSelected,
-  useDndSpellToggleSelection,
-  useDndSpellsOptionsView,
-  useDndSpellsOptionsZoom,
+  useDndSpellsView,
+  useIsDndSpellSelected,
+  useVisibleDndSpellIds,
 } from "./dnd-spells-store";
-import type { DndSpellsOptionsView } from "./dnd-spells-types";
 
-export default memo(function DndSpellsList() {
-  const [view] = useDndSpellsOptionsView();
-  const [zoom] = useDndSpellsOptionsZoom();
-  const spellIds = useDndSpellIds();
+export default function DndSpellsList() {
+  const [view] = useDndSpellsView();
+  const spellIds = useVisibleDndSpellIds();
 
   if (spellIds.length === 0) return <DndSpellsListEmpty />;
 
   return (
     <Flex
       alignItems="start"
-      fontSize={`${zoom}em`}
+      fontSize={`${view.zoom}em`}
       gap="1em"
       justifyContent="center"
       w="100%"
       wrap="wrap"
     >
       {spellIds.map((id) => (
-        <DndSpellsListItem key={id} spellId={id} view={view} />
+        <DndSpellsListItem key={id} spellId={id} />
       ))}
     </Flex>
   );
-});
+}
 
-function DndSpellsListItem({
-  spellId,
-}: {
-  spellId: string;
-  view: DndSpellsOptionsView;
-}) {
+function DndSpellsListItem({ spellId }: { spellId: string }) {
   const spell = useDndSpell(spellId);
-  const toggle = useDndSpellToggleSelection(spellId);
-  const selected = useDndSpellSelected(spellId);
+  const selected = useIsDndSpellSelected(spellId);
 
   return (
-    <DndSpellCard onClickSpell={toggle} selected={selected} spell={spell} />
+    <DndSpellCard
+      onClickSpell={() => toggleDndSpellSelection(spellId)}
+      selected={selected}
+      spell={spell}
+    />
   );
 }
