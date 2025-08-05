@@ -7,12 +7,13 @@ import {
   VStack,
   createListCollection,
 } from "@chakra-ui/react";
-import { useMemo } from "react";
+import { useCallback, useMemo } from "react";
 import { LuCopy, LuSquareCheck, LuSquareX } from "react-icons/lu";
 import AppHeader from "../../app-header";
 import NumberInput from "../../components/ui/number-input";
 import Select from "../../components/ui/select";
 import SelectSimple from "../../components/ui/select-simple";
+import { toaster } from "../../components/ui/toaster";
 import useI18n from "../../i18n/use-i18n";
 import { compareLabels } from "../../utils/select-collection";
 import {
@@ -33,7 +34,9 @@ import {
   selectAllVisibleDndSpells,
   useDndSpellsFilters,
   useDndSpellsView,
+  useSelectedVisibleSpells,
 } from "./dnd-spells-store";
+import { localizeDndSpell } from "./use-dnd-spell-localized";
 
 export default function DndSpellsHeader() {
   const i18n = useI18n();
@@ -239,20 +242,20 @@ const levelsCollection = createListCollection({
 });
 
 function CopySelectedSpellsToClipboard() {
-  // const i18n = useI18n();
-  // const spells = useDndSpellsSelected();
+  const i18n = useI18n();
+  const spells = useSelectedVisibleSpells();
 
-  // const copySpellsAsJson = useCallback(async () => {
-  //   const localizedSpells = spells.map((s) => localizeDndSpell(s, i18n));
-  //   const json = JSON.stringify(localizedSpells, null, 2);
-  //   await navigator.clipboard.writeText(json);
-  //   toaster.success({ title: "Spells copied to clipboard." });
-  // }, [i18n, spells]);
+  const copySpellsAsJson = useCallback(async () => {
+    const localizedSpells = spells.map((s) => localizeDndSpell(s, i18n));
+    const json = JSON.stringify(localizedSpells, null, 2);
+    await navigator.clipboard.writeText(json);
+    toaster.success({ title: "Spells copied to clipboard." });
+  }, [i18n, spells]);
 
-  const disabled = true; // spells.length === 0;
+  const disabled = spells.length === 0;
 
   return (
-    <IconButton disabled={disabled} onClick={() => {}} size="sm">
+    <IconButton disabled={disabled} onClick={copySpellsAsJson} size="sm">
       <LuCopy />
     </IconButton>
   );

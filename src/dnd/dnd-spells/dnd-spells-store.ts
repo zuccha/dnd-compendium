@@ -154,7 +154,7 @@ function compareDndSpells(
 //------------------------------------------------------------------------------
 
 export function useDndSpells(): NormalizedList<DndSpell> {
-  const [spells] = spellsStore.use();
+  const spells = spellsStore.useValue();
   return spells;
 }
 
@@ -166,6 +166,19 @@ export function useVisibleDndSpellIds(): string[] {
   const [ids, setIds] = useState(visibleSpellIdsStore.get());
   useLayoutEffect(() => visibleSpellIdsStore.subscribe(setIds), []);
   return ids;
+}
+
+//------------------------------------------------------------------------------
+// Use Selected Visible Dnd Spells
+//------------------------------------------------------------------------------
+
+export function useSelectedVisibleSpells(): DndSpell[] {
+  const spells = useDndSpells();
+  const selectedSpellIds = selectedSpellIdsStore.useValue();
+  const visibleSpellIds = useVisibleDndSpellIds();
+  return visibleSpellIds
+    .filter((id) => selectedSpellIds[id])
+    .map((id) => spells.byId[id]);
 }
 
 //------------------------------------------------------------------------------
