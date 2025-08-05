@@ -220,10 +220,8 @@ export function useDndSpellsFilters(): [
   const [filters, setFilters] = spellsFiltersStore.use();
 
   const setPartialFilters = useCallback(
-    (partialFilters: Partial<DndSpellsFilters>) => {
-      console.log(partialFilters);
-      setFilters((prev) => ({ ...prev, ...partialFilters }));
-    },
+    (partialFilters: Partial<DndSpellsFilters>) =>
+      setFilters((prev) => ({ ...prev, ...partialFilters })),
     [setFilters],
   );
 
