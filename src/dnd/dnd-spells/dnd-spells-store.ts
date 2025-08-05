@@ -1,8 +1,9 @@
-import { useCallback, useMemo } from "react";
+import { useCallback, useLayoutEffect, useState } from "react";
 import { z } from "zod/v4";
 import type { I18nLanguage } from "../../i18n/i18n-language";
-import useI18nLanguage from "../../i18n/use-i18n-language";
+import { i18nLanguageStore } from "../../i18n/use-i18n-language";
 import { type NormalizedList, normalize } from "../../utils/normalized-list";
+import { createObservable } from "../../utils/observable";
 import { createStore } from "../../utils/store";
 import { createStorePersistent } from "../../utils/store-persistent";
 import {
@@ -41,7 +42,6 @@ export type DndSpellsFilters = z.infer<typeof dndSpellsFiltersSchema>;
 const defaultSpells = { byId: {}, ids: [] };
 
 const spellsStore = createStore<NormalizedList<DndSpell>>(defaultSpells);
-const selectedSpellIdsStore = createStore<string[]>([]);
 
 const spellsFiltersStore = createStorePersistent(
   "dnd.spells.filters",
@@ -54,6 +54,37 @@ const spellsViewStore = createStorePersistent(
   viewSchema.parse({}),
   viewSchema.parse,
 );
+
+const visibleSpellIdsStore = (() => {
+  let visibleSpellIds: string[] = [];
+
+  const { notify, subscribe } = createObservable<string[]>();
+
+  const refresh = () => {
+    const spells = spellsStore.get();
+    const filters = spellsFiltersStore.get();
+    const view = spellsViewStore.get();
+    const lang = i18nLanguageStore.get();
+
+    const isVisible = isDndSpellVisible(spells, filters);
+    const compare = compareDndSpells(spells, view.sortBy, view.sortOrder, lang);
+    visibleSpellIds = spells.ids.filter(isVisible).sort(compare);
+    notify(visibleSpellIds);
+  };
+
+  spellsStore.subscribe(refresh);
+  spellsFiltersStore.subscribe(refresh);
+  spellsViewStore.subscribe(refresh);
+  i18nLanguageStore.subscribe(refresh);
+
+  refresh();
+
+  const get = () => visibleSpellIds;
+
+  return { get, subscribe };
+})();
+
+const selectedSpellIdsStore = createStore<string[]>([]);
 
 //------------------------------------------------------------------------------
 // Is Dnd Spell Visible
@@ -132,16 +163,9 @@ export function useDndSpells(): NormalizedList<DndSpell> {
 //------------------------------------------------------------------------------
 
 export function useVisibleDndSpellIds(): string[] {
-  const [spells] = spellsStore.use();
-  const [filters] = useDndSpellsFilters();
-  const [view] = useDndSpellsView();
-  const [lang] = useI18nLanguage();
-
-  return useMemo(() => {
-    const isVisible = isDndSpellVisible(spells, filters);
-    const compare = compareDndSpells(spells, view.sortBy, view.sortOrder, lang);
-    return spells.ids.filter(isVisible).sort(compare);
-  }, [filters, lang, spells, view.sortBy, view.sortOrder]);
+  const [ids, setIds] = useState(visibleSpellIdsStore.get());
+  useLayoutEffect(() => visibleSpellIdsStore.subscribe(setIds), []);
+  return ids;
 }
 
 //------------------------------------------------------------------------------

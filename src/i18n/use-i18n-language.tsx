@@ -1,7 +1,7 @@
 import { createStorePersistent } from "../utils/store-persistent";
 import { i18nLanguageSchema } from "./i18n-language";
 
-const i18nLanguageStore = createStorePersistent(
+export const i18nLanguageStore = createStorePersistent(
   "i18n.language",
   "en",
   i18nLanguageSchema.parse,
