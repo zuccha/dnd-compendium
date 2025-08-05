@@ -52,10 +52,6 @@ export default memo(function DndSpellCard({
   const durationLabel = i18n.t("dnd.spell.duration");
   const rangeLabel = i18n.t("dnd.spell.range");
   const componentsLabel = i18n.t("dnd.spell.components");
-  const upgradeLabel =
-    spell.level === 0
-      ? i18n.t("dnd.spell.upgrade.cantrip")
-      : i18n.t("dnd.spell.upgrade.spell");
 
   return (
     <VStack
@@ -145,25 +141,11 @@ export default memo(function DndSpellCard({
         py="0.5em"
         w="100%"
       >
-        <VStack gap={1} w="full">
-          {text.base.split("\n").map((paragraph, i) => (
+        <VStack align="flex-start" gap={1} w="full">
+          {text.full.split("\n").map((paragraph, i) => (
             <RichText key={i} patterns={patterns} text={paragraph} />
           ))}
         </VStack>
-
-        {text.upgrade && (
-          <>
-            <Text fontFamily="Mr Eaves" fontWeight="bold">
-              {upgradeLabel}
-            </Text>
-
-            <VStack gap={1} w="full">
-              {text.upgrade.split("\n").map((paragraph, i) => (
-                <RichText key={i} patterns={patterns} text={paragraph} />
-              ))}
-            </VStack>
-          </>
-        )}
       </VStack>
 
       <HStack
