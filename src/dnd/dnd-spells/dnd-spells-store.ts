@@ -84,7 +84,7 @@ const visibleSpellIdsStore = (() => {
   return { get, subscribe };
 })();
 
-const selectedSpellIdsStore = createStore<string[]>([]);
+const selectedSpellIdsStore = createStore<Record<string, boolean>>({});
 
 //------------------------------------------------------------------------------
 // Is Dnd Spell Visible
@@ -183,7 +183,7 @@ export function useDndSpell(id: string): DndSpell {
 
 export function useIsDndSpellSelected(id: string): boolean {
   const [selectedSpellIds] = selectedSpellIdsStore.use();
-  return selectedSpellIds.includes(id);
+  return selectedSpellIds[id];
 }
 
 //------------------------------------------------------------------------------
@@ -193,8 +193,7 @@ export function useIsDndSpellSelected(id: string): boolean {
 export function useSelectedVisibleSpellsCount(): number {
   const visibleDndSpellIds = useVisibleDndSpellIds();
   const selectedSpellIds = selectedSpellIdsStore.useValue();
-  return visibleDndSpellIds.filter((id) => selectedSpellIds.includes(id))
-    .length;
+  return visibleDndSpellIds.filter((id) => selectedSpellIds[id]).length;
 }
 
 //------------------------------------------------------------------------------
@@ -254,8 +253,8 @@ export async function fetchDndSpells(): Promise<void> {
 
 export function selectDndSpell(id: string): void {
   const selectedSpellIds = selectedSpellIdsStore.get();
-  if (!selectedSpellIds.includes(id))
-    selectedSpellIdsStore.set([...selectedSpellIds, id]);
+  if (!selectedSpellIds[id])
+    selectedSpellIdsStore.set({ ...selectedSpellIds, [id]: true });
 }
 
 //------------------------------------------------------------------------------
@@ -272,8 +271,8 @@ export function selectAllVisibleDndSpells() {
 
 export function deselectDndSpell(id: string): void {
   const selectedSpellIds = selectedSpellIdsStore.get();
-  if (selectedSpellIds.includes(id))
-    selectedSpellIdsStore.set(selectedSpellIds.filter((other) => other !== id));
+  if (selectedSpellIds[id])
+    selectedSpellIdsStore.set({ ...selectedSpellIds, [id]: false });
 }
 
 //------------------------------------------------------------------------------
@@ -290,7 +289,7 @@ export function deselectAllVisibleDndSpells() {
 
 export function toggleDndSpellSelection(id: string): void {
   const selectedSpellIds = selectedSpellIdsStore.get();
-  if (selectedSpellIds.includes(id))
-    selectedSpellIdsStore.set(selectedSpellIds.filter((other) => other !== id));
-  else selectedSpellIdsStore.set([...selectedSpellIds, id]);
+  if (selectedSpellIds[id])
+    selectedSpellIdsStore.set({ ...selectedSpellIds, [id]: false });
+  else selectedSpellIdsStore.set({ ...selectedSpellIds, [id]: true });
 }
