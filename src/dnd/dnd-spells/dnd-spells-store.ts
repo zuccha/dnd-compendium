@@ -1,6 +1,8 @@
-import { useCallback, useLayoutEffect, useState } from "react";
+import { useCallback, useLayoutEffect, useMemo, useState } from "react";
 import { z } from "zod/v4";
-import { loadI18nLanguage } from "../../i18n/use-i18n-language";
+import type { I18nLanguage } from "../../i18n/i18n-language";
+import useI18nLanguage from "../../i18n/use-i18n-language";
+import { normalize } from "../../utils/normalized-list";
 import { createObservable } from "../../utils/observable";
 import { createObservableBydId } from "../../utils/observable-by-id";
 import {
@@ -8,10 +10,10 @@ import {
   useStorePersistent,
 } from "../../utils/store-persistent";
 import { dndMagicSchoolSchema } from "../dnd-types";
-import dndSpells from "./dnd-spells";
 import {
   type DndSpell,
   type DndSpellsOptions,
+  dndSpellSchema,
   dndSpellsOptionsClasses,
   dndSpellsOptionsClassesSchema,
   dndSpellsOptionsLevels,
@@ -22,11 +24,19 @@ import {
 } from "./dnd-spells-types";
 
 //------------------------------------------------------------------------------
+// Resources
+//------------------------------------------------------------------------------
+
+const resources = {
+  spells: normalize<DndSpell>([], (spell) => spell.id),
+};
+
+//------------------------------------------------------------------------------
 // State
 //------------------------------------------------------------------------------
 
 const state = {
-  ids: dndSpells.ids,
+  ids: resources.spells.ids,
   selection: new Set<string>(),
 };
 
@@ -51,7 +61,7 @@ const { notify: notifySpellSelectedAny, subscribe: subscribeSpellSelectedAny } =
 //------------------------------------------------------------------------------
 
 function isVisible(id: string): boolean {
-  const spell = dndSpells.byId[id];
+  const spell = resources.spells.byId[id];
   const name = optionsCache.name;
   const levels = optionsCache.levels;
   const classes = optionsCache.classes;
@@ -69,30 +79,37 @@ function isVisible(id: string): boolean {
 // Compare
 //------------------------------------------------------------------------------
 
-function compare(id1: string, id2: string): number {
-  const spell1 = dndSpells.byId[id1];
-  const spell2 = dndSpells.byId[id2];
-  const lang = loadI18nLanguage();
+function makeCompare(lang: I18nLanguage) {
   const sortBy = optionsCache.sortBy;
   const sortOrder = optionsCache.sortOrder === "asc" ? 1 : -1;
+
   switch (sortBy) {
-    case "name": {
-      const name1 = spell1.name[lang] ?? spell1.name.en;
-      const name2 = spell2.name[lang] ?? spell2.name.en;
-      if (name1 > name2) return sortOrder;
-      if (name1 < name2) return -sortOrder;
-      return 0;
-    }
-    case "level": {
-      if (spell1.level > spell2.level) return sortOrder;
-      if (spell1.level < spell2.level) return -sortOrder;
-      return 0;
-    }
-    case "school": {
-      if (spell1.school > spell2.school) return sortOrder;
-      if (spell1.school < spell2.school) return -sortOrder;
-      return 0;
-    }
+    case "name":
+      return (id1: string, id2: string): number => {
+        const spell1 = resources.spells.byId[id1];
+        const spell2 = resources.spells.byId[id2];
+        const name1 = spell1.name[lang] ?? spell1.name.en;
+        const name2 = spell2.name[lang] ?? spell2.name.en;
+        if (name1 > name2) return sortOrder;
+        if (name1 < name2) return -sortOrder;
+        return 0;
+      };
+    case "level":
+      return (id1: string, id2: string): number => {
+        const spell1 = resources.spells.byId[id1];
+        const spell2 = resources.spells.byId[id2];
+        if (spell1.level > spell2.level) return sortOrder;
+        if (spell1.level < spell2.level) return -sortOrder;
+        return 0;
+      };
+    case "school":
+      return (id1: string, id2: string): number => {
+        const spell1 = resources.spells.byId[id1];
+        const spell2 = resources.spells.byId[id2];
+        if (spell1.school > spell2.school) return sortOrder;
+        if (spell1.school < spell2.school) return -sortOrder;
+        return 0;
+      };
   }
 }
 
@@ -105,6 +122,24 @@ const idsSelected = (ids: string[]) =>
 
 const idsUnselected = (ids: string[]) =>
   ids.filter((id) => !state.selection.has(id));
+
+//------------------------------------------------------------------------------
+// Use Initialize Dnd Spells
+//------------------------------------------------------------------------------
+
+export function useInitializeDndSpells() {
+  const [lang] = useI18nLanguage();
+
+  return useCallback(async () => {
+    const response = await fetch("/data/spells.json");
+    const json = await response.json();
+    const spells = z.array(dndSpellSchema).parse(json);
+    resources.spells = normalize(spells, (spell) => spell.id);
+
+    const compare = makeCompare(lang);
+    state.ids = resources.spells.ids.filter(isVisible).sort(compare);
+  }, [lang]);
+}
 
 //------------------------------------------------------------------------------
 // Use Dnd Spell Ids
@@ -131,11 +166,20 @@ export function useDndSpellIdsSelected(): string[] {
 }
 
 //------------------------------------------------------------------------------
+// Use Dnd Spells Selected
+//------------------------------------------------------------------------------
+
+export function useDndSpellsSelected(): DndSpell[] {
+  const ids = useDndSpellIdsSelected();
+  return useMemo(() => ids.map((id) => resources.spells.byId[id]), [ids]);
+}
+
+//------------------------------------------------------------------------------
 // Use Dnd Spell
 //------------------------------------------------------------------------------
 
 export function useDndSpell(id: string): DndSpell {
-  return dndSpells.byId[id];
+  return resources.spells.byId[id];
 }
 
 //------------------------------------------------------------------------------
@@ -168,6 +212,7 @@ function createUseOption<T>(
 
   return function useDndSpellsOptionsName() {
     const [option, setOption] = useStorePersistent<T>(id, defaultValue, parse);
+    const [lang] = useI18nLanguage();
 
     return [
       option,
@@ -175,17 +220,21 @@ function createUseOption<T>(
         (nextValueOrUpdateValue: T | ((prevValue: T) => T)): T => {
           const nextOption = setOption(nextValueOrUpdateValue);
           setCache(nextOption);
+
+          const compare = makeCompare(lang);
           const prevIds = state.ids;
-          const nextIds = dndSpells.ids.filter(isVisible).sort(compare);
+          const nextIds = resources.spells.ids.filter(isVisible).sort(compare);
           state.ids = nextIds;
           notifyIds(nextIds);
+
           const prevSelectedIdsSize = idsSelected(prevIds).length;
           const nextSelectedIdsSize = idsSelected(nextIds).length;
           if (prevSelectedIdsSize !== nextSelectedIdsSize)
             notifySelectionSize(nextSelectedIdsSize);
+
           return nextOption;
         },
-        [setOption],
+        [lang, setOption],
       ),
     ];
   };
@@ -354,9 +403,3 @@ export function useDndSpellToggleSelection(id: string): () => void {
     if (isVisible(id)) notifySelectionSize(idsSelected(state.ids).length);
   }, [id]);
 }
-
-//------------------------------------------------------------------------------
-// Update Ids
-//------------------------------------------------------------------------------
-
-state.ids = dndSpells.ids.filter(isVisible).sort(compare);

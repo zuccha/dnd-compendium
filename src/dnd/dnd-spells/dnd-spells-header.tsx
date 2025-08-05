@@ -21,9 +21,7 @@ import {
   type DndMagicSchool,
   dndMagicSchool,
 } from "../dnd-types";
-import dndSpells from "./dnd-spells";
 import {
-  useDndSpellIdsSelected,
   useDndSpellsDeselectAll,
   useDndSpellsOptionsClasses,
   useDndSpellsOptionsLevels,
@@ -34,6 +32,7 @@ import {
   useDndSpellsOptionsView,
   useDndSpellsOptionsZoom,
   useDndSpellsSelectAll,
+  useDndSpellsSelected,
 } from "./dnd-spells-store";
 import {
   type DndSpellsOptionsSortBy,
@@ -264,23 +263,19 @@ const levelsCollection = createListCollection({
 
 function CopySelectedSpellsToClipboard() {
   const i18n = useI18n();
-  const spellIds = useDndSpellIdsSelected();
+  const spells = useDndSpellsSelected();
 
   const copySpellsAsJson = useCallback(async () => {
-    const localizedSpells = spellIds.map((id) =>
-      localizeDndSpell(dndSpells.byId[id], i18n),
-    );
+    const localizedSpells = spells.map((s) => localizeDndSpell(s, i18n));
     const json = JSON.stringify(localizedSpells, null, 2);
     await navigator.clipboard.writeText(json);
     toaster.success({ title: "Spells copied to clipboard." });
-  }, [i18n, spellIds]);
+  }, [i18n, spells]);
+
+  const disabled = spells.length === 0;
 
   return (
-    <IconButton
-      disabled={spellIds.length === 0}
-      onClick={copySpellsAsJson}
-      size="sm"
-    >
+    <IconButton disabled={disabled} onClick={copySpellsAsJson} size="sm">
       <LuCopy />
     </IconButton>
   );

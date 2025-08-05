@@ -1,0 +1,910 @@
+[
+  {
+    "cost": 5,
+    "damage": {
+      "regular": "1d6"
+    },
+    "damageType": "slashing",
+    "id": "PHB'24/Handaxe",
+    "mastery": "vex",
+    "name": {
+      "en": "Handaxe",
+      "it": "Ascia"
+    },
+    "properties": ["throw", "light"],
+    "range": {
+      "ft": {},
+      "m": {}
+    },
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 2,
+      "kg": 1
+    }
+  },
+  {
+    "cost": 0.2,
+    "damage": {
+      "regular": "1d6",
+      "versatile": "1d8"
+    },
+    "damageType": "bludgeoning",
+    "id": "PHB'24/Quarterstaff",
+    "mastery": "topple",
+    "name": {
+      "en": "Quarterstaff",
+      "it": "Bastone Ferrato"
+    },
+    "properties": ["versatile"],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 4,
+      "kg": 2
+    }
+  },
+  {
+    "cost": 1,
+    "damage": {
+      "regular": "1d4"
+    },
+    "damageType": "slashing",
+    "id": "PHB'24/Sickle",
+    "mastery": "nick",
+    "name": {
+      "en": "Sickle",
+      "it": "Falcetto"
+    },
+    "properties": ["light"],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 2,
+      "kg": 1
+    }
+  },
+  {
+    "cost": 0.5,
+    "damage": {
+      "regular": "1d6"
+    },
+    "damageType": "slashing",
+    "id": "PHB'24/Javelin",
+    "mastery": "slow",
+    "name": {
+      "en": "Javelin",
+      "it": "Giavellotto"
+    },
+    "properties": ["throw"],
+    "range": {
+      "ft": {},
+      "m": {}
+    },
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 2,
+      "kg": 1
+    }
+  },
+  {
+    "cost": 1,
+    "damage": {
+      "regular": "1d6",
+      "versatile": "1d8"
+    },
+    "damageType": "piercing",
+    "id": "PHB'24/Spear",
+    "mastery": "sap",
+    "name": {
+      "en": "Spear",
+      "it": "Lancia"
+    },
+    "properties": ["throw", "versatile"],
+    "range": {
+      "ft": {},
+      "m": {}
+    },
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 3,
+      "kg": 1.5
+    }
+  },
+  {
+    "cost": 2,
+    "damage": {
+      "regular": "1d4"
+    },
+    "damageType": "bludgeoning",
+    "id": "PHB'24/Light Hammer",
+    "mastery": "nick",
+    "name": {
+      "en": "Light Hammer",
+      "it": "Martello leggero"
+    },
+    "properties": ["throw", "light"],
+    "range": {
+      "ft": {},
+      "m": {}
+    },
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 2,
+      "kg": 1
+    }
+  },
+  {
+    "cost": 5,
+    "damage": {
+      "regular": "1d6"
+    },
+    "damageType": "bludgeoning",
+    "id": "PHB'24/Mace",
+    "mastery": "sap",
+    "name": {
+      "en": "Mace",
+      "it": "Maza"
+    },
+    "properties": [""],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 4,
+      "kg": 2
+    }
+  },
+  {
+    "cost": 2,
+    "damage": {
+      "regular": "1d4"
+    },
+    "damageType": "piercing",
+    "id": "PHB'24/Dagger",
+    "mastery": "nick",
+    "name": {
+      "en": "Dagger",
+      "it": "Pugnale"
+    },
+    "properties": ["finesse", "throw", "light"],
+    "range": {
+      "ft": {},
+      "m": {}
+    },
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 1,
+      "kg": 0.5
+    }
+  },
+  {
+    "cost": 2,
+    "damage": {
+      "regular": "1d8"
+    },
+    "damageType": "bludgeoning",
+    "id": "PHB'24/Greatclub",
+    "mastery": "push",
+    "name": {
+      "en": "Greatclub",
+      "it": "Randello pesante"
+    },
+    "properties": ["two-handed"],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 10,
+      "kg": 5
+    }
+  },
+  {
+    "cost": 0.1,
+    "damage": {
+      "regular": "1d4",
+      "versatile": "1d4"
+    },
+    "damageType": "bludgeoning",
+    "id": "PHB'24/Club",
+    "mastery": "slow",
+    "name": {
+      "en": "Club",
+      "it": "Randello"
+    },
+    "properties": ["light"],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 2,
+      "kg": 1
+    }
+  },
+  {
+    "cost": 25,
+    "damage": {
+      "regular": "1d6"
+    },
+    "damageType": "piercing",
+    "id": "PHB'24/Shortbow",
+    "mastery": "vex",
+    "name": {
+      "en": "Shortbow",
+      "it": "Arco corto"
+    },
+    "properties": ["two-handed", "ammunition"],
+    "range": {
+      "ft": {},
+      "m": {}
+    },
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 2,
+      "kg": 1
+    }
+  },
+  {
+    "cost": 25,
+    "damage": {
+      "regular": "1d8"
+    },
+    "damageType": "piercing",
+    "id": "PHB'24/Light Crossbow",
+    "mastery": "slow",
+    "name": {
+      "en": "Light Crossbow",
+      "it": "Balestra leggera"
+    },
+    "properties": ["ammunition", "two-handed", "loading"],
+    "range": {
+      "ft": {},
+      "m": {}
+    },
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 5,
+      "kg": 2.5
+    }
+  },
+  {
+    "cost": 0.05,
+    "damage": {
+      "regular": "1d4"
+    },
+    "damageType": "piercing",
+    "id": "PHB'24/Dart",
+    "mastery": "vex",
+    "name": {
+      "en": "Dart",
+      "it": "Dardo"
+    },
+    "properties": ["throw", "finesse"],
+    "range": {
+      "ft": {},
+      "m": {}
+    },
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 0.25,
+      "kg": 0.125
+    }
+  },
+  {
+    "cost": 0.1,
+    "damage": {
+      "regular": "1d4"
+    },
+    "damageType": "bludgeoning",
+    "id": "PHB'24/Sling",
+    "mastery": "slow",
+    "name": {
+      "en": "Sling",
+      "it": "Fionda"
+    },
+    "properties": ["ammunition"],
+    "range": {
+      "ft": {},
+      "m": {}
+    },
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 0,
+      "kg": 0
+    }
+  },
+  {
+    "cost": 20,
+    "damage": {
+      "regular": "1d10"
+    },
+    "damageType": "slashing",
+    "id": "PHB'24/Halberd",
+    "mastery": "cleave",
+    "name": {
+      "en": "Halberd",
+      "it": "Alabarda"
+    },
+    "properties": ["reach", "two-handed", "heavy"],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 6,
+      "kg": 3
+    }
+  },
+  {
+    "cost": 30,
+    "damage": {
+      "regular": "1d12"
+    },
+    "damageType": "slashing",
+    "id": "PHB'24/Greataxe",
+    "mastery": "cleave",
+    "name": {
+      "en": "Greataxe",
+      "it": "Ascia bipenne"
+    },
+    "properties": ["two-handed", "heavy"],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 7,
+      "kg": 3.5
+    }
+  },
+  {
+    "cost": 10,
+    "damage": {
+      "regular": "1d8",
+      "versatile": "1d10"
+    },
+    "damageType": "slashing",
+    "id": "PHB'24/Battleaxe",
+    "mastery": "topple",
+    "name": {
+      "en": "Battleaxe",
+      "it": "Ascia da battaglia"
+    },
+    "properties": ["versatile"],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 4,
+      "kg": 2
+    }
+  },
+  {
+    "cost": 20,
+    "damage": {
+      "regular": "1d10"
+    },
+    "damageType": "slashing",
+    "id": "PHB'24/Glaive",
+    "mastery": "graze",
+    "name": {
+      "en": "Glaive",
+      "it": "Falcione"
+    },
+    "properties": ["reach", "two-handed", "heavy"],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 6,
+      "kg": 3
+    }
+  },
+  {
+    "cost": 2,
+    "damage": {
+      "regular": "1d4"
+    },
+    "damageType": "slashing",
+    "id": "PHB'24/Whip",
+    "mastery": "slow",
+    "name": {
+      "en": "Whip",
+      "it": "Frusta"
+    },
+    "properties": ["finesse", "reach"],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 2,
+      "kg": 1.5
+    }
+  },
+  {
+    "cost": 10,
+    "damage": {
+      "regular": "1d10"
+    },
+    "damageType": "piercing",
+    "id": "PHB'24/Lance",
+    "mastery": "topple",
+    "name": {
+      "en": "Lance",
+      "it": "Lancia da cavaliere"
+    },
+    "properties": ["reach", "two-handed", "heavy"],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 6,
+      "kg": 3
+    }
+  },
+  {
+    "cost": 10,
+    "damage": {
+      "regular": "2d6"
+    },
+    "damageType": "bludgeoning",
+    "id": "PHB'24/Maul",
+    "mastery": "topple",
+    "name": {
+      "en": "Maul",
+      "it": "Maglio"
+    },
+    "properties": ["heavy", "two-handed"],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 10,
+      "kg": 5
+    }
+  },
+  {
+    "cost": 15,
+    "damage": {
+      "regular": "1d8",
+      "versatile": "1d10"
+    },
+    "damageType": "bludgeoning",
+    "id": "PHB'24/Warhammer",
+    "mastery": "push",
+    "name": {
+      "en": "Warhammer",
+      "it": "Martello da guerra"
+    },
+    "properties": ["versatile"],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 5,
+      "kg": 2.5
+    }
+  },
+  {
+    "cost": 15,
+    "damage": {
+      "regular": "1d8"
+    },
+    "damageType": "piercing",
+    "id": "PHB'24/Morningstar",
+    "mastery": "sap",
+    "name": {
+      "en": "Morningstar",
+      "it": "Mazza chiodata"
+    },
+    "properties": [""],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 4,
+      "kg": 2
+    }
+  },
+  {
+    "cost": 10,
+    "damage": {
+      "regular": "1d8"
+    },
+    "damageType": "bludgeoning",
+    "id": "PHB'24/Flail",
+    "mastery": "sap",
+    "name": {
+      "en": "Flail",
+      "it": "Mazzafrusto"
+    },
+    "properties": [""],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 2,
+      "kg": 1
+    }
+  },
+  {
+    "cost": 5,
+    "damage": {
+      "regular": "1d10"
+    },
+    "damageType": "piercing",
+    "id": "PHB'24/Pike",
+    "mastery": "push",
+    "name": {
+      "en": "Pike",
+      "it": "Picca"
+    },
+    "properties": ["two-handed", "reach", "heavy"],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 18,
+      "kg": 9
+    }
+  },
+  {
+    "cost": 25,
+    "damage": {
+      "regular": "1d6"
+    },
+    "damageType": "slashing",
+    "id": "PHB'24/Scimitar",
+    "mastery": "nick",
+    "name": {
+      "en": "Scimitar",
+      "it": "Scimitarra"
+    },
+    "properties": ["light", "finesse"],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 3,
+      "kg": 1.5
+    }
+  },
+  {
+    "cost": 10,
+    "damage": {
+      "regular": "1d6"
+    },
+    "damageType": "piercing",
+    "id": "PHB'24/Shortsword",
+    "mastery": "vex",
+    "name": {
+      "en": "Shortsword",
+      "it": "Spada corta"
+    },
+    "properties": ["finesse", "light"],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 2,
+      "kg": 1
+    }
+  },
+  {
+    "cost": 15,
+    "damage": {
+      "regular": "1d8",
+      "versatile": "1d10"
+    },
+    "damageType": "slashing",
+    "id": "PHB'24/Longsword",
+    "mastery": "sap",
+    "name": {
+      "en": "Longsword",
+      "it": "Spada lunga"
+    },
+    "properties": ["versatile"],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 3,
+      "kg": 1.5
+    }
+  },
+  {
+    "cost": 50,
+    "damage": {
+      "regular": "2d6"
+    },
+    "damageType": "slashing",
+    "id": "PHB'24/Greatsword",
+    "mastery": "cleave",
+    "name": {
+      "en": "Greatsword",
+      "it": "Spadone"
+    },
+    "properties": ["heavy", "two-handed"],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 6,
+      "kg": 3
+    }
+  },
+  {
+    "cost": 25,
+    "damage": {
+      "regular": "1d8"
+    },
+    "damageType": "piercing",
+    "id": "PHB'24/Rapier",
+    "mastery": "vex",
+    "name": {
+      "en": "Rapier",
+      "it": "Stocco"
+    },
+    "properties": ["finesse"],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 2,
+      "kg": 1
+    }
+  },
+  {
+    "cost": 5,
+    "damage": {
+      "regular": "1d8",
+      "versatile": "1d10"
+    },
+    "damageType": "piercing",
+    "id": "PHB'24/Trident",
+    "mastery": "topple",
+    "name": {
+      "en": "Trident",
+      "it": "Tridente"
+    },
+    "properties": ["throw", "versatile"],
+    "range": {
+      "ft": {},
+      "m": {}
+    },
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 4,
+      "kg": 2
+    }
+  },
+  {
+    "cost": 5,
+    "damage": {
+      "regular": "1d8",
+      "versatile": "1d10"
+    },
+    "damageType": "piercing",
+    "id": "PHB'24/War Pick",
+    "mastery": "sap",
+    "name": {
+      "en": "War Pick",
+      "it": "Piccone da guerra"
+    },
+    "properties": ["versatile"],
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 2,
+      "kg": 1
+    }
+  },
+  {
+    "cost": 50,
+    "damage": {
+      "regular": "1d8"
+    },
+    "damageType": "piercing",
+    "id": "PHB'24/Longbow",
+    "mastery": "slow",
+    "name": {
+      "en": "Longbow",
+      "it": "Arco lungo"
+    },
+    "properties": ["ammunition", "two-handed", "heavy"],
+    "range": {
+      "ft": {},
+      "m": {}
+    },
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 2,
+      "kg": 1
+    }
+  },
+  {
+    "cost": 75,
+    "damage": {
+      "regular": "1d6"
+    },
+    "damageType": "piercing",
+    "id": "PHB'24/Hand Crossbow",
+    "mastery": "vex",
+    "name": {
+      "en": "Hand Crossbow",
+      "it": "Balestra a mano"
+    },
+    "properties": ["ammunition", "loading", "light"],
+    "range": {
+      "ft": {},
+      "m": {}
+    },
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 3,
+      "kg": 1.5
+    }
+  },
+  {
+    "cost": 50,
+    "damage": {
+      "regular": "1d10"
+    },
+    "damageType": "piercing",
+    "id": "PHB'24/Heavy Crossbow",
+    "mastery": "push",
+    "name": {
+      "en": "Heavy Crossbow",
+      "it": "Balestra pesante"
+    },
+    "properties": ["ammunition", "heavy", "loading", "two-handed"],
+    "range": {
+      "ft": {},
+      "m": {}
+    },
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 18,
+      "kg": 9
+    }
+  },
+  {
+    "cost": 10,
+    "damage": {
+      "regular": 1
+    },
+    "damageType": "piercing",
+    "id": "PHB'24/Blowgun",
+    "mastery": "vex",
+    "name": {
+      "en": "Blowgun",
+      "it": "Cerbottana"
+    },
+    "properties": ["ammunition", "loading"],
+    "range": {
+      "ft": {},
+      "m": {}
+    },
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 1,
+      "kg": 0.5
+    }
+  },
+  {
+    "cost": 500,
+    "damage": {
+      "regular": "1d12"
+    },
+    "damageType": "piercing",
+    "id": "PHB'24/Musket",
+    "mastery": "slow",
+    "name": {
+      "en": "Musket",
+      "it": "Moschetto"
+    },
+    "properties": ["two-handed", "loading", "ammunition"],
+    "range": {
+      "ft": {},
+      "m": {}
+    },
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 10,
+      "kg": 5
+    }
+  },
+  {
+    "cost": 250,
+    "damage": {
+      "regular": "1d10"
+    },
+    "damageType": "piercing",
+    "id": "PHB'24/Pistol",
+    "mastery": "vex",
+    "name": {
+      "en": "Pistol",
+      "it": "Pistola"
+    },
+    "properties": ["ammunition", "loading"],
+    "range": {
+      "ft": {},
+      "m": {}
+    },
+    "source": {
+      "book": "PHB'24",
+      "page": 215
+    },
+    "weight": {
+      "lb": 3,
+      "kg": 1.5
+    }
+  }
+]
