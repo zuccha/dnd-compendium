@@ -262,7 +262,11 @@ export function selectDndSpell(id: string): void {
 //------------------------------------------------------------------------------
 
 export function selectAllVisibleDndSpells() {
-  // TODO.
+  const visibleSpellIds = visibleSpellIdsStore.get();
+  const selectedSpellIds = { ...selectedSpellIdsStore.get() };
+  for (const visibleSpellId of visibleSpellIds)
+    selectedSpellIds[visibleSpellId] = true;
+  selectedSpellIdsStore.set(selectedSpellIds);
 }
 
 //------------------------------------------------------------------------------
@@ -280,7 +284,11 @@ export function deselectDndSpell(id: string): void {
 //------------------------------------------------------------------------------
 
 export function deselectAllVisibleDndSpells() {
-  // TODO.
+  const visibleSpellIds = visibleSpellIdsStore.get();
+  const selectedSpellIds = { ...selectedSpellIdsStore.get() };
+  for (const visibleSpellId of visibleSpellIds)
+    selectedSpellIds[visibleSpellId] = false;
+  selectedSpellIdsStore.set(selectedSpellIds);
 }
 
 //------------------------------------------------------------------------------
