@@ -10,6 +10,7 @@ import {
   dndSpellLevels,
   dndSpellSchools,
 } from "../models/dnd-spell";
+import StateFilterButton from "../ui/state-filter-button";
 import dndSpellsStore, { dndSpellsOrderByItems } from "./dnd-spells-store";
 import localizeDndSpell from "./localize-dnd-spell";
 
@@ -51,7 +52,7 @@ export default function DndSpellsHeader() {
           defaultValue={filters.name}
           name="dnd-spells-filters-name"
           onChange={(e) => setFilters({ name: e.target.value })}
-          placeholder={i18n.t("dnd.spells.filters.input.name.placeholder")}
+          placeholder={i18n.t("dnd.spells.filters.name.placeholder")}
           size="sm"
         />
         <Select
@@ -60,7 +61,7 @@ export default function DndSpellsHeader() {
           multiple
           name="dnd-spells-filters-levels"
           onValueChange={(e) => setFilters({ levels: e.value.map((v) => +v) })}
-          placeholder={i18n.t("dnd.spells.filters.select.levels.placeholder")}
+          placeholder={i18n.t("dnd.spells.filters.levels.placeholder")}
           size="sm"
         />
         <Select
@@ -69,7 +70,7 @@ export default function DndSpellsHeader() {
           multiple
           name="dnd-spells-filters-classes"
           onValueChange={(e) => setFilters({ classes: e.value as DndClass[] })}
-          placeholder={i18n.t("dnd.spells.filters.select.classes.placeholder")}
+          placeholder={i18n.t("dnd.spells.filters.classes.placeholder")}
           size="sm"
         />
         <Select
@@ -79,9 +80,23 @@ export default function DndSpellsHeader() {
           onValueChange={(e) =>
             setFilters({ school: e.value?.[0] as DndSpellSchool })
           }
-          placeholder={i18n.t("dnd.spells.filters.select.schools.placeholder")}
+          placeholder={i18n.t("dnd.spells.filters.schools.placeholder")}
           size="sm"
         />
+        <StateFilterButton
+          onChangeState={(concentration) => setFilters({ concentration })}
+          size="sm"
+          state={filters.concentration}
+        >
+          {i18n.t("dnd.spells.filters.concentration.label")}
+        </StateFilterButton>
+        <StateFilterButton
+          onChangeState={(ritual) => setFilters({ ritual })}
+          size="sm"
+          state={filters.ritual}
+        >
+          {i18n.t("dnd.spells.filters.ritual.label")}
+        </StateFilterButton>
       </HStack>
     </DndDataHeader>
   );

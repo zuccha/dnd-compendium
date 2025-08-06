@@ -122,10 +122,12 @@ const dndI18n = {
     "dnd.spell.upgrade.spell": "At Higher Levels",
 
     // Spells Filters and View
-    "dnd.spells.filters.input.name.placeholder": "Name",
-    "dnd.spells.filters.select.classes.placeholder": "Select classes",
-    "dnd.spells.filters.select.levels.placeholder": "Select levels",
-    "dnd.spells.filters.select.schools.placeholder": "Select school",
+    "dnd.spells.filters.classes.placeholder": "Classes",
+    "dnd.spells.filters.concentration.label": "C",
+    "dnd.spells.filters.levels.placeholder": "Levels",
+    "dnd.spells.filters.name.placeholder": "Name",
+    "dnd.spells.filters.ritual.label": "R",
+    "dnd.spells.filters.schools.placeholder": "School",
 
     // Weapon
     "dnd.weapon.cost": "Cost",
@@ -293,10 +295,12 @@ const dndI18n = {
     "dnd.spell.upgrade.spell": "A Livelli Superiori",
 
     // Spells Filters
-    "dnd.spells.filters.input.name.placeholder": "Nome",
-    "dnd.spells.filters.select.classes.placeholder": "Seleziona classi",
-    "dnd.spells.filters.select.levels.placeholder": "Seleziona livelli",
-    "dnd.spells.filters.select.schools.placeholder": "Seleziona scuola",
+    "dnd.spells.filters.classes.placeholder": "Classi",
+    "dnd.spells.filters.concentration.label": "C",
+    "dnd.spells.filters.levels.placeholder": "Livelli",
+    "dnd.spells.filters.name.placeholder": "Nome",
+    "dnd.spells.filters.ritual.label": "R",
+    "dnd.spells.filters.schools.placeholder": "Scuola",
 
     // Weapon
     "dnd.weapon.cost": "Costo",

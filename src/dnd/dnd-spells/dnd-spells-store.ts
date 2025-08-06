@@ -9,6 +9,7 @@ import {
   dndSpellSchema,
   dndSpellSchoolSchema,
 } from "../models/dnd-spell";
+import { stateFilterSchema } from "../models/filter";
 import type { ViewSortBy, ViewSortOrder } from "../models/view";
 import localizeDndSpell from "./localize-dnd-spell";
 
@@ -24,8 +25,10 @@ export const dndSpellsOrderByItems = ["name", "level", "school"];
 
 export const dndSpellsFiltersSchema = z.object({
   classes: z.array(dndClassSchema).default(dndClasses),
+  concentration: stateFilterSchema.default("neutral"),
   levels: z.array(dndSpellLevelSchema).default(dndSpellLevels),
   name: z.string().default(""),
+  ritual: stateFilterSchema.default("neutral"),
   school: dndSpellSchoolSchema.optional().default(undefined),
 });
 
@@ -74,13 +77,29 @@ function isDndSpellVisible(
   spell: DndSpell,
   filters: DndSpellsFilters,
 ): boolean {
-  const containsName =
-    spell.name.en.toLowerCase().includes(filters.name) ||
-    !!spell.name.it?.toLowerCase().includes(filters.name);
-  const containsClass = spell.classes.some((c) => filters.classes.includes(c));
-  const containsSchool = !filters.school || spell.school === filters.school;
-  const containsLevel = filters.levels.some((l) => spell.level === l);
-  return containsName && containsClass && containsSchool && containsLevel;
+  return (
+    // Name
+    (spell.name.en.toLowerCase().includes(filters.name) ||
+      !!spell.name.it?.toLowerCase().includes(filters.name)) &&
+    // Classes
+    spell.classes.some((c) => filters.classes.includes(c)) &&
+    // School
+    (!filters.school || spell.school === filters.school) &&
+    // Levels
+    filters.levels.some((l) => spell.level === l) &&
+    // Concentration
+    {
+      negative: !spell.concentration,
+      neutral: true,
+      positive: spell.concentration,
+    }[filters.concentration] &&
+    // Ritual
+    {
+      negative: !spell.ritual,
+      neutral: true,
+      positive: spell.ritual,
+    }[filters.ritual]
+  );
 }
 
 //------------------------------------------------------------------------------
