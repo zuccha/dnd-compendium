@@ -68,12 +68,14 @@ export const dndWeaponSchema = z.object({
   id: z.string(),
   magic: z.boolean(),
   mastery: dndWeaponMasterySchema,
+  melee: z.boolean(),
   name: i18nStringSchema,
   notes: z.string(),
   properties: z.array(dndWeaponPropertySchema),
   range: z
     .object({ long: i18nDistanceSchema, short: i18nDistanceSchema })
     .optional(),
+  ranged: z.boolean(),
   source: z.object({
     book: z.string(),
     page: z.number(),

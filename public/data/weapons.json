@@ -8,6 +8,7 @@
     "id": "PHB'24/Handaxe",
     "magic": false,
     "mastery": "vex",
+    "melee": true,
     "name": {
       "en": "Handaxe",
       "it": "Ascia"
@@ -63,6 +64,7 @@
     "id": "PHB'24/Quarterstaff",
     "magic": false,
     "mastery": "topple",
+    "melee": true,
     "name": {
       "en": "Quarterstaff",
       "it": "Bastone Ferrato"
@@ -95,6 +97,7 @@
     "id": "PHB'24/Sickle",
     "magic": false,
     "mastery": "nick",
+    "melee": true,
     "name": {
       "en": "Sickle",
       "it": "Falcetto"
@@ -127,6 +130,7 @@
     "id": "PHB'24/Javelin",
     "magic": false,
     "mastery": "slow",
+    "melee": true,
     "name": {
       "en": "Javelin",
       "it": "Giavellotto"
@@ -182,6 +186,7 @@
     "id": "PHB'24/Spear",
     "magic": false,
     "mastery": "sap",
+    "melee": true,
     "name": {
       "en": "Spear",
       "it": "Lancia"
@@ -236,6 +241,7 @@
     "id": "PHB'24/Light Hammer",
     "magic": false,
     "mastery": "nick",
+    "melee": true,
     "name": {
       "en": "Light Hammer",
       "it": "Martello leggero"
@@ -290,6 +296,7 @@
     "id": "PHB'24/Mace",
     "magic": false,
     "mastery": "sap",
+    "melee": true,
     "name": {
       "en": "Mace",
       "it": "Maza"
@@ -322,6 +329,7 @@
     "id": "PHB'24/Dagger",
     "magic": false,
     "mastery": "nick",
+    "melee": true,
     "name": {
       "en": "Dagger",
       "it": "Pugnale"
@@ -376,6 +384,7 @@
     "id": "PHB'24/Greatclub",
     "magic": false,
     "mastery": "push",
+    "melee": true,
     "name": {
       "en": "Greatclub",
       "it": "Randello pesante"
@@ -409,6 +418,7 @@
     "id": "PHB'24/Club",
     "magic": false,
     "mastery": "slow",
+    "melee": true,
     "name": {
       "en": "Club",
       "it": "Randello"
@@ -441,6 +451,7 @@
     "id": "PHB'24/Shortbow",
     "magic": false,
     "mastery": "vex",
+    "melee": false,
     "name": {
       "en": "Shortbow",
       "it": "Arco corto"
@@ -495,6 +506,7 @@
     "id": "PHB'24/Light Crossbow",
     "magic": false,
     "mastery": "slow",
+    "melee": false,
     "name": {
       "en": "Light Crossbow",
       "it": "Balestra leggera"
@@ -549,6 +561,7 @@
     "id": "PHB'24/Dart",
     "magic": false,
     "mastery": "vex",
+    "melee": false,
     "name": {
       "en": "Dart",
       "it": "Dardo"
@@ -603,6 +616,7 @@
     "id": "PHB'24/Sling",
     "magic": false,
     "mastery": "slow",
+    "melee": false,
     "name": {
       "en": "Sling",
       "it": "Fionda"
@@ -657,6 +671,7 @@
     "id": "PHB'24/Halberd",
     "magic": false,
     "mastery": "cleave",
+    "melee": true,
     "name": {
       "en": "Halberd",
       "it": "Alabarda"
@@ -689,6 +704,7 @@
     "id": "PHB'24/Greataxe",
     "magic": false,
     "mastery": "cleave",
+    "melee": true,
     "name": {
       "en": "Greataxe",
       "it": "Ascia bipenne"
@@ -722,6 +738,7 @@
     "id": "PHB'24/Battleaxe",
     "magic": false,
     "mastery": "topple",
+    "melee": true,
     "name": {
       "en": "Battleaxe",
       "it": "Ascia da battaglia"
@@ -754,6 +771,7 @@
     "id": "PHB'24/Glaive",
     "magic": false,
     "mastery": "graze",
+    "melee": true,
     "name": {
       "en": "Glaive",
       "it": "Falcione"
@@ -786,6 +804,7 @@
     "id": "PHB'24/Whip",
     "magic": false,
     "mastery": "slow",
+    "melee": true,
     "name": {
       "en": "Whip",
       "it": "Frusta"
@@ -818,6 +837,7 @@
     "id": "PHB'24/Lance",
     "magic": false,
     "mastery": "topple",
+    "melee": true,
     "name": {
       "en": "Lance",
       "it": "Lancia da cavaliere"
@@ -850,6 +870,7 @@
     "id": "PHB'24/Maul",
     "magic": false,
     "mastery": "topple",
+    "melee": true,
     "name": {
       "en": "Maul",
       "it": "Maglio"
@@ -883,6 +904,7 @@
     "id": "PHB'24/Warhammer",
     "magic": false,
     "mastery": "push",
+    "melee": true,
     "name": {
       "en": "Warhammer",
       "it": "Martello da guerra"
@@ -915,6 +937,7 @@
     "id": "PHB'24/Morningstar",
     "magic": false,
     "mastery": "sap",
+    "melee": true,
     "name": {
       "en": "Morningstar",
       "it": "Mazza chiodata"
@@ -947,6 +970,7 @@
     "id": "PHB'24/Flail",
     "magic": false,
     "mastery": "sap",
+    "melee": true,
     "name": {
       "en": "Flail",
       "it": "Mazzafrusto"
@@ -979,6 +1003,7 @@
     "id": "PHB'24/Pike",
     "magic": false,
     "mastery": "push",
+    "melee": true,
     "name": {
       "en": "Pike",
       "it": "Picca"
@@ -1011,6 +1036,7 @@
     "id": "PHB'24/Scimitar",
     "magic": false,
     "mastery": "nick",
+    "melee": true,
     "name": {
       "en": "Scimitar",
       "it": "Scimitarra"
@@ -1043,6 +1069,7 @@
     "id": "PHB'24/Shortsword",
     "magic": false,
     "mastery": "vex",
+    "melee": true,
     "name": {
       "en": "Shortsword",
       "it": "Spada corta"
@@ -1076,6 +1103,7 @@
     "id": "PHB'24/Longsword",
     "magic": false,
     "mastery": "sap",
+    "melee": true,
     "name": {
       "en": "Longsword",
       "it": "Spada lunga"
@@ -1108,6 +1136,7 @@
     "id": "PHB'24/Greatsword",
     "magic": false,
     "mastery": "cleave",
+    "melee": true,
     "name": {
       "en": "Greatsword",
       "it": "Spadone"
@@ -1140,6 +1169,7 @@
     "id": "PHB'24/Rapier",
     "magic": false,
     "mastery": "vex",
+    "melee": true,
     "name": {
       "en": "Rapier",
       "it": "Stocco"
@@ -1173,6 +1203,7 @@
     "id": "PHB'24/Trident",
     "magic": false,
     "mastery": "topple",
+    "melee": true,
     "name": {
       "en": "Trident",
       "it": "Tridente"
@@ -1228,6 +1259,7 @@
     "id": "PHB'24/War Pick",
     "magic": false,
     "mastery": "sap",
+    "melee": true,
     "name": {
       "en": "War Pick",
       "it": "Piccone da guerra"
@@ -1260,6 +1292,7 @@
     "id": "PHB'24/Longbow",
     "magic": false,
     "mastery": "slow",
+    "melee": false,
     "name": {
       "en": "Longbow",
       "it": "Arco lungo"
@@ -1314,6 +1347,7 @@
     "id": "PHB'24/Hand Crossbow",
     "magic": false,
     "mastery": "vex",
+    "melee": false,
     "name": {
       "en": "Hand Crossbow",
       "it": "Balestra a mano"
@@ -1368,6 +1402,7 @@
     "id": "PHB'24/Heavy Crossbow",
     "magic": false,
     "mastery": "push",
+    "melee": false,
     "name": {
       "en": "Heavy Crossbow",
       "it": "Balestra pesante"
@@ -1422,6 +1457,7 @@
     "id": "PHB'24/Blowgun",
     "magic": false,
     "mastery": "vex",
+    "melee": false,
     "name": {
       "en": "Blowgun",
       "it": "Cerbottana"
@@ -1476,6 +1512,7 @@
     "id": "PHB'24/Musket",
     "magic": false,
     "mastery": "slow",
+    "melee": false,
     "name": {
       "en": "Musket",
       "it": "Moschetto"
@@ -1530,6 +1567,7 @@
     "id": "PHB'24/Pistol",
     "magic": false,
     "mastery": "vex",
+    "melee": false,
     "name": {
       "en": "Pistol",
       "it": "Pistola"
