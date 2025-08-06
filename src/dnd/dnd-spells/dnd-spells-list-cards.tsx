@@ -1,13 +1,12 @@
-import { Flex } from "@chakra-ui/react";
+import { Center, Flex } from "@chakra-ui/react";
 import DndSpellCard from "./dnd-spell-card";
-import DndSpellsListEmpty from "./dnd-spells-list-empty";
 import dndSpellsStore from "./dnd-spells-store";
 
 export default function DndSpellsListCards() {
   const [view] = dndSpellsStore.useView();
   const spellIds = dndSpellsStore.useVisibleDataIds();
 
-  if (spellIds.length === 0) return <DndSpellsListEmpty />;
+  if (spellIds.length === 0) return <Center mt="25%">Nothing found</Center>;
 
   return (
     <Flex
