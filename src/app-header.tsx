@@ -1,13 +1,15 @@
 import {
   Box,
   HStack,
-  Heading,
   type SelectValueChangeDetails,
+  StackSeparator,
+  Text,
   VStack,
   createListCollection,
 } from "@chakra-ui/react";
 import { type ReactNode, useCallback, useMemo } from "react";
 import SelectSimple from "./components/ui/select-simple";
+import { dndTabIds, useSelectedDndTabId } from "./dnd/dnd-tabs";
 import {
   type I18nDistanceSystem,
   i18nDistanceSystems,
@@ -17,6 +19,7 @@ import useI18n from "./i18n/use-i18n";
 import useI18nDistanceSystem from "./i18n/use-i18n-distance-system";
 import useI18nLanguage from "./i18n/use-i18n-language";
 import ThemeButton from "./theme/theme-button";
+import { compareObjects } from "./utils/object";
 import { compareLabels } from "./utils/select-collection";
 
 export type AppHeaderProps = {
@@ -27,6 +30,7 @@ export default function AppHeader({ children }: AppHeaderProps) {
   const i18n = useI18n();
   const [language, setLanguage] = useI18nLanguage();
   const [distanceSystem, setDistanceSystem] = useI18nDistanceSystem();
+  const [selectedTabId, setSelectedTabId] = useSelectedDndTabId();
 
   const distanceSystemCollection = useMemo(() => {
     return createListCollection({
@@ -46,11 +50,30 @@ export default function AppHeader({ children }: AppHeaderProps) {
     [setLanguage],
   );
 
+  const dndTabInfos = dndTabIds
+    .map((id) => ({ id, label: i18n.t(`dnd.tab.${id}`) }))
+    .sort(compareObjects("label"));
+
   return (
     <VStack bgColor="bg" gap={0.25} shadow="sm" top={0} w="100%" zIndex={1}>
       <Box maxW="64em" w="100%">
         <HStack justifyContent="space-between" px={1} py={2} w="100%">
-          <Heading>DnD spells</Heading>
+          <HStack fontWeight="bold" separator={<StackSeparator />}>
+            {dndTabInfos.sort().map(({ id, label }) =>
+              id === selectedTabId ? (
+                <Text key={id}>{label}</Text>
+              ) : (
+                <Text
+                  color="fg.info"
+                  cursor="pointer"
+                  key={id}
+                  onClick={() => setSelectedTabId(id)}
+                >
+                  {label}
+                </Text>
+              ),
+            )}
+          </HStack>
 
           <HStack>
             <SelectSimple

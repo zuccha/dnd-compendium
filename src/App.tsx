@@ -2,15 +2,15 @@ import { Center, Text, VStack } from "@chakra-ui/react";
 import { useState } from "react";
 import AppContent from "./app-content";
 import AppHeader from "./app-header";
-import DndSpellsHeader from "./dnd/dnd-spells/dnd-spells-header";
-import DndSpellsList from "./dnd/dnd-spells/dnd-spells-list";
 import { fetchDndSpells } from "./dnd/dnd-spells/dnd-spells-store";
+import { dndTabs, useSelectedDndTabId } from "./dnd/dnd-tabs";
 import useAsyncLayoutEffect from "./hooks/use-async-layout-effect";
 
 type AppState = "initial" | "loading" | "success" | "failure";
 
 function App() {
   const [state, setState] = useState<AppState>("initial");
+  const [selectedTabId] = useSelectedDndTabId();
 
   useAsyncLayoutEffect(async () => {
     setState("loading");
@@ -34,13 +34,15 @@ function App() {
     );
   }
 
+  const { Content, Header } = dndTabs[selectedTabId];
+
   return (
     <VStack gap={0} h="100vh" w="100%">
       <AppHeader>
-        <DndSpellsHeader />
+        <Header />
       </AppHeader>
       <AppContent>
-        <DndSpellsList />
+        <Content />
       </AppContent>
     </VStack>
   );

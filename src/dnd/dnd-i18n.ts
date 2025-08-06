@@ -1,5 +1,9 @@
 const dndI18n = {
   en: {
+    // Tabs
+    "dnd.tab.spells": "Spells",
+    "dnd.tab.weapons": "Weapons",
+
     // Classes
     "dnd.class.artificer": "Artificer",
     "dnd.class.barbarian": "Barbarian",
@@ -98,6 +102,10 @@ const dndI18n = {
     "dnd.spells.filters.select.schools.placeholder": "Select school",
   },
   it: {
+    // Tabs
+    "dnd.tab.spells": "Incantesimi",
+    "dnd.tab.weapons": "Armi",
+
     // Classes
     "dnd.class.artificer": "Artificere",
     "dnd.class.barbarian": "Barbaro",
