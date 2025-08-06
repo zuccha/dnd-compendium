@@ -137,10 +137,8 @@ const dndI18n = {
     "dnd.weapon.property.throw": "Throw",
     "dnd.weapon.property.two-handed": "Two-Handed",
     "dnd.weapon.property.versatile": "Versatile",
-    "dnd.weapon.type.martial_melee": "Martial_melee",
-    "dnd.weapon.type.martial_ranged": "Martial_ranged",
-    "dnd.weapon.type.simple_melee": "Simple_melee",
-    "dnd.weapon.type.simple_ranged": "Simple_ranged",
+    "dnd.weapon.type.martial": "Martial",
+    "dnd.weapon.type.simple": "Simple",
 
     // Weapons Filters
     "dnd.weapons.filters.input.name.placeholder": "Name",
@@ -285,14 +283,12 @@ const dndI18n = {
     "dnd.weapon.property.throw": "Lancio",
     "dnd.weapon.property.two-handed": "A Due Mani",
     "dnd.weapon.property.versatile": "Versatile",
-    "dnd.weapon.type.martial_melee": "Da mischia da guerra",
-    "dnd.weapon.type.martial_ranged": "A distanza da guerra",
-    "dnd.weapon.type.simple_melee": "Da mischia semplice",
-    "dnd.weapon.type.simple_ranged": "A distanza da guerra",
+    "dnd.weapon.type.martial": "Guerra",
+    "dnd.weapon.type.simple": "Semplice",
 
     // Weapons Filters
     "dnd.weapons.filters.input.name.placeholder": "Nome",
-    "dnd.weapons.filters.select.kind.placeholder": "Non-Magico/Magico",
+    "dnd.weapons.filters.select.kind.placeholder": "Non-Magica/Magica",
     "dnd.weapons.filters.select.types.placeholder": "Tipo",
   },
 } as const;

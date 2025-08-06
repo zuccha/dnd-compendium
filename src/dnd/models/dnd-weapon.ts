@@ -48,12 +48,7 @@ export type DndWeaponProperty = z.infer<typeof dndWeaponPropertySchema>;
 // Weapon Type
 //------------------------------------------------------------------------------
 
-export const dndWeaponTypeSchema = z.enum([
-  "simple_melee",
-  "simple_ranged",
-  "martial_melee",
-  "martial_ranged",
-]);
+export const dndWeaponTypeSchema = z.enum(["simple", "martial"]);
 
 export const dndWeaponTypes = dndWeaponTypeSchema.options;
 
