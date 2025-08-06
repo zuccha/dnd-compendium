@@ -174,7 +174,7 @@ function CopySelectedSpellsToClipboard<
     const localizedDatalist = datalist.map((s) => onLocalizeData(s, i18n));
     const json = JSON.stringify(localizedDatalist, null, 2);
     await navigator.clipboard.writeText(json);
-    toaster.success({ title: "Spells copied to clipboard." });
+    toaster.success({ title: i18n.t("dnd.data.copied") });
   }, [i18n, datalist, onLocalizeData]);
 
   const disabled = datalist.length === 0;

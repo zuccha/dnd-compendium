@@ -12,6 +12,7 @@ const dndI18n = {
     "dnd.coins.sp": "sp",
 
     // Data
+    "dnd.data.copied": "Data copied to clipboard.",
     "dnd.data.view.label.at": " at ",
     "dnd.data.view.label.display": "Display spells as ",
     "dnd.data.view.label.sort": " sorted by ",
@@ -182,6 +183,7 @@ const dndI18n = {
     "dnd.coins.sp": "ma",
 
     // Data
+    "dnd.data.copied": "Dati copiati nella clipboard.",
     "dnd.data.view.label.at": " al ",
     "dnd.data.view.label.display": "Mostra incantesimi come ",
     "dnd.data.view.label.sort": " ordinati per ",
