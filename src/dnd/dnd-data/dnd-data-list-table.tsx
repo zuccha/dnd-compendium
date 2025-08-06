@@ -151,7 +151,7 @@ function DndDataListTableRow<
         ))}
       </Table.Row>
 
-      {expanded && (
+      {expanded && text && (
         <Table.Row>
           <Table.Cell colSpan={columns.length + 1}>
             <VStack align="flex-start" gap={1} w="full">

@@ -4,6 +4,13 @@ const dndI18n = {
     "dnd.tab.spells": "Spells",
     "dnd.tab.weapons": "Weapons",
 
+    // Coins
+    "dnd.coins.cp": "cp",
+    "dnd.coins.ep": "ep",
+    "dnd.coins.gp": "gp",
+    "dnd.coins.pp": "pp",
+    "dnd.coins.sp": "sp",
+
     // Data
     "dnd.data.view.label.at": " at ",
     "dnd.data.view.label.display": "Display spells as ",
@@ -120,8 +127,11 @@ const dndI18n = {
     "dnd.spells.filters.select.schools.placeholder": "Select school",
 
     // Weapon
+    "dnd.weapon.cost": "Cost",
+    "dnd.weapon.damage": "Damage",
     "dnd.weapon.kind.magic": "Magic",
     "dnd.weapon.kind.non_magic": "Non-Magic",
+    "dnd.weapon.mastery": "Mastery",
     "dnd.weapon.mastery.cleave": "Cleave",
     "dnd.weapon.mastery.graze": "Graze",
     "dnd.weapon.mastery.nick": "Nick",
@@ -130,7 +140,10 @@ const dndI18n = {
     "dnd.weapon.mastery.slow": "Slow",
     "dnd.weapon.mastery.topple": "Topple",
     "dnd.weapon.mastery.vex": "Vex",
+    "dnd.weapon.name": "Name",
+    "dnd.weapon.properties": "Properties",
     "dnd.weapon.property.ammunition": "Ammunition",
+    "dnd.weapon.property.ammunition.range": "Ammunition (<1>/<2>)", // <1> = range short, <2> range long
     "dnd.weapon.property.finesse": "Finesse",
     "dnd.weapon.property.heavy": "Heavy",
     "dnd.weapon.property.light": "Light",
@@ -138,10 +151,14 @@ const dndI18n = {
     "dnd.weapon.property.range": "Range",
     "dnd.weapon.property.reach": "Reach",
     "dnd.weapon.property.throw": "Throw",
+    "dnd.weapon.property.throw.range": "Throw (<1>/<2>)", // <1> = range short, <2> range long
     "dnd.weapon.property.two-handed": "Two-Handed",
     "dnd.weapon.property.versatile": "Versatile",
+    "dnd.weapon.property.versatile.damage": "Versatile (<1>)", // <1> = damage
+    "dnd.weapon.source.page": "p. <1>", // 1 = page
     "dnd.weapon.type.martial": "Martial",
     "dnd.weapon.type.simple": "Simple",
+    "dnd.weapon.weight": "Weight",
 
     // Weapons Filters
     "dnd.weapons.filters.input.name.placeholder": "Name",
@@ -152,6 +169,13 @@ const dndI18n = {
     // Tabs
     "dnd.tab.spells": "Incantesimi",
     "dnd.tab.weapons": "Armi",
+
+    // Coins
+    "dnd.coins.cp": "mr",
+    "dnd.coins.ep": "me",
+    "dnd.coins.gp": "mo",
+    "dnd.coins.pp": "mp",
+    "dnd.coins.sp": "ma",
 
     // Data
     "dnd.data.view.label.at": " al ",
@@ -269,8 +293,11 @@ const dndI18n = {
     "dnd.spells.filters.select.schools.placeholder": "Seleziona scuola",
 
     // Weapon
+    "dnd.weapon.cost": "Costo",
+    "dnd.weapon.damage": "Danni",
     "dnd.weapon.kind.magic": "Magica",
     "dnd.weapon.kind.non_magic": "Non Magica",
+    "dnd.weapon.mastery": "Padronanza",
     "dnd.weapon.mastery.cleave": "Doppio Fendente",
     "dnd.weapon.mastery.graze": "Colpo di Striscio",
     "dnd.weapon.mastery.nick": "Graffio",
@@ -279,7 +306,10 @@ const dndI18n = {
     "dnd.weapon.mastery.slow": "Lentezza",
     "dnd.weapon.mastery.topple": "Rovesciamento",
     "dnd.weapon.mastery.vex": "Vessazione",
-    "dnd.weapon.property.ammunition": "Munizione",
+    "dnd.weapon.name": "Nome",
+    "dnd.weapon.properties": "Proprietà",
+    "dnd.weapon.property.ammunition": "Munizioni",
+    "dnd.weapon.property.ammunition.range": "Munizioni (<1>/<2>)", // <1> = range short, <2> range long
     "dnd.weapon.property.finesse": "Accurata",
     "dnd.weapon.property.heavy": "Pesante",
     "dnd.weapon.property.light": "Leggera",
@@ -287,10 +317,14 @@ const dndI18n = {
     "dnd.weapon.property.range": "Gittata",
     "dnd.weapon.property.reach": "Portata",
     "dnd.weapon.property.throw": "Lancio",
+    "dnd.weapon.property.throw.range": "Lancio (<1>/<2>)", // <1> = range short, <2> range long
     "dnd.weapon.property.two-handed": "A Due Mani",
     "dnd.weapon.property.versatile": "Versatile",
+    "dnd.weapon.property.versatile.damage": "Versatile (<1>)", // <1> = damage
+    "dnd.weapon.source.page": "p. <1>", // 1 = page
     "dnd.weapon.type.martial": "Guerra",
     "dnd.weapon.type.simple": "Semplice",
+    "dnd.weapon.weight": "Peso",
 
     // Weapons Filters
     "dnd.weapons.filters.input.name.placeholder": "Nome",

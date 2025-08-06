@@ -11,6 +11,7 @@ import {
 } from "../models/dnd-weapon";
 import { dndWeaponTypeSchema, dndWeaponTypes } from "../models/dnd-weapon";
 import { type ViewSortBy, type ViewSortOrder } from "../models/view";
+import localizeDndWeapon from "./localize-dnd-weapon";
 
 //------------------------------------------------------------------------------
 // Dnd Weapons Order By Items
@@ -112,7 +113,7 @@ const dndWeaponsStore = createDndDataStore({
   dataSchema: dndWeaponSchema,
   dataUrl: "/data/weapons.json",
   isDataVisible: isDndWeaponVisible,
-  localizeData: (weapon) => weapon, // TODO.
+  localizeData: localizeDndWeapon,
   parseFilters: dndWeaponsFiltersSchema.parse,
   storeId: "weapons",
 });
