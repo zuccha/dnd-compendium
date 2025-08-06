@@ -3,10 +3,6 @@ import { localizeI18nString } from "../../i18n/i18n-string";
 import useI18n, { type I18n } from "../../i18n/use-i18n";
 import type { DndSpell } from "../models/dnd-spell";
 
-function localizeLevel(level: number, _i18n: I18n): string {
-  return String(level);
-}
-
 function localizeCastingTime(spell: DndSpell, i18n: I18n): string {
   const { castingTime } = spell;
   switch (castingTime.type) {
@@ -108,7 +104,7 @@ export function localizeDndSpell(spell: DndSpell, i18n: I18n) {
       .join(" "),
     components: localizeComponents(spell, i18n),
     duration: localizeDuration(spell, i18n),
-    level: localizeLevel(spell.level, i18n),
+    level: `${spell.level}`,
     materials: localizeComponentMaterials(spell, i18n),
     name: localizeI18nString(spell.name, i18n.language),
     range: localizeRange(spell, i18n),
