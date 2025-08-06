@@ -6,15 +6,14 @@ import { type NormalizedList, normalize } from "../../utils/normalized-list";
 import { createObservable } from "../../utils/observable";
 import { createStore } from "../../utils/store";
 import { createStorePersistent } from "../../utils/store-persistent";
+import { dndClassSchema, dndClasses } from "../models/dnd-class";
 import {
   type DndSpell,
-  dndClassSchema,
-  dndClasses,
   dndSpellLevelSchema,
   dndSpellLevels,
   dndSpellSchema,
   dndSpellSchoolSchema,
-} from "../models/dnd";
+} from "../models/dnd-spell";
 import {
   type View,
   type ViewSortBy,

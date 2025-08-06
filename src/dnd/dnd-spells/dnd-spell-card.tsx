@@ -11,7 +11,7 @@ import {
 import { type ReactNode, memo } from "react";
 import RichText from "../../components/ui/rich-text";
 import useI18n from "../../i18n/use-i18n";
-import type { DndSpell } from "../models/dnd";
+import type { DndSpell } from "../models/dnd-spell";
 import useDndSpellLocalized from "./use-dnd-spell-localized";
 
 export type DndSpellCardProps = {

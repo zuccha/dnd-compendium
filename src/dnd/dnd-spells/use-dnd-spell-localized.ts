@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { localizeI18nString } from "../../i18n/i18n-string";
 import useI18n, { type I18n } from "../../i18n/use-i18n";
-import type { DndSpell } from "../models/dnd";
+import type { DndSpell } from "../models/dnd-spell";
 
 function localizeLevel(level: number, _i18n: I18n): string {
   return String(level);

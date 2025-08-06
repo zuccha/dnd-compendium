@@ -2,38 +2,8 @@ import { z } from "zod/v4";
 import { i18nDistanceSchema } from "../../i18n/i18n-distance";
 import { i18nStringSchema } from "../../i18n/i18n-string";
 import { range } from "../../utils/array";
-
-//------------------------------------------------------------------------------
-// Class
-//------------------------------------------------------------------------------
-
-export const dndClassSchema = z.enum([
-  "artificer",
-  "barbarian",
-  "bard",
-  "cleric",
-  "druid",
-  "fighter",
-  "monk",
-  "paladin",
-  "ranger",
-  "rogue",
-  "sorcerer",
-  "warlock",
-  "wizard",
-]);
-
-export const dndClasses = dndClassSchema.options;
-
-export type DndClass = z.infer<typeof dndClassSchema>;
-
-//------------------------------------------------------------------------------
-// Time
-//------------------------------------------------------------------------------
-
-export const dndTimeSchema = z.enum(["round", "minute", "hour", "day"]);
-
-export type DndTime = z.infer<typeof dndTimeSchema>;
+import { dndClassSchema } from "./dnd-class";
+import { dndTimeSchema } from "./dnd-time";
 
 //------------------------------------------------------------------------------
 // Spell Level

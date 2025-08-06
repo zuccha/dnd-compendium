@@ -14,13 +14,12 @@ import SelectSimple from "../../components/ui/select-simple";
 import { toaster } from "../../components/ui/toaster";
 import useI18n from "../../i18n/use-i18n";
 import { compareLabels } from "../../utils/select-collection";
+import { type DndClass, dndClasses } from "../models/dnd-class";
 import {
-  type DndClass,
   type DndSpellSchool,
-  dndClasses,
   dndSpellLevels,
   dndSpellSchools,
-} from "../models/dnd";
+} from "../models/dnd-spell";
 import {
   type ViewSortOrder,
   type ViewType,
