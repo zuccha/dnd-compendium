@@ -142,7 +142,7 @@ export default memo(function DndSpellCard({
         w="100%"
       >
         <VStack align="flex-start" gap={1} w="full">
-          {text.full.split("\n").map((paragraph, i) => (
+          {text.split("\n").map((paragraph, i) => (
             <RichText key={i} patterns={patterns} text={paragraph} />
           ))}
         </VStack>

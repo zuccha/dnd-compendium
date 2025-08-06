@@ -103,7 +103,7 @@ function DndSpellsTableRow({ spellId }: { spellId: string }) {
         <Table.Row>
           <Table.Cell colSpan={8}>
             <VStack align="flex-start" gap={1} w="full">
-              {spellLocalized.text.full.split("\n").map((paragraph, i) => (
+              {spellLocalized.text.split("\n").map((paragraph, i) => (
                 <RichText key={i} patterns={patterns} text={paragraph} />
               ))}
             </VStack>

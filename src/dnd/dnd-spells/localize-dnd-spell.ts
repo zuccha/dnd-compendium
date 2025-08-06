@@ -112,21 +112,15 @@ export default function localizeDndSpell(spell: DndSpell, i18n: I18n) {
       book: spell.source.book,
       page: i18n.ti("dnd.spell.source.page", `${spell.source.page}`),
     },
-    text: {
-      base: localizeI18nString(spell.text.base, i18n.language),
-      full: spell.text.upgrade
-        ? localizeI18nString(spell.text.base, i18n.language) +
-          "\n\n**" +
-          (spell.level === 0
-            ? i18n.t("dnd.spell.upgrade.cantrip")
-            : i18n.t("dnd.spell.upgrade.spell")) +
-          "**\n" +
-          localizeI18nString(spell.text.upgrade, i18n.language)
-        : localizeI18nString(spell.text.base, i18n.language),
-      upgrade: spell.text.upgrade
-        ? localizeI18nString(spell.text.upgrade, i18n.language)
-        : undefined,
-    },
+    text: spell.text.upgrade
+      ? localizeI18nString(spell.text.base, i18n.language) +
+        "\n\n**" +
+        (spell.level === 0
+          ? i18n.t("dnd.spell.upgrade.cantrip")
+          : i18n.t("dnd.spell.upgrade.spell")) +
+        "**\n" +
+        localizeI18nString(spell.text.upgrade, i18n.language)
+      : localizeI18nString(spell.text.base, i18n.language),
   };
 }
 
