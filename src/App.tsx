@@ -4,6 +4,7 @@ import AppContent from "./app-content";
 import AppHeader from "./app-header";
 import dndSpellsStore from "./dnd/dnd-spells/dnd-spells-store";
 import { dndTabs, useSelectedDndTabId } from "./dnd/dnd-tabs";
+import dndWeaponsStore from "./dnd/dnd-weapons/dnd-weapons-store";
 import useAsyncLayoutEffect from "./hooks/use-async-layout-effect";
 
 type AppState = "initial" | "loading" | "success" | "failure";
@@ -15,9 +16,13 @@ function App() {
   useAsyncLayoutEffect(async () => {
     setState("loading");
     try {
-      await dndSpellsStore.fetchDataset();
+      await Promise.all([
+        dndSpellsStore.fetchDataset(),
+        dndWeaponsStore.fetchDataset(),
+      ]);
       setState("success");
-    } catch {
+    } catch (e) {
+      console.error(e);
       setState("failure");
     }
   }, []);

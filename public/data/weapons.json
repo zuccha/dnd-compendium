@@ -6,23 +6,51 @@
     },
     "damageType": "slashing",
     "id": "PHB'24/Handaxe",
+    "magic": false,
     "mastery": "vex",
     "name": {
       "en": "Handaxe",
       "it": "Ascia"
     },
+    "notes": "",
     "properties": ["throw", "light"],
     "range": {
-      "ft": {},
-      "m": {}
+      "long": {
+        "imperial": {
+          "unit": "ft",
+          "value": 60
+        },
+        "metric": {
+          "unit": "m",
+          "value": 18
+        }
+      },
+      "short": {
+        "imperial": {
+          "unit": "ft",
+          "value": 20
+        },
+        "metric": {
+          "unit": "m",
+          "value": 6
+        }
+      }
     },
+    "ranged": true,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "simple",
     "weight": {
-      "lb": 2,
-      "kg": 1
+      "imperial": {
+        "unit": "lb",
+        "value": 2
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 1
+      }
     }
   },
   {
@@ -33,19 +61,29 @@
     },
     "damageType": "bludgeoning",
     "id": "PHB'24/Quarterstaff",
+    "magic": false,
     "mastery": "topple",
     "name": {
       "en": "Quarterstaff",
       "it": "Bastone Ferrato"
     },
+    "notes": "",
     "properties": ["versatile"],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "simple",
     "weight": {
-      "lb": 4,
-      "kg": 2
+      "imperial": {
+        "unit": "lb",
+        "value": 4
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 2
+      }
     }
   },
   {
@@ -55,19 +93,29 @@
     },
     "damageType": "slashing",
     "id": "PHB'24/Sickle",
+    "magic": false,
     "mastery": "nick",
     "name": {
       "en": "Sickle",
       "it": "Falcetto"
     },
+    "notes": "",
     "properties": ["light"],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "simple",
     "weight": {
-      "lb": 2,
-      "kg": 1
+      "imperial": {
+        "unit": "lb",
+        "value": 2
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 1
+      }
     }
   },
   {
@@ -77,23 +125,51 @@
     },
     "damageType": "slashing",
     "id": "PHB'24/Javelin",
+    "magic": false,
     "mastery": "slow",
     "name": {
       "en": "Javelin",
       "it": "Giavellotto"
     },
+    "notes": "",
     "properties": ["throw"],
     "range": {
-      "ft": {},
-      "m": {}
+      "long": {
+        "imperial": {
+          "unit": "ft",
+          "value": 120
+        },
+        "metric": {
+          "unit": "m",
+          "value": 36
+        }
+      },
+      "short": {
+        "imperial": {
+          "unit": "ft",
+          "value": 30
+        },
+        "metric": {
+          "unit": "m",
+          "value": 9
+        }
+      }
     },
+    "ranged": true,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "simple",
     "weight": {
-      "lb": 2,
-      "kg": 1
+      "imperial": {
+        "unit": "lb",
+        "value": 2
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 1
+      }
     }
   },
   {
@@ -104,23 +180,51 @@
     },
     "damageType": "piercing",
     "id": "PHB'24/Spear",
+    "magic": false,
     "mastery": "sap",
     "name": {
       "en": "Spear",
       "it": "Lancia"
     },
+    "notes": "",
     "properties": ["throw", "versatile"],
     "range": {
-      "ft": {},
-      "m": {}
+      "long": {
+        "imperial": {
+          "unit": "ft",
+          "value": 60
+        },
+        "metric": {
+          "unit": "m",
+          "value": 18
+        }
+      },
+      "short": {
+        "imperial": {
+          "unit": "ft",
+          "value": 20
+        },
+        "metric": {
+          "unit": "m",
+          "value": 6
+        }
+      }
     },
+    "ranged": true,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "simple",
     "weight": {
-      "lb": 3,
-      "kg": 1.5
+      "imperial": {
+        "unit": "lb",
+        "value": 3
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 1.5
+      }
     }
   },
   {
@@ -130,23 +234,51 @@
     },
     "damageType": "bludgeoning",
     "id": "PHB'24/Light Hammer",
+    "magic": false,
     "mastery": "nick",
     "name": {
       "en": "Light Hammer",
       "it": "Martello leggero"
     },
+    "notes": "",
     "properties": ["throw", "light"],
     "range": {
-      "ft": {},
-      "m": {}
+      "long": {
+        "imperial": {
+          "unit": "ft",
+          "value": 60
+        },
+        "metric": {
+          "unit": "m",
+          "value": 18
+        }
+      },
+      "short": {
+        "imperial": {
+          "unit": "ft",
+          "value": 20
+        },
+        "metric": {
+          "unit": "m",
+          "value": 6
+        }
+      }
     },
+    "ranged": true,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "simple",
     "weight": {
-      "lb": 2,
-      "kg": 1
+      "imperial": {
+        "unit": "lb",
+        "value": 2
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 1
+      }
     }
   },
   {
@@ -156,19 +288,29 @@
     },
     "damageType": "bludgeoning",
     "id": "PHB'24/Mace",
+    "magic": false,
     "mastery": "sap",
     "name": {
       "en": "Mace",
       "it": "Maza"
     },
-    "properties": [""],
+    "notes": "",
+    "properties": [],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "simple",
     "weight": {
-      "lb": 4,
-      "kg": 2
+      "imperial": {
+        "unit": "lb",
+        "value": 4
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 2
+      }
     }
   },
   {
@@ -178,23 +320,51 @@
     },
     "damageType": "piercing",
     "id": "PHB'24/Dagger",
+    "magic": false,
     "mastery": "nick",
     "name": {
       "en": "Dagger",
       "it": "Pugnale"
     },
+    "notes": "",
     "properties": ["finesse", "throw", "light"],
     "range": {
-      "ft": {},
-      "m": {}
+      "long": {
+        "imperial": {
+          "unit": "ft",
+          "value": 60
+        },
+        "metric": {
+          "unit": "m",
+          "value": 18
+        }
+      },
+      "short": {
+        "imperial": {
+          "unit": "ft",
+          "value": 20
+        },
+        "metric": {
+          "unit": "m",
+          "value": 6
+        }
+      }
     },
+    "ranged": true,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "simple",
     "weight": {
-      "lb": 1,
-      "kg": 0.5
+      "imperial": {
+        "unit": "lb",
+        "value": 1
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 0.5
+      }
     }
   },
   {
@@ -204,19 +374,29 @@
     },
     "damageType": "bludgeoning",
     "id": "PHB'24/Greatclub",
+    "magic": false,
     "mastery": "push",
     "name": {
       "en": "Greatclub",
       "it": "Randello pesante"
     },
+    "notes": "",
     "properties": ["two-handed"],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "simple",
     "weight": {
-      "lb": 10,
-      "kg": 5
+      "imperial": {
+        "unit": "lb",
+        "value": 10
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 5
+      }
     }
   },
   {
@@ -227,19 +407,29 @@
     },
     "damageType": "bludgeoning",
     "id": "PHB'24/Club",
+    "magic": false,
     "mastery": "slow",
     "name": {
       "en": "Club",
       "it": "Randello"
     },
+    "notes": "",
     "properties": ["light"],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "simple",
     "weight": {
-      "lb": 2,
-      "kg": 1
+      "imperial": {
+        "unit": "lb",
+        "value": 2
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 1
+      }
     }
   },
   {
@@ -249,23 +439,51 @@
     },
     "damageType": "piercing",
     "id": "PHB'24/Shortbow",
+    "magic": false,
     "mastery": "vex",
     "name": {
       "en": "Shortbow",
       "it": "Arco corto"
     },
+    "notes": "",
     "properties": ["two-handed", "ammunition"],
     "range": {
-      "ft": {},
-      "m": {}
+      "long": {
+        "imperial": {
+          "unit": "ft",
+          "value": 320
+        },
+        "metric": {
+          "unit": "m",
+          "value": 96
+        }
+      },
+      "short": {
+        "imperial": {
+          "unit": "ft",
+          "value": 80
+        },
+        "metric": {
+          "unit": "m",
+          "value": 24
+        }
+      }
     },
+    "ranged": true,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "simple",
     "weight": {
-      "lb": 2,
-      "kg": 1
+      "imperial": {
+        "unit": "lb",
+        "value": 2
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 1
+      }
     }
   },
   {
@@ -275,23 +493,51 @@
     },
     "damageType": "piercing",
     "id": "PHB'24/Light Crossbow",
+    "magic": false,
     "mastery": "slow",
     "name": {
       "en": "Light Crossbow",
       "it": "Balestra leggera"
     },
+    "notes": "",
     "properties": ["ammunition", "two-handed", "loading"],
     "range": {
-      "ft": {},
-      "m": {}
+      "long": {
+        "imperial": {
+          "unit": "ft",
+          "value": 320
+        },
+        "metric": {
+          "unit": "m",
+          "value": 96
+        }
+      },
+      "short": {
+        "imperial": {
+          "unit": "ft",
+          "value": 80
+        },
+        "metric": {
+          "unit": "m",
+          "value": 24
+        }
+      }
     },
+    "ranged": true,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "simple",
     "weight": {
-      "lb": 5,
-      "kg": 2.5
+      "imperial": {
+        "unit": "lb",
+        "value": 5
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 2.5
+      }
     }
   },
   {
@@ -301,23 +547,51 @@
     },
     "damageType": "piercing",
     "id": "PHB'24/Dart",
+    "magic": false,
     "mastery": "vex",
     "name": {
       "en": "Dart",
       "it": "Dardo"
     },
+    "notes": "",
     "properties": ["throw", "finesse"],
     "range": {
-      "ft": {},
-      "m": {}
+      "long": {
+        "imperial": {
+          "unit": "ft",
+          "value": 60
+        },
+        "metric": {
+          "unit": "m",
+          "value": 18
+        }
+      },
+      "short": {
+        "imperial": {
+          "unit": "ft",
+          "value": 20
+        },
+        "metric": {
+          "unit": "m",
+          "value": 6
+        }
+      }
     },
+    "ranged": true,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "simple",
     "weight": {
-      "lb": 0.25,
-      "kg": 0.125
+      "imperial": {
+        "unit": "lb",
+        "value": 0.25
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 0.125
+      }
     }
   },
   {
@@ -327,23 +601,51 @@
     },
     "damageType": "bludgeoning",
     "id": "PHB'24/Sling",
+    "magic": false,
     "mastery": "slow",
     "name": {
       "en": "Sling",
       "it": "Fionda"
     },
+    "notes": "",
     "properties": ["ammunition"],
     "range": {
-      "ft": {},
-      "m": {}
+      "long": {
+        "imperial": {
+          "unit": "ft",
+          "value": 120
+        },
+        "metric": {
+          "unit": "m",
+          "value": 36
+        }
+      },
+      "short": {
+        "imperial": {
+          "unit": "ft",
+          "value": 30
+        },
+        "metric": {
+          "unit": "m",
+          "value": 9
+        }
+      }
     },
+    "ranged": true,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "simple",
     "weight": {
-      "lb": 0,
-      "kg": 0
+      "imperial": {
+        "unit": "lb",
+        "value": 0
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 0
+      }
     }
   },
   {
@@ -353,19 +655,29 @@
     },
     "damageType": "slashing",
     "id": "PHB'24/Halberd",
+    "magic": false,
     "mastery": "cleave",
     "name": {
       "en": "Halberd",
       "it": "Alabarda"
     },
+    "notes": "",
     "properties": ["reach", "two-handed", "heavy"],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 6,
-      "kg": 3
+      "imperial": {
+        "unit": "lb",
+        "value": 6
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 3
+      }
     }
   },
   {
@@ -375,19 +687,29 @@
     },
     "damageType": "slashing",
     "id": "PHB'24/Greataxe",
+    "magic": false,
     "mastery": "cleave",
     "name": {
       "en": "Greataxe",
       "it": "Ascia bipenne"
     },
+    "notes": "",
     "properties": ["two-handed", "heavy"],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 7,
-      "kg": 3.5
+      "imperial": {
+        "unit": "lb",
+        "value": 7
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 3.5
+      }
     }
   },
   {
@@ -398,19 +720,29 @@
     },
     "damageType": "slashing",
     "id": "PHB'24/Battleaxe",
+    "magic": false,
     "mastery": "topple",
     "name": {
       "en": "Battleaxe",
       "it": "Ascia da battaglia"
     },
+    "notes": "",
     "properties": ["versatile"],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 4,
-      "kg": 2
+      "imperial": {
+        "unit": "lb",
+        "value": 4
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 2
+      }
     }
   },
   {
@@ -420,19 +752,29 @@
     },
     "damageType": "slashing",
     "id": "PHB'24/Glaive",
+    "magic": false,
     "mastery": "graze",
     "name": {
       "en": "Glaive",
       "it": "Falcione"
     },
+    "notes": "",
     "properties": ["reach", "two-handed", "heavy"],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 6,
-      "kg": 3
+      "imperial": {
+        "unit": "lb",
+        "value": 6
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 3
+      }
     }
   },
   {
@@ -442,19 +784,29 @@
     },
     "damageType": "slashing",
     "id": "PHB'24/Whip",
+    "magic": false,
     "mastery": "slow",
     "name": {
       "en": "Whip",
       "it": "Frusta"
     },
+    "notes": "",
     "properties": ["finesse", "reach"],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 2,
-      "kg": 1.5
+      "imperial": {
+        "unit": "lb",
+        "value": 2
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 1.5
+      }
     }
   },
   {
@@ -464,19 +816,29 @@
     },
     "damageType": "piercing",
     "id": "PHB'24/Lance",
+    "magic": false,
     "mastery": "topple",
     "name": {
       "en": "Lance",
       "it": "Lancia da cavaliere"
     },
+    "notes": "",
     "properties": ["reach", "two-handed", "heavy"],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 6,
-      "kg": 3
+      "imperial": {
+        "unit": "lb",
+        "value": 6
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 3
+      }
     }
   },
   {
@@ -486,19 +848,29 @@
     },
     "damageType": "bludgeoning",
     "id": "PHB'24/Maul",
+    "magic": false,
     "mastery": "topple",
     "name": {
       "en": "Maul",
       "it": "Maglio"
     },
+    "notes": "",
     "properties": ["heavy", "two-handed"],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 10,
-      "kg": 5
+      "imperial": {
+        "unit": "lb",
+        "value": 10
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 5
+      }
     }
   },
   {
@@ -509,19 +881,29 @@
     },
     "damageType": "bludgeoning",
     "id": "PHB'24/Warhammer",
+    "magic": false,
     "mastery": "push",
     "name": {
       "en": "Warhammer",
       "it": "Martello da guerra"
     },
+    "notes": "",
     "properties": ["versatile"],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 5,
-      "kg": 2.5
+      "imperial": {
+        "unit": "lb",
+        "value": 5
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 2.5
+      }
     }
   },
   {
@@ -531,19 +913,29 @@
     },
     "damageType": "piercing",
     "id": "PHB'24/Morningstar",
+    "magic": false,
     "mastery": "sap",
     "name": {
       "en": "Morningstar",
       "it": "Mazza chiodata"
     },
-    "properties": [""],
+    "notes": "",
+    "properties": [],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 4,
-      "kg": 2
+      "imperial": {
+        "unit": "lb",
+        "value": 4
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 2
+      }
     }
   },
   {
@@ -553,19 +945,29 @@
     },
     "damageType": "bludgeoning",
     "id": "PHB'24/Flail",
+    "magic": false,
     "mastery": "sap",
     "name": {
       "en": "Flail",
       "it": "Mazzafrusto"
     },
-    "properties": [""],
+    "notes": "",
+    "properties": [],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 2,
-      "kg": 1
+      "imperial": {
+        "unit": "lb",
+        "value": 2
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 1
+      }
     }
   },
   {
@@ -575,19 +977,29 @@
     },
     "damageType": "piercing",
     "id": "PHB'24/Pike",
+    "magic": false,
     "mastery": "push",
     "name": {
       "en": "Pike",
       "it": "Picca"
     },
+    "notes": "",
     "properties": ["two-handed", "reach", "heavy"],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 18,
-      "kg": 9
+      "imperial": {
+        "unit": "lb",
+        "value": 18
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 9
+      }
     }
   },
   {
@@ -597,19 +1009,29 @@
     },
     "damageType": "slashing",
     "id": "PHB'24/Scimitar",
+    "magic": false,
     "mastery": "nick",
     "name": {
       "en": "Scimitar",
       "it": "Scimitarra"
     },
+    "notes": "",
     "properties": ["light", "finesse"],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 3,
-      "kg": 1.5
+      "imperial": {
+        "unit": "lb",
+        "value": 3
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 1.5
+      }
     }
   },
   {
@@ -619,19 +1041,29 @@
     },
     "damageType": "piercing",
     "id": "PHB'24/Shortsword",
+    "magic": false,
     "mastery": "vex",
     "name": {
       "en": "Shortsword",
       "it": "Spada corta"
     },
+    "notes": "",
     "properties": ["finesse", "light"],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 2,
-      "kg": 1
+      "imperial": {
+        "unit": "lb",
+        "value": 2
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 1
+      }
     }
   },
   {
@@ -642,19 +1074,29 @@
     },
     "damageType": "slashing",
     "id": "PHB'24/Longsword",
+    "magic": false,
     "mastery": "sap",
     "name": {
       "en": "Longsword",
       "it": "Spada lunga"
     },
+    "notes": "",
     "properties": ["versatile"],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 3,
-      "kg": 1.5
+      "imperial": {
+        "unit": "lb",
+        "value": 3
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 1.5
+      }
     }
   },
   {
@@ -664,19 +1106,29 @@
     },
     "damageType": "slashing",
     "id": "PHB'24/Greatsword",
+    "magic": false,
     "mastery": "cleave",
     "name": {
       "en": "Greatsword",
       "it": "Spadone"
     },
+    "notes": "",
     "properties": ["heavy", "two-handed"],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 6,
-      "kg": 3
+      "imperial": {
+        "unit": "lb",
+        "value": 6
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 3
+      }
     }
   },
   {
@@ -686,19 +1138,29 @@
     },
     "damageType": "piercing",
     "id": "PHB'24/Rapier",
+    "magic": false,
     "mastery": "vex",
     "name": {
       "en": "Rapier",
       "it": "Stocco"
     },
+    "notes": "",
     "properties": ["finesse"],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 2,
-      "kg": 1
+      "imperial": {
+        "unit": "lb",
+        "value": 2
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 1
+      }
     }
   },
   {
@@ -709,23 +1171,51 @@
     },
     "damageType": "piercing",
     "id": "PHB'24/Trident",
+    "magic": false,
     "mastery": "topple",
     "name": {
       "en": "Trident",
       "it": "Tridente"
     },
+    "notes": "",
     "properties": ["throw", "versatile"],
     "range": {
-      "ft": {},
-      "m": {}
+      "long": {
+        "imperial": {
+          "unit": "ft",
+          "value": 60
+        },
+        "metric": {
+          "unit": "m",
+          "value": 18
+        }
+      },
+      "short": {
+        "imperial": {
+          "unit": "ft",
+          "value": 20
+        },
+        "metric": {
+          "unit": "m",
+          "value": 6
+        }
+      }
     },
+    "ranged": true,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 4,
-      "kg": 2
+      "imperial": {
+        "unit": "lb",
+        "value": 4
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 2
+      }
     }
   },
   {
@@ -736,19 +1226,29 @@
     },
     "damageType": "piercing",
     "id": "PHB'24/War Pick",
+    "magic": false,
     "mastery": "sap",
     "name": {
       "en": "War Pick",
       "it": "Piccone da guerra"
     },
+    "notes": "",
     "properties": ["versatile"],
+    "ranged": false,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 2,
-      "kg": 1
+      "imperial": {
+        "unit": "lb",
+        "value": 2
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 1
+      }
     }
   },
   {
@@ -758,23 +1258,51 @@
     },
     "damageType": "piercing",
     "id": "PHB'24/Longbow",
+    "magic": false,
     "mastery": "slow",
     "name": {
       "en": "Longbow",
       "it": "Arco lungo"
     },
+    "notes": "",
     "properties": ["ammunition", "two-handed", "heavy"],
     "range": {
-      "ft": {},
-      "m": {}
+      "long": {
+        "imperial": {
+          "unit": "ft",
+          "value": 600
+        },
+        "metric": {
+          "unit": "m",
+          "value": 180
+        }
+      },
+      "short": {
+        "imperial": {
+          "unit": "ft",
+          "value": 150
+        },
+        "metric": {
+          "unit": "m",
+          "value": 45
+        }
+      }
     },
+    "ranged": true,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 2,
-      "kg": 1
+      "imperial": {
+        "unit": "lb",
+        "value": 2
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 1
+      }
     }
   },
   {
@@ -784,23 +1312,51 @@
     },
     "damageType": "piercing",
     "id": "PHB'24/Hand Crossbow",
+    "magic": false,
     "mastery": "vex",
     "name": {
       "en": "Hand Crossbow",
       "it": "Balestra a mano"
     },
+    "notes": "",
     "properties": ["ammunition", "loading", "light"],
     "range": {
-      "ft": {},
-      "m": {}
+      "long": {
+        "imperial": {
+          "unit": "ft",
+          "value": 120
+        },
+        "metric": {
+          "unit": "m",
+          "value": 36
+        }
+      },
+      "short": {
+        "imperial": {
+          "unit": "ft",
+          "value": 30
+        },
+        "metric": {
+          "unit": "m",
+          "value": 9
+        }
+      }
     },
+    "ranged": true,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 3,
-      "kg": 1.5
+      "imperial": {
+        "unit": "lb",
+        "value": 3
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 1.5
+      }
     }
   },
   {
@@ -810,49 +1366,105 @@
     },
     "damageType": "piercing",
     "id": "PHB'24/Heavy Crossbow",
+    "magic": false,
     "mastery": "push",
     "name": {
       "en": "Heavy Crossbow",
       "it": "Balestra pesante"
     },
+    "notes": "",
     "properties": ["ammunition", "heavy", "loading", "two-handed"],
     "range": {
-      "ft": {},
-      "m": {}
+      "long": {
+        "imperial": {
+          "unit": "ft",
+          "value": 400
+        },
+        "metric": {
+          "unit": "m",
+          "value": 120
+        }
+      },
+      "short": {
+        "imperial": {
+          "unit": "ft",
+          "value": 100
+        },
+        "metric": {
+          "unit": "m",
+          "value": 30
+        }
+      }
     },
+    "ranged": true,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 18,
-      "kg": 9
+      "imperial": {
+        "unit": "lb",
+        "value": 18
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 9
+      }
     }
   },
   {
     "cost": 10,
     "damage": {
-      "regular": 1
+      "regular": "1"
     },
     "damageType": "piercing",
     "id": "PHB'24/Blowgun",
+    "magic": false,
     "mastery": "vex",
     "name": {
       "en": "Blowgun",
       "it": "Cerbottana"
     },
+    "notes": "",
     "properties": ["ammunition", "loading"],
     "range": {
-      "ft": {},
-      "m": {}
+      "long": {
+        "imperial": {
+          "unit": "ft",
+          "value": 100
+        },
+        "metric": {
+          "unit": "m",
+          "value": 30
+        }
+      },
+      "short": {
+        "imperial": {
+          "unit": "ft",
+          "value": 25
+        },
+        "metric": {
+          "unit": "m",
+          "value": 7
+        }
+      }
     },
+    "ranged": true,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 1,
-      "kg": 0.5
+      "imperial": {
+        "unit": "lb",
+        "value": 1
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 0.5
+      }
     }
   },
   {
@@ -862,23 +1474,51 @@
     },
     "damageType": "piercing",
     "id": "PHB'24/Musket",
+    "magic": false,
     "mastery": "slow",
     "name": {
       "en": "Musket",
       "it": "Moschetto"
     },
+    "notes": "",
     "properties": ["two-handed", "loading", "ammunition"],
     "range": {
-      "ft": {},
-      "m": {}
+      "long": {
+        "imperial": {
+          "unit": "ft",
+          "value": 120
+        },
+        "metric": {
+          "unit": "m",
+          "value": 36
+        }
+      },
+      "short": {
+        "imperial": {
+          "unit": "ft",
+          "value": 40
+        },
+        "metric": {
+          "unit": "m",
+          "value": 12
+        }
+      }
     },
+    "ranged": true,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 10,
-      "kg": 5
+      "imperial": {
+        "unit": "lb",
+        "value": 10
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 5
+      }
     }
   },
   {
@@ -888,23 +1528,51 @@
     },
     "damageType": "piercing",
     "id": "PHB'24/Pistol",
+    "magic": false,
     "mastery": "vex",
     "name": {
       "en": "Pistol",
       "it": "Pistola"
     },
+    "notes": "",
     "properties": ["ammunition", "loading"],
     "range": {
-      "ft": {},
-      "m": {}
+      "long": {
+        "imperial": {
+          "unit": "ft",
+          "value": 90
+        },
+        "metric": {
+          "unit": "m",
+          "value": 27
+        }
+      },
+      "short": {
+        "imperial": {
+          "unit": "ft",
+          "value": 30
+        },
+        "metric": {
+          "unit": "m",
+          "value": 9
+        }
+      }
     },
+    "ranged": true,
     "source": {
       "book": "PHB'24",
       "page": 215
     },
+    "type": "martial",
     "weight": {
-      "lb": 3,
-      "kg": 1.5
+      "imperial": {
+        "unit": "lb",
+        "value": 3
+      },
+      "metric": {
+        "unit": "kg",
+        "value": 1.5
+      }
     }
   }
 ]
