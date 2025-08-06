@@ -12,7 +12,7 @@ import { type ReactNode, memo } from "react";
 import RichText from "../../components/ui/rich-text";
 import useI18n from "../../i18n/use-i18n";
 import type { DndSpell } from "../models/dnd-spell";
-import useDndSpellLocalized from "./use-dnd-spell-localized";
+import dndSpellsStore from "./dnd-spells-store";
 
 export type DndSpellCardProps = {
   onClickSpell?: () => void;
@@ -46,7 +46,7 @@ export default memo(function DndSpellCard({
     school,
     source,
     text,
-  } = useDndSpellLocalized(spell);
+  } = dndSpellsStore.useLocalizedData(spell.id);
 
   const castingTimeLabel = i18n.t("dnd.spell.casting_time");
   const durationLabel = i18n.t("dnd.spell.duration");

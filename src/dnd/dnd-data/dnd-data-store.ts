@@ -1,6 +1,8 @@
-import { useCallback, useLayoutEffect, useState } from "react";
+import { useCallback, useLayoutEffect, useMemo, useState } from "react";
 import { z } from "zod/v4";
 import type { I18nLanguage } from "../../i18n/i18n-language";
+import type { I18n } from "../../i18n/use-i18n";
+import useI18n from "../../i18n/use-i18n";
 import { i18nLanguageStore } from "../../i18n/use-i18n-language";
 import { type NormalizedList, normalize } from "../../utils/normalized-list";
 import { createObservable } from "../../utils/observable";
@@ -13,15 +15,24 @@ import {
   viewSchema,
 } from "../models/view";
 
-export type DataStore<DndData extends { id: string }, DndFilters> = ReturnType<
-  typeof createDndDataStore<DndData, DndFilters>
+export type DataStore<
+  DndData extends { id: string },
+  DndDataLocalized,
+  DndFilters,
+> = ReturnType<
+  typeof createDndDataStore<DndData, DndDataLocalized, DndFilters>
 >;
 
-export function createDndDataStore<DndData extends { id: string }, DndFilters>({
+export function createDndDataStore<
+  DndData extends { id: string },
+  DndDataLocalized,
+  DndFilters,
+>({
   compareData,
   dataSchema,
   dataUrl,
   isDataVisible,
+  localizeData,
   parseFilters,
   storeId,
 }: {
@@ -35,6 +46,7 @@ export function createDndDataStore<DndData extends { id: string }, DndFilters>({
   dataSchema: z.ZodType<DndData>;
   dataUrl: string;
   isDataVisible: (data: DndData, filters: DndFilters) => boolean;
+  localizeData: (data: DndData, i18n: I18n) => DndDataLocalized;
   parseFilters: (maybeT: unknown) => DndFilters;
   storeId: string;
 }) {
@@ -135,6 +147,19 @@ export function createDndDataStore<DndData extends { id: string }, DndFilters>({
   function useData(id: string): DndData {
     const dataset = datasetStore.useValue();
     return dataset.byId[id];
+  }
+
+  //----------------------------------------------------------------------------
+  // Use Localized Data
+  //----------------------------------------------------------------------------
+
+  function useLocalizedData(id: string): DndDataLocalized {
+    const i18n = useI18n();
+    const dataset = useDataset();
+    return useMemo(
+      () => localizeData(dataset.byId[id], i18n),
+      [dataset.byId, i18n, id],
+    );
   }
 
   //----------------------------------------------------------------------------
@@ -272,6 +297,7 @@ export function createDndDataStore<DndData extends { id: string }, DndFilters>({
     useDataset,
     useFilters,
     useIsDataSelected,
+    useLocalizedData,
     useSelectedVisibleDataCount,
     useSelectedVisibleDatalist,
     useView,

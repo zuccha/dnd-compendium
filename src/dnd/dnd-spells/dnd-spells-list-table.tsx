@@ -4,7 +4,6 @@ import RichText from "../../components/ui/rich-text";
 import useI18n from "../../i18n/use-i18n";
 import DndSpellsListEmpty from "./dnd-spells-list-empty";
 import dndSpellsStore from "./dnd-spells-store";
-import useDndSpellLocalized from "./use-dnd-spell-localized";
 
 export default function DndSpellsListTable() {
   const spellIds = dndSpellsStore.useVisibleDataIds();
@@ -67,11 +66,8 @@ function DndSpellsTableHeader({ size }: { size: number }) {
 }
 
 function DndSpellsTableRow({ spellId }: { spellId: string }) {
-  const spell = dndSpellsStore.useData(spellId);
-  const spellLocalized = useDndSpellLocalized(spell);
-
+  const spellLocalized = dndSpellsStore.useLocalizedData(spellId);
   const selected = dndSpellsStore.useIsDataSelected(spellId);
-
   const [expanded, setExpanded] = useState(false);
 
   return (

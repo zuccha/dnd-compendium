@@ -1,6 +1,5 @@
-import { useMemo } from "react";
 import { localizeI18nString } from "../../i18n/i18n-string";
-import useI18n, { type I18n } from "../../i18n/use-i18n";
+import { type I18n } from "../../i18n/use-i18n";
 import type { DndSpell } from "../models/dnd-spell";
 
 function localizeCastingTime(spell: DndSpell, i18n: I18n): string {
@@ -92,7 +91,7 @@ function localizeComponentMaterials(spell: DndSpell, i18n: I18n): string {
     : i18n.t("dnd.spell.component_materials.none");
 }
 
-export function localizeDndSpell(spell: DndSpell, i18n: I18n) {
+export default function localizeDndSpell(spell: DndSpell, i18n: I18n) {
   return {
     castingTime:
       localizeCastingTime(spell, i18n) +
@@ -131,9 +130,4 @@ export function localizeDndSpell(spell: DndSpell, i18n: I18n) {
   };
 }
 
-export default function useDndSpellLocalized(spell: DndSpell) {
-  const i18n = useI18n();
-  return useMemo(() => localizeDndSpell(spell, i18n), [i18n, spell]);
-}
-
-export type DndSpellLocalized = ReturnType<typeof useDndSpellLocalized>;
+export type DndSpellLocalized = ReturnType<typeof localizeDndSpell>;

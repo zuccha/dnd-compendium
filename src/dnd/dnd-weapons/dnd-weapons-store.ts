@@ -112,6 +112,7 @@ const dndWeaponsStore = createDndDataStore({
   dataSchema: dndWeaponSchema,
   dataUrl: "/data/weapons.json",
   isDataVisible: isDndWeaponVisible,
+  localizeData: (weapon) => weapon, // TODO.
   parseFilters: dndWeaponsFiltersSchema.parse,
   storeId: "weapons",
 });

@@ -11,7 +11,7 @@ import {
   dndSpellSchools,
 } from "../models/dnd-spell";
 import dndSpellsStore, { dndSpellsOrderByItems } from "./dnd-spells-store";
-import { localizeDndSpell } from "./use-dnd-spell-localized";
+import localizeDndSpell from "./localize-dnd-spell";
 
 export default function DndSpellsHeader() {
   const i18n = useI18n();

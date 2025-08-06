@@ -19,22 +19,27 @@ import {
 } from "../models/view";
 import type { DataStore } from "./dnd-data-store";
 
-export type DndDataHeaderProps<DndData extends { id: string }, DndFilters> = {
+export type DndDataHeaderProps<
+  DndData extends { id: string },
+  DndDataLocalized,
+  DndFilters,
+> = {
   children: ReactNode;
   onLocalizeData: (data: DndData, i18n: I18n) => unknown;
   sortByItems: string[];
-  store: DataStore<DndData, DndFilters>;
+  store: DataStore<DndData, DndDataLocalized, DndFilters>;
 };
 
 export default function DndDataHeader<
   DndData extends { id: string },
+  DndDataLocalized,
   DndFilters,
 >({
   children,
   onLocalizeData,
   sortByItems,
   store,
-}: DndDataHeaderProps<DndData, DndFilters>) {
+}: DndDataHeaderProps<DndData, DndDataLocalized, DndFilters>) {
   const i18n = useI18n();
   const [view, setView] = store.useView();
 
@@ -153,11 +158,15 @@ export default function DndDataHeader<
 
 function CopySelectedSpellsToClipboard<
   DndData extends { id: string },
+  DndDataLocalized,
   DndFilters,
 >({
   onLocalizeData,
   store,
-}: Omit<DndDataHeaderProps<DndData, DndFilters>, "children" | "sortByItems">) {
+}: Omit<
+  DndDataHeaderProps<DndData, DndDataLocalized, DndFilters>,
+  "children" | "sortByItems"
+>) {
   const i18n = useI18n();
   const datalist = store.useSelectedVisibleDatalist();
 

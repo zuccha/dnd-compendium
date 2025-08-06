@@ -10,6 +10,7 @@ import {
   dndSpellSchoolSchema,
 } from "../models/dnd-spell";
 import type { ViewSortBy, ViewSortOrder } from "../models/view";
+import localizeDndSpell from "./localize-dnd-spell";
 
 //------------------------------------------------------------------------------
 // Dnd Spells Order By Items
@@ -91,6 +92,7 @@ const dndSpellsStore = createDndDataStore({
   dataSchema: dndSpellSchema,
   dataUrl: "/data/spells.json",
   isDataVisible: isDndSpellVisible,
+  localizeData: localizeDndSpell,
   parseFilters: dndSpellsFiltersSchema.parse,
   storeId: "spells",
 });
