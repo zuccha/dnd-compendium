@@ -22,8 +22,8 @@ export const dndTabs: Record<DndTabId, DndTab> = {
 };
 
 function readTabIdFromUrl(): DndTabId {
-  const pathname = window.location.pathname.substring(1);
-  const initialTabIdResult = dndTabIdSchema.safeParse(pathname);
+  const hash = window.location.hash.substring(1);
+  const initialTabIdResult = dndTabIdSchema.safeParse(hash);
   return initialTabIdResult.success ? initialTabIdResult.data : "spells";
 }
 
@@ -34,7 +34,7 @@ export const useSelectedDndTabId = (): [
   const [id, setId] = useState(readTabIdFromUrl);
 
   const setPathname = useCallback((nextId: DndTabId) => {
-    window.history.pushState({}, "", nextId);
+    window.location.hash = nextId;
   }, []);
 
   useLayoutEffect(() => {
