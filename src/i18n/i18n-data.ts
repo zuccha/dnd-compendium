@@ -42,6 +42,20 @@ const genericI18n = {
     "generic.time.minute@short/1": "min.",
     "generic.time.round@short/*": "rounds",
     "generic.time.round@short/1": "round",
+
+    "generic.weight.g/*": "grams",
+    "generic.weight.g/1": "gram",
+    "generic.weight.kg/*": "kilograms",
+    "generic.weight.kg/1": "kilogram",
+    "generic.weight.lb/*": "pounds",
+    "generic.weight.lb/1": "pound",
+
+    "generic.weight.g@short/*": "g",
+    "generic.weight.g@short/1": "g",
+    "generic.weight.kg@short/*": "kg",
+    "generic.weight.kg@short/1": "kg",
+    "generic.weight.lb@short/*": "lb",
+    "generic.weight.lb@short/1": "lb",
   },
   it: {
     "generic.system.imperial": "Imperiale",
@@ -86,6 +100,20 @@ const genericI18n = {
     "generic.time.minute@short/1": "min.",
     "generic.time.round@short/*": "rounds",
     "generic.time.round@short/1": "round",
+
+    "generic.weight.g/*": "grammi",
+    "generic.weight.g/1": "grammo",
+    "generic.weight.kg/*": "chilogrammi",
+    "generic.weight.kg/1": "chilogrammo",
+    "generic.weight.lb/*": "libbre",
+    "generic.weight.lb/1": "libbra",
+
+    "generic.weight.g@short/*": "g",
+    "generic.weight.g@short/1": "g",
+    "generic.weight.kg@short/*": "kg",
+    "generic.weight.kg@short/1": "kg",
+    "generic.weight.lb@short/*": "lb",
+    "generic.weight.lb@short/1": "lb",
   },
 };
 
