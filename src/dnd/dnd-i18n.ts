@@ -117,6 +117,8 @@ const dndI18n = {
     "dnd.spells.filters.select.schools.placeholder": "Select school",
 
     // Weapon
+    "dnd.weapon.kind.magic": "Magic",
+    "dnd.weapon.kind.non_magic": "Non-Magic",
     "dnd.weapon.mastery.cleave": "Cleave",
     "dnd.weapon.mastery.graze": "Graze",
     "dnd.weapon.mastery.nick": "Nick",
@@ -139,6 +141,11 @@ const dndI18n = {
     "dnd.weapon.type.martial_ranged": "Martial_ranged",
     "dnd.weapon.type.simple_melee": "Simple_melee",
     "dnd.weapon.type.simple_ranged": "Simple_ranged",
+
+    // Weapons Filters
+    "dnd.weapons.filters.input.name.placeholder": "Name",
+    "dnd.weapons.filters.select.kind.placeholder": "Non-Magic/Magic",
+    "dnd.weapons.filters.select.types.placeholder": "Type",
   },
   it: {
     // Tabs
@@ -258,6 +265,8 @@ const dndI18n = {
     "dnd.spells.filters.select.schools.placeholder": "Seleziona scuola",
 
     // Weapon
+    "dnd.weapon.kind.magic": "Magica",
+    "dnd.weapon.kind.non_magic": "Non Magica",
     "dnd.weapon.mastery.cleave": "Doppio Fendente",
     "dnd.weapon.mastery.graze": "Colpo di Striscio",
     "dnd.weapon.mastery.nick": "Graffio",
@@ -276,10 +285,15 @@ const dndI18n = {
     "dnd.weapon.property.throw": "Lancio",
     "dnd.weapon.property.two-handed": "A Due Mani",
     "dnd.weapon.property.versatile": "Versatile",
-    "dnd.weapon.type.martial_melee": "da mischia da guerra",
-    "dnd.weapon.type.martial_ranged": "a distanza da guerra",
-    "dnd.weapon.type.simple_melee": "da mischia semplice",
-    "dnd.weapon.type.simple_ranged": "a distanza da guerra",
+    "dnd.weapon.type.martial_melee": "Da mischia da guerra",
+    "dnd.weapon.type.martial_ranged": "A distanza da guerra",
+    "dnd.weapon.type.simple_melee": "Da mischia semplice",
+    "dnd.weapon.type.simple_ranged": "A distanza da guerra",
+
+    // Weapons Filters
+    "dnd.weapons.filters.input.name.placeholder": "Nome",
+    "dnd.weapons.filters.select.kind.placeholder": "Non-Magico/Magico",
+    "dnd.weapons.filters.select.types.placeholder": "Tipo",
   },
 } as const;
 
