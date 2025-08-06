@@ -20,6 +20,21 @@ import localizeDndWeapon from "./localize-dnd-weapon";
 export const dndWeaponsOrderByItems = ["name", "type", "weight", "cost"];
 
 //------------------------------------------------------------------------------
+// Dnd Weapons Range Filter
+//------------------------------------------------------------------------------
+
+export const dndWeaponsRangeFilterSchema = z.enum([
+  "any_range",
+  "melee_only",
+  "ranged_only",
+  "melee_and_ranged",
+]);
+
+export const dndWeaponsRangeFilters = dndWeaponsRangeFilterSchema.options;
+
+export type DndWeaponsRangeFilter = z.infer<typeof dndWeaponsRangeFilterSchema>;
+
+//------------------------------------------------------------------------------
 // Dnd Weapons Filters
 //------------------------------------------------------------------------------
 
@@ -28,6 +43,7 @@ export const dndWeaponsFiltersSchema = z.object({
   masteries: z.array(dndWeaponMasterySchema).default(dndWeaponMasteries),
   name: z.string().default(""),
   properties: z.array(dndWeaponPropertySchema).default(dndWeaponProperties),
+  range: dndWeaponsRangeFilterSchema.default("any_range"),
   types: z.array(dndWeaponTypeSchema).default(dndWeaponTypes),
 });
 
@@ -98,7 +114,15 @@ function isDndWeaponVisible(
     // Properties
     filters.properties.some((p) => weapon.properties.includes(p)) &&
     // Kind
-    (!filters.kind || (weapon.magic && filters.kind === "magic")) &&
+    // (!filters.kind || (weapon.magic && filters.kind === "magic")) &&
+    // Range
+    (filters.range === "melee_and_ranged"
+      ? weapon.ranged && weapon.melee
+      : filters.range === "melee_only"
+        ? !weapon.ranged && weapon.melee
+        : filters.range === "ranged_only"
+          ? weapon.ranged && !weapon.melee
+          : true) &&
     // Type
     filters.types.some((t) => weapon.type === t)
   );

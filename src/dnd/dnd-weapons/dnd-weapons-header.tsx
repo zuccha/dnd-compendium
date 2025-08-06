@@ -12,7 +12,11 @@ import {
   dndWeaponProperties,
   dndWeaponTypes,
 } from "../models/dnd-weapon";
-import dndWeaponsStore, { dndWeaponsOrderByItems } from "./dnd-weapons-store";
+import dndWeaponsStore, {
+  type DndWeaponsRangeFilter,
+  dndWeaponsOrderByItems,
+  dndWeaponsRangeFilters,
+} from "./dnd-weapons-store";
 
 export default function DndWeaponsHeader() {
   const i18n = useI18n();
@@ -48,6 +52,15 @@ export default function DndWeaponsHeader() {
           value: type,
         }))
         .sort(compareLabels),
+    });
+  }, [i18n]);
+
+  const rangeCollection = useMemo(() => {
+    return createListCollection({
+      items: dndWeaponsRangeFilters.map((type) => ({
+        label: i18n.t(`dnd.weapons.filters.range.${type}`),
+        value: type,
+      })),
     });
   }, [i18n]);
 
@@ -100,6 +113,15 @@ export default function DndWeaponsHeader() {
           placeholder={i18n.t(
             "dnd.weapons.filters.select.masteries.placeholder",
           )}
+          size="sm"
+        />
+        <Select
+          collection={rangeCollection}
+          defaultValue={[filters.range]}
+          name="dnd-weapons-filters-range"
+          onValueChange={(e) =>
+            setFilters({ range: e.value[0] as DndWeaponsRangeFilter })
+          }
           size="sm"
         />
       </HStack>
