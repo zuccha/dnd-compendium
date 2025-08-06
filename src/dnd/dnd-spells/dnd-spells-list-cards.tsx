@@ -9,7 +9,7 @@ import {
   useVisibleDndSpellIds,
 } from "./dnd-spells-store";
 
-export default function DndSpellsList() {
+export default function DndSpellsListCards() {
   const [view] = useDndSpellsView();
   const spellIds = useVisibleDndSpellIds();
 
@@ -25,13 +25,13 @@ export default function DndSpellsList() {
       wrap="wrap"
     >
       {spellIds.map((id) => (
-        <DndSpellsListItem key={id} spellId={id} />
+        <DndSpellsListCardsItem key={id} spellId={id} />
       ))}
     </Flex>
   );
 }
 
-function DndSpellsListItem({ spellId }: { spellId: string }) {
+function DndSpellsListCardsItem({ spellId }: { spellId: string }) {
   const spell = useDndSpell(spellId);
   const selected = useIsDndSpellSelected(spellId);
 
