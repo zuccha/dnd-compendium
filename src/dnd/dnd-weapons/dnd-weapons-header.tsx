@@ -1,5 +1,7 @@
 import { HStack, Input, createListCollection } from "@chakra-ui/react";
+import { LucideBowArrow } from "lucide-react";
 import { useMemo } from "react";
+import { LuSword, LuWand } from "react-icons/lu";
 import Select from "../../components/ui/select";
 import useI18n from "../../i18n/use-i18n";
 import { compareLabels } from "../../utils/select-collection";
@@ -12,11 +14,8 @@ import {
   dndWeaponProperties,
   dndWeaponTypes,
 } from "../models/dnd-weapon";
-import dndWeaponsStore, {
-  type DndWeaponsRangeFilter,
-  dndWeaponsOrderByItems,
-  dndWeaponsRangeFilters,
-} from "./dnd-weapons-store";
+import StateFilterIconButton from "../ui/state-filter-icon-button";
+import dndWeaponsStore, { dndWeaponsOrderByItems } from "./dnd-weapons-store";
 
 export default function DndWeaponsHeader() {
   const i18n = useI18n();
@@ -55,15 +54,6 @@ export default function DndWeaponsHeader() {
     });
   }, [i18n]);
 
-  const rangeCollection = useMemo(() => {
-    return createListCollection({
-      items: dndWeaponsRangeFilters.map((type) => ({
-        label: i18n.t(`dnd.weapons.filters.range.${type}`),
-        value: type,
-      })),
-    });
-  }, [i18n]);
-
   return (
     <DndDataHeader
       onLocalizeData={(weapon) => weapon}
@@ -75,7 +65,7 @@ export default function DndWeaponsHeader() {
           defaultValue={filters.name}
           name="dnd-weapons-filters-name"
           onChange={(e) => setFilters({ name: e.target.value })}
-          placeholder={i18n.t("dnd.weapons.filters.input.name.placeholder")}
+          placeholder={i18n.t("dnd.weapons.filters.name.placeholder")}
           size="sm"
         />
         <Select
@@ -86,7 +76,7 @@ export default function DndWeaponsHeader() {
           onValueChange={(e) =>
             setFilters({ types: e.value as DndWeaponType[] })
           }
-          placeholder={i18n.t("dnd.weapons.filters.select.types.placeholder")}
+          placeholder={i18n.t("dnd.weapons.filters.types.placeholder")}
           size="sm"
         />
         <Select
@@ -97,9 +87,7 @@ export default function DndWeaponsHeader() {
           onValueChange={(e) =>
             setFilters({ properties: e.value as DndWeaponProperty[] })
           }
-          placeholder={i18n.t(
-            "dnd.weapons.filters.select.properties.placeholder",
-          )}
+          placeholder={i18n.t("dnd.weapons.filters.properties.placeholder")}
           size="sm"
         />
         <Select
@@ -110,19 +98,26 @@ export default function DndWeaponsHeader() {
           onValueChange={(e) =>
             setFilters({ masteries: e.value as DndWeaponMastery[] })
           }
-          placeholder={i18n.t(
-            "dnd.weapons.filters.select.masteries.placeholder",
-          )}
+          placeholder={i18n.t("dnd.weapons.filters.masteries.placeholder")}
           size="sm"
         />
-        <Select
-          collection={rangeCollection}
-          defaultValue={[filters.range]}
-          name="dnd-weapons-filters-range"
-          onValueChange={(e) =>
-            setFilters({ range: e.value[0] as DndWeaponsRangeFilter })
-          }
+        <StateFilterIconButton
+          Icon={LuSword}
+          onChangeState={(melee) => setFilters({ melee })}
           size="sm"
+          state={filters.melee}
+        />
+        <StateFilterIconButton
+          Icon={LucideBowArrow}
+          onChangeState={(ranged) => setFilters({ ranged })}
+          size="sm"
+          state={filters.ranged}
+        />
+        <StateFilterIconButton
+          Icon={LuWand}
+          onChangeState={(magic) => setFilters({ magic })}
+          size="sm"
+          state={filters.magic}
         />
       </HStack>
     </DndDataHeader>

@@ -10,6 +10,7 @@ import {
   dndWeaponSchema,
 } from "../models/dnd-weapon";
 import { dndWeaponTypeSchema, dndWeaponTypes } from "../models/dnd-weapon";
+import { stateFilterSchema } from "../models/filter";
 import { type ViewSortBy, type ViewSortOrder } from "../models/view";
 import localizeDndWeapon from "./localize-dnd-weapon";
 
@@ -20,30 +21,16 @@ import localizeDndWeapon from "./localize-dnd-weapon";
 export const dndWeaponsOrderByItems = ["name", "type", "weight", "cost"];
 
 //------------------------------------------------------------------------------
-// Dnd Weapons Range Filter
-//------------------------------------------------------------------------------
-
-export const dndWeaponsRangeFilterSchema = z.enum([
-  "any_range",
-  "melee_only",
-  "ranged_only",
-  "melee_and_ranged",
-]);
-
-export const dndWeaponsRangeFilters = dndWeaponsRangeFilterSchema.options;
-
-export type DndWeaponsRangeFilter = z.infer<typeof dndWeaponsRangeFilterSchema>;
-
-//------------------------------------------------------------------------------
 // Dnd Weapons Filters
 //------------------------------------------------------------------------------
 
 export const dndWeaponsFiltersSchema = z.object({
-  kind: z.enum(["non_magic", "magic"]).optional().default(undefined),
+  magic: stateFilterSchema.default("neutral"),
   masteries: z.array(dndWeaponMasterySchema).default(dndWeaponMasteries),
+  melee: stateFilterSchema.default("neutral"),
   name: z.string().default(""),
   properties: z.array(dndWeaponPropertySchema).default(dndWeaponProperties),
-  range: dndWeaponsRangeFilterSchema.default("any_range"),
+  ranged: stateFilterSchema.default("neutral"),
   types: z.array(dndWeaponTypeSchema).default(dndWeaponTypes),
 });
 
@@ -113,16 +100,24 @@ function isDndWeaponVisible(
     filters.masteries.some((m) => weapon.mastery === m) &&
     // Properties
     filters.properties.some((p) => weapon.properties.includes(p)) &&
-    // Kind
-    // (!filters.kind || (weapon.magic && filters.kind === "magic")) &&
-    // Range
-    (filters.range === "melee_and_ranged"
-      ? weapon.ranged && weapon.melee
-      : filters.range === "melee_only"
-        ? !weapon.ranged && weapon.melee
-        : filters.range === "ranged_only"
-          ? weapon.ranged && !weapon.melee
-          : true) &&
+    // Magic
+    {
+      negative: !weapon.magic,
+      neutral: true,
+      positive: weapon.magic,
+    }[filters.magic] &&
+    // Melee
+    {
+      negative: !weapon.melee,
+      neutral: true,
+      positive: weapon.melee,
+    }[filters.melee] &&
+    // Ranged
+    {
+      negative: !weapon.ranged,
+      neutral: true,
+      positive: weapon.ranged,
+    }[filters.ranged] &&
     // Type
     filters.types.some((t) => weapon.type === t)
   );

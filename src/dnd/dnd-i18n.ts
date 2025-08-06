@@ -162,13 +162,13 @@ const dndI18n = {
     "dnd.weapon.weight": "Weight",
 
     // Weapons Filters
-    "dnd.weapons.filters.input.name.placeholder": "Name",
-    "dnd.weapons.filters.range.any_range": "Any Range",
-    "dnd.weapons.filters.range.melee_and_ranged": "Melee and Ranged",
-    "dnd.weapons.filters.range.melee_only": "Melee Only",
-    "dnd.weapons.filters.range.ranged_only": "Ranged Only",
-    "dnd.weapons.filters.select.kind.placeholder": "Non-Magic/Magic",
-    "dnd.weapons.filters.select.types.placeholder": "Type",
+    "dnd.weapons.filters.magic.label": "Magic",
+    "dnd.weapons.filters.masteries.placeholder": "Masteries",
+    "dnd.weapons.filters.melee.label": "Melee",
+    "dnd.weapons.filters.name.placeholder": "Name",
+    "dnd.weapons.filters.properties.placeholder": "Properties",
+    "dnd.weapons.filters.ranged.label": "Ranged",
+    "dnd.weapons.filters.types.placeholder": "Types",
   },
   it: {
     // Tabs
@@ -333,13 +333,13 @@ const dndI18n = {
     "dnd.weapon.weight": "Peso",
 
     // Weapons Filters
-    "dnd.weapons.filters.input.name.placeholder": "Nome",
-    "dnd.weapons.filters.range.any_range": "Mischi o Distanza",
-    "dnd.weapons.filters.range.melee_and_ranged": "Mischia e Distanza",
-    "dnd.weapons.filters.range.melee_only": "Solo Mischia",
-    "dnd.weapons.filters.range.ranged_only": "Solo Distanza",
-    "dnd.weapons.filters.select.kind.placeholder": "Non-Magica/Magica",
-    "dnd.weapons.filters.select.types.placeholder": "Tipo",
+    "dnd.weapons.filters.magic.label": "Magica",
+    "dnd.weapons.filters.masteries.placeholder": "Maestrie",
+    "dnd.weapons.filters.melee.label": "Mischia",
+    "dnd.weapons.filters.name.placeholder": "Nome",
+    "dnd.weapons.filters.properties.placeholder": "Proprietà",
+    "dnd.weapons.filters.ranged.label": "Distanza",
+    "dnd.weapons.filters.types.placeholder": "Tipi",
   },
 } as const;
 
