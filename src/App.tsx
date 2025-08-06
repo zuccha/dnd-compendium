@@ -1,7 +1,10 @@
-import { Center, Text } from "@chakra-ui/react";
+import { Center, Text, VStack } from "@chakra-ui/react";
 import { useState } from "react";
+import AppContent from "./app-content";
+import AppHeader from "./app-header";
+import DndSpellsHeader from "./dnd/dnd-spells/dnd-spells-header";
+import DndSpellsList from "./dnd/dnd-spells/dnd-spells-list";
 import { fetchDndSpells } from "./dnd/dnd-spells/dnd-spells-store";
-import DndSpellsTab from "./dnd/dnd-spells/dnd-spells-tab";
 import useAsyncLayoutEffect from "./hooks/use-async-layout-effect";
 
 type AppState = "initial" | "loading" | "success" | "failure";
@@ -31,7 +34,16 @@ function App() {
     );
   }
 
-  return <DndSpellsTab />;
+  return (
+    <VStack gap={0} h="100vh" w="100%">
+      <AppHeader>
+        <DndSpellsHeader />
+      </AppHeader>
+      <AppContent>
+        <DndSpellsList />
+      </AppContent>
+    </VStack>
+  );
 }
 
 export default App;

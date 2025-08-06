@@ -1,10 +1,12 @@
 import {
+  Box,
   HStack,
   Heading,
   type SelectValueChangeDetails,
+  VStack,
   createListCollection,
 } from "@chakra-ui/react";
-import { useCallback, useMemo } from "react";
+import { type ReactNode, useCallback, useMemo } from "react";
 import SelectSimple from "./components/ui/select-simple";
 import {
   type I18nDistanceSystem,
@@ -17,7 +19,11 @@ import useI18nLanguage from "./i18n/use-i18n-language";
 import ThemeButton from "./theme/theme-button";
 import { compareLabels } from "./utils/select-collection";
 
-export default function AppHeader() {
+export type AppHeaderProps = {
+  children: ReactNode;
+};
+
+export default function AppHeader({ children }: AppHeaderProps) {
   const i18n = useI18n();
   const [language, setLanguage] = useI18nLanguage();
   const [distanceSystem, setDistanceSystem] = useI18nDistanceSystem();
@@ -41,32 +47,38 @@ export default function AppHeader() {
   );
 
   return (
-    <HStack justifyContent="space-between" px={1} py={2} w="100%">
-      <Heading>DnD spells</Heading>
+    <VStack bgColor="bg" gap={0.25} shadow="sm" top={0} w="100%" zIndex={1}>
+      <Box maxW="64em" w="100%">
+        <HStack justifyContent="space-between" px={1} py={2} w="100%">
+          <Heading>DnD spells</Heading>
 
-      <HStack>
-        <SelectSimple
-          collection={langCollection}
-          onValueChange={handleLanguageChange}
-          size="xs"
-          value={[language]}
-          w="4em"
-        />
+          <HStack>
+            <SelectSimple
+              collection={langCollection}
+              onValueChange={handleLanguageChange}
+              size="xs"
+              value={[language]}
+              w="4em"
+            />
 
-        <SelectSimple
-          collection={distanceSystemCollection}
-          defaultValue={[distanceSystem]}
-          name="dnd-spells-options-distance-system"
-          onValueChange={(e) =>
-            setDistanceSystem(e.value?.[0] as I18nDistanceSystem)
-          }
-          size="sm"
-          w="7em"
-        />
+            <SelectSimple
+              collection={distanceSystemCollection}
+              defaultValue={[distanceSystem]}
+              name="dnd-spells-options-distance-system"
+              onValueChange={(e) =>
+                setDistanceSystem(e.value?.[0] as I18nDistanceSystem)
+              }
+              size="sm"
+              w="7em"
+            />
 
-        <ThemeButton />
-      </HStack>
-    </HStack>
+            <ThemeButton />
+          </HStack>
+        </HStack>
+
+        {children}
+      </Box>
+    </VStack>
   );
 }
 

@@ -1,5 +1,4 @@
 import {
-  Box,
   HStack,
   IconButton,
   Input,
@@ -9,7 +8,6 @@ import {
 } from "@chakra-ui/react";
 import { useCallback, useMemo } from "react";
 import { LuCopy, LuSquareCheck, LuSquareX } from "react-icons/lu";
-import AppHeader from "../../app-header";
 import NumberInput from "../../components/ui/number-input";
 import Select from "../../components/ui/select";
 import SelectSimple from "../../components/ui/select-simple";
@@ -94,142 +92,120 @@ export default function DndSpellsHeader() {
   }, [i18n]);
 
   return (
-    <VStack bgColor="bg" gap={0.25} shadow="sm" top={0} w="100%" zIndex={1}>
-      <Box maxW="64em" w="100%">
-        <AppHeader />
+    <VStack pb={2} px={1} w="100%">
+      <HStack w="100%">
+        <HStack w="100%">
+          <Text fontSize="sm">{i18n.t("dnd.spells.view.label.display")}</Text>
+          <SelectSimple
+            collection={viewCollection}
+            defaultValue={[view.type]}
+            flex={0}
+            minW="6em"
+            name="dnd-spells-view-type"
+            onValueChange={(e) => setView({ type: e.value[0] as ViewType })}
+            size="sm"
+          />
 
-        <VStack pb={2} px={1} w="100%">
-          <HStack w="100%">
-            <HStack w="100%">
-              <Text fontSize="sm">
-                {i18n.t("dnd.spells.view.label.display")}
-              </Text>
-              <SelectSimple
-                collection={viewCollection}
-                defaultValue={[view.type]}
-                flex={0}
-                minW="6em"
-                name="dnd-spells-view-type"
-                onValueChange={(e) => setView({ type: e.value[0] as ViewType })}
+          <Text fontSize="sm">{i18n.t("dnd.spells.view.label.sort")}</Text>
+          <SelectSimple
+            collection={sortByCollection}
+            defaultValue={[view.sortBy]}
+            flex={0}
+            minW="6em"
+            name="dnd-spells-view-sort-by"
+            onValueChange={(e) => setView({ sortBy: e.value[0] })}
+            size="sm"
+          />
+          <Text fontSize="sm">{" : "}</Text>
+          <SelectSimple
+            collection={sortOrderCollection}
+            defaultValue={[view.sortOrder]}
+            flex={0}
+            minW="5em"
+            name="dnd-spells-view-sort-order"
+            onValueChange={(e) =>
+              setView({ sortOrder: e.value[0] as ViewSortOrder })
+            }
+            size="sm"
+          />
+
+          {view.type === "cards" && (
+            <>
+              <Text fontSize="sm">{i18n.t("dnd.spells.view.label.at")}</Text>
+              <NumberInput
+                defaultValue={`${view.zoom * 100}%`}
+                formatOptions={{ style: "percent" }}
+                inputProps={{ w: "6em" }}
+                max={2}
+                min={0.5}
+                name="dnd-spells-view-zoom"
+                onValueChange={(e) => setView({ zoom: e.valueAsNumber })}
                 size="sm"
+                step={0.1}
               />
+              <Text fontSize="sm">{i18n.t("dnd.spells.view.label.zoom")}</Text>
+            </>
+          )}
+        </HStack>
 
-              <Text fontSize="sm">{i18n.t("dnd.spells.view.label.sort")}</Text>
-              <SelectSimple
-                collection={sortByCollection}
-                defaultValue={[view.sortBy]}
-                flex={0}
-                minW="6em"
-                name="dnd-spells-view-sort-by"
-                onValueChange={(e) => setView({ sortBy: e.value[0] })}
-                size="sm"
-              />
-              <Text fontSize="sm">{" : "}</Text>
-              <SelectSimple
-                collection={sortOrderCollection}
-                defaultValue={[view.sortOrder]}
-                flex={0}
-                minW="5em"
-                name="dnd-spells-view-sort-order"
-                onValueChange={(e) =>
-                  setView({ sortOrder: e.value[0] as ViewSortOrder })
-                }
-                size="sm"
-              />
+        <HStack>
+          <IconButton
+            onClick={deselectAllVisibleDndSpells}
+            size="sm"
+            variant="outline"
+          >
+            <LuSquareX />
+          </IconButton>
 
-              {view.type === "cards" && (
-                <>
-                  <Text fontSize="sm">
-                    {i18n.t("dnd.spells.view.label.at")}
-                  </Text>
-                  <NumberInput
-                    defaultValue={`${view.zoom * 100}%`}
-                    formatOptions={{ style: "percent" }}
-                    inputProps={{ w: "6em" }}
-                    max={2}
-                    min={0.5}
-                    name="dnd-spells-view-zoom"
-                    onValueChange={(e) => setView({ zoom: e.valueAsNumber })}
-                    size="sm"
-                    step={0.1}
-                  />
-                  <Text fontSize="sm">
-                    {i18n.t("dnd.spells.view.label.zoom")}
-                  </Text>
-                </>
-              )}
-            </HStack>
+          <IconButton
+            onClick={selectAllVisibleDndSpells}
+            size="sm"
+            variant="outline"
+          >
+            <LuSquareCheck />
+          </IconButton>
 
-            <HStack>
-              <IconButton
-                onClick={deselectAllVisibleDndSpells}
-                size="sm"
-                variant="outline"
-              >
-                <LuSquareX />
-              </IconButton>
+          <CopySelectedSpellsToClipboard />
+        </HStack>
+      </HStack>
 
-              <IconButton
-                onClick={selectAllVisibleDndSpells}
-                size="sm"
-                variant="outline"
-              >
-                <LuSquareCheck />
-              </IconButton>
-
-              <CopySelectedSpellsToClipboard />
-            </HStack>
-          </HStack>
-
-          <HStack w="100%">
-            <Input
-              defaultValue={filters.name}
-              name="dnd-spells-filters-name"
-              onChange={(e) => setFilters({ name: e.target.value })}
-              placeholder={i18n.t("dnd.spells.filters.input.name.placeholder")}
-              size="sm"
-            />
-            <Select
-              collection={levelsCollection}
-              defaultValue={filters.levels.map(String)}
-              multiple
-              name="dnd-spells-filters-levels"
-              onValueChange={(e) =>
-                setFilters({ levels: e.value.map((v) => +v) })
-              }
-              placeholder={i18n.t(
-                "dnd.spells.filters.select.levels.placeholder",
-              )}
-              size="sm"
-            />
-            <Select
-              collection={classesCollection}
-              defaultValue={filters.classes}
-              multiple
-              name="dnd-spells-filters-classes"
-              onValueChange={(e) =>
-                setFilters({ classes: e.value as DndClass[] })
-              }
-              placeholder={i18n.t(
-                "dnd.spells.filters.select.classes.placeholder",
-              )}
-              size="sm"
-            />
-            <Select
-              collection={schoolsCollection}
-              defaultValue={filters.school ? [filters.school] : []}
-              name="dnd-spells-filters-schools"
-              onValueChange={(e) =>
-                setFilters({ school: e.value?.[0] as DndSpellSchool })
-              }
-              placeholder={i18n.t(
-                "dnd.spells.filters.select.schools.placeholder",
-              )}
-              size="sm"
-            />
-          </HStack>
-        </VStack>
-      </Box>
+      <HStack w="100%">
+        <Input
+          defaultValue={filters.name}
+          name="dnd-spells-filters-name"
+          onChange={(e) => setFilters({ name: e.target.value })}
+          placeholder={i18n.t("dnd.spells.filters.input.name.placeholder")}
+          size="sm"
+        />
+        <Select
+          collection={levelsCollection}
+          defaultValue={filters.levels.map(String)}
+          multiple
+          name="dnd-spells-filters-levels"
+          onValueChange={(e) => setFilters({ levels: e.value.map((v) => +v) })}
+          placeholder={i18n.t("dnd.spells.filters.select.levels.placeholder")}
+          size="sm"
+        />
+        <Select
+          collection={classesCollection}
+          defaultValue={filters.classes}
+          multiple
+          name="dnd-spells-filters-classes"
+          onValueChange={(e) => setFilters({ classes: e.value as DndClass[] })}
+          placeholder={i18n.t("dnd.spells.filters.select.classes.placeholder")}
+          size="sm"
+        />
+        <Select
+          collection={schoolsCollection}
+          defaultValue={filters.school ? [filters.school] : []}
+          name="dnd-spells-filters-schools"
+          onValueChange={(e) =>
+            setFilters({ school: e.value?.[0] as DndSpellSchool })
+          }
+          placeholder={i18n.t("dnd.spells.filters.select.schools.placeholder")}
+          size="sm"
+        />
+      </HStack>
     </VStack>
   );
 }
