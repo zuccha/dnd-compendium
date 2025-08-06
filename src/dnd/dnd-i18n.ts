@@ -13,10 +13,6 @@ const dndI18n = {
 
     // Data
     "dnd.data.copied": "Data copied to clipboard.",
-    "dnd.data.view.label.at": " at ",
-    "dnd.data.view.label.display": "Display spells as ",
-    "dnd.data.view.label.sort": " sorted by ",
-    "dnd.data.view.label.zoom": " zoom",
     "dnd.data.view.sort_by.cost": "Cost",
     "dnd.data.view.sort_by.level": "Level",
     "dnd.data.view.sort_by.name": "Name",
@@ -186,10 +182,6 @@ const dndI18n = {
 
     // Data
     "dnd.data.copied": "Dati copiati nella clipboard.",
-    "dnd.data.view.label.at": " al ",
-    "dnd.data.view.label.display": "Mostra incantesimi come ",
-    "dnd.data.view.label.sort": " ordinati per ",
-    "dnd.data.view.label.zoom": " zoom",
     "dnd.data.view.sort_by.cost": "Costo",
     "dnd.data.view.sort_by.level": "Livello",
     "dnd.data.view.sort_by.name": "Nome",

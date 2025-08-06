@@ -1,12 +1,12 @@
 import {
   HStack,
+  Icon,
   IconButton,
-  Text,
   VStack,
   createListCollection,
 } from "@chakra-ui/react";
 import { type ReactNode, useCallback, useMemo } from "react";
-import { LuCopy, LuSquareCheck, LuSquareX } from "react-icons/lu";
+import { LuCopy, LuDot, LuSquareCheck, LuSquareX } from "react-icons/lu";
 import NumberInput from "../../components/ui/number-input";
 import SelectSimple from "../../components/ui/select-simple";
 import { toaster } from "../../components/ui/toaster";
@@ -72,9 +72,8 @@ export default function DndDataHeader<
 
   return (
     <VStack pb={2} px={1} w="100%">
-      <HStack w="100%">
-        <HStack w="100%">
-          <Text fontSize="sm">{i18n.t("dnd.data.view.label.display")}</Text>
+      <HStack justify="space-between" w="100%" wrap="wrap">
+        <HStack>
           <SelectSimple
             collection={viewCollection}
             defaultValue={[view.type]}
@@ -85,7 +84,24 @@ export default function DndDataHeader<
             size="sm"
           />
 
-          <Text fontSize="sm">{i18n.t("dnd.data.view.label.sort")}</Text>
+          {view.type === "cards" && (
+            <NumberInput
+              defaultValue={`${view.zoom * 100}%`}
+              formatOptions={{ style: "percent" }}
+              inputProps={{ w: "6em" }}
+              max={2}
+              min={0.5}
+              name="dnd-data-view-zoom"
+              onValueChange={(e) => setView({ zoom: e.valueAsNumber })}
+              size="sm"
+              step={0.1}
+            />
+          )}
+
+          <Icon mx={-2} size="lg">
+            <LuDot />
+          </Icon>
+
           <SelectSimple
             collection={sortByCollection}
             defaultValue={[view.sortBy]}
@@ -95,7 +111,7 @@ export default function DndDataHeader<
             onValueChange={(e) => setView({ sortBy: e.value[0] })}
             size="sm"
           />
-          <Text fontSize="sm">{" : "}</Text>
+
           <SelectSimple
             collection={sortOrderCollection}
             defaultValue={[view.sortOrder]}
@@ -107,24 +123,6 @@ export default function DndDataHeader<
             }
             size="sm"
           />
-
-          {view.type === "cards" && (
-            <>
-              <Text fontSize="sm">{i18n.t("dnd.data.view.label.at")}</Text>
-              <NumberInput
-                defaultValue={`${view.zoom * 100}%`}
-                formatOptions={{ style: "percent" }}
-                inputProps={{ w: "6em" }}
-                max={2}
-                min={0.5}
-                name="dnd-data-view-zoom"
-                onValueChange={(e) => setView({ zoom: e.valueAsNumber })}
-                size="sm"
-                step={0.1}
-              />
-              <Text fontSize="sm">{i18n.t("dnd.data.view.label.zoom")}</Text>
-            </>
-          )}
         </HStack>
 
         <HStack>
