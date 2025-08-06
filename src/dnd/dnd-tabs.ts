@@ -1,5 +1,5 @@
+import { useCallback, useLayoutEffect, useState } from "react";
 import { z } from "zod/v4";
-import { createStorePersistent } from "../utils/store-persistent";
 import DndSpellsHeader from "./dnd-spells/dnd-spells-header";
 import DndSpellsList from "./dnd-spells/dnd-spells-list";
 import DndWeaponsHeader from "./dnd-weapons/dnd-weapons-header";
@@ -21,10 +21,33 @@ export const dndTabs: Record<DndTabId, DndTab> = {
   weapons: { Content: DndWeaponsList, Header: DndWeaponsHeader },
 };
 
-const selectedDndTabStore = createStorePersistent(
-  "dnd.tabs.id.selected",
-  "spells",
-  dndTabIdSchema.parse,
-);
+function readTabIdFromUrl(): DndTabId {
+  const pathname = window.location.pathname.substring(1);
+  const initialTabIdResult = dndTabIdSchema.safeParse(pathname);
+  return initialTabIdResult.success ? initialTabIdResult.data : "spells";
+}
 
-export const useSelectedDndTabId = selectedDndTabStore.use;
+export const useSelectedDndTabId = (): [
+  DndTabId,
+  (tabId: DndTabId) => void,
+] => {
+  const [id, setId] = useState(readTabIdFromUrl);
+
+  const setPathname = useCallback((nextId: DndTabId) => {
+    window.history.pushState({}, "", nextId);
+  }, []);
+
+  useLayoutEffect(() => {
+    const update = () => setId(readTabIdFromUrl());
+    window.addEventListener("pushstate", update);
+    window.addEventListener("replacestate", update);
+    window.addEventListener("popstate", update);
+    return () => {
+      window.removeEventListener("pushstate", update);
+      window.removeEventListener("replacestate", update);
+      window.removeEventListener("popstate", update);
+    };
+  }, []);
+
+  return [id, setPathname];
+};
