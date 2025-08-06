@@ -4,7 +4,14 @@ import Select from "../../components/ui/select";
 import useI18n from "../../i18n/use-i18n";
 import { compareLabels } from "../../utils/select-collection";
 import DndDataHeader from "../dnd-data/dnd-data-header";
-import { type DndWeaponType, dndWeaponTypes } from "../models/dnd-weapon";
+import {
+  type DndWeaponMastery,
+  type DndWeaponProperty,
+  type DndWeaponType,
+  dndWeaponMasteries,
+  dndWeaponProperties,
+  dndWeaponTypes,
+} from "../models/dnd-weapon";
 import dndWeaponsStore, { dndWeaponsOrderByItems } from "./dnd-weapons-store";
 
 export default function DndWeaponsHeader() {
@@ -22,12 +29,23 @@ export default function DndWeaponsHeader() {
     });
   }, [i18n]);
 
-  const kindCollection = useMemo(() => {
+  const masteriesCollection = useMemo(() => {
     return createListCollection({
-      items: ["non_magic", "magic"]
-        .map((kind) => ({
-          label: i18n.t(`dnd.weapon.kind.${kind}`),
-          value: kind,
+      items: dndWeaponMasteries
+        .map((type) => ({
+          label: i18n.t(`dnd.weapon.mastery.${type}`),
+          value: type,
+        }))
+        .sort(compareLabels),
+    });
+  }, [i18n]);
+
+  const propertiesCollection = useMemo(() => {
+    return createListCollection({
+      items: dndWeaponProperties
+        .map((type) => ({
+          label: i18n.t(`dnd.weapon.property.${type}`),
+          value: type,
         }))
         .sort(compareLabels),
     });
@@ -51,21 +69,37 @@ export default function DndWeaponsHeader() {
           collection={typesCollection}
           defaultValue={filters.types}
           multiple
-          name="dnd-weapons-filters-classes"
+          name="dnd-weapons-filters-types"
           onValueChange={(e) =>
             setFilters({ types: e.value as DndWeaponType[] })
           }
-          placeholder={i18n.t("dnd.weapons.filters.select.classes.placeholder")}
+          placeholder={i18n.t("dnd.weapons.filters.select.types.placeholder")}
           size="sm"
         />
         <Select
-          collection={kindCollection}
-          defaultValue={filters.kind ? [filters.kind] : []}
-          name="dnd-weapons-filters-kind"
+          collection={propertiesCollection}
+          defaultValue={filters.properties}
+          multiple
+          name="dnd-weapons-filters-properties"
           onValueChange={(e) =>
-            setFilters({ kind: e.value?.[0] as "magic" | "non_magic" })
+            setFilters({ properties: e.value as DndWeaponProperty[] })
           }
-          placeholder={i18n.t("dnd.weapons.filters.select.kind.placeholder")}
+          placeholder={i18n.t(
+            "dnd.weapons.filters.select.properties.placeholder",
+          )}
+          size="sm"
+        />
+        <Select
+          collection={masteriesCollection}
+          defaultValue={filters.masteries}
+          multiple
+          name="dnd-weapons-filters-masteries"
+          onValueChange={(e) =>
+            setFilters({ masteries: e.value as DndWeaponMastery[] })
+          }
+          placeholder={i18n.t(
+            "dnd.weapons.filters.select.masteries.placeholder",
+          )}
           size="sm"
         />
       </HStack>

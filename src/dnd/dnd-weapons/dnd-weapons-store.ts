@@ -1,7 +1,14 @@
 import { z } from "zod/v4";
 import type { I18nLanguage } from "../../i18n/i18n-language";
 import { createDndDataStore } from "../dnd-data/dnd-data-store";
-import { type DndWeapon, dndWeaponSchema } from "../models/dnd-weapon";
+import {
+  type DndWeapon,
+  dndWeaponMasteries,
+  dndWeaponMasterySchema,
+  dndWeaponProperties,
+  dndWeaponPropertySchema,
+  dndWeaponSchema,
+} from "../models/dnd-weapon";
 import { dndWeaponTypeSchema, dndWeaponTypes } from "../models/dnd-weapon";
 import { type ViewSortBy, type ViewSortOrder } from "../models/view";
 
@@ -17,7 +24,9 @@ export const dndWeaponsOrderByItems = ["name", "type", "weight", "cost"];
 
 export const dndWeaponsFiltersSchema = z.object({
   kind: z.enum(["non_magic", "magic"]).optional().default(undefined),
+  masteries: z.array(dndWeaponMasterySchema).default(dndWeaponMasteries),
   name: z.string().default(""),
+  properties: z.array(dndWeaponPropertySchema).default(dndWeaponProperties),
   types: z.array(dndWeaponTypeSchema).default(dndWeaponTypes),
 });
 
@@ -79,13 +88,19 @@ function isDndWeaponVisible(
   weapon: DndWeapon,
   filters: DndWeaponsFilters,
 ): boolean {
-  const containsName =
-    weapon.name.en.toLowerCase().includes(filters.name) ||
-    !!weapon.name.it?.toLowerCase().includes(filters.name);
-  const containsKind =
-    !filters.kind || (weapon.magic && filters.kind === "magic");
-  const containsType = filters.types.some((t) => weapon.type === t);
-  return containsName && containsKind && containsType;
+  return (
+    // Name
+    (weapon.name.en.toLowerCase().includes(filters.name) ||
+      !!weapon.name.it?.toLowerCase().includes(filters.name)) &&
+    // Mastery
+    filters.masteries.some((m) => weapon.mastery === m) &&
+    // Properties
+    filters.properties.some((p) => weapon.properties.includes(p)) &&
+    // Kind
+    (!filters.kind || (weapon.magic && filters.kind === "magic")) &&
+    // Type
+    filters.types.some((t) => weapon.type === t)
+  );
 }
 
 //------------------------------------------------------------------------------
