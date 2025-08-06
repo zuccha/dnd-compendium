@@ -10,14 +10,11 @@ import {
 import { type ReactNode, useCallback, useMemo } from "react";
 import SelectSimple from "./components/ui/select-simple";
 import { dndTabIds, useSelectedDndTabId } from "./dnd/dnd-tabs";
-import {
-  type I18nDistanceSystem,
-  i18nDistanceSystems,
-} from "./i18n/i18n-distance";
 import type { I18nLanguage } from "./i18n/i18n-language";
+import { type I18nSystem, i18nSystems } from "./i18n/i18n-system";
 import useI18n from "./i18n/use-i18n";
-import useI18nDistanceSystem from "./i18n/use-i18n-distance-system";
 import useI18nLanguage from "./i18n/use-i18n-language";
+import useI18nSystem from "./i18n/use-i18n-system";
 import ThemeButton from "./theme/theme-button";
 import { compareObjects } from "./utils/object";
 import { compareLabels } from "./utils/select-collection";
@@ -29,15 +26,15 @@ export type AppHeaderProps = {
 export default function AppHeader({ children }: AppHeaderProps) {
   const i18n = useI18n();
   const [language, setLanguage] = useI18nLanguage();
-  const [distanceSystem, setDistanceSystem] = useI18nDistanceSystem();
+  const [system, setSystem] = useI18nSystem();
   const [selectedTabId, setSelectedTabId] = useSelectedDndTabId();
 
-  const distanceSystemCollection = useMemo(() => {
+  const systemCollection = useMemo(() => {
     return createListCollection({
-      items: i18nDistanceSystems
-        .map((distanceSystem) => ({
-          label: i18n.t(`generic.distance_system.${distanceSystem}`),
-          value: distanceSystem,
+      items: i18nSystems
+        .map((system) => ({
+          label: i18n.t(`generic.system.${system}`),
+          value: system,
         }))
         .sort(compareLabels),
     });
@@ -79,18 +76,16 @@ export default function AppHeader({ children }: AppHeaderProps) {
             <SelectSimple
               collection={langCollection}
               onValueChange={handleLanguageChange}
-              size="xs"
+              size="sm"
               value={[language]}
               w="4em"
             />
 
             <SelectSimple
-              collection={distanceSystemCollection}
-              defaultValue={[distanceSystem]}
-              name="dnd-spells-options-distance-system"
-              onValueChange={(e) =>
-                setDistanceSystem(e.value?.[0] as I18nDistanceSystem)
-              }
+              collection={systemCollection}
+              defaultValue={[system]}
+              name="i18n-system"
+              onValueChange={(e) => setSystem(e.value?.[0] as I18nSystem)}
               size="sm"
               w="7em"
             />

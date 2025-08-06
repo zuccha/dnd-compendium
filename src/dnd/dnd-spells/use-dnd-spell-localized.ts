@@ -61,7 +61,7 @@ function localizeRange(spell: DndSpell, i18n: I18n): string {
       return i18n.t("dnd.spell.range.special");
     case "distance": {
       const localizedRange =
-        i18n.distanceSystem === "imperial" ? range.imperial : range.metric;
+        i18n.system === "imperial" ? range.imperial : range.metric;
       return i18n.ti(
         "dnd.spell.range.distance",
         `${localizedRange.value}`,

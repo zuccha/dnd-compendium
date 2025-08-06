@@ -1,7 +1,7 @@
 const genericI18n = {
   en: {
-    "generic.distance_system.imperial": "Imperial",
-    "generic.distance_system.metric": "Metric",
+    "generic.system.imperial": "Imperial",
+    "generic.system.metric": "Metric",
 
     "generic.distance.cm/*": "centimeters",
     "generic.distance.cm/1": "centimeter",
@@ -44,8 +44,8 @@ const genericI18n = {
     "generic.time.round@short/1": "round",
   },
   it: {
-    "generic.distance_system.imperial": "Imperiale",
-    "generic.distance_system.metric": "Metrico",
+    "generic.system.imperial": "Imperiale",
+    "generic.system.metric": "Metrico",
 
     "generic.distance.cm/*": "centimetri",
     "generic.distance.cm/1": "centimetro",

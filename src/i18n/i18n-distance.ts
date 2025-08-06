@@ -16,9 +16,3 @@ export const i18nDistanceSchema = z.object({
 });
 
 export type I18nDistance = z.infer<typeof i18nDistanceSchema>;
-
-export const i18nDistanceSystemSchema = z.enum(["imperial", "metric"]);
-
-export type I18nDistanceSystem = z.infer<typeof i18nDistanceSystemSchema>;
-
-export const i18nDistanceSystems = i18nDistanceSystemSchema.options;
