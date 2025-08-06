@@ -42,7 +42,7 @@ const dndI18n = {
     "dnd.spell_school.necromancy": "Necromancy",
     "dnd.spell_school.transmutation": "Transmutation",
 
-    // Spell-related
+    // Spell
     "dnd.spell.casting_time": "Casting time",
     "dnd.spell.casting_time.action": "Action",
     "dnd.spell.casting_time.bonus_action": "Bonus action",
@@ -84,7 +84,13 @@ const dndI18n = {
     "dnd.spell.view.cards": "Cards",
     "dnd.spell.view.table": "Table",
 
-    // View
+    // Spells Filters
+    "dnd.spells.filters.input.name.placeholder": "Name",
+    "dnd.spells.filters.select.classes.placeholder": "Select classes",
+    "dnd.spells.filters.select.levels.placeholder": "Select levels",
+    "dnd.spells.filters.select.schools.placeholder": "Select school",
+
+    // Spells View
     "dnd.spells.view.label.at": " at ",
     "dnd.spells.view.label.display": "Display spells as ",
     "dnd.spells.view.label.sort": " sorted by ",
@@ -94,12 +100,6 @@ const dndI18n = {
     "dnd.spells.view.sort_by.school": "School",
     "dnd.spells.view.sort_order.asc": "Asc",
     "dnd.spells.view.sort_order.desc": "Desc",
-
-    // Filters
-    "dnd.spells.filters.input.name.placeholder": "Name",
-    "dnd.spells.filters.select.classes.placeholder": "Select classes",
-    "dnd.spells.filters.select.levels.placeholder": "Select levels",
-    "dnd.spells.filters.select.schools.placeholder": "Select school",
   },
   it: {
     // Tabs
@@ -144,7 +144,7 @@ const dndI18n = {
     "dnd.spell_school.necromancy": "Necromazia",
     "dnd.spell_school.transmutation": "Transmutazione",
 
-    // Spell-related
+    // Spell
     "dnd.spell.casting_time": "Tempo di lancio",
     "dnd.spell.casting_time.action": "Azione",
     "dnd.spell.casting_time.bonus_action": "Azione bonus",
@@ -186,7 +186,13 @@ const dndI18n = {
     "dnd.spell.view.cards": "Carte",
     "dnd.spell.view.table": "Tabella",
 
-    // View
+    // Spells Filters
+    "dnd.spells.filters.input.name.placeholder": "Nome",
+    "dnd.spells.filters.select.classes.placeholder": "Seleziona classi",
+    "dnd.spells.filters.select.levels.placeholder": "Seleziona livelli",
+    "dnd.spells.filters.select.schools.placeholder": "Seleziona scuola",
+
+    // Spells View
     "dnd.spells.view.label.at": " al ",
     "dnd.spells.view.label.display": "Mostra incantesimi come ",
     "dnd.spells.view.label.sort": " ordinati per ",
@@ -196,12 +202,6 @@ const dndI18n = {
     "dnd.spells.view.sort_by.school": "Scuola",
     "dnd.spells.view.sort_order.asc": "Asc",
     "dnd.spells.view.sort_order.desc": "Desc",
-
-    // Filters
-    "dnd.spells.filters.input.name.placeholder": "Nome",
-    "dnd.spells.filters.select.classes.placeholder": "Seleziona classi",
-    "dnd.spells.filters.select.levels.placeholder": "Seleziona livelli",
-    "dnd.spells.filters.select.schools.placeholder": "Seleziona scuola",
   },
 } as const;
 
