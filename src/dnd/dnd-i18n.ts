@@ -4,6 +4,19 @@ const dndI18n = {
     "dnd.tab.spells": "Spells",
     "dnd.tab.weapons": "Weapons",
 
+    // Data
+    "dnd.data.view.label.at": " at ",
+    "dnd.data.view.label.display": "Display spells as ",
+    "dnd.data.view.label.sort": " sorted by ",
+    "dnd.data.view.label.zoom": " zoom",
+    "dnd.data.view.sort_by.level": "Level",
+    "dnd.data.view.sort_by.name": "Name",
+    "dnd.data.view.sort_by.school": "School",
+    "dnd.data.view.sort_order.asc": "Asc",
+    "dnd.data.view.sort_order.desc": "Desc",
+    "dnd.data.view.type.cards": "Cards",
+    "dnd.data.view.type.table": "Table",
+
     // Classes
     "dnd.class.artificer": "Artificer",
     "dnd.class.barbarian": "Barbarian",
@@ -96,25 +109,12 @@ const dndI18n = {
     "dnd.spell.source.page": "p. <1>", // 1 = page
     "dnd.spell.upgrade.cantrip": "Cantrip Upgrade",
     "dnd.spell.upgrade.spell": "At Higher Levels",
-    "dnd.spell.view.cards": "Cards",
-    "dnd.spell.view.table": "Table",
 
-    // Spells Filters
+    // Spells Filters and View
     "dnd.spells.filters.input.name.placeholder": "Name",
     "dnd.spells.filters.select.classes.placeholder": "Select classes",
     "dnd.spells.filters.select.levels.placeholder": "Select levels",
     "dnd.spells.filters.select.schools.placeholder": "Select school",
-
-    // Spells View
-    "dnd.spells.view.label.at": " at ",
-    "dnd.spells.view.label.display": "Display spells as ",
-    "dnd.spells.view.label.sort": " sorted by ",
-    "dnd.spells.view.label.zoom": " zoom",
-    "dnd.spells.view.sort_by.level": "Level",
-    "dnd.spells.view.sort_by.name": "Name",
-    "dnd.spells.view.sort_by.school": "School",
-    "dnd.spells.view.sort_order.asc": "Asc",
-    "dnd.spells.view.sort_order.desc": "Desc",
 
     // Weapon
     "dnd.weapon.mastery.cleave": "Cleave",
@@ -144,6 +144,19 @@ const dndI18n = {
     // Tabs
     "dnd.tab.spells": "Incantesimi",
     "dnd.tab.weapons": "Armi",
+
+    // Data
+    "dnd.data.view.label.at": " al ",
+    "dnd.data.view.label.display": "Mostra incantesimi come ",
+    "dnd.data.view.label.sort": " ordinati per ",
+    "dnd.data.view.label.zoom": " zoom",
+    "dnd.data.view.sort_by.level": "Livello",
+    "dnd.data.view.sort_by.name": "Nome",
+    "dnd.data.view.sort_by.school": "Scuola",
+    "dnd.data.view.sort_order.asc": "Asc",
+    "dnd.data.view.sort_order.desc": "Desc",
+    "dnd.data.view.type.cards": "Carte",
+    "dnd.data.view.type.table": "Tabella",
 
     // Classes
     "dnd.class.artificer": "Artificere",
@@ -237,25 +250,12 @@ const dndI18n = {
     "dnd.spell.source.page": "p. <1>", // 1 = page
     "dnd.spell.upgrade.cantrip": "Potenziamento del Trucchetto",
     "dnd.spell.upgrade.spell": "A Livelli Superiori",
-    "dnd.spell.view.cards": "Carte",
-    "dnd.spell.view.table": "Tabella",
 
     // Spells Filters
     "dnd.spells.filters.input.name.placeholder": "Nome",
     "dnd.spells.filters.select.classes.placeholder": "Seleziona classi",
     "dnd.spells.filters.select.levels.placeholder": "Seleziona livelli",
     "dnd.spells.filters.select.schools.placeholder": "Seleziona scuola",
-
-    // Spells View
-    "dnd.spells.view.label.at": " al ",
-    "dnd.spells.view.label.display": "Mostra incantesimi come ",
-    "dnd.spells.view.label.sort": " ordinati per ",
-    "dnd.spells.view.label.zoom": " zoom",
-    "dnd.spells.view.sort_by.level": "Livello",
-    "dnd.spells.view.sort_by.name": "Nome",
-    "dnd.spells.view.sort_by.school": "Scuola",
-    "dnd.spells.view.sort_order.asc": "Asc",
-    "dnd.spells.view.sort_order.desc": "Desc",
 
     // Weapon
     "dnd.weapon.mastery.cleave": "Doppio Fendente",
