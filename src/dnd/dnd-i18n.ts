@@ -32,6 +32,21 @@ const dndI18n = {
     "dnd.class@short.warlock": "War.",
     "dnd.class@short.wizard": "Wiz.",
 
+    // Damage Type
+    "dnd.damage_type.acid": "Acid",
+    "dnd.damage_type.bludgeoning": "Bludgeoning",
+    "dnd.damage_type.cold": "Cold",
+    "dnd.damage_type.fire": "Fire",
+    "dnd.damage_type.force": "Force",
+    "dnd.damage_type.lightning": "Lightning",
+    "dnd.damage_type.necrotic": "Necrotic",
+    "dnd.damage_type.piercing": "Piercing",
+    "dnd.damage_type.poison": "Poison",
+    "dnd.damage_type.psychic": "Psychic",
+    "dnd.damage_type.radiant": "Radiant",
+    "dnd.damage_type.slashing": "Slashing",
+    "dnd.damage_type.thunder": "Thunder",
+
     // Spell School
     "dnd.spell_school.abjuration": "Abjuration",
     "dnd.spell_school.conjuration": "Conjuration",
@@ -133,6 +148,21 @@ const dndI18n = {
     "dnd.class@short.sorcerer": "Str.",
     "dnd.class@short.warlock": "War.",
     "dnd.class@short.wizard": "Mag.",
+
+    // Damage Type
+    "dnd.damage_type.acid": "Acido",
+    "dnd.damage_type.bludgeoning": "Contundente",
+    "dnd.damage_type.cold": "Freddo",
+    "dnd.damage_type.fire": "Fuoco",
+    "dnd.damage_type.force": "Forza",
+    "dnd.damage_type.lightning": "Fulmine",
+    "dnd.damage_type.necrotic": "Necrotico",
+    "dnd.damage_type.piercing": "Perforante",
+    "dnd.damage_type.poison": "Veleno",
+    "dnd.damage_type.psychic": "Psichico",
+    "dnd.damage_type.radiant": "Radioso",
+    "dnd.damage_type.slashing": "Tagliente",
+    "dnd.damage_type.thunder": "Tuono",
 
     // Spell School
     "dnd.spell_school.abjuration": "Abiurazione",
