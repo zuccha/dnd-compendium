@@ -1,11 +1,6 @@
-import { useCallback, useLayoutEffect, useState } from "react";
-import { z } from "zod/v4";
+import z from "zod/v4";
 import type { I18nLanguage } from "../../i18n/i18n-language";
-import { i18nLanguageStore } from "../../i18n/use-i18n-language";
-import { type NormalizedList, normalize } from "../../utils/normalized-list";
-import { createObservable } from "../../utils/observable";
-import { createStore } from "../../utils/store";
-import { createStorePersistent } from "../../utils/store-persistent";
+import { createDndDataStore } from "../dnd-data/dnd-data-store";
 import { dndClassSchema, dndClasses } from "../models/dnd-class";
 import {
   type DndSpell,
@@ -14,12 +9,7 @@ import {
   dndSpellSchema,
   dndSpellSchoolSchema,
 } from "../models/dnd-spell";
-import {
-  type View,
-  type ViewSortBy,
-  type ViewSortOrder,
-  viewSchema,
-} from "../models/view";
+import type { ViewSortBy, ViewSortOrder } from "../models/view";
 
 //------------------------------------------------------------------------------
 // Dnd Spells Filters
@@ -35,279 +25,68 @@ export const dndSpellsFiltersSchema = z.object({
 export type DndSpellsFilters = z.infer<typeof dndSpellsFiltersSchema>;
 
 //------------------------------------------------------------------------------
-// Stores
-//------------------------------------------------------------------------------
-
-const defaultSpells = { byId: {}, ids: [] };
-
-const spellsStore = createStore<NormalizedList<DndSpell>>(defaultSpells);
-
-const spellsFiltersStore = createStorePersistent(
-  "dnd.spells.filters",
-  dndSpellsFiltersSchema.parse({}),
-  dndSpellsFiltersSchema.parse,
-);
-
-const spellsViewStore = createStorePersistent(
-  "dnd.spells.view",
-  viewSchema.parse({}),
-  viewSchema.parse,
-);
-
-const visibleSpellIdsStore = (() => {
-  let visibleSpellIds: string[] = [];
-
-  const { notify, subscribe } = createObservable<string[]>();
-
-  const refresh = () => {
-    const spells = spellsStore.get();
-    const filters = spellsFiltersStore.get();
-    const view = spellsViewStore.get();
-    const lang = i18nLanguageStore.get();
-
-    const isVisible = isDndSpellVisible(spells, filters);
-    const compare = compareDndSpells(spells, view.sortBy, view.sortOrder, lang);
-    visibleSpellIds = spells.ids.filter(isVisible).sort(compare);
-    notify(visibleSpellIds);
-  };
-
-  spellsStore.subscribe(refresh);
-  spellsFiltersStore.subscribe(refresh);
-  spellsViewStore.subscribe(refresh);
-  i18nLanguageStore.subscribe(refresh);
-
-  refresh();
-
-  const get = () => visibleSpellIds;
-
-  return { get, subscribe };
-})();
-
-const selectedSpellIdsStore = createStore<Record<string, boolean>>({});
-
-//------------------------------------------------------------------------------
-// Is Dnd Spell Visible
-//------------------------------------------------------------------------------
-
-function isDndSpellVisible(
-  spells: NormalizedList<DndSpell>,
-  filters: DndSpellsFilters,
-) {
-  return (id: string): boolean => {
-    const spell = spells.byId[id];
-    const containsName =
-      spell.name.en.toLowerCase().includes(filters.name) ||
-      !!spell.name.it?.toLowerCase().includes(filters.name);
-    const containsClass = spell.classes.some((c) =>
-      filters.classes.includes(c),
-    );
-    const containsSchool = !filters.school || spell.school === filters.school;
-    const containsLevel = filters.levels.some((l) => spell.level === l);
-    return containsName && containsClass && containsSchool && containsLevel;
-  };
-}
-
-//------------------------------------------------------------------------------
 // Compare Dnd Spells
 //------------------------------------------------------------------------------
 
 function compareDndSpells(
-  spells: NormalizedList<DndSpell>,
+  spell1: DndSpell,
+  spell2: DndSpell,
   sortBy: ViewSortBy,
   sortOrder: ViewSortOrder,
   lang: I18nLanguage,
 ) {
   const value = sortOrder === "asc" ? 1 : -1;
 
-  const compares: Record<string, (id1: string, id2: string) => number> = {
-    level: (id1: string, id2: string): number => {
-      const spell1 = spells.byId[id1];
-      const spell2 = spells.byId[id2];
+  switch (sortBy) {
+    case "level": {
       if (spell1.level > spell2.level) return value;
       if (spell1.level < spell2.level) return -value;
       return 0;
-    },
-    name: (id1: string, id2: string): number => {
-      const spell1 = spells.byId[id1];
-      const spell2 = spells.byId[id2];
+    }
+    case "name": {
       const name1 = spell1.name[lang] ?? spell1.name.en;
       const name2 = spell2.name[lang] ?? spell2.name.en;
       if (name1 > name2) return value;
       if (name1 < name2) return -value;
       return 0;
-    },
-    school: (id1: string, id2: string): number => {
-      const spell1 = spells.byId[id1];
-      const spell2 = spells.byId[id2];
+    }
+    case "school": {
       if (spell1.school > spell2.school) return value;
       if (spell1.school < spell2.school) return -value;
       return 0;
-    },
-  };
-
-  return compares[sortBy] ?? (() => 0);
+    }
+  }
+  return 0;
 }
 
 //------------------------------------------------------------------------------
-// Use Dnd Spells
+// Is Dnd Spell Visible
 //------------------------------------------------------------------------------
 
-export function useDndSpells(): NormalizedList<DndSpell> {
-  const spells = spellsStore.useValue();
-  return spells;
+function isDndSpellVisible(
+  spell: DndSpell,
+  filters: DndSpellsFilters,
+): boolean {
+  const containsName =
+    spell.name.en.toLowerCase().includes(filters.name) ||
+    !!spell.name.it?.toLowerCase().includes(filters.name);
+  const containsClass = spell.classes.some((c) => filters.classes.includes(c));
+  const containsSchool = !filters.school || spell.school === filters.school;
+  const containsLevel = filters.levels.some((l) => spell.level === l);
+  return containsName && containsClass && containsSchool && containsLevel;
 }
 
 //------------------------------------------------------------------------------
-// Use Visible Dnd Spell Ids
+// Store
 //------------------------------------------------------------------------------
 
-export function useVisibleDndSpellIds(): string[] {
-  const [ids, setIds] = useState(visibleSpellIdsStore.get());
-  useLayoutEffect(() => visibleSpellIdsStore.subscribe(setIds), []);
-  return ids;
-}
+const dndSpellsStore = createDndDataStore({
+  compareData: compareDndSpells,
+  dataSchema: dndSpellSchema,
+  dataUrl: "/data/spells.json",
+  isDataVisible: isDndSpellVisible,
+  parseFilters: dndSpellsFiltersSchema.parse,
+  storeId: "spells",
+});
 
-//------------------------------------------------------------------------------
-// Use Selected Visible Dnd Spells
-//------------------------------------------------------------------------------
-
-export function useSelectedVisibleSpells(): DndSpell[] {
-  const spells = useDndSpells();
-  const selectedSpellIds = selectedSpellIdsStore.useValue();
-  const visibleSpellIds = useVisibleDndSpellIds();
-  return visibleSpellIds
-    .filter((id) => selectedSpellIds[id])
-    .map((id) => spells.byId[id]);
-}
-
-//------------------------------------------------------------------------------
-// Use Dnd Spell
-//------------------------------------------------------------------------------
-
-export function useDndSpell(id: string): DndSpell {
-  const [spells] = spellsStore.use();
-  return spells.byId[id];
-}
-
-//------------------------------------------------------------------------------
-// Use Is Dnd Spell Selected
-//------------------------------------------------------------------------------
-
-export function useIsDndSpellSelected(id: string): boolean {
-  const [selectedSpellIds] = selectedSpellIdsStore.use();
-  return selectedSpellIds[id];
-}
-
-//------------------------------------------------------------------------------
-// Use Selected Visible Spells Count
-//------------------------------------------------------------------------------
-
-export function useSelectedVisibleSpellsCount(): number {
-  const visibleDndSpellIds = useVisibleDndSpellIds();
-  const selectedSpellIds = selectedSpellIdsStore.useValue();
-  return visibleDndSpellIds.filter((id) => selectedSpellIds[id]).length;
-}
-
-//------------------------------------------------------------------------------
-// Use Dnd Spells Filters
-//------------------------------------------------------------------------------
-
-export function useDndSpellsFilters(): [
-  DndSpellsFilters,
-  (partialFilters: Partial<DndSpellsFilters>) => void,
-] {
-  const [filters, setFilters] = spellsFiltersStore.use();
-
-  const setPartialFilters = useCallback(
-    (partialFilters: Partial<DndSpellsFilters>) =>
-      setFilters((prev) => ({ ...prev, ...partialFilters })),
-    [setFilters],
-  );
-
-  return [filters, setPartialFilters];
-}
-
-//------------------------------------------------------------------------------
-// Use Dnd Spells View
-//------------------------------------------------------------------------------
-
-export function useDndSpellsView(): [
-  View,
-  (partialView: Partial<View>) => void,
-] {
-  const [view, setView] = spellsViewStore.use();
-
-  const setPartialView = useCallback(
-    (partialView: Partial<View>) =>
-      setView((prev) => ({ ...prev, ...partialView })),
-    [setView],
-  );
-
-  return [view, setPartialView];
-}
-
-//------------------------------------------------------------------------------
-// Fetch Dnd Spells
-//------------------------------------------------------------------------------
-
-export async function fetchDndSpells(): Promise<void> {
-  const response = await fetch("/data/spells.json");
-  const json = await response.json();
-  const spells = z.array(dndSpellSchema).parse(json);
-  spellsStore.set(normalize(spells, (spell) => spell.id));
-}
-
-//------------------------------------------------------------------------------
-// Select Dnd Spell
-//------------------------------------------------------------------------------
-
-export function selectDndSpell(id: string): void {
-  const selectedSpellIds = selectedSpellIdsStore.get();
-  if (!selectedSpellIds[id])
-    selectedSpellIdsStore.set({ ...selectedSpellIds, [id]: true });
-}
-
-//------------------------------------------------------------------------------
-// Select All Visible Dnd Spells
-//------------------------------------------------------------------------------
-
-export function selectAllVisibleDndSpells() {
-  const visibleSpellIds = visibleSpellIdsStore.get();
-  const selectedSpellIds = { ...selectedSpellIdsStore.get() };
-  for (const visibleSpellId of visibleSpellIds)
-    selectedSpellIds[visibleSpellId] = true;
-  selectedSpellIdsStore.set(selectedSpellIds);
-}
-
-//------------------------------------------------------------------------------
-// Deselect Dnd Spell
-//------------------------------------------------------------------------------
-
-export function deselectDndSpell(id: string): void {
-  const selectedSpellIds = selectedSpellIdsStore.get();
-  if (selectedSpellIds[id])
-    selectedSpellIdsStore.set({ ...selectedSpellIds, [id]: false });
-}
-
-//------------------------------------------------------------------------------
-// Deselect All Visible Dnd Spells
-//------------------------------------------------------------------------------
-
-export function deselectAllVisibleDndSpells() {
-  const visibleSpellIds = visibleSpellIdsStore.get();
-  const selectedSpellIds = { ...selectedSpellIdsStore.get() };
-  for (const visibleSpellId of visibleSpellIds)
-    selectedSpellIds[visibleSpellId] = false;
-  selectedSpellIdsStore.set(selectedSpellIds);
-}
-
-//------------------------------------------------------------------------------
-// Toggle Dnd Spell Selection
-//------------------------------------------------------------------------------
-
-export function toggleDndSpellSelection(id: string): void {
-  const selectedSpellIds = selectedSpellIdsStore.get();
-  if (selectedSpellIds[id])
-    selectedSpellIdsStore.set({ ...selectedSpellIds, [id]: false });
-  else selectedSpellIdsStore.set({ ...selectedSpellIds, [id]: true });
-}
+export default dndSpellsStore;

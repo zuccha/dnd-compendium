@@ -1,17 +1,11 @@
 import { Flex } from "@chakra-ui/react";
 import DndSpellCard from "./dnd-spell-card";
 import DndSpellsListEmpty from "./dnd-spells-list-empty";
-import {
-  toggleDndSpellSelection,
-  useDndSpell,
-  useDndSpellsView,
-  useIsDndSpellSelected,
-  useVisibleDndSpellIds,
-} from "./dnd-spells-store";
+import dndSpellsStore from "./dnd-spells-store";
 
 export default function DndSpellsListCards() {
-  const [view] = useDndSpellsView();
-  const spellIds = useVisibleDndSpellIds();
+  const [view] = dndSpellsStore.useView();
+  const spellIds = dndSpellsStore.useVisibleDataIds();
 
   if (spellIds.length === 0) return <DndSpellsListEmpty />;
 
@@ -32,12 +26,12 @@ export default function DndSpellsListCards() {
 }
 
 function DndSpellsListCardsItem({ spellId }: { spellId: string }) {
-  const spell = useDndSpell(spellId);
-  const selected = useIsDndSpellSelected(spellId);
+  const spell = dndSpellsStore.useData(spellId);
+  const selected = dndSpellsStore.useIsDataSelected(spellId);
 
   return (
     <DndSpellCard
-      onClickSpell={() => toggleDndSpellSelection(spellId)}
+      onClickSpell={() => dndSpellsStore.toggleDataSelection(spellId)}
       selected={selected}
       spell={spell}
     />

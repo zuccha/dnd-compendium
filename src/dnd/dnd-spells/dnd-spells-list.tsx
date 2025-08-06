@@ -1,9 +1,9 @@
 import DndSpellsListCards from "./dnd-spells-list-cards";
 import DndSpellsListTable from "./dnd-spells-list-table";
-import { useDndSpellsView } from "./dnd-spells-store";
+import dndSpellsStore from './dnd-spells-store';
 
 export default function DndSpellsList() {
-  const [view] = useDndSpellsView();
+  const [view] = dndSpellsStore.useView();
 
   return view.type === "table" ? (
     <DndSpellsListTable />

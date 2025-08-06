@@ -3,19 +3,11 @@ import { type ReactNode, useState } from "react";
 import RichText from "../../components/ui/rich-text";
 import useI18n from "../../i18n/use-i18n";
 import DndSpellsListEmpty from "./dnd-spells-list-empty";
-import {
-  deselectAllVisibleDndSpells,
-  selectAllVisibleDndSpells,
-  toggleDndSpellSelection,
-  useDndSpell,
-  useIsDndSpellSelected,
-  useSelectedVisibleSpellsCount,
-  useVisibleDndSpellIds,
-} from "./dnd-spells-store";
+import dndSpellsStore from "./dnd-spells-store";
 import useDndSpellLocalized from "./use-dnd-spell-localized";
 
 export default function DndSpellsListTable() {
-  const spellIds = useVisibleDndSpellIds();
+  const spellIds = dndSpellsStore.useVisibleDataIds();
 
   if (spellIds.length === 0) return <DndSpellsListEmpty />;
 
@@ -35,7 +27,7 @@ export default function DndSpellsListTable() {
 
 function DndSpellsTableHeader({ size }: { size: number }) {
   const i18n = useI18n();
-  const count = useSelectedVisibleSpellsCount();
+  const count = dndSpellsStore.useSelectedVisibleDataCount();
 
   return (
     <Table.Row>
@@ -47,8 +39,8 @@ function DndSpellsTableHeader({ size }: { size: number }) {
             }
             onCheckedChange={
               count === size
-                ? deselectAllVisibleDndSpells
-                : selectAllVisibleDndSpells
+                ? dndSpellsStore.deselectAllVisibleData
+                : dndSpellsStore.selectAllVisibleData
             }
             position="static"
             size="sm"
@@ -75,10 +67,10 @@ function DndSpellsTableHeader({ size }: { size: number }) {
 }
 
 function DndSpellsTableRow({ spellId }: { spellId: string }) {
-  const spell = useDndSpell(spellId);
+  const spell = dndSpellsStore.useData(spellId);
   const spellLocalized = useDndSpellLocalized(spell);
 
-  const selected = useIsDndSpellSelected(spellId);
+  const selected = dndSpellsStore.useIsDataSelected(spellId);
 
   const [expanded, setExpanded] = useState(false);
 
@@ -89,7 +81,9 @@ function DndSpellsTableRow({ spellId }: { spellId: string }) {
           <Flex alignItems="center">
             <Checkbox.Root
               checked={selected}
-              onCheckedChange={() => toggleDndSpellSelection(spellId)}
+              onCheckedChange={() =>
+                dndSpellsStore.toggleDataSelection(spellId)
+              }
               onClick={(e) => e.stopPropagation()}
               position="static"
               size="sm"

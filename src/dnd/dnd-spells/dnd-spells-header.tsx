@@ -26,19 +26,13 @@ import {
   viewSortOrders,
   viewTypes,
 } from "../models/view";
-import {
-  deselectAllVisibleDndSpells,
-  selectAllVisibleDndSpells,
-  useDndSpellsFilters,
-  useDndSpellsView,
-  useSelectedVisibleSpells,
-} from "./dnd-spells-store";
+import dndSpellsStore from "./dnd-spells-store";
 import { localizeDndSpell } from "./use-dnd-spell-localized";
 
 export default function DndSpellsHeader() {
   const i18n = useI18n();
-  const [filters, setFilters] = useDndSpellsFilters();
-  const [view, setView] = useDndSpellsView();
+  const [filters, setFilters] = dndSpellsStore.useFilters();
+  const [view, setView] = dndSpellsStore.useView();
 
   const classesCollection = useMemo(() => {
     return createListCollection({
@@ -149,7 +143,7 @@ export default function DndSpellsHeader() {
 
         <HStack>
           <IconButton
-            onClick={deselectAllVisibleDndSpells}
+            onClick={dndSpellsStore.deselectAllVisibleData}
             size="sm"
             variant="outline"
           >
@@ -157,7 +151,7 @@ export default function DndSpellsHeader() {
           </IconButton>
 
           <IconButton
-            onClick={selectAllVisibleDndSpells}
+            onClick={dndSpellsStore.selectAllVisibleData}
             size="sm"
             variant="outline"
           >
@@ -218,7 +212,7 @@ const levelsCollection = createListCollection({
 
 function CopySelectedSpellsToClipboard() {
   const i18n = useI18n();
-  const spells = useSelectedVisibleSpells();
+  const spells = dndSpellsStore.useSelectedVisibleDatalist();
 
   const copySpellsAsJson = useCallback(async () => {
     const localizedSpells = spells.map((s) => localizeDndSpell(s, i18n));
