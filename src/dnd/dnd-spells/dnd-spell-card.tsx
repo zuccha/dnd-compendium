@@ -62,9 +62,9 @@ export default memo(function DndSpellCard({
       gap="0.2em"
       h={`${dndCardHeight}em`}
       onClick={onClickSpell}
-      outlineColor="green.500"
-      outlineStyle="auto"
-      outlineWidth={selected ? "10em" : 0}
+      outlineColor="border.info"
+      outlineStyle="solid"
+      outlineWidth={selected ? "0.25em" : 0}
       pb="0.5em"
       pt="0.625em"
       px="0.625em"
