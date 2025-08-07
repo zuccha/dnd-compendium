@@ -25,6 +25,7 @@ export type DndDataHeaderProps<
   DndFilters,
 > = {
   children: ReactNode;
+  hideViewSelection?: boolean;
   onLocalizeData: (data: DndData, i18n: I18n) => unknown;
   sortByItems: string[];
   store: DataStore<DndData, DndDataLocalized, DndFilters>;
@@ -36,6 +37,7 @@ export default function DndDataHeader<
   DndFilters,
 >({
   children,
+  hideViewSelection = false,
   onLocalizeData,
   sortByItems,
   store,
@@ -74,33 +76,37 @@ export default function DndDataHeader<
     <VStack pb={2} px={1} w="100%">
       <HStack justify="space-between" w="100%" wrap="wrap">
         <HStack>
-          <SelectSimple
-            collection={viewCollection}
-            defaultValue={[view.type]}
-            flex={0}
-            minW="6em"
-            name="dnd-data-view-type"
-            onValueChange={(e) => setView({ type: e.value[0] as ViewType })}
-            size="sm"
-          />
+          {!hideViewSelection && (
+            <>
+              <SelectSimple
+                collection={viewCollection}
+                defaultValue={[view.type]}
+                flex={0}
+                minW="6em"
+                name="dnd-data-view-type"
+                onValueChange={(e) => setView({ type: e.value[0] as ViewType })}
+                size="sm"
+              />
 
-          {view.type === "cards" && (
-            <NumberInput
-              defaultValue={`${view.zoom * 100}%`}
-              formatOptions={{ style: "percent" }}
-              inputProps={{ w: "6em" }}
-              max={2}
-              min={0.5}
-              name="dnd-data-view-zoom"
-              onValueChange={(e) => setView({ zoom: e.valueAsNumber })}
-              size="sm"
-              step={0.1}
-            />
+              {view.type === "cards" && (
+                <NumberInput
+                  defaultValue={`${view.zoom * 100}%`}
+                  formatOptions={{ style: "percent" }}
+                  inputProps={{ w: "6em" }}
+                  max={2}
+                  min={0.5}
+                  name="dnd-data-view-zoom"
+                  onValueChange={(e) => setView({ zoom: e.valueAsNumber })}
+                  size="sm"
+                  step={0.1}
+                />
+              )}
+
+              <Icon mx={-2} size="lg">
+                <LuDot />
+              </Icon>
+            </>
           )}
-
-          <Icon mx={-2} size="lg">
-            <LuDot />
-          </Icon>
 
           <SelectSimple
             collection={sortByCollection}
@@ -163,7 +169,7 @@ function CopySelectedSpellsToClipboard<
   store,
 }: Omit<
   DndDataHeaderProps<DndData, DndDataLocalized, DndFilters>,
-  "children" | "sortByItems"
+  "children" | "sortByItems" | "hideViewSelection"
 >) {
   const i18n = useI18n();
   const datalist = store.useSelectedVisibleDatalist();

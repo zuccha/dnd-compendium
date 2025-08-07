@@ -56,6 +56,7 @@ export default function DndWeaponsHeader() {
 
   return (
     <DndDataHeader
+      hideViewSelection
       onLocalizeData={(weapon) => weapon}
       sortByItems={dndWeaponsOrderByItems}
       store={dndWeaponsStore}
