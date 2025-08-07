@@ -16768,7 +16768,8 @@
     "id": "PHB24/True Strike",
     "level": 0,
     "materials": {
-      "en": "a weapon with which you have proficiency and that is worth 1+ CP"
+      "en": "a weapon with which you have proficiency and that is worth 1+ CP",
+      "it": "un'arma nel cui uso l'incantatore ha competenza e ha un valore di 1 mo o più"
     },
     "name": {
       "en": "True Strike",
