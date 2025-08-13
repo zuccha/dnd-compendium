@@ -5,7 +5,7 @@
       "regular": "1d6"
     },
     "damageType": "slashing",
-    "id": "PHB'24/Handaxe",
+    "id": "PHB24/Handaxe",
     "magic": false,
     "mastery": "vex",
     "melee": true,
@@ -39,7 +39,7 @@
     },
     "ranged": true,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "simple",
@@ -61,7 +61,7 @@
       "versatile": "1d8"
     },
     "damageType": "bludgeoning",
-    "id": "PHB'24/Quarterstaff",
+    "id": "PHB24/Quarterstaff",
     "magic": false,
     "mastery": "topple",
     "melee": true,
@@ -73,7 +73,7 @@
     "properties": ["versatile"],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "simple",
@@ -94,7 +94,7 @@
       "regular": "1d4"
     },
     "damageType": "slashing",
-    "id": "PHB'24/Sickle",
+    "id": "PHB24/Sickle",
     "magic": false,
     "mastery": "nick",
     "melee": true,
@@ -106,7 +106,7 @@
     "properties": ["light"],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "simple",
@@ -127,7 +127,7 @@
       "regular": "1d6"
     },
     "damageType": "slashing",
-    "id": "PHB'24/Javelin",
+    "id": "PHB24/Javelin",
     "magic": false,
     "mastery": "slow",
     "melee": true,
@@ -161,7 +161,7 @@
     },
     "ranged": true,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "simple",
@@ -183,7 +183,7 @@
       "versatile": "1d8"
     },
     "damageType": "piercing",
-    "id": "PHB'24/Spear",
+    "id": "PHB24/Spear",
     "magic": false,
     "mastery": "sap",
     "melee": true,
@@ -217,7 +217,7 @@
     },
     "ranged": true,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "simple",
@@ -238,7 +238,7 @@
       "regular": "1d4"
     },
     "damageType": "bludgeoning",
-    "id": "PHB'24/Light Hammer",
+    "id": "PHB24/Light Hammer",
     "magic": false,
     "mastery": "nick",
     "melee": true,
@@ -272,7 +272,7 @@
     },
     "ranged": true,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "simple",
@@ -293,7 +293,7 @@
       "regular": "1d6"
     },
     "damageType": "bludgeoning",
-    "id": "PHB'24/Mace",
+    "id": "PHB24/Mace",
     "magic": false,
     "mastery": "sap",
     "melee": true,
@@ -305,7 +305,7 @@
     "properties": [],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "simple",
@@ -326,7 +326,7 @@
       "regular": "1d4"
     },
     "damageType": "piercing",
-    "id": "PHB'24/Dagger",
+    "id": "PHB24/Dagger",
     "magic": false,
     "mastery": "nick",
     "melee": true,
@@ -360,7 +360,7 @@
     },
     "ranged": true,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "simple",
@@ -381,7 +381,7 @@
       "regular": "1d8"
     },
     "damageType": "bludgeoning",
-    "id": "PHB'24/Greatclub",
+    "id": "PHB24/Greatclub",
     "magic": false,
     "mastery": "push",
     "melee": true,
@@ -393,7 +393,7 @@
     "properties": ["two-handed"],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "simple",
@@ -415,7 +415,7 @@
       "versatile": "1d4"
     },
     "damageType": "bludgeoning",
-    "id": "PHB'24/Club",
+    "id": "PHB24/Club",
     "magic": false,
     "mastery": "slow",
     "melee": true,
@@ -427,7 +427,7 @@
     "properties": ["light"],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "simple",
@@ -448,7 +448,7 @@
       "regular": "1d6"
     },
     "damageType": "piercing",
-    "id": "PHB'24/Shortbow",
+    "id": "PHB24/Shortbow",
     "magic": false,
     "mastery": "vex",
     "melee": false,
@@ -482,7 +482,7 @@
     },
     "ranged": true,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "simple",
@@ -503,7 +503,7 @@
       "regular": "1d8"
     },
     "damageType": "piercing",
-    "id": "PHB'24/Light Crossbow",
+    "id": "PHB24/Light Crossbow",
     "magic": false,
     "mastery": "slow",
     "melee": false,
@@ -537,7 +537,7 @@
     },
     "ranged": true,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "simple",
@@ -558,7 +558,7 @@
       "regular": "1d4"
     },
     "damageType": "piercing",
-    "id": "PHB'24/Dart",
+    "id": "PHB24/Dart",
     "magic": false,
     "mastery": "vex",
     "melee": false,
@@ -592,7 +592,7 @@
     },
     "ranged": true,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "simple",
@@ -613,7 +613,7 @@
       "regular": "1d4"
     },
     "damageType": "bludgeoning",
-    "id": "PHB'24/Sling",
+    "id": "PHB24/Sling",
     "magic": false,
     "mastery": "slow",
     "melee": false,
@@ -647,7 +647,7 @@
     },
     "ranged": true,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "simple",
@@ -668,7 +668,7 @@
       "regular": "1d10"
     },
     "damageType": "slashing",
-    "id": "PHB'24/Halberd",
+    "id": "PHB24/Halberd",
     "magic": false,
     "mastery": "cleave",
     "melee": true,
@@ -680,7 +680,7 @@
     "properties": ["reach", "two-handed", "heavy"],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -701,7 +701,7 @@
       "regular": "1d12"
     },
     "damageType": "slashing",
-    "id": "PHB'24/Greataxe",
+    "id": "PHB24/Greataxe",
     "magic": false,
     "mastery": "cleave",
     "melee": true,
@@ -713,7 +713,7 @@
     "properties": ["two-handed", "heavy"],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -735,7 +735,7 @@
       "versatile": "1d10"
     },
     "damageType": "slashing",
-    "id": "PHB'24/Battleaxe",
+    "id": "PHB24/Battleaxe",
     "magic": false,
     "mastery": "topple",
     "melee": true,
@@ -747,7 +747,7 @@
     "properties": ["versatile"],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -768,7 +768,7 @@
       "regular": "1d10"
     },
     "damageType": "slashing",
-    "id": "PHB'24/Glaive",
+    "id": "PHB24/Glaive",
     "magic": false,
     "mastery": "graze",
     "melee": true,
@@ -780,7 +780,7 @@
     "properties": ["reach", "two-handed", "heavy"],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -801,7 +801,7 @@
       "regular": "1d4"
     },
     "damageType": "slashing",
-    "id": "PHB'24/Whip",
+    "id": "PHB24/Whip",
     "magic": false,
     "mastery": "slow",
     "melee": true,
@@ -813,7 +813,7 @@
     "properties": ["finesse", "reach"],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -834,7 +834,7 @@
       "regular": "1d10"
     },
     "damageType": "piercing",
-    "id": "PHB'24/Lance",
+    "id": "PHB24/Lance",
     "magic": false,
     "mastery": "topple",
     "melee": true,
@@ -846,7 +846,7 @@
     "properties": ["reach", "two-handed", "heavy"],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -867,7 +867,7 @@
       "regular": "2d6"
     },
     "damageType": "bludgeoning",
-    "id": "PHB'24/Maul",
+    "id": "PHB24/Maul",
     "magic": false,
     "mastery": "topple",
     "melee": true,
@@ -879,7 +879,7 @@
     "properties": ["heavy", "two-handed"],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -901,7 +901,7 @@
       "versatile": "1d10"
     },
     "damageType": "bludgeoning",
-    "id": "PHB'24/Warhammer",
+    "id": "PHB24/Warhammer",
     "magic": false,
     "mastery": "push",
     "melee": true,
@@ -913,7 +913,7 @@
     "properties": ["versatile"],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -934,7 +934,7 @@
       "regular": "1d8"
     },
     "damageType": "piercing",
-    "id": "PHB'24/Morningstar",
+    "id": "PHB24/Morningstar",
     "magic": false,
     "mastery": "sap",
     "melee": true,
@@ -946,7 +946,7 @@
     "properties": [],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -967,7 +967,7 @@
       "regular": "1d8"
     },
     "damageType": "bludgeoning",
-    "id": "PHB'24/Flail",
+    "id": "PHB24/Flail",
     "magic": false,
     "mastery": "sap",
     "melee": true,
@@ -979,7 +979,7 @@
     "properties": [],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -1000,7 +1000,7 @@
       "regular": "1d10"
     },
     "damageType": "piercing",
-    "id": "PHB'24/Pike",
+    "id": "PHB24/Pike",
     "magic": false,
     "mastery": "push",
     "melee": true,
@@ -1012,7 +1012,7 @@
     "properties": ["two-handed", "reach", "heavy"],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -1033,7 +1033,7 @@
       "regular": "1d6"
     },
     "damageType": "slashing",
-    "id": "PHB'24/Scimitar",
+    "id": "PHB24/Scimitar",
     "magic": false,
     "mastery": "nick",
     "melee": true,
@@ -1045,7 +1045,7 @@
     "properties": ["light", "finesse"],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -1066,7 +1066,7 @@
       "regular": "1d6"
     },
     "damageType": "piercing",
-    "id": "PHB'24/Shortsword",
+    "id": "PHB24/Shortsword",
     "magic": false,
     "mastery": "vex",
     "melee": true,
@@ -1078,7 +1078,7 @@
     "properties": ["finesse", "light"],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -1100,7 +1100,7 @@
       "versatile": "1d10"
     },
     "damageType": "slashing",
-    "id": "PHB'24/Longsword",
+    "id": "PHB24/Longsword",
     "magic": false,
     "mastery": "sap",
     "melee": true,
@@ -1112,7 +1112,7 @@
     "properties": ["versatile"],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -1133,7 +1133,7 @@
       "regular": "2d6"
     },
     "damageType": "slashing",
-    "id": "PHB'24/Greatsword",
+    "id": "PHB24/Greatsword",
     "magic": false,
     "mastery": "cleave",
     "melee": true,
@@ -1145,7 +1145,7 @@
     "properties": ["heavy", "two-handed"],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -1166,7 +1166,7 @@
       "regular": "1d8"
     },
     "damageType": "piercing",
-    "id": "PHB'24/Rapier",
+    "id": "PHB24/Rapier",
     "magic": false,
     "mastery": "vex",
     "melee": true,
@@ -1178,7 +1178,7 @@
     "properties": ["finesse"],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -1200,7 +1200,7 @@
       "versatile": "1d10"
     },
     "damageType": "piercing",
-    "id": "PHB'24/Trident",
+    "id": "PHB24/Trident",
     "magic": false,
     "mastery": "topple",
     "melee": true,
@@ -1234,7 +1234,7 @@
     },
     "ranged": true,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -1256,7 +1256,7 @@
       "versatile": "1d10"
     },
     "damageType": "piercing",
-    "id": "PHB'24/War Pick",
+    "id": "PHB24/War Pick",
     "magic": false,
     "mastery": "sap",
     "melee": true,
@@ -1268,7 +1268,7 @@
     "properties": ["versatile"],
     "ranged": false,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -1289,7 +1289,7 @@
       "regular": "1d8"
     },
     "damageType": "piercing",
-    "id": "PHB'24/Longbow",
+    "id": "PHB24/Longbow",
     "magic": false,
     "mastery": "slow",
     "melee": false,
@@ -1323,7 +1323,7 @@
     },
     "ranged": true,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -1344,7 +1344,7 @@
       "regular": "1d6"
     },
     "damageType": "piercing",
-    "id": "PHB'24/Hand Crossbow",
+    "id": "PHB24/Hand Crossbow",
     "magic": false,
     "mastery": "vex",
     "melee": false,
@@ -1378,7 +1378,7 @@
     },
     "ranged": true,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -1399,7 +1399,7 @@
       "regular": "1d10"
     },
     "damageType": "piercing",
-    "id": "PHB'24/Heavy Crossbow",
+    "id": "PHB24/Heavy Crossbow",
     "magic": false,
     "mastery": "push",
     "melee": false,
@@ -1433,7 +1433,7 @@
     },
     "ranged": true,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -1454,7 +1454,7 @@
       "regular": "1"
     },
     "damageType": "piercing",
-    "id": "PHB'24/Blowgun",
+    "id": "PHB24/Blowgun",
     "magic": false,
     "mastery": "vex",
     "melee": false,
@@ -1488,7 +1488,7 @@
     },
     "ranged": true,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -1509,7 +1509,7 @@
       "regular": "1d12"
     },
     "damageType": "piercing",
-    "id": "PHB'24/Musket",
+    "id": "PHB24/Musket",
     "magic": false,
     "mastery": "slow",
     "melee": false,
@@ -1543,7 +1543,7 @@
     },
     "ranged": true,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",
@@ -1564,7 +1564,7 @@
       "regular": "1d10"
     },
     "damageType": "piercing",
-    "id": "PHB'24/Pistol",
+    "id": "PHB24/Pistol",
     "magic": false,
     "mastery": "vex",
     "melee": false,
@@ -1598,7 +1598,7 @@
     },
     "ranged": true,
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 215
     },
     "type": "martial",

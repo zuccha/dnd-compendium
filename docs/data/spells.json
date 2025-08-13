@@ -13,7 +13,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Acid Splash",
+    "id": "PHB24/Acid Splash",
     "level": 0,
     "name": {
       "en": "Acid Splash",
@@ -33,7 +33,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 239
     },
     "text": {
@@ -62,7 +62,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Aid",
+    "id": "PHB24/Aid",
     "level": 2,
     "materials": {
       "en": "a strip of white cloth",
@@ -86,7 +86,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 239
     },
     "text": {
@@ -119,7 +119,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Alarm",
+    "id": "PHB24/Alarm",
     "level": 1,
     "materials": {
       "en": "a bell and silver wire",
@@ -143,7 +143,7 @@
     "ritual": true,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 239
     },
     "text": {
@@ -170,7 +170,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Alter Self",
+    "id": "PHB24/Alter Self",
     "level": 2,
     "name": {
       "en": "Alter Self",
@@ -182,7 +182,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 239
     },
     "text": {
@@ -208,7 +208,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Animal Friendship",
+    "id": "PHB24/Animal Friendship",
     "level": 1,
     "materials": {
       "en": "a morsel of food",
@@ -232,7 +232,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 239
     },
     "text": {
@@ -263,7 +263,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Animal Messenger",
+    "id": "PHB24/Animal Messenger",
     "level": 2,
     "materials": {
       "en": "a morsel of food",
@@ -287,7 +287,7 @@
     "ritual": true,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 240
     },
     "text": {
@@ -318,7 +318,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Animal Shapes",
+    "id": "PHB24/Animal Shapes",
     "level": 8,
     "name": {
       "en": "Animal Shapes",
@@ -338,7 +338,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 240
     },
     "text": {
@@ -363,7 +363,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Animate Dead",
+    "id": "PHB24/Animate Dead",
     "level": 3,
     "materials": {
       "en": "a drop of blood, a piece of flesh, and a pinch of bone dust",
@@ -387,7 +387,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 240
     },
     "text": {
@@ -416,7 +416,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Animate Objects",
+    "id": "PHB24/Animate Objects",
     "level": 5,
     "name": {
       "en": "Animate Objects",
@@ -436,7 +436,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 240
     },
     "text": {
@@ -465,7 +465,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Antilife Shell",
+    "id": "PHB24/Antilife Shell",
     "level": 5,
     "name": {
       "en": "Antilife Shell",
@@ -477,7 +477,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 241
     },
     "text": {
@@ -503,7 +503,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Antimagic Field",
+    "id": "PHB24/Antimagic Field",
     "level": 8,
     "materials": {
       "en": "iron filings",
@@ -519,7 +519,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 241
     },
     "text": {
@@ -547,7 +547,7 @@
       "unit": "day",
       "upTo": false
     },
-    "id": "PHB'24/Antipathy/Sympathy",
+    "id": "PHB24/Antipathy/Sympathy",
     "level": 8,
     "materials": {
       "en": "a mix of vinegar and honey",
@@ -571,7 +571,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 242
     },
     "text": {
@@ -597,7 +597,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Arcane Eye",
+    "id": "PHB24/Arcane Eye",
     "level": 4,
     "materials": {
       "en": "a bit of bat fur",
@@ -621,7 +621,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 242
     },
     "text": {
@@ -647,7 +647,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Arcane Gate",
+    "id": "PHB24/Arcane Gate",
     "level": 6,
     "name": {
       "en": "Arcane Gate",
@@ -667,7 +667,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 242
     },
     "text": {
@@ -691,7 +691,7 @@
     "duration": {
       "type": "until_dispelled"
     },
-    "id": "PHB'24/Arcane Lock",
+    "id": "PHB24/Arcane Lock",
     "level": 2,
     "materials": {
       "en": "gold dust worth 25+ GP, which the spell consumes",
@@ -707,7 +707,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 242
     },
     "text": {
@@ -730,7 +730,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Arcane Vigor",
+    "id": "PHB24/Arcane Vigor",
     "level": 2,
     "name": {
       "en": "Arcane Vigor",
@@ -742,7 +742,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 242
     },
     "text": {
@@ -771,7 +771,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Armor of Agathys",
+    "id": "PHB24/Armor of Agathys",
     "level": 1,
     "materials": {
       "en": "a shard of blue glass",
@@ -787,7 +787,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 243
     },
     "text": {
@@ -815,7 +815,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Arms of Hadar",
+    "id": "PHB24/Arms of Hadar",
     "level": 1,
     "name": {
       "en": "Arms of Hadar",
@@ -827,7 +827,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 243
     },
     "text": {
@@ -857,7 +857,7 @@
     "duration": {
       "type": "until_dispelled"
     },
-    "id": "PHB'24/Astral Projection",
+    "id": "PHB24/Astral Projection",
     "level": 9,
     "materials": {
       "en": "for each of the spell's targets, one jacinth worth 1,000+ GP and one silver bar worth 100+ GP, all of which the spell consumes",
@@ -881,7 +881,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 243
     },
     "text": {
@@ -907,7 +907,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Augury",
+    "id": "PHB24/Augury",
     "level": 2,
     "materials": {
       "en": "specially marked sticks, bones, cards, or other divinatory tokens worth 25+ GP",
@@ -923,7 +923,7 @@
     "ritual": true,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 244
     },
     "text": {
@@ -949,7 +949,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Aura of Life",
+    "id": "PHB24/Aura of Life",
     "level": 4,
     "name": {
       "en": "Aura of Life",
@@ -961,7 +961,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 244
     },
     "text": {
@@ -987,7 +987,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Aura of Purity",
+    "id": "PHB24/Aura of Purity",
     "level": 4,
     "name": {
       "en": "Aura of Purity",
@@ -999,7 +999,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 244
     },
     "text": {
@@ -1025,7 +1025,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Aura of Vitality",
+    "id": "PHB24/Aura of Vitality",
     "level": 3,
     "name": {
       "en": "Aura of Vitality",
@@ -1037,7 +1037,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 244
     },
     "text": {
@@ -1062,7 +1062,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Awaken",
+    "id": "PHB24/Awaken",
     "level": 5,
     "materials": {
       "en": "an agate worth 1,000+ GP, which the spell consumes",
@@ -1078,7 +1078,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 244
     },
     "text": {
@@ -1104,7 +1104,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Bane",
+    "id": "PHB24/Bane",
     "level": 1,
     "materials": {
       "en": "a drop of blood",
@@ -1128,7 +1128,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 245
     },
     "text": {
@@ -1159,7 +1159,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Banishing Smite",
+    "id": "PHB24/Banishing Smite",
     "level": 5,
     "name": {
       "en": "Banishing Smite",
@@ -1171,7 +1171,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 245
     },
     "text": {
@@ -1197,7 +1197,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Banishment",
+    "id": "PHB24/Banishment",
     "level": 4,
     "materials": {
       "en": "a pentacle",
@@ -1221,7 +1221,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 245
     },
     "text": {
@@ -1252,7 +1252,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Barkskin",
+    "id": "PHB24/Barkskin",
     "level": 2,
     "materials": {
       "en": "a handful of oak bark",
@@ -1268,7 +1268,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 245
     },
     "text": {
@@ -1295,7 +1295,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Beacon of Hope",
+    "id": "PHB24/Beacon of Hope",
     "level": 3,
     "name": {
       "en": "Beacon of Hope",
@@ -1315,7 +1315,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 245
     },
     "text": {
@@ -1341,7 +1341,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Beast Sense",
+    "id": "PHB24/Beast Sense",
     "level": 2,
     "name": {
       "en": "Beast Sense",
@@ -1353,7 +1353,7 @@
     "ritual": true,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 245
     },
     "text": {
@@ -1377,7 +1377,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Befuddlement",
+    "id": "PHB24/Befuddlement",
     "level": 8,
     "materials": {
       "en": "a key ring with no keys",
@@ -1401,7 +1401,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 245
     },
     "text": {
@@ -1428,7 +1428,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Bestow Curse",
+    "id": "PHB24/Bestow Curse",
     "level": 3,
     "name": {
       "en": "Bestow Curse",
@@ -1440,7 +1440,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 246
     },
     "text": {
@@ -1469,7 +1469,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Bigby's Hand",
+    "id": "PHB24/Bigby's Hand",
     "level": 5,
     "materials": {
       "en": "an eggshell and a glove",
@@ -1493,7 +1493,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 246
     },
     "text": {
@@ -1522,7 +1522,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Blade Barrier",
+    "id": "PHB24/Blade Barrier",
     "level": 6,
     "name": {
       "en": "Blade Barrier",
@@ -1542,7 +1542,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 247
     },
     "text": {
@@ -1568,7 +1568,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Blade Ward",
+    "id": "PHB24/Blade Ward",
     "level": 0,
     "name": {
       "en": "Blade Ward",
@@ -1580,7 +1580,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 247
     },
     "text": {
@@ -1607,7 +1607,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Bless",
+    "id": "PHB24/Bless",
     "level": 1,
     "materials": {
       "en": "a Holy Symbol worth 5+ GP",
@@ -1631,7 +1631,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 247
     },
     "text": {
@@ -1657,7 +1657,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Blight",
+    "id": "PHB24/Blight",
     "level": 4,
     "name": {
       "en": "Blight",
@@ -1677,7 +1677,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 247
     },
     "text": {
@@ -1708,7 +1708,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Blinding Smite",
+    "id": "PHB24/Blinding Smite",
     "level": 3,
     "name": {
       "en": "Blinding Smite",
@@ -1720,7 +1720,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 247
     },
     "text": {
@@ -1749,7 +1749,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Blindness/Deafness",
+    "id": "PHB24/Blindness/Deafness",
     "level": 2,
     "name": {
       "en": "Blindness/Deafness",
@@ -1769,7 +1769,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 248
     },
     "text": {
@@ -1798,7 +1798,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Blink",
+    "id": "PHB24/Blink",
     "level": 3,
     "name": {
       "en": "Blink",
@@ -1810,7 +1810,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 248
     },
     "text": {
@@ -1836,7 +1836,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Blur",
+    "id": "PHB24/Blur",
     "level": 2,
     "name": {
       "en": "Blur",
@@ -1848,7 +1848,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 248
     },
     "text": {
@@ -1871,7 +1871,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Burning Hands",
+    "id": "PHB24/Burning Hands",
     "level": 1,
     "name": {
       "en": "Burning Hands",
@@ -1883,7 +1883,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 248
     },
     "text": {
@@ -1912,7 +1912,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Call Lightning",
+    "id": "PHB24/Call Lightning",
     "level": 3,
     "name": {
       "en": "Call Lightning",
@@ -1932,7 +1932,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 248
     },
     "text": {
@@ -1961,7 +1961,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Calm Emotions",
+    "id": "PHB24/Calm Emotions",
     "level": 2,
     "name": {
       "en": "Calm Emotions",
@@ -1981,7 +1981,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 249
     },
     "text": {
@@ -2004,7 +2004,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Chain Lightning",
+    "id": "PHB24/Chain Lightning",
     "level": 6,
     "materials": {
       "en": "three silver pins",
@@ -2028,7 +2028,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 249
     },
     "text": {
@@ -2057,7 +2057,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Charm Monster",
+    "id": "PHB24/Charm Monster",
     "level": 4,
     "name": {
       "en": "Charm Monster",
@@ -2077,7 +2077,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 249
     },
     "text": {
@@ -2108,7 +2108,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Charm Person",
+    "id": "PHB24/Charm Person",
     "level": 1,
     "name": {
       "en": "Charm Person",
@@ -2128,7 +2128,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 249
     },
     "text": {
@@ -2156,7 +2156,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Chill Touch",
+    "id": "PHB24/Chill Touch",
     "level": 0,
     "name": {
       "en": "Chill Touch",
@@ -2168,7 +2168,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 249
     },
     "text": {
@@ -2196,7 +2196,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Chromatic Orb",
+    "id": "PHB24/Chromatic Orb",
     "level": 1,
     "materials": {
       "en": "a diamond worth 50+ GP",
@@ -2220,7 +2220,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 249
     },
     "text": {
@@ -2246,7 +2246,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Circle of Death",
+    "id": "PHB24/Circle of Death",
     "level": 6,
     "materials": {
       "en": "the powder of a crushed black pearl worth 500+ GP",
@@ -2270,7 +2270,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 250
     },
     "text": {
@@ -2301,7 +2301,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Circle of Power",
+    "id": "PHB24/Circle of Power",
     "level": 5,
     "name": {
       "en": "Circle of Power",
@@ -2313,7 +2313,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 250
     },
     "text": {
@@ -2341,7 +2341,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Clairvoyance",
+    "id": "PHB24/Clairvoyance",
     "level": 3,
     "materials": {
       "en": "a focus worth 100+ GP, either a jeweled horn for hearing or a glass eye for seeing",
@@ -2365,7 +2365,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 250
     },
     "text": {
@@ -2390,7 +2390,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Clone",
+    "id": "PHB24/Clone",
     "level": 8,
     "materials": {
       "en": "a diamond worth 1,000+ GP, which the spell consumes, and a sealable vessel worth 2,000+ GP that is large enough to hold the creature being cloned",
@@ -2406,7 +2406,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 251
     },
     "text": {
@@ -2432,7 +2432,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Cloud of Daggers",
+    "id": "PHB24/Cloud of Daggers",
     "level": 2,
     "materials": {
       "en": "a sliver of glass",
@@ -2456,7 +2456,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 251
     },
     "text": {
@@ -2487,7 +2487,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Cloudkill",
+    "id": "PHB24/Cloudkill",
     "level": 5,
     "name": {
       "en": "Cloudkill",
@@ -2507,7 +2507,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 251
     },
     "text": {
@@ -2533,7 +2533,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Color Spray",
+    "id": "PHB24/Color Spray",
     "level": 1,
     "materials": {
       "en": "a pinch of colorful sand",
@@ -2549,7 +2549,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 251
     },
     "text": {
@@ -2572,7 +2572,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Command",
+    "id": "PHB24/Command",
     "level": 1,
     "name": {
       "en": "Command",
@@ -2592,7 +2592,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 251
     },
     "text": {
@@ -2623,7 +2623,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Commune",
+    "id": "PHB24/Commune",
     "level": 5,
     "materials": {
       "en": "incense",
@@ -2639,7 +2639,7 @@
     "ritual": true,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 251
     },
     "text": {
@@ -2667,7 +2667,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Commune with Nature",
+    "id": "PHB24/Commune with Nature",
     "level": 5,
     "name": {
       "en": "Commune with Nature",
@@ -2679,7 +2679,7 @@
     "ritual": true,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 252
     },
     "text": {
@@ -2706,7 +2706,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Compelled Duel",
+    "id": "PHB24/Compelled Duel",
     "level": 1,
     "name": {
       "en": "Compelled Duel",
@@ -2726,7 +2726,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 252
     },
     "text": {
@@ -2752,7 +2752,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Comprehend Languages",
+    "id": "PHB24/Comprehend Languages",
     "level": 1,
     "materials": {
       "en": "a pinch of soot and salt",
@@ -2768,7 +2768,7 @@
     "ritual": true,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 252
     },
     "text": {
@@ -2795,7 +2795,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Compulsion",
+    "id": "PHB24/Compulsion",
     "level": 4,
     "name": {
       "en": "Compulsion",
@@ -2815,7 +2815,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 252
     },
     "text": {
@@ -2838,7 +2838,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Cone of Cold",
+    "id": "PHB24/Cone of Cold",
     "level": 5,
     "materials": {
       "en": "a small crystal or glass cone",
@@ -2854,7 +2854,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 253
     },
     "text": {
@@ -2883,7 +2883,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Confusion",
+    "id": "PHB24/Confusion",
     "level": 4,
     "materials": {
       "en": "three nut shells",
@@ -2907,7 +2907,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 253
     },
     "text": {
@@ -2936,7 +2936,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Conjure Animals",
+    "id": "PHB24/Conjure Animals",
     "level": 3,
     "name": {
       "en": "Conjure Animals",
@@ -2956,7 +2956,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 254
     },
     "text": {
@@ -2984,7 +2984,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Conjure Barrage",
+    "id": "PHB24/Conjure Barrage",
     "level": 3,
     "materials": {
       "en": "a Melee or Ranged weapon worth at least 1 CP",
@@ -3000,7 +3000,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 254
     },
     "text": {
@@ -3031,7 +3031,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Conjure Celestial",
+    "id": "PHB24/Conjure Celestial",
     "level": 7,
     "name": {
       "en": "Conjure Celestial",
@@ -3051,7 +3051,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 254
     },
     "text": {
@@ -3080,7 +3080,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Conjure Elemental",
+    "id": "PHB24/Conjure Elemental",
     "level": 5,
     "name": {
       "en": "Conjure Elemental",
@@ -3100,7 +3100,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 254
     },
     "text": {
@@ -3129,7 +3129,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Conjure Fey",
+    "id": "PHB24/Conjure Fey",
     "level": 6,
     "name": {
       "en": "Conjure Fey",
@@ -3149,7 +3149,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 255
     },
     "text": {
@@ -3178,7 +3178,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Conjure Minor Elementals",
+    "id": "PHB24/Conjure Minor Elementals",
     "level": 4,
     "name": {
       "en": "Conjure Minor Elementals",
@@ -3190,7 +3190,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 255
     },
     "text": {
@@ -3216,7 +3216,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Conjure Volley",
+    "id": "PHB24/Conjure Volley",
     "level": 5,
     "materials": {
       "en": "a Melee or Ranged weapon worth at least 1 CP",
@@ -3240,7 +3240,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 255
     },
     "text": {
@@ -3267,7 +3267,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Conjure Woodland Beings",
+    "id": "PHB24/Conjure Woodland Beings",
     "level": 4,
     "name": {
       "en": "Conjure Woodland Beings",
@@ -3279,7 +3279,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 255
     },
     "text": {
@@ -3312,7 +3312,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Contact Other Plane",
+    "id": "PHB24/Contact Other Plane",
     "level": 5,
     "name": {
       "en": "Contact Other Plane",
@@ -3324,7 +3324,7 @@
     "ritual": true,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 255
     },
     "text": {
@@ -3351,7 +3351,7 @@
       "unit": "day",
       "upTo": false
     },
-    "id": "PHB'24/Contagion",
+    "id": "PHB24/Contagion",
     "level": 5,
     "name": {
       "en": "Contagion",
@@ -3363,7 +3363,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 256
     },
     "text": {
@@ -3391,7 +3391,7 @@
       "unit": "day",
       "upTo": false
     },
-    "id": "PHB'24/Contingency",
+    "id": "PHB24/Contingency",
     "level": 6,
     "materials": {
       "en": "a gem-encrusted statuette of yourself worth 1,500+ GP",
@@ -3407,7 +3407,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 256
     },
     "text": {
@@ -3430,7 +3430,7 @@
     "duration": {
       "type": "until_dispelled"
     },
-    "id": "PHB'24/Continual Flame",
+    "id": "PHB24/Continual Flame",
     "level": 2,
     "materials": {
       "en": "ruby dust worth 50+ GP, which the spell consumes",
@@ -3446,7 +3446,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 256
     },
     "text": {
@@ -3472,7 +3472,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Control Water",
+    "id": "PHB24/Control Water",
     "level": 4,
     "materials": {
       "en": "a mixture of water and dust",
@@ -3496,7 +3496,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 256
     },
     "text": {
@@ -3524,7 +3524,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Control Weather",
+    "id": "PHB24/Control Weather",
     "level": 8,
     "materials": {
       "en": "burning incense",
@@ -3540,7 +3540,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 257
     },
     "text": {
@@ -3566,7 +3566,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Cordon of Arrows",
+    "id": "PHB24/Cordon of Arrows",
     "level": 2,
     "materials": {
       "en": "four or more arrows or bolts",
@@ -3582,7 +3582,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 258
     },
     "text": {
@@ -3610,7 +3610,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Counterspell",
+    "id": "PHB24/Counterspell",
     "level": 3,
     "name": {
       "en": "Counterspell",
@@ -3630,7 +3630,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 258
     },
     "text": {
@@ -3654,7 +3654,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Create Food and Water",
+    "id": "PHB24/Create Food and Water",
     "level": 3,
     "name": {
       "en": "Create Food and Water",
@@ -3674,7 +3674,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 258
     },
     "text": {
@@ -3697,7 +3697,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Create or Destroy Water",
+    "id": "PHB24/Create or Destroy Water",
     "level": 1,
     "materials": {
       "en": "a mix of water and sand",
@@ -3721,7 +3721,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 258
     },
     "text": {
@@ -3751,7 +3751,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Create Undead",
+    "id": "PHB24/Create Undead",
     "level": 6,
     "materials": {
       "en": "one 150+ GP black onyx stone for each corpse",
@@ -3775,7 +3775,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 258
     },
     "text": {
@@ -3805,7 +3805,7 @@
     "duration": {
       "type": "special"
     },
-    "id": "PHB'24/Creation",
+    "id": "PHB24/Creation",
     "level": 5,
     "materials": {
       "en": "a paintbrush",
@@ -3829,7 +3829,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 259
     },
     "text": {
@@ -3858,7 +3858,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Crown of Madness",
+    "id": "PHB24/Crown of Madness",
     "level": 2,
     "name": {
       "en": "Crown of Madness",
@@ -3878,7 +3878,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 259
     },
     "text": {
@@ -3905,7 +3905,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Crusader's Mantle",
+    "id": "PHB24/Crusader's Mantle",
     "level": 3,
     "name": {
       "en": "Crusader's Mantle",
@@ -3917,7 +3917,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 259
     },
     "text": {
@@ -3940,7 +3940,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Cure Wounds",
+    "id": "PHB24/Cure Wounds",
     "level": 1,
     "name": {
       "en": "Cure Wounds",
@@ -3952,7 +3952,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 259
     },
     "text": {
@@ -3983,7 +3983,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Dancing Lights",
+    "id": "PHB24/Dancing Lights",
     "level": 0,
     "materials": {
       "en": "a bit of phosphorus",
@@ -4007,7 +4007,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 259
     },
     "text": {
@@ -4033,7 +4033,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Darkness",
+    "id": "PHB24/Darkness",
     "level": 2,
     "materials": {
       "en": "bat fur and a piece of coal",
@@ -4057,7 +4057,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 260
     },
     "text": {
@@ -4084,7 +4084,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Darkvision",
+    "id": "PHB24/Darkvision",
     "level": 2,
     "materials": {
       "en": "a dried carrot",
@@ -4100,7 +4100,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 260
     },
     "text": {
@@ -4127,7 +4127,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Daylight",
+    "id": "PHB24/Daylight",
     "level": 3,
     "name": {
       "en": "Daylight",
@@ -4147,7 +4147,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 260
     },
     "text": {
@@ -4174,7 +4174,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Death Ward",
+    "id": "PHB24/Death Ward",
     "level": 4,
     "name": {
       "en": "Death Ward",
@@ -4186,7 +4186,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 261
     },
     "text": {
@@ -4212,7 +4212,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Delayed Blast Fireball",
+    "id": "PHB24/Delayed Blast Fireball",
     "level": 7,
     "materials": {
       "en": "a ball of bat guano and sulfur",
@@ -4236,7 +4236,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 261
     },
     "text": {
@@ -4265,7 +4265,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Demiplane",
+    "id": "PHB24/Demiplane",
     "level": 8,
     "name": {
       "en": "Demiplane",
@@ -4285,7 +4285,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 261
     },
     "text": {
@@ -4309,7 +4309,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Destructive Wave",
+    "id": "PHB24/Destructive Wave",
     "level": 5,
     "name": {
       "en": "Destructive Wave",
@@ -4321,7 +4321,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 261
     },
     "text": {
@@ -4347,7 +4347,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Detect Evil and Good",
+    "id": "PHB24/Detect Evil and Good",
     "level": 1,
     "name": {
       "en": "Detect Evil and Good",
@@ -4359,7 +4359,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 261
     },
     "text": {
@@ -4395,7 +4395,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Detect Magic",
+    "id": "PHB24/Detect Magic",
     "level": 1,
     "name": {
       "en": "Detect Magic",
@@ -4407,7 +4407,7 @@
     "ritual": true,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 262
     },
     "text": {
@@ -4434,7 +4434,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Detect Poison and Disease",
+    "id": "PHB24/Detect Poison and Disease",
     "level": 1,
     "materials": {
       "en": "a yew leaf",
@@ -4450,7 +4450,7 @@
     "ritual": true,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 262
     },
     "text": {
@@ -4477,7 +4477,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Detect Thoughts",
+    "id": "PHB24/Detect Thoughts",
     "level": 2,
     "materials": {
       "en": "1 CP",
@@ -4493,7 +4493,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 262
     },
     "text": {
@@ -4516,7 +4516,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Dimension Door",
+    "id": "PHB24/Dimension Door",
     "level": 4,
     "name": {
       "en": "Dimension Door",
@@ -4536,7 +4536,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 262
     },
     "text": {
@@ -4563,7 +4563,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Disguise Self",
+    "id": "PHB24/Disguise Self",
     "level": 1,
     "name": {
       "en": "Disguise Self",
@@ -4575,7 +4575,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 262
     },
     "text": {
@@ -4598,7 +4598,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Disintegrate",
+    "id": "PHB24/Disintegrate",
     "level": 6,
     "materials": {
       "en": "a lodestone and dust",
@@ -4622,7 +4622,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 263
     },
     "text": {
@@ -4651,7 +4651,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Dispel Evil and Good",
+    "id": "PHB24/Dispel Evil and Good",
     "level": 5,
     "materials": {
       "en": "powdered silver and iron",
@@ -4667,7 +4667,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 263
     },
     "text": {
@@ -4700,7 +4700,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Dispel Magic",
+    "id": "PHB24/Dispel Magic",
     "level": 3,
     "name": {
       "en": "Dispel Magic",
@@ -4720,7 +4720,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 264
     },
     "text": {
@@ -4748,7 +4748,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Dissonant Whispers",
+    "id": "PHB24/Dissonant Whispers",
     "level": 1,
     "name": {
       "en": "Dissonant Whispers",
@@ -4768,7 +4768,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 264
     },
     "text": {
@@ -4794,7 +4794,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Divination",
+    "id": "PHB24/Divination",
     "level": 4,
     "materials": {
       "en": "incense worth 25+ GP, which the spell consumes",
@@ -4810,7 +4810,7 @@
     "ritual": true,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 264
     },
     "text": {
@@ -4836,7 +4836,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Divine Favor",
+    "id": "PHB24/Divine Favor",
     "level": 1,
     "name": {
       "en": "Divine Favor",
@@ -4848,7 +4848,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 265
     },
     "text": {
@@ -4871,7 +4871,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Divine Smite",
+    "id": "PHB24/Divine Smite",
     "level": 1,
     "name": {
       "en": "Divine Smite",
@@ -4883,7 +4883,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 265
     },
     "text": {
@@ -4909,7 +4909,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Divine Word",
+    "id": "PHB24/Divine Word",
     "level": 7,
     "name": {
       "en": "Divine Word",
@@ -4929,7 +4929,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 265
     },
     "text": {
@@ -4955,7 +4955,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Dominate Beast",
+    "id": "PHB24/Dominate Beast",
     "level": 4,
     "name": {
       "en": "Dominate Beast",
@@ -4975,7 +4975,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 265
     },
     "text": {
@@ -5006,7 +5006,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Dominate Monster",
+    "id": "PHB24/Dominate Monster",
     "level": 8,
     "name": {
       "en": "Dominate Monster",
@@ -5026,7 +5026,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 265
     },
     "text": {
@@ -5057,7 +5057,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Dominate Person",
+    "id": "PHB24/Dominate Person",
     "level": 5,
     "name": {
       "en": "Dominate Person",
@@ -5077,7 +5077,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 266
     },
     "text": {
@@ -5108,7 +5108,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Dragon's Breath",
+    "id": "PHB24/Dragon's Breath",
     "level": 2,
     "materials": {
       "en": "a hot pepper",
@@ -5124,7 +5124,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 266
     },
     "text": {
@@ -5152,7 +5152,7 @@
     "duration": {
       "type": "until_dispelled"
     },
-    "id": "PHB'24/Drawmij's Instant Summons",
+    "id": "PHB24/Drawmij's Instant Summons",
     "level": 6,
     "materials": {
       "en": "a sapphire worth 1,000+ GP",
@@ -5168,7 +5168,7 @@
     "ritual": true,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 266
     },
     "text": {
@@ -5196,7 +5196,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Dream",
+    "id": "PHB24/Dream",
     "level": 5,
     "materials": {
       "en": "a handful of sand",
@@ -5212,7 +5212,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 266
     },
     "text": {
@@ -5236,7 +5236,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Druidcraft",
+    "id": "PHB24/Druidcraft",
     "level": 0,
     "name": {
       "en": "Druidcraft",
@@ -5256,7 +5256,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 266
     },
     "text": {
@@ -5283,7 +5283,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Earthquake",
+    "id": "PHB24/Earthquake",
     "level": 8,
     "materials": {
       "en": "a fractured rock",
@@ -5307,7 +5307,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 267
     },
     "text": {
@@ -5330,7 +5330,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Eldritch Blast",
+    "id": "PHB24/Eldritch Blast",
     "level": 0,
     "name": {
       "en": "Eldritch Blast",
@@ -5350,7 +5350,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 267
     },
     "text": {
@@ -5381,7 +5381,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Elemental Weapon",
+    "id": "PHB24/Elemental Weapon",
     "level": 3,
     "name": {
       "en": "Elemental Weapon",
@@ -5393,7 +5393,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 267
     },
     "text": {
@@ -5421,7 +5421,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Elementalism",
+    "id": "PHB24/Elementalism",
     "level": 0,
     "name": {
       "en": "Elementalism",
@@ -5441,7 +5441,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 267
     },
     "text": {
@@ -5476,7 +5476,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Enhance Ability",
+    "id": "PHB24/Enhance Ability",
     "level": 2,
     "materials": {
       "en": "fur or a feather",
@@ -5492,7 +5492,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 268
     },
     "text": {
@@ -5523,7 +5523,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Enlarge/Reduce",
+    "id": "PHB24/Enlarge/Reduce",
     "level": 2,
     "materials": {
       "en": "a pinch of powdered iron",
@@ -5547,7 +5547,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 268
     },
     "text": {
@@ -5573,7 +5573,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Ensnaring Strike",
+    "id": "PHB24/Ensnaring Strike",
     "level": 1,
     "name": {
       "en": "Ensnaring Strike",
@@ -5585,7 +5585,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 268
     },
     "text": {
@@ -5616,7 +5616,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Entangle",
+    "id": "PHB24/Entangle",
     "level": 1,
     "name": {
       "en": "Entangle",
@@ -5636,7 +5636,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 268
     },
     "text": {
@@ -5663,7 +5663,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Enthrall",
+    "id": "PHB24/Enthrall",
     "level": 2,
     "name": {
       "en": "Enthrall",
@@ -5683,7 +5683,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 269
     },
     "text": {
@@ -5710,7 +5710,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Etherealness",
+    "id": "PHB24/Etherealness",
     "level": 7,
     "name": {
       "en": "Etherealness",
@@ -5722,7 +5722,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 269
     },
     "text": {
@@ -5753,7 +5753,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Evard's Black Tentacles",
+    "id": "PHB24/Evard's Black Tentacles",
     "level": 4,
     "materials": {
       "en": "a tentacle",
@@ -5777,7 +5777,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 270
     },
     "text": {
@@ -5803,7 +5803,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Expeditious Retreat",
+    "id": "PHB24/Expeditious Retreat",
     "level": 1,
     "name": {
       "en": "Expeditious Retreat",
@@ -5815,7 +5815,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 270
     },
     "text": {
@@ -5842,7 +5842,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Eyebite",
+    "id": "PHB24/Eyebite",
     "level": 6,
     "name": {
       "en": "Eyebite",
@@ -5854,7 +5854,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 270
     },
     "text": {
@@ -5880,7 +5880,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Fabricate",
+    "id": "PHB24/Fabricate",
     "level": 4,
     "name": {
       "en": "Fabricate",
@@ -5900,7 +5900,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 271
     },
     "text": {
@@ -5926,7 +5926,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Faerie Fire",
+    "id": "PHB24/Faerie Fire",
     "level": 1,
     "name": {
       "en": "Faerie Fire",
@@ -5946,7 +5946,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 271
     },
     "text": {
@@ -5970,7 +5970,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/False Life",
+    "id": "PHB24/False Life",
     "level": 1,
     "materials": {
       "en": "a drop of alcohol",
@@ -5986,7 +5986,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 271
     },
     "text": {
@@ -6015,7 +6015,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Fear",
+    "id": "PHB24/Fear",
     "level": 3,
     "materials": {
       "en": "a white feather",
@@ -6031,7 +6031,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 271
     },
     "text": {
@@ -6058,7 +6058,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Feather Fall",
+    "id": "PHB24/Feather Fall",
     "level": 1,
     "materials": {
       "en": "a small feather or piece of down",
@@ -6082,7 +6082,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 271
     },
     "text": {
@@ -6108,7 +6108,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Feign Death",
+    "id": "PHB24/Feign Death",
     "level": 3,
     "materials": {
       "en": "a pinch of graveyard dirt",
@@ -6124,7 +6124,7 @@
     "ritual": true,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 271
     },
     "text": {
@@ -6149,7 +6149,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Find Familiar",
+    "id": "PHB24/Find Familiar",
     "level": 1,
     "materials": {
       "en": "burning incense worth 10+ GP, which the spell consumes",
@@ -6173,7 +6173,7 @@
     "ritual": true,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 272
     },
     "text": {
@@ -6196,7 +6196,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Find Steed",
+    "id": "PHB24/Find Steed",
     "level": 2,
     "name": {
       "en": "Find Steed",
@@ -6216,7 +6216,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 272
     },
     "text": {
@@ -6247,7 +6247,7 @@
       "unit": "day",
       "upTo": true
     },
-    "id": "PHB'24/Find the Path",
+    "id": "PHB24/Find the Path",
     "level": 6,
     "materials": {
       "en": "a set of divination tools—such as cards or runes—worth 100+ GP",
@@ -6263,7 +6263,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 273
     },
     "text": {
@@ -6286,7 +6286,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Find Traps",
+    "id": "PHB24/Find Traps",
     "level": 2,
     "name": {
       "en": "Find Traps",
@@ -6306,7 +6306,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 273
     },
     "text": {
@@ -6330,7 +6330,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Finger of Death",
+    "id": "PHB24/Finger of Death",
     "level": 7,
     "name": {
       "en": "Finger of Death",
@@ -6350,7 +6350,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 273
     },
     "text": {
@@ -6374,7 +6374,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Fire Bolt",
+    "id": "PHB24/Fire Bolt",
     "level": 0,
     "name": {
       "en": "Fire Bolt",
@@ -6394,7 +6394,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 274
     },
     "text": {
@@ -6423,7 +6423,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Fire Shield",
+    "id": "PHB24/Fire Shield",
     "level": 4,
     "materials": {
       "en": "a bit of phosphorus or a firefly",
@@ -6439,7 +6439,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 274
     },
     "text": {
@@ -6462,7 +6462,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Fire Storm",
+    "id": "PHB24/Fire Storm",
     "level": 7,
     "name": {
       "en": "Fire Storm",
@@ -6482,7 +6482,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 275
     },
     "text": {
@@ -6505,7 +6505,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Fireball",
+    "id": "PHB24/Fireball",
     "level": 3,
     "materials": {
       "en": "a ball of bat guano and sulfur",
@@ -6529,7 +6529,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 274
     },
     "text": {
@@ -6558,7 +6558,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Flame Blade",
+    "id": "PHB24/Flame Blade",
     "level": 2,
     "materials": {
       "en": "a sumac leaf",
@@ -6574,7 +6574,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 275
     },
     "text": {
@@ -6600,7 +6600,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Flame Strike",
+    "id": "PHB24/Flame Strike",
     "level": 5,
     "materials": {
       "en": "a pinch of sulfur",
@@ -6624,7 +6624,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 275
     },
     "text": {
@@ -6653,7 +6653,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Flaming Sphere",
+    "id": "PHB24/Flaming Sphere",
     "level": 2,
     "materials": {
       "en": "a ball of wax",
@@ -6677,7 +6677,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 275
     },
     "text": {
@@ -6706,7 +6706,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Flesh to Stone",
+    "id": "PHB24/Flesh to Stone",
     "level": 6,
     "materials": {
       "en": "a cockatrice feather",
@@ -6730,7 +6730,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 275
     },
     "text": {
@@ -6756,7 +6756,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Fly",
+    "id": "PHB24/Fly",
     "level": 3,
     "materials": {
       "en": "a feather",
@@ -6772,7 +6772,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 276
     },
     "text": {
@@ -6803,7 +6803,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Fog Cloud",
+    "id": "PHB24/Fog Cloud",
     "level": 1,
     "name": {
       "en": "Fog Cloud",
@@ -6823,7 +6823,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 276
     },
     "text": {
@@ -6856,7 +6856,7 @@
       "unit": "day",
       "upTo": false
     },
-    "id": "PHB'24/Forbiddance",
+    "id": "PHB24/Forbiddance",
     "level": 6,
     "materials": {
       "en": "ruby dust worth 1,000+ GP",
@@ -6872,7 +6872,7 @@
     "ritual": true,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 276
     },
     "text": {
@@ -6898,7 +6898,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Forcecage",
+    "id": "PHB24/Forcecage",
     "level": 7,
     "materials": {
       "en": "ruby dust worth 1,500+ GP, which the spell consumes",
@@ -6922,7 +6922,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 276
     },
     "text": {
@@ -6951,7 +6951,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Foresight",
+    "id": "PHB24/Foresight",
     "level": 9,
     "materials": {
       "en": "a hummingbird feather",
@@ -6967,7 +6967,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 276
     },
     "text": {
@@ -6994,7 +6994,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Fount of Moonlight",
+    "id": "PHB24/Fount of Moonlight",
     "level": 4,
     "name": {
       "en": "Fount of Moonlight",
@@ -7006,7 +7006,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 277
     },
     "text": {
@@ -7032,7 +7032,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Freedom of Movement",
+    "id": "PHB24/Freedom of Movement",
     "level": 4,
     "materials": {
       "en": "a leather strap",
@@ -7048,7 +7048,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 277
     },
     "text": {
@@ -7079,7 +7079,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Friends",
+    "id": "PHB24/Friends",
     "level": 0,
     "materials": {
       "en": "some makeup",
@@ -7103,7 +7103,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 277
     },
     "text": {
@@ -7130,7 +7130,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Gaseous Form",
+    "id": "PHB24/Gaseous Form",
     "level": 3,
     "materials": {
       "en": "a bit of gauze",
@@ -7146,7 +7146,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 277
     },
     "text": {
@@ -7177,7 +7177,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Gate",
+    "id": "PHB24/Gate",
     "level": 9,
     "materials": {
       "en": "a diamond worth 5,000+ GP",
@@ -7201,7 +7201,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 277
     },
     "text": {
@@ -7230,7 +7230,7 @@
       "unit": "day",
       "upTo": false
     },
-    "id": "PHB'24/Geas",
+    "id": "PHB24/Geas",
     "level": 5,
     "name": {
       "en": "Geas",
@@ -7250,7 +7250,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 278
     },
     "text": {
@@ -7279,7 +7279,7 @@
       "unit": "day",
       "upTo": false
     },
-    "id": "PHB'24/Gentle Repose",
+    "id": "PHB24/Gentle Repose",
     "level": 2,
     "materials": {
       "en": "2 Copper Pieces, which the spell consumes",
@@ -7295,7 +7295,7 @@
     "ritual": true,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 278
     },
     "text": {
@@ -7321,7 +7321,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Giant Insect",
+    "id": "PHB24/Giant Insect",
     "level": 4,
     "name": {
       "en": "Giant Insect",
@@ -7341,7 +7341,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 279
     },
     "text": {
@@ -7370,7 +7370,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Glibness",
+    "id": "PHB24/Glibness",
     "level": 8,
     "name": {
       "en": "Glibness",
@@ -7382,7 +7382,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 279
     },
     "text": {
@@ -7409,7 +7409,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Globe of Invulnerability",
+    "id": "PHB24/Globe of Invulnerability",
     "level": 6,
     "materials": {
       "en": "a glass bead",
@@ -7425,7 +7425,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 279
     },
     "text": {
@@ -7453,7 +7453,7 @@
     "duration": {
       "type": "until_dispelled"
     },
-    "id": "PHB'24/Glyph of Warding",
+    "id": "PHB24/Glyph of Warding",
     "level": 3,
     "materials": {
       "en": "powdered diamond worth 200+ GP, which the spell consumes",
@@ -7469,7 +7469,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 279
     },
     "text": {
@@ -7498,7 +7498,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Goodberry",
+    "id": "PHB24/Goodberry",
     "level": 1,
     "materials": {
       "en": "a sprig of mistletoe",
@@ -7514,7 +7514,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 280
     },
     "text": {
@@ -7541,7 +7541,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Grasping Vine",
+    "id": "PHB24/Grasping Vine",
     "level": 4,
     "name": {
       "en": "Grasping Vine",
@@ -7561,7 +7561,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 280
     },
     "text": {
@@ -7592,7 +7592,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Grease",
+    "id": "PHB24/Grease",
     "level": 1,
     "materials": {
       "en": "a bit of pork rind or butter",
@@ -7616,7 +7616,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 280
     },
     "text": {
@@ -7642,7 +7642,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Greater Invisibility",
+    "id": "PHB24/Greater Invisibility",
     "level": 4,
     "name": {
       "en": "Greater Invisibility",
@@ -7654,7 +7654,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 281
     },
     "text": {
@@ -7677,7 +7677,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Greater Restoration",
+    "id": "PHB24/Greater Restoration",
     "level": 5,
     "materials": {
       "en": "diamond dust worth 100+ GP, which the spell consumes",
@@ -7693,7 +7693,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 281
     },
     "text": {
@@ -7720,7 +7720,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Guardian of Faith",
+    "id": "PHB24/Guardian of Faith",
     "level": 4,
     "name": {
       "en": "Guardian of Faith",
@@ -7740,7 +7740,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 281
     },
     "text": {
@@ -7768,7 +7768,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Guards and Wards",
+    "id": "PHB24/Guards and Wards",
     "level": 6,
     "materials": {
       "en": "a silver rod worth 10+ GP",
@@ -7784,7 +7784,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 282
     },
     "text": {
@@ -7810,7 +7810,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Guidance",
+    "id": "PHB24/Guidance",
     "level": 0,
     "name": {
       "en": "Guidance",
@@ -7822,7 +7822,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 282
     },
     "text": {
@@ -7849,7 +7849,7 @@
       "unit": "round",
       "upTo": false
     },
-    "id": "PHB'24/Guiding Bolt",
+    "id": "PHB24/Guiding Bolt",
     "level": 1,
     "name": {
       "en": "Guiding Bolt",
@@ -7869,7 +7869,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 282
     },
     "text": {
@@ -7898,7 +7898,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Gust of Wind",
+    "id": "PHB24/Gust of Wind",
     "level": 2,
     "materials": {
       "en": "a legume seed",
@@ -7914,7 +7914,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 282
     },
     "text": {
@@ -7938,7 +7938,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Hail of Thorns",
+    "id": "PHB24/Hail of Thorns",
     "level": 1,
     "name": {
       "en": "Hail of Thorns",
@@ -7950,7 +7950,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 283
     },
     "text": {
@@ -7980,7 +7980,7 @@
     "duration": {
       "type": "until_dispelled"
     },
-    "id": "PHB'24/Hallow",
+    "id": "PHB24/Hallow",
     "level": 5,
     "materials": {
       "en": "incense worth 1,000+ GP, which the spell consumes",
@@ -7996,7 +7996,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 283
     },
     "text": {
@@ -8024,7 +8024,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Hallucinatory Terrain",
+    "id": "PHB24/Hallucinatory Terrain",
     "level": 4,
     "materials": {
       "en": "a mushroom",
@@ -8048,7 +8048,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 283
     },
     "text": {
@@ -8072,7 +8072,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Harm",
+    "id": "PHB24/Harm",
     "level": 6,
     "name": {
       "en": "Harm",
@@ -8092,7 +8092,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 283
     },
     "text": {
@@ -8118,7 +8118,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Haste",
+    "id": "PHB24/Haste",
     "level": 3,
     "materials": {
       "en": "a shaving of licorice root",
@@ -8142,7 +8142,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 284
     },
     "text": {
@@ -8165,7 +8165,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Heal",
+    "id": "PHB24/Heal",
     "level": 6,
     "name": {
       "en": "Heal",
@@ -8185,7 +8185,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 284
     },
     "text": {
@@ -8211,7 +8211,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Healing Word",
+    "id": "PHB24/Healing Word",
     "level": 1,
     "name": {
       "en": "Healing Word",
@@ -8231,7 +8231,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 284
     },
     "text": {
@@ -8262,7 +8262,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Heat Metal",
+    "id": "PHB24/Heat Metal",
     "level": 2,
     "materials": {
       "en": "a piece of iron and a flame",
@@ -8286,7 +8286,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 284
     },
     "text": {
@@ -8312,7 +8312,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Hellish Rebuke",
+    "id": "PHB24/Hellish Rebuke",
     "level": 1,
     "name": {
       "en": "Hellish Rebuke",
@@ -8332,7 +8332,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 284
     },
     "text": {
@@ -8362,7 +8362,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Heroes' Feast",
+    "id": "PHB24/Heroes' Feast",
     "level": 6,
     "materials": {
       "en": "a gem-encrusted bowl worth 1,000+ GP, which the spell consumes",
@@ -8378,7 +8378,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 284
     },
     "text": {
@@ -8404,7 +8404,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Heroism",
+    "id": "PHB24/Heroism",
     "level": 1,
     "name": {
       "en": "Heroism",
@@ -8416,7 +8416,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 285
     },
     "text": {
@@ -8445,7 +8445,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Hex",
+    "id": "PHB24/Hex",
     "level": 1,
     "materials": {
       "en": "the petrified eye of a newt",
@@ -8469,7 +8469,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 285
     },
     "text": {
@@ -8500,7 +8500,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Hold Monster",
+    "id": "PHB24/Hold Monster",
     "level": 5,
     "materials": {
       "en": "a straight piece of iron",
@@ -8524,7 +8524,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 285
     },
     "text": {
@@ -8555,7 +8555,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Hold Person",
+    "id": "PHB24/Hold Person",
     "level": 2,
     "materials": {
       "en": "a straight piece of iron",
@@ -8579,7 +8579,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 286
     },
     "text": {
@@ -8610,7 +8610,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Holy Aura",
+    "id": "PHB24/Holy Aura",
     "level": 8,
     "materials": {
       "en": "a reliquary worth 1,000+ GP",
@@ -8626,7 +8626,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 286
     },
     "text": {
@@ -8652,7 +8652,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Hunger of Hadar",
+    "id": "PHB24/Hunger of Hadar",
     "level": 3,
     "materials": {
       "en": "a pickled tentacle",
@@ -8676,7 +8676,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 286
     },
     "text": {
@@ -8707,7 +8707,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Hunter's Mark",
+    "id": "PHB24/Hunter's Mark",
     "level": 1,
     "name": {
       "en": "Hunter's Mark",
@@ -8727,7 +8727,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 287
     },
     "text": {
@@ -8758,7 +8758,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Hypnotic Pattern",
+    "id": "PHB24/Hypnotic Pattern",
     "level": 3,
     "materials": {
       "en": "a pinch of confetti",
@@ -8782,7 +8782,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 287
     },
     "text": {
@@ -8806,7 +8806,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Ice Knife",
+    "id": "PHB24/Ice Knife",
     "level": 1,
     "materials": {
       "en": "a drop of water or a piece of ice",
@@ -8830,7 +8830,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 287
     },
     "text": {
@@ -8858,7 +8858,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Ice Storm",
+    "id": "PHB24/Ice Storm",
     "level": 4,
     "materials": {
       "en": "a mitten",
@@ -8882,7 +8882,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 287
     },
     "text": {
@@ -8910,7 +8910,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Identify",
+    "id": "PHB24/Identify",
     "level": 1,
     "materials": {
       "en": "a pearl worth 100+ GP",
@@ -8926,7 +8926,7 @@
     "ritual": true,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 287
     },
     "text": {
@@ -8954,7 +8954,7 @@
       "unit": "day",
       "upTo": false
     },
-    "id": "PHB'24/Illusory Script",
+    "id": "PHB24/Illusory Script",
     "level": 1,
     "materials": {
       "en": "ink worth 10+ GP, which the spell consumes",
@@ -8970,7 +8970,7 @@
     "ritual": true,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 288
     },
     "text": {
@@ -8996,7 +8996,7 @@
     "duration": {
       "type": "until_dispelled"
     },
-    "id": "PHB'24/Imprisonment",
+    "id": "PHB24/Imprisonment",
     "level": 9,
     "materials": {
       "en": "a statuette of the target worth 5,000+ GP",
@@ -9020,7 +9020,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 288
     },
     "text": {
@@ -9047,7 +9047,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Incendiary Cloud",
+    "id": "PHB24/Incendiary Cloud",
     "level": 8,
     "name": {
       "en": "Incendiary Cloud",
@@ -9067,7 +9067,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 288
     },
     "text": {
@@ -9090,7 +9090,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Inflict Wounds",
+    "id": "PHB24/Inflict Wounds",
     "level": 1,
     "name": {
       "en": "Inflict Wounds",
@@ -9102,7 +9102,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 288
     },
     "text": {
@@ -9131,7 +9131,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Insect Plague",
+    "id": "PHB24/Insect Plague",
     "level": 5,
     "materials": {
       "en": "a locust",
@@ -9155,7 +9155,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 289
     },
     "text": {
@@ -9184,7 +9184,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Invisibility",
+    "id": "PHB24/Invisibility",
     "level": 2,
     "materials": {
       "en": "an eyelash in gum arabic",
@@ -9200,7 +9200,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 289
     },
     "text": {
@@ -9231,7 +9231,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Jallarzi's Storm of Radiance",
+    "id": "PHB24/Jallarzi's Storm of Radiance",
     "level": 5,
     "materials": {
       "en": "a pinch of phosphorus",
@@ -9255,7 +9255,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 289
     },
     "text": {
@@ -9286,7 +9286,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Jump",
+    "id": "PHB24/Jump",
     "level": 1,
     "materials": {
       "en": "a grasshopper's hind leg",
@@ -9302,7 +9302,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 290
     },
     "text": {
@@ -9330,7 +9330,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Knock",
+    "id": "PHB24/Knock",
     "level": 2,
     "name": {
       "en": "Knock",
@@ -9350,7 +9350,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 290
     },
     "text": {
@@ -9375,7 +9375,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Legend Lore",
+    "id": "PHB24/Legend Lore",
     "level": 5,
     "materials": {
       "en": "incense worth 250+ GP, which the spell consumes, and four ivory strips worth 50+ GP each",
@@ -9391,7 +9391,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 290
     },
     "text": {
@@ -9414,7 +9414,7 @@
     "duration": {
       "type": "until_dispelled"
     },
-    "id": "PHB'24/Leomund's Secret Chest",
+    "id": "PHB24/Leomund's Secret Chest",
     "level": 4,
     "materials": {
       "en": "a chest, 3 feet by 2 feet by 2 feet, constructed from rare materials worth 5,000+ GP, and a Tiny replica of the chest made from the same materials worth 50+ GP",
@@ -9430,7 +9430,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 290
     },
     "text": {
@@ -9458,7 +9458,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Leomund's Tiny Hut",
+    "id": "PHB24/Leomund's Tiny Hut",
     "level": 3,
     "materials": {
       "en": "a crystal bead",
@@ -9474,7 +9474,7 @@
     "ritual": true,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 291
     },
     "text": {
@@ -9497,7 +9497,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Lesser Restoration",
+    "id": "PHB24/Lesser Restoration",
     "level": 2,
     "name": {
       "en": "Lesser Restoration",
@@ -9509,7 +9509,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 291
     },
     "text": {
@@ -9536,7 +9536,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Levitate",
+    "id": "PHB24/Levitate",
     "level": 2,
     "materials": {
       "en": "a metal spring",
@@ -9560,7 +9560,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 291
     },
     "text": {
@@ -9586,7 +9586,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Light",
+    "id": "PHB24/Light",
     "level": 0,
     "materials": {
       "en": "a firefly or phosphorescent moss",
@@ -9602,7 +9602,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 292
     },
     "text": {
@@ -9625,7 +9625,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Lightning Arrow",
+    "id": "PHB24/Lightning Arrow",
     "level": 3,
     "name": {
       "en": "Lightning Arrow",
@@ -9637,7 +9637,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 292
     },
     "text": {
@@ -9665,7 +9665,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Lightning Bolt",
+    "id": "PHB24/Lightning Bolt",
     "level": 3,
     "materials": {
       "en": "a bit of fur and a crystal rod",
@@ -9681,7 +9681,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 292
     },
     "text": {
@@ -9707,7 +9707,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Locate Animals or Plants",
+    "id": "PHB24/Locate Animals or Plants",
     "level": 2,
     "materials": {
       "en": "fur from a bloodhound",
@@ -9723,7 +9723,7 @@
     "ritual": true,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 292
     },
     "text": {
@@ -9750,7 +9750,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Locate Creature",
+    "id": "PHB24/Locate Creature",
     "level": 4,
     "materials": {
       "en": "fur from a bloodhound",
@@ -9766,7 +9766,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 292
     },
     "text": {
@@ -9793,7 +9793,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Locate Object",
+    "id": "PHB24/Locate Object",
     "level": 2,
     "materials": {
       "en": "a forked twig",
@@ -9809,7 +9809,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 293
     },
     "text": {
@@ -9836,7 +9836,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Longstrider",
+    "id": "PHB24/Longstrider",
     "level": 1,
     "materials": {
       "en": "a pinch of dirt",
@@ -9852,7 +9852,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 293
     },
     "text": {
@@ -9883,7 +9883,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Mage Armor",
+    "id": "PHB24/Mage Armor",
     "level": 1,
     "materials": {
       "en": "a piece of cured leather",
@@ -9899,7 +9899,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 293
     },
     "text": {
@@ -9925,7 +9925,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Mage Hand",
+    "id": "PHB24/Mage Hand",
     "level": 0,
     "name": {
       "en": "Mage Hand",
@@ -9945,7 +9945,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 293
     },
     "text": {
@@ -9974,7 +9974,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Magic Circle",
+    "id": "PHB24/Magic Circle",
     "level": 3,
     "materials": {
       "en": "salt and powdered silver worth 100+ GP, which the spell consumes",
@@ -9998,7 +9998,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 293
     },
     "text": {
@@ -10028,7 +10028,7 @@
     "duration": {
       "type": "until_dispelled"
     },
-    "id": "PHB'24/Magic Jar",
+    "id": "PHB24/Magic Jar",
     "level": 6,
     "materials": {
       "en": "a gem, crystal, or reliquary worth 500+ GP",
@@ -10044,7 +10044,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 294
     },
     "text": {
@@ -10067,7 +10067,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Magic Missile",
+    "id": "PHB24/Magic Missile",
     "level": 1,
     "name": {
       "en": "Magic Missile",
@@ -10087,7 +10087,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 295
     },
     "text": {
@@ -10115,7 +10115,7 @@
     "duration": {
       "type": "until_dispelled"
     },
-    "id": "PHB'24/Magic Mouth",
+    "id": "PHB24/Magic Mouth",
     "level": 2,
     "materials": {
       "en": "jade dust worth 10+ GP, which the spell consumes",
@@ -10139,7 +10139,7 @@
     "ritual": true,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 295
     },
     "text": {
@@ -10165,7 +10165,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Magic Weapon",
+    "id": "PHB24/Magic Weapon",
     "level": 2,
     "name": {
       "en": "Magic Weapon",
@@ -10177,7 +10177,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 295
     },
     "text": {
@@ -10208,7 +10208,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Major Image",
+    "id": "PHB24/Major Image",
     "level": 3,
     "materials": {
       "en": "a bit of fleece",
@@ -10232,7 +10232,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 295
     },
     "text": {
@@ -10260,7 +10260,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Mass Cure Wounds",
+    "id": "PHB24/Mass Cure Wounds",
     "level": 5,
     "name": {
       "en": "Mass Cure Wounds",
@@ -10280,7 +10280,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 296
     },
     "text": {
@@ -10306,7 +10306,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Mass Heal",
+    "id": "PHB24/Mass Heal",
     "level": 9,
     "name": {
       "en": "Mass Heal",
@@ -10326,7 +10326,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 296
     },
     "text": {
@@ -10349,7 +10349,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Mass Healing Word",
+    "id": "PHB24/Mass Healing Word",
     "level": 3,
     "name": {
       "en": "Mass Healing Word",
@@ -10369,7 +10369,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 296
     },
     "text": {
@@ -10398,7 +10398,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Mass Suggestion",
+    "id": "PHB24/Mass Suggestion",
     "level": 6,
     "materials": {
       "en": "a snake's tongue",
@@ -10422,7 +10422,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 296
     },
     "text": {
@@ -10451,7 +10451,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Maze",
+    "id": "PHB24/Maze",
     "level": 8,
     "name": {
       "en": "Maze",
@@ -10471,7 +10471,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 296
     },
     "text": {
@@ -10497,7 +10497,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Meld into Stone",
+    "id": "PHB24/Meld into Stone",
     "level": 3,
     "name": {
       "en": "Meld into Stone",
@@ -10509,7 +10509,7 @@
     "ritual": true,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 296
     },
     "text": {
@@ -10533,7 +10533,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Melf's Acid Arrow",
+    "id": "PHB24/Melf's Acid Arrow",
     "level": 2,
     "materials": {
       "en": "powdered rhubarb leaf",
@@ -10557,7 +10557,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 297
     },
     "text": {
@@ -10585,7 +10585,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Mending",
+    "id": "PHB24/Mending",
     "level": 0,
     "materials": {
       "en": "two lodestones",
@@ -10601,7 +10601,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 297
     },
     "text": {
@@ -10628,7 +10628,7 @@
       "unit": "round",
       "upTo": false
     },
-    "id": "PHB'24/Message",
+    "id": "PHB24/Message",
     "level": 0,
     "materials": {
       "en": "a copper wire",
@@ -10652,7 +10652,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 298
     },
     "text": {
@@ -10676,7 +10676,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Meteor Swarm",
+    "id": "PHB24/Meteor Swarm",
     "level": 9,
     "name": {
       "en": "Meteor Swarm",
@@ -10696,7 +10696,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 298
     },
     "text": {
@@ -10722,7 +10722,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Mind Blank",
+    "id": "PHB24/Mind Blank",
     "level": 8,
     "name": {
       "en": "Mind Blank",
@@ -10734,7 +10734,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 298
     },
     "text": {
@@ -10757,7 +10757,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Mind Sliver",
+    "id": "PHB24/Mind Sliver",
     "level": 0,
     "name": {
       "en": "Mind Sliver",
@@ -10777,7 +10777,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 298
     },
     "text": {
@@ -10808,7 +10808,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Mind Spike",
+    "id": "PHB24/Mind Spike",
     "level": 2,
     "name": {
       "en": "Mind Spike",
@@ -10828,7 +10828,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 298
     },
     "text": {
@@ -10859,7 +10859,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Minor Illusion",
+    "id": "PHB24/Minor Illusion",
     "level": 0,
     "materials": {
       "en": "a bit of fleece",
@@ -10883,7 +10883,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 298
     },
     "text": {
@@ -10912,7 +10912,7 @@
       "unit": "day",
       "upTo": false
     },
-    "id": "PHB'24/Mirage Arcane",
+    "id": "PHB24/Mirage Arcane",
     "level": 7,
     "name": {
       "en": "Mirage Arcane",
@@ -10924,7 +10924,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 299
     },
     "text": {
@@ -10950,7 +10950,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Mirror Image",
+    "id": "PHB24/Mirror Image",
     "level": 2,
     "name": {
       "en": "Mirror Image",
@@ -10962,7 +10962,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 299
     },
     "text": {
@@ -10989,7 +10989,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Mislead",
+    "id": "PHB24/Mislead",
     "level": 5,
     "name": {
       "en": "Mislead",
@@ -11001,7 +11001,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 299
     },
     "text": {
@@ -11025,7 +11025,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Misty Step",
+    "id": "PHB24/Misty Step",
     "level": 2,
     "name": {
       "en": "Misty Step",
@@ -11037,7 +11037,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 299
     },
     "text": {
@@ -11064,7 +11064,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Modify Memory",
+    "id": "PHB24/Modify Memory",
     "level": 5,
     "name": {
       "en": "Modify Memory",
@@ -11084,7 +11084,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 299
     },
     "text": {
@@ -11113,7 +11113,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Moonbeam",
+    "id": "PHB24/Moonbeam",
     "level": 2,
     "materials": {
       "en": "a moonseed leaf",
@@ -11137,7 +11137,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 300
     },
     "text": {
@@ -11166,7 +11166,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Mordenkainen's Faithful Hound",
+    "id": "PHB24/Mordenkainen's Faithful Hound",
     "level": 4,
     "materials": {
       "en": "a silver whistle",
@@ -11190,7 +11190,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 300
     },
     "text": {
@@ -11218,7 +11218,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Mordenkainen's Magnificent Mansion",
+    "id": "PHB24/Mordenkainen's Magnificent Mansion",
     "level": 7,
     "materials": {
       "en": "a miniature door worth 15+ GP",
@@ -11242,7 +11242,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 300
     },
     "text": {
@@ -11270,7 +11270,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Mordenkainen's Private Sanctum",
+    "id": "PHB24/Mordenkainen's Private Sanctum",
     "level": 4,
     "materials": {
       "en": "a thin sheet of lead",
@@ -11294,7 +11294,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 301
     },
     "text": {
@@ -11323,7 +11323,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Mordenkainen's Sword",
+    "id": "PHB24/Mordenkainen's Sword",
     "level": 7,
     "materials": {
       "en": "a miniature sword worth 250+ GP",
@@ -11347,7 +11347,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 302
     },
     "text": {
@@ -11373,7 +11373,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Move Earth",
+    "id": "PHB24/Move Earth",
     "level": 6,
     "materials": {
       "en": "a miniature shovel",
@@ -11397,7 +11397,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 302
     },
     "text": {
@@ -11423,7 +11423,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Nondetection",
+    "id": "PHB24/Nondetection",
     "level": 3,
     "materials": {
       "en": "a pinch of diamond dust worth 25+ GP, which the spell consumes",
@@ -11439,7 +11439,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 302
     },
     "text": {
@@ -11466,7 +11466,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Nystul's Magic Aura",
+    "id": "PHB24/Nystul's Magic Aura",
     "level": 2,
     "materials": {
       "en": "a small square of silk",
@@ -11482,7 +11482,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 302
     },
     "text": {
@@ -11505,7 +11505,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Otiluke's Freezing Sphere",
+    "id": "PHB24/Otiluke's Freezing Sphere",
     "level": 6,
     "materials": {
       "en": "a miniature crystal sphere",
@@ -11529,7 +11529,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 302
     },
     "text": {
@@ -11558,7 +11558,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Otiluke's Resilient Sphere",
+    "id": "PHB24/Otiluke's Resilient Sphere",
     "level": 4,
     "materials": {
       "en": "a glass sphere",
@@ -11582,7 +11582,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 303
     },
     "text": {
@@ -11608,7 +11608,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Otto's Irresistible Dance",
+    "id": "PHB24/Otto's Irresistible Dance",
     "level": 6,
     "name": {
       "en": "Otto's Irresistible Dance",
@@ -11628,7 +11628,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 303
     },
     "text": {
@@ -11654,7 +11654,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Pass without Trace",
+    "id": "PHB24/Pass without Trace",
     "level": 2,
     "materials": {
       "en": "ashes from burned mistletoe",
@@ -11670,7 +11670,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 303
     },
     "text": {
@@ -11697,7 +11697,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Passwall",
+    "id": "PHB24/Passwall",
     "level": 5,
     "materials": {
       "en": "a pinch of sesame seeds",
@@ -11721,7 +11721,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 304
     },
     "text": {
@@ -11747,7 +11747,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Phantasmal Force",
+    "id": "PHB24/Phantasmal Force",
     "level": 2,
     "materials": {
       "en": "a bit of fleece",
@@ -11771,7 +11771,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 304
     },
     "text": {
@@ -11797,7 +11797,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Phantasmal Killer",
+    "id": "PHB24/Phantasmal Killer",
     "level": 4,
     "name": {
       "en": "Phantasmal Killer",
@@ -11817,7 +11817,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 304
     },
     "text": {
@@ -11848,7 +11848,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Phantom Steed",
+    "id": "PHB24/Phantom Steed",
     "level": 3,
     "name": {
       "en": "Phantom Steed",
@@ -11868,7 +11868,7 @@
     "ritual": true,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 304
     },
     "text": {
@@ -11893,7 +11893,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Planar Ally",
+    "id": "PHB24/Planar Ally",
     "level": 6,
     "name": {
       "en": "Planar Ally",
@@ -11913,7 +11913,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 304
     },
     "text": {
@@ -11941,7 +11941,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Planar Binding",
+    "id": "PHB24/Planar Binding",
     "level": 5,
     "materials": {
       "en": "a jewel worth 1,000+ GP, which the spell consumes",
@@ -11965,7 +11965,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 305
     },
     "text": {
@@ -11993,7 +11993,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Plane Shift",
+    "id": "PHB24/Plane Shift",
     "level": 7,
     "materials": {
       "en": "a forked, metal rod worth 250+ GP and attuned to a plane of existence",
@@ -12009,7 +12009,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 305
     },
     "text": {
@@ -12033,7 +12033,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Plant Growth",
+    "id": "PHB24/Plant Growth",
     "level": 3,
     "name": {
       "en": "Plant Growth",
@@ -12053,7 +12053,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 305
     },
     "text": {
@@ -12077,7 +12077,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Poison Spray",
+    "id": "PHB24/Poison Spray",
     "level": 0,
     "name": {
       "en": "Poison Spray",
@@ -12097,7 +12097,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 306
     },
     "text": {
@@ -12128,7 +12128,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Polymorph",
+    "id": "PHB24/Polymorph",
     "level": 4,
     "materials": {
       "en": "a caterpillar cocoon",
@@ -12152,7 +12152,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 306
     },
     "text": {
@@ -12175,7 +12175,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Power Word Fortify",
+    "id": "PHB24/Power Word Fortify",
     "level": 7,
     "name": {
       "en": "Power Word Fortify",
@@ -12195,7 +12195,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 306
     },
     "text": {
@@ -12218,7 +12218,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Power Word Heal",
+    "id": "PHB24/Power Word Heal",
     "level": 9,
     "name": {
       "en": "Power Word Heal",
@@ -12238,7 +12238,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 306
     },
     "text": {
@@ -12261,7 +12261,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Power Word Kill",
+    "id": "PHB24/Power Word Kill",
     "level": 9,
     "name": {
       "en": "Power Word Kill",
@@ -12281,7 +12281,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 306
     },
     "text": {
@@ -12305,7 +12305,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Power Word Stun",
+    "id": "PHB24/Power Word Stun",
     "level": 8,
     "name": {
       "en": "Power Word Stun",
@@ -12325,7 +12325,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 306
     },
     "text": {
@@ -12351,7 +12351,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Prayer of Healing",
+    "id": "PHB24/Prayer of Healing",
     "level": 2,
     "name": {
       "en": "Prayer of Healing",
@@ -12371,7 +12371,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 307
     },
     "text": {
@@ -12400,7 +12400,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Prestidigitation",
+    "id": "PHB24/Prestidigitation",
     "level": 0,
     "name": {
       "en": "Prestidigitation",
@@ -12420,7 +12420,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 307
     },
     "text": {
@@ -12444,7 +12444,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Prismatic Spray",
+    "id": "PHB24/Prismatic Spray",
     "level": 7,
     "name": {
       "en": "Prismatic Spray",
@@ -12456,7 +12456,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 307
     },
     "text": {
@@ -12482,7 +12482,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Prismatic Wall",
+    "id": "PHB24/Prismatic Wall",
     "level": 9,
     "name": {
       "en": "Prismatic Wall",
@@ -12502,7 +12502,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 308
     },
     "text": {
@@ -12528,7 +12528,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Produce Flame",
+    "id": "PHB24/Produce Flame",
     "level": 0,
     "name": {
       "en": "Produce Flame",
@@ -12540,7 +12540,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 308
     },
     "text": {
@@ -12568,7 +12568,7 @@
     "duration": {
       "type": "until_dispelled"
     },
-    "id": "PHB'24/Programmed Illusion",
+    "id": "PHB24/Programmed Illusion",
     "level": 6,
     "materials": {
       "en": "jade dust worth 25+ GP",
@@ -12592,7 +12592,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 309
     },
     "text": {
@@ -12618,7 +12618,7 @@
       "unit": "day",
       "upTo": true
     },
-    "id": "PHB'24/Project Image",
+    "id": "PHB24/Project Image",
     "level": 7,
     "materials": {
       "en": "a statuette of yourself worth 5+ GP",
@@ -12642,7 +12642,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 309
     },
     "text": {
@@ -12668,7 +12668,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Protection from Energy",
+    "id": "PHB24/Protection from Energy",
     "level": 3,
     "name": {
       "en": "Protection from Energy",
@@ -12680,7 +12680,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 309
     },
     "text": {
@@ -12707,7 +12707,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Protection from Evil and Good",
+    "id": "PHB24/Protection from Evil and Good",
     "level": 1,
     "materials": {
       "en": "a flask of Holy Water worth 25+ GP, which the spell consumes",
@@ -12723,7 +12723,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 309
     },
     "text": {
@@ -12750,7 +12750,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Protection from Poison",
+    "id": "PHB24/Protection from Poison",
     "level": 2,
     "name": {
       "en": "Protection from Poison",
@@ -12762,7 +12762,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 310
     },
     "text": {
@@ -12786,7 +12786,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Purify Food and Drink",
+    "id": "PHB24/Purify Food and Drink",
     "level": 1,
     "name": {
       "en": "Purify Food and Drink",
@@ -12806,7 +12806,7 @@
     "ritual": true,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 310
     },
     "text": {
@@ -12832,7 +12832,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Raise Dead",
+    "id": "PHB24/Raise Dead",
     "level": 5,
     "materials": {
       "en": "a diamond worth 500+ GP, which the spell consumes",
@@ -12848,7 +12848,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 310
     },
     "text": {
@@ -12874,7 +12874,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Rary's Telepathic Bond",
+    "id": "PHB24/Rary's Telepathic Bond",
     "level": 5,
     "materials": {
       "en": "two eggs",
@@ -12898,7 +12898,7 @@
     "ritual": true,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 311
     },
     "text": {
@@ -12924,7 +12924,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Ray of Enfeeblement",
+    "id": "PHB24/Ray of Enfeeblement",
     "level": 2,
     "name": {
       "en": "Ray of Enfeeblement",
@@ -12944,7 +12944,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 311
     },
     "text": {
@@ -12968,7 +12968,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Ray of Frost",
+    "id": "PHB24/Ray of Frost",
     "level": 0,
     "name": {
       "en": "Ray of Frost",
@@ -12988,7 +12988,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 311
     },
     "text": {
@@ -13014,7 +13014,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Ray of Sickness",
+    "id": "PHB24/Ray of Sickness",
     "level": 1,
     "name": {
       "en": "Ray of Sickness",
@@ -13034,7 +13034,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 311
     },
     "text": {
@@ -13065,7 +13065,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Regenerate",
+    "id": "PHB24/Regenerate",
     "level": 7,
     "materials": {
       "en": "a prayer wheel",
@@ -13081,7 +13081,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 311
     },
     "text": {
@@ -13106,7 +13106,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Reincarnate",
+    "id": "PHB24/Reincarnate",
     "level": 5,
     "materials": {
       "en": "rare oils worth 1,000+ GP, which the spell consumes",
@@ -13122,7 +13122,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 311
     },
     "text": {
@@ -13145,7 +13145,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Remove Curse",
+    "id": "PHB24/Remove Curse",
     "level": 3,
     "name": {
       "en": "Remove Curse",
@@ -13157,7 +13157,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 312
     },
     "text": {
@@ -13184,7 +13184,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Resistance",
+    "id": "PHB24/Resistance",
     "level": 0,
     "name": {
       "en": "Resistance",
@@ -13196,7 +13196,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 312
     },
     "text": {
@@ -13222,7 +13222,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Resurrection",
+    "id": "PHB24/Resurrection",
     "level": 7,
     "materials": {
       "en": "a diamond worth 1,000+ GP, which the spell consumes",
@@ -13238,7 +13238,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 312
     },
     "text": {
@@ -13264,7 +13264,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Reverse Gravity",
+    "id": "PHB24/Reverse Gravity",
     "level": 7,
     "materials": {
       "en": "a lodestone and iron filings",
@@ -13288,7 +13288,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 312
     },
     "text": {
@@ -13311,7 +13311,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Revivify",
+    "id": "PHB24/Revivify",
     "level": 3,
     "materials": {
       "en": "a diamond worth 300+ GP, which the spell consumes",
@@ -13327,7 +13327,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 312
     },
     "text": {
@@ -13354,7 +13354,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Rope Trick",
+    "id": "PHB24/Rope Trick",
     "level": 2,
     "materials": {
       "en": "a segment of rope",
@@ -13370,7 +13370,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 312
     },
     "text": {
@@ -13393,7 +13393,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Sacred Flame",
+    "id": "PHB24/Sacred Flame",
     "level": 0,
     "name": {
       "en": "Sacred Flame",
@@ -13413,7 +13413,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 313
     },
     "text": {
@@ -13442,7 +13442,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Sanctuary",
+    "id": "PHB24/Sanctuary",
     "level": 1,
     "materials": {
       "en": "a shard of glass from a mirror",
@@ -13466,7 +13466,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 313
     },
     "text": {
@@ -13489,7 +13489,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Scorching Ray",
+    "id": "PHB24/Scorching Ray",
     "level": 2,
     "name": {
       "en": "Scorching Ray",
@@ -13509,7 +13509,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 313
     },
     "text": {
@@ -13540,7 +13540,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Scrying",
+    "id": "PHB24/Scrying",
     "level": 5,
     "materials": {
       "en": "a focus worth 1,000+ GP, such as a crystal ball, mirror, or water-filled font",
@@ -13556,7 +13556,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 313
     },
     "text": {
@@ -13583,7 +13583,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Searing Smite",
+    "id": "PHB24/Searing Smite",
     "level": 1,
     "name": {
       "en": "Searing Smite",
@@ -13595,7 +13595,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 314
     },
     "text": {
@@ -13624,7 +13624,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/See Invisibility",
+    "id": "PHB24/See Invisibility",
     "level": 2,
     "materials": {
       "en": "a pinch of talc",
@@ -13640,7 +13640,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 314
     },
     "text": {
@@ -13666,7 +13666,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Seeming",
+    "id": "PHB24/Seeming",
     "level": 5,
     "name": {
       "en": "Seeming",
@@ -13686,7 +13686,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 314
     },
     "text": {
@@ -13709,7 +13709,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Sending",
+    "id": "PHB24/Sending",
     "level": 3,
     "materials": {
       "en": "a copper wire",
@@ -13725,7 +13725,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 314
     },
     "text": {
@@ -13748,7 +13748,7 @@
     "duration": {
       "type": "until_dispelled"
     },
-    "id": "PHB'24/Sequester",
+    "id": "PHB24/Sequester",
     "level": 7,
     "materials": {
       "en": "gem dust worth 5,000+ GP, which the spell consumes",
@@ -13764,7 +13764,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 315
     },
     "text": {
@@ -13790,7 +13790,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Shapechange",
+    "id": "PHB24/Shapechange",
     "level": 9,
     "materials": {
       "en": "a jade circlet worth 1,500+ GP",
@@ -13806,7 +13806,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 315
     },
     "text": {
@@ -13829,7 +13829,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Shatter",
+    "id": "PHB24/Shatter",
     "level": 2,
     "materials": {
       "en": "a chip of mica",
@@ -13853,7 +13853,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 316
     },
     "text": {
@@ -13882,7 +13882,7 @@
       "unit": "round",
       "upTo": false
     },
-    "id": "PHB'24/Shield",
+    "id": "PHB24/Shield",
     "level": 1,
     "name": {
       "en": "Shield",
@@ -13894,7 +13894,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 316
     },
     "text": {
@@ -13920,7 +13920,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Shield of Faith",
+    "id": "PHB24/Shield of Faith",
     "level": 1,
     "materials": {
       "en": "a prayer scroll",
@@ -13944,7 +13944,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 316
     },
     "text": {
@@ -13970,7 +13970,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Shillelagh",
+    "id": "PHB24/Shillelagh",
     "level": 0,
     "materials": {
       "en": "mistletoe"
@@ -13985,7 +13985,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 316
     },
     "text": {
@@ -14016,7 +14016,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Shining Smite",
+    "id": "PHB24/Shining Smite",
     "level": 2,
     "name": {
       "en": "Shining Smite",
@@ -14028,7 +14028,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 316
     },
     "text": {
@@ -14054,7 +14054,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Shocking Grasp",
+    "id": "PHB24/Shocking Grasp",
     "level": 0,
     "name": {
       "en": "Shocking Grasp",
@@ -14066,7 +14066,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 316
     },
     "text": {
@@ -14095,7 +14095,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Silence",
+    "id": "PHB24/Silence",
     "level": 2,
     "name": {
       "en": "Silence",
@@ -14115,7 +14115,7 @@
     "ritual": true,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 316
     },
     "text": {
@@ -14142,7 +14142,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Silent Image",
+    "id": "PHB24/Silent Image",
     "level": 1,
     "materials": {
       "en": "a bit of fleece",
@@ -14166,7 +14166,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 317
     },
     "text": {
@@ -14191,7 +14191,7 @@
     "duration": {
       "type": "until_dispelled"
     },
-    "id": "PHB'24/Simulacrum",
+    "id": "PHB24/Simulacrum",
     "level": 7,
     "materials": {
       "en": "powdered ruby worth 1,500+ GP, which the spell consumes",
@@ -14207,7 +14207,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 317
     },
     "text": {
@@ -14233,7 +14233,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Sleep",
+    "id": "PHB24/Sleep",
     "level": 1,
     "materials": {
       "en": "a pinch of sand or rose petals",
@@ -14257,7 +14257,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 317
     },
     "text": {
@@ -14283,7 +14283,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Sleet Storm",
+    "id": "PHB24/Sleet Storm",
     "level": 3,
     "materials": {
       "en": "a miniature umbrella",
@@ -14307,7 +14307,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 317
     },
     "text": {
@@ -14333,7 +14333,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Slow",
+    "id": "PHB24/Slow",
     "level": 3,
     "materials": {
       "en": "a drop of molasses",
@@ -14357,7 +14357,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 318
     },
     "text": {
@@ -14380,7 +14380,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Sorcerous Burst",
+    "id": "PHB24/Sorcerous Burst",
     "level": 0,
     "name": {
       "en": "Sorcerous Burst",
@@ -14400,7 +14400,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 318
     },
     "text": {
@@ -14426,7 +14426,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Spare the Dying",
+    "id": "PHB24/Spare the Dying",
     "level": 0,
     "name": {
       "en": "Spare the Dying",
@@ -14446,7 +14446,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 318
     },
     "text": {
@@ -14477,7 +14477,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Speak with Animals",
+    "id": "PHB24/Speak with Animals",
     "level": 1,
     "name": {
       "en": "Speak with Animals",
@@ -14489,7 +14489,7 @@
     "ritual": true,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 318
     },
     "text": {
@@ -14516,7 +14516,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Speak with Dead",
+    "id": "PHB24/Speak with Dead",
     "level": 3,
     "materials": {
       "en": "burning incense",
@@ -14540,7 +14540,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 318
     },
     "text": {
@@ -14566,7 +14566,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Speak with Plants",
+    "id": "PHB24/Speak with Plants",
     "level": 3,
     "name": {
       "en": "Speak with Plants",
@@ -14578,7 +14578,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 319
     },
     "text": {
@@ -14605,7 +14605,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Spider Climb",
+    "id": "PHB24/Spider Climb",
     "level": 2,
     "materials": {
       "en": "a drop of bitumen and a spider",
@@ -14621,7 +14621,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 319
     },
     "text": {
@@ -14652,7 +14652,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Spike Growth",
+    "id": "PHB24/Spike Growth",
     "level": 2,
     "materials": {
       "en": "seven thorns",
@@ -14676,7 +14676,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 319
     },
     "text": {
@@ -14703,7 +14703,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Spirit Guardians",
+    "id": "PHB24/Spirit Guardians",
     "level": 3,
     "materials": {
       "en": "a prayer scroll",
@@ -14719,7 +14719,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 319
     },
     "text": {
@@ -14748,7 +14748,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Spiritual Weapon",
+    "id": "PHB24/Spiritual Weapon",
     "level": 2,
     "name": {
       "en": "Spiritual Weapon",
@@ -14768,7 +14768,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 319
     },
     "text": {
@@ -14794,7 +14794,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Staggering Smite",
+    "id": "PHB24/Staggering Smite",
     "level": 4,
     "name": {
       "en": "Staggering Smite",
@@ -14806,7 +14806,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 320
     },
     "text": {
@@ -14832,7 +14832,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Starry Wisp",
+    "id": "PHB24/Starry Wisp",
     "level": 0,
     "name": {
       "en": "Starry Wisp",
@@ -14852,7 +14852,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 320
     },
     "text": {
@@ -14880,7 +14880,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Steel Wind Strike",
+    "id": "PHB24/Steel Wind Strike",
     "level": 5,
     "materials": {
       "en": "a Melee weapon worth 1+ SP",
@@ -14904,7 +14904,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 320
     },
     "text": {
@@ -14931,7 +14931,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Stinking Cloud",
+    "id": "PHB24/Stinking Cloud",
     "level": 3,
     "materials": {
       "en": "a rotten egg",
@@ -14955,7 +14955,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 321
     },
     "text": {
@@ -14978,7 +14978,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Stone Shape",
+    "id": "PHB24/Stone Shape",
     "level": 4,
     "materials": {
       "en": "soft clay",
@@ -14994,7 +14994,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 321
     },
     "text": {
@@ -15020,7 +15020,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Stoneskin",
+    "id": "PHB24/Stoneskin",
     "level": 4,
     "materials": {
       "en": "diamond dust worth 100+ GP, which the spell consumes",
@@ -15036,7 +15036,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 321
     },
     "text": {
@@ -15063,7 +15063,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Storm of Vengeance",
+    "id": "PHB24/Storm of Vengeance",
     "level": 9,
     "name": {
       "en": "Storm of Vengeance",
@@ -15083,7 +15083,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 321
     },
     "text": {
@@ -15109,7 +15109,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Suggestion",
+    "id": "PHB24/Suggestion",
     "level": 2,
     "materials": {
       "en": "a drop of honey",
@@ -15133,7 +15133,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 321
     },
     "text": {
@@ -15160,7 +15160,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Summon Aberration",
+    "id": "PHB24/Summon Aberration",
     "level": 4,
     "materials": {
       "en": "a pickled tentacle and an eyeball in a platinum-inlaid vial worth 400+ GP",
@@ -15184,7 +15184,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 322
     },
     "text": {
@@ -15215,7 +15215,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Summon Beast",
+    "id": "PHB24/Summon Beast",
     "level": 2,
     "materials": {
       "en": "a feather, tuft of fur, and fish tail inside a gilded acorn worth 200+ GP",
@@ -15239,7 +15239,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 322
     },
     "text": {
@@ -15270,7 +15270,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Summon Celestial",
+    "id": "PHB24/Summon Celestial",
     "level": 5,
     "materials": {
       "en": "a reliquary worth 500+ GP",
@@ -15294,7 +15294,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 323
     },
     "text": {
@@ -15323,7 +15323,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Summon Construct",
+    "id": "PHB24/Summon Construct",
     "level": 4,
     "materials": {
       "en": "a lockbox worth 400+ GP",
@@ -15347,7 +15347,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 324
     },
     "text": {
@@ -15376,7 +15376,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Summon Dragon",
+    "id": "PHB24/Summon Dragon",
     "level": 5,
     "materials": {
       "en": "an object with the image of a dragon engraved on it worth 500+ GP",
@@ -15400,7 +15400,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 324
     },
     "text": {
@@ -15429,7 +15429,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Summon Elemental",
+    "id": "PHB24/Summon Elemental",
     "level": 4,
     "materials": {
       "en": "air, a pebble, ash, and water inside a gold-inlaid vial worth 400+ GP",
@@ -15453,7 +15453,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 325
     },
     "text": {
@@ -15484,7 +15484,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Summon Fey",
+    "id": "PHB24/Summon Fey",
     "level": 3,
     "materials": {
       "en": "a gilded flower worth 300+ GP",
@@ -15508,7 +15508,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 326
     },
     "text": {
@@ -15539,7 +15539,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Summon Fiend",
+    "id": "PHB24/Summon Fiend",
     "level": 6,
     "materials": {
       "en": "a bloody vial worth 600+ GP",
@@ -15563,7 +15563,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 326
     },
     "text": {
@@ -15594,7 +15594,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Summon Undead",
+    "id": "PHB24/Summon Undead",
     "level": 3,
     "materials": {
       "en": "a gilded skull worth 300+ GP",
@@ -15618,7 +15618,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 328
     },
     "text": {
@@ -15649,7 +15649,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Sunbeam",
+    "id": "PHB24/Sunbeam",
     "level": 6,
     "materials": {
       "en": "a magnifying glass",
@@ -15665,7 +15665,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 329
     },
     "text": {
@@ -15688,7 +15688,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Sunburst",
+    "id": "PHB24/Sunburst",
     "level": 8,
     "materials": {
       "en": "a piece of sunstone",
@@ -15712,7 +15712,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 329
     },
     "text": {
@@ -15738,7 +15738,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Swift Quiver",
+    "id": "PHB24/Swift Quiver",
     "level": 5,
     "materials": {
       "en": "a Quiver worth 1+ GP",
@@ -15754,7 +15754,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 329
     },
     "text": {
@@ -15780,7 +15780,7 @@
     "duration": {
       "type": "until_dispelled"
     },
-    "id": "PHB'24/Symbol",
+    "id": "PHB24/Symbol",
     "level": 7,
     "materials": {
       "en": "powdered diamond worth 1,000+ GP, which the spell consumes",
@@ -15796,7 +15796,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 329
     },
     "text": {
@@ -15819,7 +15819,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Synaptic Static",
+    "id": "PHB24/Synaptic Static",
     "level": 5,
     "name": {
       "en": "Synaptic Static",
@@ -15839,7 +15839,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 330
     },
     "text": {
@@ -15866,7 +15866,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Tasha's Bubbling Cauldron",
+    "id": "PHB24/Tasha's Bubbling Cauldron",
     "level": 6,
     "materials": {
       "en": "a gilded ladle worth 500 + GP",
@@ -15890,7 +15890,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 330
     },
     "text": {
@@ -15917,7 +15917,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Tasha's Hideous Laughter",
+    "id": "PHB24/Tasha's Hideous Laughter",
     "level": 1,
     "materials": {
       "en": "a tart and a feather",
@@ -15941,7 +15941,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 331
     },
     "text": {
@@ -15972,7 +15972,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Telekinesis",
+    "id": "PHB24/Telekinesis",
     "level": 5,
     "name": {
       "en": "Telekinesis",
@@ -15992,7 +15992,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 331
     },
     "text": {
@@ -16018,7 +16018,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Telepathy",
+    "id": "PHB24/Telepathy",
     "level": 8,
     "materials": {
       "en": "a pair of linked silver rings",
@@ -16034,7 +16034,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 331
     },
     "text": {
@@ -16057,7 +16057,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Teleport",
+    "id": "PHB24/Teleport",
     "level": 7,
     "name": {
       "en": "Teleport",
@@ -16077,7 +16077,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 331
     },
     "text": {
@@ -16105,7 +16105,7 @@
       "unit": "round",
       "upTo": false
     },
-    "id": "PHB'24/Teleportation Circle",
+    "id": "PHB24/Teleportation Circle",
     "level": 5,
     "materials": {
       "en": "rare inks worth 50+ GP, which the spell consumes",
@@ -16129,7 +16129,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 332
     },
     "text": {
@@ -16156,7 +16156,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Tenser's Floating Disk",
+    "id": "PHB24/Tenser's Floating Disk",
     "level": 1,
     "materials": {
       "en": "a drop of mercury",
@@ -16180,7 +16180,7 @@
     "ritual": true,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 332
     },
     "text": {
@@ -16206,7 +16206,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Thaumaturgy",
+    "id": "PHB24/Thaumaturgy",
     "level": 0,
     "name": {
       "en": "Thaumaturgy",
@@ -16226,7 +16226,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 333
     },
     "text": {
@@ -16249,7 +16249,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Thorn Whip",
+    "id": "PHB24/Thorn Whip",
     "level": 0,
     "materials": {
       "en": "the stem of a plant with thorns",
@@ -16273,7 +16273,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 333
     },
     "text": {
@@ -16301,7 +16301,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Thunderclap",
+    "id": "PHB24/Thunderclap",
     "level": 0,
     "name": {
       "en": "Thunderclap",
@@ -16313,7 +16313,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 333
     },
     "text": {
@@ -16341,7 +16341,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Thunderous Smite",
+    "id": "PHB24/Thunderous Smite",
     "level": 1,
     "name": {
       "en": "Thunderous Smite",
@@ -16353,7 +16353,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 334
     },
     "text": {
@@ -16379,7 +16379,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Thunderwave",
+    "id": "PHB24/Thunderwave",
     "level": 1,
     "name": {
       "en": "Thunderwave",
@@ -16391,7 +16391,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 334
     },
     "text": {
@@ -16419,7 +16419,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Time Stop",
+    "id": "PHB24/Time Stop",
     "level": 9,
     "name": {
       "en": "Time Stop",
@@ -16431,7 +16431,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 334
     },
     "text": {
@@ -16454,7 +16454,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Toll the Dead",
+    "id": "PHB24/Toll the Dead",
     "level": 0,
     "name": {
       "en": "Toll the Dead",
@@ -16474,7 +16474,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 334
     },
     "text": {
@@ -16505,7 +16505,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Tongues",
+    "id": "PHB24/Tongues",
     "level": 3,
     "materials": {
       "en": "a miniature ziggurat",
@@ -16521,7 +16521,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 334
     },
     "text": {
@@ -16548,7 +16548,7 @@
       "unit": "round",
       "upTo": false
     },
-    "id": "PHB'24/Transport via Plants",
+    "id": "PHB24/Transport via Plants",
     "level": 6,
     "name": {
       "en": "Transport via Plants",
@@ -16568,7 +16568,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 334
     },
     "text": {
@@ -16594,7 +16594,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Tree Stride",
+    "id": "PHB24/Tree Stride",
     "level": 5,
     "name": {
       "en": "Tree Stride",
@@ -16606,7 +16606,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 335
     },
     "text": {
@@ -16633,7 +16633,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/True Polymorph",
+    "id": "PHB24/True Polymorph",
     "level": 9,
     "materials": {
       "en": "a drop of mercury, a dollop of gum arabic, and a wisp of smoke",
@@ -16657,7 +16657,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 335
     },
     "text": {
@@ -16683,7 +16683,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/True Resurrection",
+    "id": "PHB24/True Resurrection",
     "level": 9,
     "materials": {
       "en": "diamonds worth 25,000+ GP, which the spell consumes",
@@ -16699,7 +16699,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 336
     },
     "text": {
@@ -16725,7 +16725,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/True Seeing",
+    "id": "PHB24/True Seeing",
     "level": 6,
     "materials": {
       "en": "mushroom powder worth 25+ GP, which the spell consumes",
@@ -16741,7 +16741,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 336
     },
     "text": {
@@ -16765,10 +16765,11 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/True Strike",
+    "id": "PHB24/True Strike",
     "level": 0,
     "materials": {
-      "en": "a weapon with which you have proficiency and that is worth 1+ CP"
+      "en": "a weapon with which you have proficiency and that is worth 1+ CP",
+      "it": "un'arma nel cui uso l'incantatore ha competenza e ha un valore di 1 mo o più"
     },
     "name": {
       "en": "True Strike",
@@ -16780,7 +16781,7 @@
     "ritual": false,
     "school": "divination",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 336
     },
     "text": {
@@ -16813,7 +16814,7 @@
       "unit": "round",
       "upTo": true
     },
-    "id": "PHB'24/Tsunami",
+    "id": "PHB24/Tsunami",
     "level": 8,
     "name": {
       "en": "Tsunami",
@@ -16833,7 +16834,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 336
     },
     "text": {
@@ -16859,7 +16860,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Unseen Servant",
+    "id": "PHB24/Unseen Servant",
     "level": 1,
     "materials": {
       "en": "a bit of string and of wood",
@@ -16883,7 +16884,7 @@
     "ritual": true,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 336
     },
     "text": {
@@ -16910,7 +16911,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Vampiric Touch",
+    "id": "PHB24/Vampiric Touch",
     "level": 3,
     "name": {
       "en": "Vampiric Touch",
@@ -16922,7 +16923,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 337
     },
     "text": {
@@ -16950,7 +16951,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Vicious Mockery",
+    "id": "PHB24/Vicious Mockery",
     "level": 0,
     "name": {
       "en": "Vicious Mockery",
@@ -16970,7 +16971,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 337
     },
     "text": {
@@ -16996,7 +16997,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Vitriolic Sphere",
+    "id": "PHB24/Vitriolic Sphere",
     "level": 4,
     "materials": {
       "en": "a drop of bile",
@@ -17020,7 +17021,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 337
     },
     "text": {
@@ -17049,7 +17050,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Wall of Fire",
+    "id": "PHB24/Wall of Fire",
     "level": 4,
     "materials": {
       "en": "a piece of charcoal",
@@ -17073,7 +17074,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 338
     },
     "text": {
@@ -17102,7 +17103,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Wall of Force",
+    "id": "PHB24/Wall of Force",
     "level": 5,
     "materials": {
       "en": "a shard of glass",
@@ -17126,7 +17127,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 338
     },
     "text": {
@@ -17152,7 +17153,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Wall of Ice",
+    "id": "PHB24/Wall of Ice",
     "level": 6,
     "materials": {
       "en": "a piece of quartz",
@@ -17176,7 +17177,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 339
     },
     "text": {
@@ -17205,7 +17206,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Wall of Stone",
+    "id": "PHB24/Wall of Stone",
     "level": 5,
     "materials": {
       "en": "a cube of granite",
@@ -17229,7 +17230,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 339
     },
     "text": {
@@ -17255,7 +17256,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Wall of Thorns",
+    "id": "PHB24/Wall of Thorns",
     "level": 6,
     "materials": {
       "en": "a handful of thorns",
@@ -17279,7 +17280,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 339
     },
     "text": {
@@ -17308,7 +17309,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Warding Bond",
+    "id": "PHB24/Warding Bond",
     "level": 2,
     "materials": {
       "en": "a pair of platinum rings worth 50+ GP each, which you and the target must wear for the duration",
@@ -17324,7 +17325,7 @@
     "ritual": false,
     "school": "abjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 340
     },
     "text": {
@@ -17350,7 +17351,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Water Breathing",
+    "id": "PHB24/Water Breathing",
     "level": 3,
     "materials": {
       "en": "a short reed"
@@ -17373,7 +17374,7 @@
     "ritual": true,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 340
     },
     "text": {
@@ -17400,7 +17401,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Water Walk",
+    "id": "PHB24/Water Walk",
     "level": 3,
     "materials": {
       "en": "a piece of cork",
@@ -17424,7 +17425,7 @@
     "ritual": true,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 340
     },
     "text": {
@@ -17451,7 +17452,7 @@
       "unit": "hour",
       "upTo": true
     },
-    "id": "PHB'24/Web",
+    "id": "PHB24/Web",
     "level": 2,
     "materials": {
       "en": "a bit of spiderweb",
@@ -17475,7 +17476,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 340
     },
     "text": {
@@ -17501,7 +17502,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Weird",
+    "id": "PHB24/Weird",
     "level": 9,
     "name": {
       "en": "Weird",
@@ -17521,7 +17522,7 @@
     "ritual": false,
     "school": "illusion",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 341
     },
     "text": {
@@ -17550,7 +17551,7 @@
       "unit": "hour",
       "upTo": false
     },
-    "id": "PHB'24/Wind Walk",
+    "id": "PHB24/Wind Walk",
     "level": 6,
     "materials": {
       "en": "a candle",
@@ -17574,7 +17575,7 @@
     "ritual": false,
     "school": "transmutation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 341
     },
     "text": {
@@ -17600,7 +17601,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Wind Wall",
+    "id": "PHB24/Wind Wall",
     "level": 3,
     "materials": {
       "en": "a fan and a feather",
@@ -17624,7 +17625,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 341
     },
     "text": {
@@ -17648,7 +17649,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Wish",
+    "id": "PHB24/Wish",
     "level": 9,
     "name": {
       "en": "Wish",
@@ -17660,7 +17661,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 341
     },
     "text": {
@@ -17686,7 +17687,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Witch Bolt",
+    "id": "PHB24/Witch Bolt",
     "level": 1,
     "materials": {
       "en": "a twig struck by lightning",
@@ -17710,7 +17711,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 343
     },
     "text": {
@@ -17738,7 +17739,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Word of Radiance",
+    "id": "PHB24/Word of Radiance",
     "level": 0,
     "materials": {
       "en": "a sunburst token",
@@ -17754,7 +17755,7 @@
     "ritual": false,
     "school": "evocation",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 343
     },
     "text": {
@@ -17780,7 +17781,7 @@
     "duration": {
       "type": "instantaneous"
     },
-    "id": "PHB'24/Word of Recall",
+    "id": "PHB24/Word of Recall",
     "level": 6,
     "name": {
       "en": "Word of Recall",
@@ -17800,7 +17801,7 @@
     "ritual": false,
     "school": "conjuration",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 343
     },
     "text": {
@@ -17826,7 +17827,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Wrathful Smite",
+    "id": "PHB24/Wrathful Smite",
     "level": 1,
     "name": {
       "en": "Wrathful Smite",
@@ -17838,7 +17839,7 @@
     "ritual": false,
     "school": "necromancy",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 343
     },
     "text": {
@@ -17867,7 +17868,7 @@
       "unit": "minute",
       "upTo": true
     },
-    "id": "PHB'24/Yolande's Regal Presence",
+    "id": "PHB24/Yolande's Regal Presence",
     "level": 5,
     "materials": {
       "en": "a miniature tiara",
@@ -17883,7 +17884,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 343
     },
     "text": {
@@ -17909,7 +17910,7 @@
       "unit": "minute",
       "upTo": false
     },
-    "id": "PHB'24/Zone of Truth",
+    "id": "PHB24/Zone of Truth",
     "level": 2,
     "name": {
       "en": "Zone of Truth",
@@ -17929,7 +17930,7 @@
     "ritual": false,
     "school": "enchantment",
     "source": {
-      "book": "PHB'24",
+      "book": "PHB24",
       "page": 343
     },
     "text": {
