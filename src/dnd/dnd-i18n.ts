@@ -13,6 +13,8 @@ const dndI18n = {
 
     // Data
     "dnd.data.copied": "Data copied to clipboard.",
+    "dnd.data.results/*": "<1> selected results",
+    "dnd.data.results/1": "<1> selected result",
     "dnd.data.view.sort_by.cost": "Cost",
     "dnd.data.view.sort_by.level": "Level",
     "dnd.data.view.sort_by.name": "Name",
@@ -182,6 +184,8 @@ const dndI18n = {
 
     // Data
     "dnd.data.copied": "Dati copiati nella clipboard.",
+    "dnd.data.results/*": "<1> risultati selezionati",
+    "dnd.data.results/1": "<1> risultato selezionato",
     "dnd.data.view.sort_by.cost": "Costo",
     "dnd.data.view.sort_by.level": "Livello",
     "dnd.data.view.sort_by.name": "Nome",

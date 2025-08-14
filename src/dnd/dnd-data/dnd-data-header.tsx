@@ -2,6 +2,7 @@ import {
   HStack,
   Icon,
   IconButton,
+  Text,
   VStack,
   createListCollection,
 } from "@chakra-ui/react";
@@ -44,6 +45,7 @@ export default function DndDataHeader<
 }: DndDataHeaderProps<DndData, DndDataLocalized, DndFilters>) {
   const i18n = useI18n();
   const [view, setView] = store.useView();
+  const count = store.useSelectedVisibleDataCount();
 
   const viewCollection = useMemo(() => {
     return createListCollection({
@@ -129,6 +131,12 @@ export default function DndDataHeader<
             }
             size="sm"
           />
+
+          <Icon mx={-2} size="lg">
+            <LuDot />
+          </Icon>
+
+          <Text>{i18n.tpi("dnd.data.results", count, `${count}`)}</Text>
         </HStack>
 
         <HStack>
