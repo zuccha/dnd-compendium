@@ -136,7 +136,9 @@ export default function DndDataHeader<
             />
           </HStack>
 
-          <Text>{i18n.tpi("dnd.data.results", count, `${count}`)}</Text>
+          <Text fontSize="sm">
+            {i18n.tpi("dnd.data.results", count, `${count}`)}
+          </Text>
         </HStack>
 
         <HStack rowGap={2} separator={<Separator />} wrap="wrap">
