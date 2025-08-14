@@ -83,9 +83,9 @@ export default function DndDataHeader<
   return (
     <VStack pb={2} px={1} w="100%">
       <HStack justify="space-between" w="100%" wrap="wrap">
-        <HStack>
+        <HStack rowGap={2} separator={<Separator />} wrap="wrap">
           {!hideViewSelection && (
-            <>
+            <HStack>
               <SelectSimple
                 collection={viewCollection}
                 defaultValue={[view.type]}
@@ -109,67 +109,63 @@ export default function DndDataHeader<
                   step={0.1}
                 />
               )}
-
-              <Icon mx={-2} size="lg">
-                <LuDot />
-              </Icon>
-            </>
+            </HStack>
           )}
 
-          <SelectSimple
-            collection={sortByCollection}
-            defaultValue={[view.sortBy]}
-            flex={0}
-            minW="6em"
-            name="dnd-data-view-sort-by"
-            onValueChange={(e) => setView({ sortBy: e.value[0] })}
-            size="sm"
-          />
+          <HStack>
+            <SelectSimple
+              collection={sortByCollection}
+              defaultValue={[view.sortBy]}
+              flex={0}
+              minW="6em"
+              name="dnd-data-view-sort-by"
+              onValueChange={(e) => setView({ sortBy: e.value[0] })}
+              size="sm"
+            />
 
-          <SelectSimple
-            collection={sortOrderCollection}
-            defaultValue={[view.sortOrder]}
-            flex={0}
-            minW="5em"
-            name="dnd-data-view-sort-order"
-            onValueChange={(e) =>
-              setView({ sortOrder: e.value[0] as ViewSortOrder })
-            }
-            size="sm"
-          />
-
-          <Icon mx={-2} size="lg">
-            <LuDot />
-          </Icon>
+            <SelectSimple
+              collection={sortOrderCollection}
+              defaultValue={[view.sortOrder]}
+              flex={0}
+              minW="5em"
+              name="dnd-data-view-sort-order"
+              onValueChange={(e) =>
+                setView({ sortOrder: e.value[0] as ViewSortOrder })
+              }
+              size="sm"
+            />
+          </HStack>
 
           <Text>{i18n.tpi("dnd.data.results", count, `${count}`)}</Text>
         </HStack>
 
-        <HStack>
-          <IconButton
-            onClick={store.deselectAllVisibleData}
-            size="sm"
-            variant="outline"
-          >
-            <LuSquareX />
-          </IconButton>
+        <HStack rowGap={2} separator={<Separator />} wrap="wrap">
+          <HStack>
+            <IconButton
+              onClick={store.deselectAllVisibleData}
+              size="sm"
+              variant="outline"
+            >
+              <LuSquareX />
+            </IconButton>
 
-          <IconButton
-            onClick={store.selectAllVisibleData}
-            size="sm"
-            variant="outline"
-          >
-            <LuSquareCheck />
-          </IconButton>
+            <IconButton
+              onClick={store.selectAllVisibleData}
+              size="sm"
+              variant="outline"
+            >
+              <LuSquareCheck />
+            </IconButton>
 
-          <CopySelectedDataToClipboard
-            onLocalizeData={onLocalizeData}
-            store={store}
-          />
-          <DownloadSelectedDataAsJson
-            onLocalizeData={onLocalizeData}
-            store={store}
-          />
+            <CopySelectedDataToClipboard
+              onLocalizeData={onLocalizeData}
+              store={store}
+            />
+            <DownloadSelectedDataAsJson
+              onLocalizeData={onLocalizeData}
+              store={store}
+            />
+          </HStack>
         </HStack>
       </HStack>
 
@@ -243,5 +239,13 @@ function DownloadSelectedDataAsJson<
     <IconButton disabled={disabled} onClick={copySpellsAsJson} size="sm">
       <LuFileJson />
     </IconButton>
+  );
+}
+
+function Separator() {
+  return (
+    <Icon size="lg">
+      <LuDot />
+    </Icon>
   );
 }
