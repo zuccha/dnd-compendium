@@ -244,7 +244,7 @@ const dndI18n = {
     "dnd.spell_school.evocation": "Invocazione",
     "dnd.spell_school.illusion": "Illusione",
     "dnd.spell_school.necromancy": "Necromazia",
-    "dnd.spell_school.transmutation": "Transmutazione",
+    "dnd.spell_school.transmutation": "Trasmutazione",
 
     // Spell
     "dnd.spell.casting_time": "Tempo di lancio",
