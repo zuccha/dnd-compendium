@@ -7,7 +7,13 @@ import {
   createListCollection,
 } from "@chakra-ui/react";
 import { type ReactNode, useCallback, useMemo } from "react";
-import { LuCopy, LuDot, LuSquareCheck, LuSquareX } from "react-icons/lu";
+import {
+  LuCopy,
+  LuDot,
+  LuFileJson,
+  LuSquareCheck,
+  LuSquareX,
+} from "react-icons/lu";
 import NumberInput from "../../components/ui/number-input";
 import SelectSimple from "../../components/ui/select-simple";
 import { toaster } from "../../components/ui/toaster";
@@ -156,7 +162,11 @@ export default function DndDataHeader<
             <LuSquareCheck />
           </IconButton>
 
-          <CopySelectedSpellsToClipboard
+          <CopySelectedDataToClipboard
+            onLocalizeData={onLocalizeData}
+            store={store}
+          />
+          <DownloadSelectedDataAsJson
             onLocalizeData={onLocalizeData}
             store={store}
           />
@@ -168,7 +178,7 @@ export default function DndDataHeader<
   );
 }
 
-function CopySelectedSpellsToClipboard<
+function CopySelectedDataToClipboard<
   DndData extends { id: string },
   DndDataLocalized,
   DndFilters,
@@ -194,6 +204,44 @@ function CopySelectedSpellsToClipboard<
   return (
     <IconButton disabled={disabled} onClick={copySpellsAsJson} size="sm">
       <LuCopy />
+    </IconButton>
+  );
+}
+
+function DownloadSelectedDataAsJson<
+  DndData extends { id: string },
+  DndDataLocalized,
+  DndFilters,
+>({
+  onLocalizeData,
+  store,
+}: Omit<
+  DndDataHeaderProps<DndData, DndDataLocalized, DndFilters>,
+  "children" | "sortByItems" | "hideViewSelection"
+>) {
+  const i18n = useI18n();
+  const datalist = store.useSelectedVisibleDatalist();
+
+  const copySpellsAsJson = useCallback(async () => {
+    const localizedDatalist = datalist.map((s) => onLocalizeData(s, i18n));
+    const json = JSON.stringify(localizedDatalist, null, 2);
+    const blob = new Blob([json], { type: "application/json;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `data.json`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  }, [i18n, datalist, onLocalizeData]);
+
+  const disabled = datalist.length === 0;
+
+  return (
+    <IconButton disabled={disabled} onClick={copySpellsAsJson} size="sm">
+      <LuFileJson />
     </IconButton>
   );
 }
