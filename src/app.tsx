@@ -1,6 +1,5 @@
 import { Center, Text, VStack } from "@chakra-ui/react";
 import { useState } from "react";
-import AppCart from "./app-cart";
 import AppContent from "./app-content";
 import AppHeader from "./app-header";
 import dndSpellsStore from "./dnd/dnd-spells/dnd-spells-store";
@@ -40,7 +39,7 @@ function App() {
     );
   }
 
-  const { Cart, Content, Header } = dndTabs[selectedTabId];
+  const { Content, Header } = dndTabs[selectedTabId];
 
   return (
     <VStack gap={0} h="100vh" position="relative" w="100%">
@@ -50,9 +49,6 @@ function App() {
       <AppContent>
         <Content />
       </AppContent>
-      <AppCart>
-        <Cart />
-      </AppCart>
     </VStack>
   );
 }
