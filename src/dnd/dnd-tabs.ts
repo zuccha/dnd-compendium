@@ -1,7 +1,9 @@
 import { useCallback, useLayoutEffect, useState } from "react";
 import { z } from "zod/v4";
+import DndSpellsCart from "./dnd-spells/dnd-spells-cart";
 import DndSpellsHeader from "./dnd-spells/dnd-spells-header";
 import DndSpellsList from "./dnd-spells/dnd-spells-list";
+import DndWeaponsCart from "./dnd-weapons/dnd-weapons-cart";
 import DndWeaponsHeader from "./dnd-weapons/dnd-weapons-header";
 import DndWeaponsList from "./dnd-weapons/dnd-weapons-list";
 
@@ -12,13 +14,22 @@ export const dndTabIds = dndTabIdSchema.options;
 export type DndTabId = z.infer<typeof dndTabIdSchema>;
 
 export type DndTab = {
+  Cart: React.FC;
   Content: React.FC;
   Header: React.FC;
 };
 
 export const dndTabs: Record<DndTabId, DndTab> = {
-  spells: { Content: DndSpellsList, Header: DndSpellsHeader },
-  weapons: { Content: DndWeaponsList, Header: DndWeaponsHeader },
+  spells: {
+    Cart: DndSpellsCart,
+    Content: DndSpellsList,
+    Header: DndSpellsHeader,
+  },
+  weapons: {
+    Cart: DndWeaponsCart,
+    Content: DndWeaponsList,
+    Header: DndWeaponsHeader,
+  },
 };
 
 function readTabIdFromUrl(): DndTabId {
