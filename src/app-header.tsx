@@ -1,5 +1,4 @@
 import {
-  Box,
   HStack,
   type SelectValueChangeDetails,
   StackSeparator,
@@ -52,50 +51,48 @@ export default function AppHeader({ children }: AppHeaderProps) {
     .sort(compareObjects("label"));
 
   return (
-    <VStack bgColor="bg" gap={0.25} shadow="sm" top={0} w="100%" zIndex={1}>
-      <Box maxW="64em" w="100%">
-        <HStack justifyContent="space-between" px={1} py={2} w="100%">
-          <HStack fontWeight="bold" separator={<StackSeparator />}>
-            {dndTabInfos.sort().map(({ id, label }) =>
-              id === selectedTabId ? (
-                <Text key={id}>{label}</Text>
-              ) : (
-                <Text
-                  color="fg.info"
-                  cursor="pointer"
-                  key={id}
-                  onClick={() => setSelectedTabId(id)}
-                >
-                  {label}
-                </Text>
-              ),
-            )}
-          </HStack>
-
-          <HStack>
-            <SelectSimple
-              collection={langCollection}
-              onValueChange={handleLanguageChange}
-              size="sm"
-              value={[language]}
-              w="4em"
-            />
-
-            <SelectSimple
-              collection={systemCollection}
-              defaultValue={[system]}
-              name="i18n-system"
-              onValueChange={(e) => setSystem(e.value?.[0] as I18nSystem)}
-              size="sm"
-              w="7em"
-            />
-
-            <ThemeButton />
-          </HStack>
+    <VStack bgColor="bg" gap={0.25} px={2} shadow="sm" w="100%" zIndex={1}>
+      <HStack justifyContent="space-between" px={1} py={2} w="100%">
+        <HStack fontWeight="bold" separator={<StackSeparator />}>
+          {dndTabInfos.sort().map(({ id, label }) =>
+            id === selectedTabId ? (
+              <Text key={id}>{label}</Text>
+            ) : (
+              <Text
+                color="fg.info"
+                cursor="pointer"
+                key={id}
+                onClick={() => setSelectedTabId(id)}
+              >
+                {label}
+              </Text>
+            ),
+          )}
         </HStack>
 
-        {children}
-      </Box>
+        <HStack>
+          <SelectSimple
+            collection={langCollection}
+            onValueChange={handleLanguageChange}
+            size="sm"
+            value={[language]}
+            w="4em"
+          />
+
+          <SelectSimple
+            collection={systemCollection}
+            defaultValue={[system]}
+            name="i18n-system"
+            onValueChange={(e) => setSystem(e.value?.[0] as I18nSystem)}
+            size="sm"
+            w="7em"
+          />
+
+          <ThemeButton />
+        </HStack>
+      </HStack>
+
+      {children}
     </VStack>
   );
 }
