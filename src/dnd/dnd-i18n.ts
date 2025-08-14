@@ -125,7 +125,7 @@ const dndI18n = {
     "dnd.spells.filters.levels.placeholder": "Levels",
     "dnd.spells.filters.name.placeholder": "Name",
     "dnd.spells.filters.ritual.label": "R",
-    "dnd.spells.filters.schools.placeholder": "School",
+    "dnd.spells.filters.schools.placeholder": "Schools",
 
     // Weapon
     "dnd.weapon.cost": "Cost",
@@ -296,7 +296,7 @@ const dndI18n = {
     "dnd.spells.filters.levels.placeholder": "Livelli",
     "dnd.spells.filters.name.placeholder": "Nome",
     "dnd.spells.filters.ritual.label": "R",
-    "dnd.spells.filters.schools.placeholder": "Scuola",
+    "dnd.spells.filters.schools.placeholder": "Scuole",
 
     // Weapon
     "dnd.weapon.cost": "Costo",

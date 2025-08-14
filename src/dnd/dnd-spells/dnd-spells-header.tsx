@@ -75,10 +75,11 @@ export default function DndSpellsHeader() {
         />
         <Select
           collection={schoolsCollection}
-          defaultValue={filters.school ? [filters.school] : []}
+          defaultValue={filters.schools}
+          multiple
           name="dnd-spells-filters-schools"
           onValueChange={(e) =>
-            setFilters({ school: e.value?.[0] as DndSpellSchool })
+            setFilters({ schools: e.value as DndSpellSchool[] })
           }
           placeholder={i18n.t("dnd.spells.filters.schools.placeholder")}
           size="sm"

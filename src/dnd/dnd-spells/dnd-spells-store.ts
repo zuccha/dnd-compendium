@@ -8,6 +8,7 @@ import {
   dndSpellLevels,
   dndSpellSchema,
   dndSpellSchoolSchema,
+  dndSpellSchools,
 } from "../models/dnd-spell";
 import { stateFilterSchema } from "../models/filter";
 import type { ViewSortBy, ViewSortOrder } from "../models/view";
@@ -29,7 +30,7 @@ export const dndSpellsFiltersSchema = z.object({
   levels: z.array(dndSpellLevelSchema).default(dndSpellLevels),
   name: z.string().default(""),
   ritual: stateFilterSchema.default("neutral"),
-  school: dndSpellSchoolSchema.optional().default(undefined),
+  schools: z.array(dndSpellSchoolSchema).default(dndSpellSchools),
 });
 
 export type DndSpellsFilters = z.infer<typeof dndSpellsFiltersSchema>;
@@ -83,8 +84,8 @@ function isDndSpellVisible(
       !!spell.name.it?.toLowerCase().includes(filters.name)) &&
     // Classes
     spell.classes.some((c) => filters.classes.includes(c)) &&
-    // School
-    (!filters.school || spell.school === filters.school) &&
+    // Schools
+    filters.schools.some((s) => s === spell.school) &&
     // Levels
     filters.levels.some((l) => spell.level === l) &&
     // Concentration
