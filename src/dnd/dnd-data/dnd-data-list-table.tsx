@@ -1,5 +1,6 @@
-import { Center, Checkbox, Flex, Span, Table, VStack } from "@chakra-ui/react";
+import { Center, Flex, Span, Table, VStack } from "@chakra-ui/react";
 import { type ReactNode, useState } from "react";
+import Checkbox from "../../components/ui/checkbox";
 import RichText from "../../components/ui/rich-text";
 import type { DataStore } from "./dnd-data-store";
 
@@ -80,22 +81,17 @@ function DndDataListTableHeader<
     <Table.Row>
       <Table.ColumnHeader w="2em">
         <Flex alignItems="center">
-          <Checkbox.Root
+          <Checkbox
             checked={
               count === size ? true : count === 0 ? false : "indeterminate"
             }
-            onCheckedChange={
+            onToggle={
               count === size
                 ? store.deselectAllVisibleData
                 : store.selectAllVisibleData
             }
-            position="static"
             size="sm"
-          >
-            <Checkbox.HiddenInput />
-            <Checkbox.Control />
-            <Checkbox.Label />
-          </Checkbox.Root>
+          />
         </Flex>
       </Table.ColumnHeader>
       {columns.map((column) => (
@@ -130,17 +126,11 @@ function DndDataListTableRow<
       <Table.Row onClick={() => setExpanded((prev) => !prev)}>
         <Table.Cell alignItems="center">
           <Flex alignItems="center">
-            <Checkbox.Root
+            <Checkbox
               checked={selected}
-              onCheckedChange={() => store.toggleDataSelection(dataId)}
-              onClick={(e) => e.stopPropagation()}
-              position="static"
+              onToggle={() => store.toggleDataSelection(dataId)}
               size="sm"
-            >
-              <Checkbox.HiddenInput />
-              <Checkbox.Control />
-              <Checkbox.Label />
-            </Checkbox.Root>
+            />
           </Flex>
         </Table.Cell>
 
