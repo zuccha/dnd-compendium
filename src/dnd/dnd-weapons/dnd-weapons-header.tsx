@@ -16,6 +16,7 @@ import {
 } from "../models/dnd-weapon";
 import StateFilterIconButton from "../ui/state-filter-icon-button";
 import dndWeaponsStore, { dndWeaponsOrderByItems } from "./dnd-weapons-store";
+import localizeDndWeapon from "./localize-dnd-weapon";
 
 export default function DndWeaponsHeader() {
   const i18n = useI18n();
@@ -57,7 +58,7 @@ export default function DndWeaponsHeader() {
   return (
     <DndDataHeader
       hideViewSelection
-      onLocalizeData={(weapon) => weapon}
+      onLocalizeData={localizeDndWeapon}
       sortByItems={dndWeaponsOrderByItems}
       store={dndWeaponsStore}
     >
