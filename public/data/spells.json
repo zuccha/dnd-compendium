@@ -38,10 +38,12 @@
     },
     "text": {
       "base": {
-        "en": "You create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage."
+        "en": "You create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage.",
+        "it": "L'incantatore crea una bolla di acido in un punto entro gittata, dove la bolla esplode in una sfera del raggio di 1,5 metri. Ogni creatura all'interno della sfera deve superare un tiro salvezza su Destrezza, altrimenti subisce 1d6 danni da acido."
       },
       "upgrade": {
-        "en": "The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6)."
+        "en": "The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
+        "it": "I danni aumentano di 1d6 quando l'incantatore raggiunge il 5˚ livello (2d6), l'11˚ livello (3d6) e il 17˚ livello (4d6)."
       }
     }
   },
@@ -966,7 +968,8 @@
     },
     "text": {
       "base": {
-        "en": "An aura radiates from you in a 30-foot Emanation for the duration. While in the aura, you and your allies have Resistance to Necrotic damage, and your Hit Point maximums can't be reduced. If an ally with 0 Hit Points starts its turn in the aura, that ally regains 1 Hit Point."
+        "en": "An aura radiates from you in a 30-foot Emanation for the duration. While in the aura, you and your allies have Resistance to Necrotic damage, and your Hit Point maximums can't be reduced. If an ally with 0 Hit Points starts its turn in the aura, that ally regains 1 Hit Point.",
+        "it": "L'incantatore irradia un'aura in un'emanazione di 9 metri da sé che permane per la durata dell'incantesimo. Mentre sono nell'aura, l'incantatore e i suoi alleati ottengono resistenza ai danni necrotici e i loro punti ferita massimi non possono essere ridotti. Se un alleato con 0 punti ferita inizia il suo turno dell'aura, ne recupera 1."
       }
     }
   },
@@ -1004,7 +1007,8 @@
     },
     "text": {
       "base": {
-        "en": "An aura radiates from you in a 30-foot Emanation for the duration. While in the aura, you and your allies have Resistance to Poison damage and Advantage on saving throws to avoid or end effects that include the Blinded, Charmed, Deafened, Frightened, Paralyzed, Poisoned, or Stunned condition."
+        "en": "An aura radiates from you in a 30-foot Emanation for the duration. While in the aura, you and your allies have Resistance to Poison damage and Advantage on saving throws to avoid or end effects that include the Blinded, Charmed, Deafened, Frightened, Paralyzed, Poisoned, or Stunned condition.",
+        "it": "L'incantatore irradia un'aura in un'emanazione di 9 metri da sé che permane per la durata dell'incantesimo. Mentre sono nell'aura, l'incantatore e i suoi alleati ottengono resistenza ai danni da veleno e vantaggio ai tiri salvezza che evitano o pongono fine agli effetti che includono le condizioni accecato, affascinato, assordato, avvelenato, paralizzato, spaventato o stordito."
       }
     }
   },
@@ -1042,7 +1046,8 @@
     },
     "text": {
       "base": {
-        "en": "An aura radiates from you in a 30-foot Emanation for the duration. When you create the aura and at the start of each of your turns while it persists, you can restore 2d6 Hit Points to one creature in it."
+        "en": "An aura radiates from you in a 30-foot Emanation for the duration. When you create the aura and at the start of each of your turns while it persists, you can restore 2d6 Hit Points to one creature in it.",
+        "it": "L'incantatore irradia un'aura in un'emanazione di 9 metri da sé che permane per la durata dell'incantesimo. Quando crea l'aura e all'inizio di ogni suo turno finché l'aura permane, l'incantatore può ripristinare 2d6 punti ferita a una creatura al suo interno."
       }
     }
   },
@@ -1636,10 +1641,12 @@
     },
     "text": {
       "base": {
-        "en": "You bless up to three creatures within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target adds 1d4 to the attack roll or save."
+        "en": "You bless up to three creatures within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target adds 1d4 to the attack roll or save.",
+        "it": "L'incantatore benedice fino a tre creature entro gittata. Se un bersaglio effettua un tiro per colpire o un tiro salvezza prima del termine dell'incantesimo, il bersaglio aggiunge a essi 1d4."
       },
       "upgrade": {
-        "en": "You can target one additional creature for each spell slot level above 1."
+        "en": "You can target one additional creature for each spell slot level above 1.",
+        "it": "L'incantatore può bersagliare una creatura aggiuntiva per ogni slot di livello superiore al 1˚."
       }
     }
   },
@@ -1888,10 +1895,12 @@
     },
     "text": {
       "base": {
-        "en": "A thin sheet of flames shoots forth from you. Each creature in a 15-foot Cone makes a Dexterity saving throw, taking 3d6 Fire damage on a failed save or half as much damage on a successful one.Flammable objects in the Cone that aren't being worn or carried start burning."
+        "en": "A thin sheet of flames shoots forth from you. Each creature in a 15-foot Cone makes a Dexterity saving throw, taking 3d6 Fire damage on a failed save or half as much damage on a successful one.\nFlammable objects in the Cone that aren't being worn or carried start burning.",
+        "it": "Un sottile velo di fiamme si propaga dall'incantatore. Ogni creatura entro un cono di 4,5 metri effettua un tiro salvezza su Destrezza, subendo 3d6 danni da fuoco in caso di fallimento o la metà dei danni in caso di successo.\nGli oggetti infiammabili nel cono che non sono indossati o trasportati iniziano a bruciare."
       },
       "upgrade": {
-        "en": "The damage increases by 1d6 for each spell slot level above 1."
+        "en": "The damage increases by 1d6 for each spell slot level above 1.",
+        "it": "I danni aumentano di 1d6 per ogni slot di livello superiore al 1˚."
       }
     }
   },
@@ -2225,10 +2234,12 @@
     },
     "text": {
       "base": {
-        "en": "You hurl an orb of energy at a target within range. Choose Acid, Cold, Fire, Lightning, Poison, or Thunder for the type of orb you create, and then make a ranged spell attack against the target. On a hit, the target takes 3d8 damage of the chosen type.If you roll the same number on two or more of the d8s, the orb leaps to a different target of your choice within 30 feet of the target. Make an attack roll against the new target, and make a new damage roll. The orb can't leap again unless you cast the spell with a level 2+ spell slot."
+        "en": "You hurl an orb of energy at a target within range. Choose Acid, Cold, Fire, Lightning, Poison, or Thunder for the type of orb you create, and then make a ranged spell attack against the target. On a hit, the target takes 3d8 damage of the chosen type.\nIf you roll the same number on two or more of the d8s, the orb leaps to a different target of your choice within 30 feet of the target. Make an attack roll against the new target, and make a new damage roll. The orb can't leap again unless you cast the spell with a level 2+ spell slot.",
+        "it": "L'incantatore scaglia un globo di energia contro un bersaglio entro gittata. Può scegliere che tipo di globo creare tra acido, freddo, fulmine, fuoco, tuono o veleno, e poi effettuare un attacco a distanza con l'incantesimo contro il bersaglio. Se il colpo va a segno, il bersaglio subisce 3d8 danni del tipo scelto.\nSe l'incantatore ottiene lo stesso risultato su duo o più d8, il globo schizza verso un altro bersaglio che si trovi entro 9 metri dal primo bersaglio. L'incantatore effettua un tiro per colpire contro il secondo bersaglio e anche un altro tiro per i danni. Il globo non può schizzare verso un altro bersaglio, a meno che l'incantatore non lanci l'incantesimo usando uno slot incantesimo di 2˚ livello o superiore."
       },
       "upgrade": {
-        "en": "The damage increases by 1d8 for each spell slot level above 1. The orb can leap a maximum number of times equal to the level of the slot expended, and a creature can be targeted only once by each casting of this spell."
+        "en": "The damage increases by 1d8 for each spell slot level above 1. The orb can leap a maximum number of times equal to the level of the slot expended, and a creature can be targeted only once by each casting of this spell.",
+        "it": "I danni aumentano di 1d8 per ogni slot di livello superiore al 1˚. Il globo può schizzare verso un altro bersaglio un numero massimo di volte pari al livello dello slot incantesimo consumato, ed è possibile bersagliare una creatura soltanto una volta per ogni lancio di questo incantesimo."
       }
     }
   },
@@ -2554,7 +2565,8 @@
     },
     "text": {
       "base": {
-        "en": "You launch a dazzling array of flashing, colorful light. Each creature in a 15-foot Cone originating from you must succeed on a Constitution saving throw or have the Blinded condition until the end of your next turn."
+        "en": "You launch a dazzling array of flashing, colorful light. Each creature in a 15-foot Cone originating from you must succeed on a Constitution saving throw or have the Blinded condition until the end of your next turn.",
+        "it": "L'incantatore lancia un lampo abbagliante di luce multicolore. Ogni creatura entro un cono di 4,5 metri originto dall'incantatore deve superare un tiro salvezza su Costituzione, altrimenti è accecata fino al termine del suo turno successivo."
       }
     }
   },
@@ -2597,10 +2609,12 @@
     },
     "text": {
       "base": {
-        "en": "You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. Choose the command from these options:Approach. The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.Drop. The target drops whatever it is holding and then ends its turn.Flee. The target spends its turn moving away from you by the fastest available means.Grovel. The target has the Prone condition and then ends its turn.Halt. On its turn, the target doesn't move and takes no action or Bonus Action."
+        "en": "You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. Choose the command from these options:\n**Approach.** The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.\n**Drop.** The target drops whatever it is holding and then ends its turn.\n**Flee.** The target spends its turn moving away from you by the fastest available means.\n**Grovel.** The target has the Prone condition and then ends its turn.\n**Halt.** On its turn, the target doesn't move and takes no action or Bonus Action.",
+        "it": "L'incantatore rivolge una parola di comando a una creatura entro gittata che è in grado di vedere. Il bersaglio deve superare un tiro salvezza su Saggezza, altrimenti dovrà obbedire al comando nel suo turno successivo. Scegli il comando tra le seguenti opzioni:\n**Avvicinati.** Il bersaglio si muove verso l'incantatore seguendo il percorso più breve e diretto, terminando il suo turno se giunge entro 1,5 metri da lui.\n**Fermo.** Nel suo turno, il bersaglio non si muove e non effettua alcuna azione o azione bonus.\n**Fuggi.** Il bersaglio usa il suo turno per allontanarsi dall'incantatore nel modo più rapido possibile.\n**Lascia.** Il bersaglio lascia cadere ciò che stava impugnando, poi termina il suo turno.\n**Prostati.** Il bersaglio cade a terra prono e termina il suo turno."
       },
       "upgrade": {
-        "en": "You can affect one additional creature for each spell slot level above 1."
+        "en": "You can affect one additional creature for each spell slot level above 1.",
+        "it": "L'incantatore può influenzare una creatura aggiuntiva per ogni slot di livello superiore al 1˚."
       }
     }
   },
@@ -2731,7 +2745,8 @@
     },
     "text": {
       "base": {
-        "en": "You try to compel a creature into a duel. One creature that you can see within range makes a Wisdom saving throw. On a failed save, the target has Disadvantage on attack rolls against creatures other than you, and it can't willingly move to a space that is more than 30 feet away from you.The spell ends if you make an attack roll against a creature other than the target, if you cast a spell on an enemy other than the target, if an ally of yours damages the target, or if you end your turn more than 30 feet away from the target."
+        "en": "You try to compel a creature into a duel. One creature that you can see within range makes a Wisdom saving throw. On a failed save, the target has Disadvantage on attack rolls against creatures other than you, and it can't willingly move to a space that is more than 30 feet away from you.\nThe spell ends if you make an attack roll against a creature other than the target, if you cast a spell on an enemy other than the target, if an ally of yours damages the target, or if you end your turn more than 30 feet away from the target.",
+        "it": "L'incantatore tenta di obbligare una creatura a partecipare a un duello. Una creatura entro gittata che l'incantatore è in grado di vedere effettua un tiro salvezza su Saggezza. In caso di fallimento, il bersaglio subisce svantaggio ai tiri per colpire contro le creature diverse dall'incantatore e non può volontariamente muoversi in uno spazio a più di 9 metri dall'incantatore.\nL'incantesimo termina se l'incantatore effettua un tiro per colpire contro una creatura diversa dal bersaglio, se lancia un incantesimo su un nemico diverso dal bersaglio, se un suo alleato infligge danni al bersaglio, o se l'incantatore termina il proprio turno a più di 9 metri dal bersaglio."
       }
     }
   },
@@ -4012,7 +4027,8 @@
     },
     "text": {
       "base": {
-        "en": "You create up to four torch-size lights within range, making them appear as torches, lanterns, or glowing orbs that hover for the duration. Alternatively, you combine the four lights into one glowing Medium form that is vaguely humanlike. Whichever form you choose, each light sheds Dim Light in a 10-foot radius.As a Bonus Action, you can move the lights up to 60 feet to a space within range. A light must be within 20 feet of another light created by this spell, and a light vanishes if it exceeds the spell's range."
+        "en": "You create up to four torch-size lights within range, making them appear as torches, lanterns, or glowing orbs that hover for the duration. Alternatively, you combine the four lights into one glowing Medium form that is vaguely humanlike. Whichever form you choose, each light sheds Dim Light in a 10-foot radius.\nAs a Bonus Action, you can move the lights up to 60 feet to a space within range. A light must be within 20 feet of another light created by this spell, and a light vanishes if it exceeds the spell's range.",
+        "it": "L'incantatore crea fino a quattro luci delle dimensioni di una torcia, facendole apparire come lanterne, torce o globi luminosi che fluttuano per la durata dell'incantesimo entro la sua gittata. In altrernativa, l'incantatore può fondere le quattro luci in un'unica forma luminosa di taglia Media di aspetto simile a quello umano. Qualunque sia la forma scelta, ogni luce proietta luce fioca entro un raggio di 3 metri.\nCome azione bonus, l'incantatore può muovere le luci per un massimo di 18 metri fino a un punto entro gittata. Ogni luce deve trovarsi entro 6 metri da un'altra luce creata da questo incantesimo. Se una delle luci supera la gittata dell'incantesimo, svanisce."
       }
     }
   },
@@ -4364,7 +4380,8 @@
     },
     "text": {
       "base": {
-        "en": "For the duration, you sense the location of any Aberration, Celestial, Elemental, Fey, Fiend, or Undead within 30 feet of yourself. You also sense whether the Hallow spell is active there and, if so, where.The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
+        "en": "For the duration, you sense the location of any Aberration, Celestial, Elemental, Fey, Fiend, or Undead within 30 feet of yourself. You also sense whether the _Hallow_ spell is active there and, if so, where.\nThe spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead.",
+        "it": "Per la durata dell'incantesimo, l'incantatore percepisce la posizione di aberrazioni, celestiali, elementali, folletti, immondi o non morti entro 9 metri di distanza da sé. Percepisce inoltre se l'incantesimo _santificare_ è attivo e, se sì, dove.\nL'incantesimo viene bloccato da 3 centimetri di pietra, terriccio o legno, 2,5 centimetri di metallo o una sottile lamina di piombo."
       }
     }
   },
@@ -4580,7 +4597,8 @@
     },
     "text": {
       "base": {
-        "en": "You make yourself—including your clothing, armor, weapons, and other belongings on your person—look different until the spell ends. You can seem 1 foot shorter or taller and can appear heavier or lighter. You must adopt a form that has the same basic arrangement of limbs as you have. Otherwise, the extent of the illusion is up to you.The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing.To discern that you are disguised, a creature must take the Study action to inspect your appearance and succeed on an Intelligence (Investigation) check against your spell save DC."
+        "en": "You make yourself—including your clothing, armor, weapons, and other belongings on your person—look different until the spell ends. You can seem 1 foot shorter or taller and can appear heavier or lighter. You must adopt a form that has the same basic arrangement of limbs as you have. Otherwise, the extent of the illusion is up to you.\nThe changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing.\nTo discern that you are disguised, a creature must take the Study action to inspect your appearance and succeed on an Intelligence (Investigation) check against your spell save DC.",
+        "it": "L'incantatore assume un aspetto diverso (che include i suoi abiti, armatura, armi e altri oggetti personali presenti sulla sua persona) fino al termine dell'incantesimo. Può apparire 30 centimetri più alto o più basso e apparire più grasso o più magro, adottando una forma che usi la stessa disposizione basilare degli arti. Entro questi limiti, la natura dell'illusione dipende da lui.\nI cambiamenti apportati da questo incantesimo non passano il vaglio di un'ispezione fisica. Per esempio, se l'incantatore usa questo incantesimo per aggiungere un cappello al suo abbigliamento, gli oggetti attraverserebbero il cappello e chiunque lo toccasse non sentirebbe nulla.\nPer capire che l'incantatore è camuffato, una creatura può usare la sua azione di Studio per ispezionare l'aspetto, superando una prova di Intelligenza (Indagare) contro la CD del tiro salvezza sull'incantesimo."
       }
     }
   },
@@ -4773,10 +4791,12 @@
     },
     "text": {
       "base": {
-        "en": "One creature of your choice that you can see within range hears a discordant melody in its mind. The target makes a Wisdom saving throw. On a failed save, it takes 3d6 Psychic damage and must immediately use its Reaction, if available, to move as far away from you as it can, using the safest route. On a successful save, the target takes half as much damage only."
+        "en": "One creature of your choice that you can see within range hears a discordant melody in its mind. The target makes a Wisdom saving throw. On a failed save, it takes 3d6 Psychic damage and must immediately use its Reaction, if available, to move as far away from you as it can, using the safest route. On a successful save, the target takes half as much damage only.",
+        "it": "Una creatura a scelta dell'incantatore, situata entro gittata e che sia in grado di vedere, sente una melodia dissonante nella sua mente. Il bersaglio effettua un tiro salvezza su Saggezza. Se lo fallisce, subisce 3d6 danni psichici e, se disponibile, deve usare immediatamente la sua reazione per muoversi fin dove la sua velocità glielo consente, percorrendo la via più sicura. Se invece lo supera, il bersaglio subisce soltanto la metà di quei danni."
       },
       "upgrade": {
-        "en": "The damage increases by 1d6 for each spell slot level above 1."
+        "en": "The damage increases by 1d6 for each spell slot level above 1.",
+        "it": "I danni aumentano di 1d6 per ogni slot di livello superiore al 1˚."
       }
     }
   },
@@ -4853,7 +4873,8 @@
     },
     "text": {
       "base": {
-        "en": "Until the spell ends, your attacks with weapons deal an extra 1d4 Radiant damage on a hit."
+        "en": "Until the spell ends, your attacks with weapons deal an extra 1d4 Radiant damage on a hit.",
+        "it": "Fino al termine dell'incantesimo, i suoi attacchi con le armi infliggono 1d4 danni radiosi extra se il colpo va a segno."
       }
     }
   },
@@ -4888,10 +4909,12 @@
     },
     "text": {
       "base": {
-        "en": "The target takes an extra 2d8 Radiant damage from the attack. The damage increases by 1d8 if the target is a Fiend or an Undead."
+        "en": "The target takes an extra 2d8 Radiant damage from the attack. The damage increases by 1d8 if the target is a Fiend or an Undead.",
+        "it": "Il bersaglio subisce 2d8 danni radiosi extra dall'attacco. I danni aumentano di 1d8 se il bersaglio è un immondo o un non morto."
       },
       "upgrade": {
-        "en": "The damage increases by 1d8 for each spell slot level above 1."
+        "en": "The damage increases by 1d8 for each spell slot level above 1.",
+        "it": "I danni aumentano di 1d8 per ogni slot di livello superiore al 1˚."
       }
     }
   },
@@ -5952,7 +5975,7 @@
     "text": {
       "base": {
         "en": "Objects in a 20-foot Cube within range are outlined in blue, green, or violet light (your choice). Each creature in the Cube is also outlined if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed Dim Light in a 10-foot radius and can't benefit from the Invisible condition.\nAttack rolls against an affected creature or object have Advantage if the attacker can see it.",
-        "it": "L'incantatore crea fino a quattro luci delle dimensioni di una torcia, facendole apparire come lanterne, torce o globi luminosi che fluttuano per la durata dell'incantesimo entro la sua gittata. In altrernativa, l'incantatore può fondere le quattro luci in un'unica forma luminosa di taglia Media di aspetto simile a quello umano. Qualunque sia la forma scelta, ogni luce proietta luce fioca entro un raggio di 3 metri.\nCome azione bonus, l'incantatore può muovere le luci per un massimo di 18 metri fino a un punto entro gittata. Ogni luce deve trovarsi entro 6 metri da un'altra luce creata da questo incantesimo. Se una delle luci supera la gittata dell'incantesimo, svanisce."
+        "it": "Gli oggetti contenuti in un cubo con spigolo di 6 metri entro gittata vengono evidenziati da un alone di luce blu, verde o viola (a scelta dell'incantatore). Ogni creatura presente nel cubo viene a sua volta evidenziata se fallisce un tiro salvezza su Destrezza. Per la durata dell'incantesimo, gli oggetti e le creature influenzate proiettano luce fioca entro un raggio di 3 metri e non possono beneficiare della condizione di invisibilità.\nI tiri per colpire contro una creatura influenzata o un oggetto influenzato dispongono di vantaggio se l'attaccante è in grado di vederli."
       }
     }
   },
@@ -5991,10 +6014,12 @@
     },
     "text": {
       "base": {
-        "en": "You gain 2d4 + 4 Temporary Hit Points."
+        "en": "You gain 2d4 + 4 Temporary Hit Points.",
+        "it": "L'incantatore ottiene 2d4 + 4 punti ferita temporanei."
       },
       "upgrade": {
-        "en": "You gain 5 additional Temporary Hit Points for each spell slot level above 1."
+        "en": "You gain 5 additional Temporary Hit Points for each spell slot level above 1.",
+        "it": "L'incantatore ottiene 5 punti ferita temporanei aggiuntivi per ogni slot di livello superiore al 1˚."
       }
     }
   },
@@ -6087,7 +6112,8 @@
     },
     "text": {
       "base": {
-        "en": "Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If a creature lands before the spell ends, the creature takes no damage from the fall, and the spell ends for that creature."
+        "en": "Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If a creature lands before the spell ends, the creature takes no damage from the fall, and the spell ends for that creature.",
+        "it": "L'incantatore sceglie fino a cinque creature in caduta entro gittata. La velocità di discesa di una creatura in caduta rallenta fino a 18 metri per round finché l'incantesimo non termina. Se una creatura cade prima del termine dell'incantesimo, non subisce alcun danno da caduta e interrompe l'effetto dell'incantesimo."
       }
     }
   },
@@ -6178,7 +6204,8 @@
     },
     "text": {
       "base": {
-        "en": "You gain the service of a familiar, a spirit that takes an animal form you choose: Bat, Cat, Frog, Hawk, Lizard, Octopus, Owl, Rat, Raven, Spider, Weasel, or another Beast that has a Challenge Rating of 0. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a Celestial, Fey, or Fiend (your choice) instead of a Beast. Your familiar acts independently of you, but it obeys your commands. Telepathic Connection. While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as a Bonus Action, you can see through the familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses it has.Finally, when you cast a spell with a range of touch, your familiar can deliver the touch. Your familiar must be within 100 feet of you, and it must take a Reaction to deliver the touch when you cast the spell. Combat. The familiar is an ally to you and your allies. It rolls its own Initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal. Disappearance of the Familiar. When the familiar drops to 0 Hit Points, it disappears. It reappears after you cast this spell again. As a Magic action, you can temporarily dismiss the familiar to a pocket dimension. Alternatively, you can dismiss it forever. As a Magic action while it is temporarily dismissed, you can cause it to reappear in an unoccupied space within 30 feet of you. Whenever the familiar drops to 0 Hit Points or disappears into the pocket dimension, it leaves behind in its space anything it was wearing or carrying. One Familiar Only. You can't have more than one familiar at a time. If you cast this spell while you have a familiar, you instead cause it to adopt a new eligible form."
+        "en": "You gain the service of a familiar, a spirit that takes an animal form you choose: **Bat**, **Cat**, **Frog**, **Hawk**, **Lizard**, **Octopus**, **Owl**, **Rat**, **Raven**, **Spider**, **Weasel**, or another Beast that has a Challenge Rating of 0. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a Celestial, Fey, or Fiend (your choice) instead of a Beast. Your familiar acts independently of you, but it obeys your commands.\n**Telepathic Connection.** While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as a Bonus Action, you can see through the familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses it has.\nFinally, when you cast a spell with a range of touch, your familiar can deliver the touch. Your familiar must be within 100 feet of you, and it must take a Reaction to deliver the touch when you cast the spell.\n**Combat.** The familiar is an ally to you and your allies. It rolls its own Initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal.\n**Disappearance of the Familiar.** When the familiar drops to 0 Hit Points, it disappears. It reappears after you cast this spell again. As a Magic action, you can temporarily dismiss the familiar to a pocket dimension. Alternatively, you can dismiss it forever. As a Magic action while it is temporarily dismissed, you can cause it to reappear in an unoccupied space within 30 feet of you. Whenever the familiar drops to 0 Hit Points or disappears into the pocket dimension, it leaves behind in its space anything it was wearing or carrying.\n**One Familiar Only.** You can't have more than one familiar at a time. If you cast this spell while you have a familiar, you instead cause it to adopt a new eligible form.",
+        "it": "L'incantatore ottiene i servigi di un famiglio, uno spirito che assume la forma di un animale a sua scelta: **pipistrello**, **gatto**, **rana**, **falco**, **lucertola**, **piovra**, **gufo**, **ratto**, **corvo**, **ragno**, **faina** o un'altra bestia che abbia un grado di sfida pari a 0. Il famiglio appare in uno spazio libero entro gittata, ha le statistiche della forma scelta (vedi appendice B), anche se si tratta di un celestiale, un folletto o un immondo (a scelta dell'incantatore) invece di una bestia. Il famiglio è indipendente dall'incantatore, ma obbedisce ai suoi comandi.\n**Connessione telepatica.** Finché il famiglio si trova a 30 metri dall'incantatore, quest'ultimo può comunicare con lui telepaticamente. Inoltre, come azione bonus, l'incantatore è in grado di vedere attraverso gli occhi del famiglio e sentire ciò che sente fino all'inizio del suo turno successivo, ottenendo i benefici di eventuali sensi speciali posseduti dal famiglio.\nInfine, quando l'incantatore lancia un incantesimo con gittata a contatto, il suo famiglio può trasmettere il tocco. Il famiglio deve trovarsi entro 30 metri dall'incantatore e usare la sua reazione per trasmettere il tocco quando l'incantesimo viene lanciato.\n**Combattimento.** Il famiglia diventa un alleato per l'incantatore e i suoi alleati. Tira per la propria iniziativa e agisce nel proprio turno. Un famiglio non può attaccare, ma può effettuare altre azioni normalmente.\n**Scomparsa del famiglio.** Quando un famiglio scende a 0 punti ferita, scompare e riappare quando l'incantatore lancia nuovamente questo incantesimo. Come azione di Magia, l'incantatore può temporaneamente congedare il famiglio, che scompare in una sacca dimensionale. In alternativa, l'incantatore può farlo sparire per sempre. Come azione di Magia, finché il famiglio è congedato temporaneamente, l'incantatore può farlo ricomparire in uno spazio libero entro 9 metri da sé. Ogni volta che scende a 0 punti ferita o scompare in una sacca dimensionale, nello spazio che occupava in precedenza lascia qualsiasi oggetto stesse indossando o trasportando.\n**Un solo famiglio.** Un incantatore non può avere più di un famiglio alla volta. Se lancia questo incantesimo mentre è già presente un famiglio, l'incantatore gli impartisce un'altra forma possibile."
       }
     }
   },
@@ -6399,10 +6426,12 @@
     },
     "text": {
       "base": {
-        "en": "You hurl a mote of fire at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Fire damage. A flammable object hit by this spell starts burning if it isn't being worn or carried."
+        "en": "You hurl a mote of fire at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Fire damage. A flammable object hit by this spell starts burning if it isn't being worn or carried.",
+        "it": "L'incantatore scaglia una scintilla di fuoco verso una creatura o un oggetto situato entro gittata, effettuando un attacco a distanza con incantesimo contro il bersaglio. Se il colpo va a segno, il bersaglio subisce 1d10 danni da fuoco. Un oggetto infiammabile colpito da questo incantesimo prende fuoco se non indossato o trasportato in quel momento."
       },
       "upgrade": {
-        "en": "The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10)."
+        "en": "The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).",
+        "it": "I danni aumentano di 1d10 quando l'incantatore raggiunge il 5˚ livello (2d10), l'11˚ livello (3d10) e il 17˚ livello (4d10)."
       }
     }
   },
@@ -7621,7 +7650,8 @@
     },
     "text": {
       "base": {
-        "en": "Nonflammable grease covers the ground in a 10-foot square centered on a point within range and turns it into Difficult Terrain for the duration.When the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or have the Prone condition. A creature that enters the area or ends its turn there must also succeed on that save or fall Prone."
+        "en": "Nonflammable grease covers the ground in a 10-foot square centered on a point within range and turns it into Difficult Terrain for the duration.\nWhen the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or have the Prone condition. A creature that enters the area or ends its turn there must also succeed on that save or fall Prone.",
+        "it": "Una patina di unto non infiammabile ricopre un'area di terreno di 3 metri per lato centrata su un punto entro gittata che diventa terreno difficile per la durata dell'incantesimo.\nQuando l'unto compare, ogni creatura nell'area deve superare un tiro salvezza su Destrezza, altrimenti cade a terra prona. Anche una creatura che entra nell'area o vi termina il proprio turno deve superare lo stesso tiro salvezza, altrimenti cade prona."
       }
     }
   },
@@ -7874,10 +7904,12 @@
     },
     "text": {
       "base": {
-        "en": "You hurl a bolt of light toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 4d6 Radiant damage, and the next attack roll made against it before the end of your next turn has Advantage."
+        "en": "You hurl a bolt of light toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 4d6 Radiant damage, and the next attack roll made against it before the end of your next turn has Advantage.",
+        "it": "L'incantatore scaglia un lampo di luce verso una creatura entro gittata, effettuando un attacco a distanza con incantesimo contro il bersaglio. Se il colpo va a segno, esso subisce 4d6 danni radiosi, e il successivo tiro per colpire effettuanto contro il bersaglio prima del termine del turno successivo dell'incantatore dispone di vantaggio."
       },
       "upgrade": {
-        "en": "The damage increases by 1d6 for each spell slot level above 1."
+        "en": "The damage increases by 1d6 for each spell slot level above 1.",
+        "it": "I danni aumentano di 1d6 per ogni slot di livello superiore al 1˚."
       }
     }
   },
@@ -8421,10 +8453,12 @@
     },
     "text": {
       "base": {
-        "en": "A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to the Frightened condition and gains Temporary Hit Points equal to your spellcasting ability modifier at the start of each of its turns."
+        "en": "A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to the Frightened condition and gains Temporary Hit Points equal to your spellcasting ability modifier at the start of each of its turns.",
+        "it": "Una creatura consenziente toccata dall'incantatore è animata da un grande coraggio. Fino al termine dell'incantesimo, la creatura è immune alla condizione spaventato e all'inizio di ogni suo turno ottiene una quantità di punti ferita temporanei pari al modificatore di caratteristica da incantatore dell'incantatore."
       },
       "upgrade": {
-        "en": "You can target one additional creature for each spell slot level above 1."
+        "en": "You can target one additional creature for each spell slot level above 1.",
+        "it": "L'incantatore può bersagliare una creatura aggiuntiva per ogni slot di livello superiore al 1˚."
       }
     }
   },
@@ -8931,7 +8965,8 @@
     },
     "text": {
       "base": {
-        "en": "You touch an object throughout the spell's casting. If the object is a magic item or some other magical object, you learn its properties and how to use them, whether it requires Attunement, and how many charges it has, if any. You learn whether any ongoing spells are affecting the item and what they are. If the item was created by a spell, you learn that spell's name.If you instead touch a creature throughout the casting, you learn which ongoing spells, if any, are currently affecting it."
+        "en": "You touch an object throughout the spell's casting. If the object is a magic item or some other magical object, you learn its properties and how to use them, whether it requires Attunement, and how many charges it has, if any. You learn whether any ongoing spells are affecting the item and what they are. If the item was created by a spell, you learn that spell's name.\nIf you instead touch a creature throughout the casting, you learn which ongoing spells, if any, are currently affecting it.",
+        "it": "L'incantatore tocca un oggetto per la durata del lancio dell'incantesimo. Se si trattaq di un oggetto magico o di un altro oggetto infuso di magia, apprende le sue proprietà e come usarlo, se richiede sintonia e quante cariche contiene, se ce ne sono. Apprende anche se l'oggetto è influenzato da eventuali incantesimi in corso e di quali si tratta. Se l'oggetto è stato creato da un incantesimo, l'incantatore apprende il nome di quell'incantesimo.\nSe invece durante il lancio dell'incantesimo l'incantatore tocca una creatura, apprende quali incantesimi in corso la stanno influenzando, se ce ne sono."
       }
     }
   },
@@ -9107,10 +9142,12 @@
     },
     "text": {
       "base": {
-        "en": "A creature you touch makes a Constitution saving throw, taking 2d10 Necrotic damage on a failed save or half as much damage on a successful one."
+        "en": "A creature you touch makes a Constitution saving throw, taking 2d10 Necrotic damage on a failed save or half as much damage on a successful one.",
+        "it": "Una creatura toccata dall'incantatore effettua un tiro salvezza su Costituzione, subendo 2d10 danni necrotici in caso di fallimento, o la metà di quei danni in caso di successo."
       },
       "upgrade": {
-        "en": "The damage increases by 1d10 for each spell slot level above 1."
+        "en": "The damage increases by 1d10 for each spell slot level above 1.",
+        "it": "I danni aumentano di 1d10 per ogni slot di livello superiore al 1˚."
       }
     }
   },
@@ -9607,7 +9644,8 @@
     },
     "text": {
       "base": {
-        "en": "You touch one Large or smaller object that isn't being worn or carried by someone else. Until the spell ends, the object sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The light can be colored as you like.Covering the object with something opaque blocks the light. The spell ends if you cast it again."
+        "en": "You touch one Large or smaller object that isn't being worn or carried by someone else. Until the spell ends, the object sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The light can be colored as you like.\nCovering the object with something opaque blocks the light. The spell ends if you cast it again.",
+        "it": "L'incantatore tocca un oggetto di taglia Grande o inferiore che non sia stato indossato o trasportato da altri. Fino al termine dell'incantesimo, l'oggetto proietta luce intensa entro un raggio di 6 metri e luce fioca per altri 6 metri. L'incantatore sceglie il colore di luce che desidera.\nCoprire l'oggetto con qualcosa di opaco blocca la luce. L'incantesimo termina se l'incantatore lo lancia di nuovo."
       }
     }
   },
@@ -9904,7 +9942,8 @@
     },
     "text": {
       "base": {
-        "en": "You touch a willing creature who isn't wearing armor. Until the spell ends, the target's base AC becomes 13 plus its Dexterity modifier. The spell ends early if the target dons armor."
+        "en": "You touch a willing creature who isn't wearing armor. Until the spell ends, the target's base AC becomes 13 plus its Dexterity modifier. The spell ends early if the target dons armor.",
+        "it": "L'incantatore tocca una creatura consenziente che non indossa un'armatura. Fino al termine dell'incantesimo, la CA base del bersaglio diventa 13 più il suo modificatore di Destrezza. L'incantesimo termina in anticipo se il bersaglio indossa un'armatura."
       }
     }
   },
@@ -10092,10 +10131,12 @@
     },
     "text": {
       "base": {
-        "en": "You create three glowing darts of magical force. Each dart strikes a creature of your choice that you can see within range. A dart deals 1d4 + 1 Force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several."
+        "en": "You create three glowing darts of magical force. Each dart strikes a creature of your choice that you can see within range. A dart deals 1d4 + 1 Force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.",
+        "it": "L'incantatore crea tre dardi lucenti di forza magica. Ogni dardo colpisce una creatura a scelta dell'incantatore, situata entro gittata e che è in grado di vedere. Un dardo infligge 1d4 + 1 danni da forza al suo bersaglio. Tutti i dardi colpiscono simultaneamente e l'incantatore può dirigerli per colpire una o più creature."
       },
       "upgrade": {
-        "en": "The spell creates one more dart for each spell slot level above 1."
+        "en": "The spell creates one more dart for each spell slot level above 1.",
+        "it": "L'incantesimo crea un dardo aggiuntivo per ogni slot di livello superiore al 1˚."
       }
     }
   },
@@ -12550,7 +12591,7 @@
       },
       "upgrade": {
         "en": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
-        "it": "I danni di questo incantesimo aumentano di 1d8 quando l'incantatore raggiunge il 5˚ livello (2d8), l'11˚ livello (3d8) e il 17˚ livello (4d8)."
+        "it": "I danni aumentano di 1d8 quando l'incantatore raggiunge il 5˚ livello (2d8), l'11˚ livello (3d8) e il 17˚ livello (4d8)."
       }
     }
   },
@@ -12993,10 +13034,12 @@
     },
     "text": {
       "base": {
-        "en": "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 Cold damage, and its Speed is reduced by 10 feet until the start of your next turn."
+        "en": "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 Cold damage, and its Speed is reduced by 10 feet until the start of your next turn.",
+        "it": "Un raggio gelido di luce bianco-azzurra sfreccia verso una creatura entro gittata, contro cui l'incantatore effettua un attacco a distanza con l'incantesimo. Se il colpo va a segno, il bersaglio subisce 1d8 danni da freddo e la sua velocità è ridotta di 3 metri fino all'inizio del turno successivo dell'incantatore."
       },
       "upgrade": {
-        "en": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
+        "en": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
+        "it": "I danni aumentano di 1d8 quando l'incantatore raggiunge il 5˚ livello (2d8), l'11˚ livello (3d8) e il 17˚ livello (4d8)."
       }
     }
   },
@@ -13039,10 +13082,12 @@
     },
     "text": {
       "base": {
-        "en": "You shoot a greenish ray at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 Poison damage and has the Poisoned condition until the end of your next turn."
+        "en": "You shoot a greenish ray at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 Poison damage and has the Poisoned condition until the end of your next turn.",
+        "it": "L'incantatore proietta un raggio di energia verdastra verso una creatura entro gittata, effettuando un attacco a distanza con l'incantesimo contro il bersaglio. Se il colpo va a segno, il bersaglio subisce 2d8 danni da veleno ed è avvelenato fino al termine del turno successivo dell'incantatore."
       },
       "upgrade": {
-        "en": "The damage increases by 1d8 for each spell slot level above 1."
+        "en": "The damage increases by 1d8 for each spell slot level above 1.",
+        "it": "I danni aumentano di 1d8 per ogni slot di livello superiore al 1˚."
       }
     }
   },
@@ -13418,10 +13463,12 @@
     },
     "text": {
       "base": {
-        "en": "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 Radiant damage. The target gains no benefit from Half Cover or Three-Quarters Cover for this save."
+        "en": "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 Radiant damage. The target gains no benefit from Half Cover or Three-Quarters Cover for this save.",
+        "it": "Un bagliore simile a una fiamma discende su una creatura entro gittata che l'incantatore è in grado di vedere. Il bersaglio deve superare un tiro salvezza su Destrezza, altrimenti subisce 1d8 danni radiosi. Per questo tiro salvezza, il bersaglio non trae beneficio dalla mezza copertura o dai tre quarti di copertura."
       },
       "upgrade": {
-        "en": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
+        "en": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
+        "it": "I danni aumentano di 1d8 quando l'incantatore raggiunge il 5˚ livello (2d8), l'11˚ livello (3d8) e il 17˚ livello (4d8)."
       }
     }
   },
@@ -13471,7 +13518,8 @@
     },
     "text": {
       "base": {
-        "en": "You ward a creature within range. Until the spell ends, any creature who targets the warded creature with an attack roll or a damaging spell must succeed on a Wisdom saving throw or either choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from areas of effect.The spell ends if the warded creature makes an attack roll, casts a spell, or deals damage."
+        "en": "You ward a creature within range. Until the spell ends, any creature who targets the warded creature with an attack roll or a damaging spell must succeed on a Wisdom saving throw or either choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from areas of effect.The spell ends if the warded creature makes an attack roll, casts a spell, or deals damage.",
+        "it": "L'incantatore protegge una creatura situata entro gittata. Fino al termine dell'incantesimo, ogni creatura che bersaglia la creatura protetta con un tiro per colpire o con un incantesimo dannoso deve prima superare un tiro salvezza su Saggezza, altrimenti deve scegliere un bersaglio diverso o perdere l'attacco o l'incantesimo. Questo incantesimo non protegge la creatura protetta dalle aree di effetto. L'incantesimo termina se la creatura protetta effettua un tiro per colpire, lancia un incantesimo o infligge danni."
       }
     }
   },
@@ -13600,10 +13648,12 @@
     },
     "text": {
       "base": {
-        "en": "As you hit the target, it takes an extra 1d6 Fire damage from the attack. At the start of each of its turns until the spell ends, the target takes 1d6 Fire damage and then makes a Constitution saving throw. On a failed save, the spell continues. On a successful save, the spell ends."
+        "en": "As you hit the target, it takes an extra 1d6 Fire damage from the attack. At the start of each of its turns until the spell ends, the target takes 1d6 Fire damage and then makes a Constitution saving throw. On a failed save, the spell continues. On a successful save, the spell ends.",
+        "it": "Quando l'incantatore colpisce il bersaglio, esso subisce 1d6 danni da fuoco extra dall'attacco. All'inizio di ogni suo turno fino al termine dell'incantesimo, il bersaglio subisce 1d6 danni da fuoco ed effettua un tiro salvezza su Costituzione. In caso di fallimento, l'incantesimo permane. In caso di successo, l'incantesimo termina."
       },
       "upgrade": {
-        "en": "All the damage increases by 1d6 for each spell slot level above 1."
+        "en": "All the damage increases by 1d6 for each spell slot level above 1.",
+        "it": "Tutti i danni aumentano di 1d6 per ogni slot di livello superiore al 1˚."
       }
     }
   },
@@ -13899,7 +13949,8 @@
     },
     "text": {
       "base": {
-        "en": "An imperceptible barrier of magical force protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from Magic Missile."
+        "en": "An imperceptible barrier of magical force protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from _Magic Missile_.",
+        "it": "Una barriera impercettibile di forza magica protegge l'incantatore. Fino all'inizio del suo turno successivo, l'incantatore ottiene un bonus di +5 alla CA da applicare anche all'attacco innescante e non subisce danni da _dardo incantato_."
       }
     }
   },
@@ -13949,7 +14000,8 @@
     },
     "text": {
       "base": {
-        "en": "A shimmering field surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration."
+        "en": "A shimmering field surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.",
+        "it": "Un campo di energia scintillante avvolge una creatura scelta dall'incantatore entro gittata, conferendole un bonus di +2 alla CA per la durata dell'incantesimo."
       }
     }
   },
@@ -14071,10 +14123,12 @@
     },
     "text": {
       "base": {
-        "en": "Lightning springs from you to a creature that you try to touch. Make a melee spell attack against the target. On a hit, the target takes 1d8 Lightning damage, and it can't make Opportunity Attacks until the start of its next turn."
+        "en": "Lightning springs from you to a creature that you try to touch. Make a melee spell attack against the target. On a hit, the target takes 1d8 Lightning damage, and it can't make Opportunity Attacks until the start of its next turn.",
+        "it": "Un fulmine si sprigiona dall'incantatore verso una creatura da lui toccata. Con questo incantesimo, l'incantatore effettua un attacco in mischia contro il bersaglio. Se il colpo va a segno, il bersaglio subisce 1d8 danni da fulmine e non può effettuare attacchi di opportunità fino all'inizio del proprio turno successivo."
       },
       "upgrade": {
-        "en": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
+        "en": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
+        "it": "I danni aumentano di 1d8 quando l'incantatore raggiunge il 5˚ livello (2d8), l'11˚ livello (3d8) e il 17˚ livello (4d8)."
       }
     }
   },
@@ -14171,7 +14225,8 @@
     },
     "text": {
       "base": {
-        "en": "You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 15-foot Cube. The image appears at a spot within range and lasts for the duration. The image is purely visual; it isn't accompanied by sound, smell, or other sensory effects.As a Magic action, you can cause the image to move to any spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking.Physical interaction with the image reveals it to be an illusion, since things can pass through it. A creature that takes a Study action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image."
+        "en": "You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 15-foot Cube. The image appears at a spot within range and lasts for the duration. The image is purely visual; it isn't accompanied by sound, smell, or other sensory effects.\nAs a Magic action, you can cause the image to move to any spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking.\nPhysical interaction with the image reveals it to be an illusion, since things can pass through it. A creature that takes a Study action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image.",
+        "it": "L'incantatore crea l'immagine di un oggetto. una creatura o qualche altro fenomeno visibile che non sia più grande di un cubo con spigolo di 4,5 metri. L'immagine compare in un punto situato entro gittata e permane per la durata dell'incantesimo. L'immagine è puramente visiva: non è accompagnata da suoni, odori o altri effetti sensoriali.\nCome azione di Magia, l'incantatore può far muovere l'immagine verso qualunque posizione entro gittata. Mentre l'immagine è in movimento, l'incantatore può alterarne l'aspetto in modo che i movimenti risultino naturali. Ad esempio, se l'incantatore crea l'immagine di una creatura e decide di farla muovere, può modificarla per simulare il fatto che sta camminando.\nL'illusione può essere rivelata da un'interazione fisica, poiché gli oggetti possono attraversarla. Una creatura che effettua l'azione di Studio per esaminare l'immagine può determinare che si tratta di un'illusione superando una prova di Intelligenza (Indagare) contro la CD del tiro salvezza sull'incantesimo. Se una creatura riconosce l'illusione per ciò che è, riesce a vedere attraverso l'immagine."
       }
     }
   },
@@ -14262,7 +14317,8 @@
     },
     "text": {
       "base": {
-        "en": "Each creature of your choice in a 5-foot-radius Sphere centered on a point within range must succeed on a Wisdom saving throw or have the Incapacitated condition until the end of its next turn, at which point it must repeat the save. If the target fails the second save, the target has the Unconscious condition for the duration. The spell ends on a target if it takes damage or someone within 5 feet of it takes an action to shake it out of the spell's effect.Creatures that don't sleep, such as elves, or that have Immunity to the Exhaustion condition automatically succeed on saves against this spell."
+        "en": "Each creature of your choice in a 5-foot-radius Sphere centered on a point within range must succeed on a Wisdom saving throw or have the Incapacitated condition until the end of its next turn, at which point it must repeat the save. If the target fails the second save, the target has the Unconscious condition for the duration. The spell ends on a target if it takes damage or someone within 5 feet of it takes an action to shake it out of the spell's effect.\nCreatures that don't sleep, such as elves, or that have Immunity to the Exhaustion condition automatically succeed on saves against this spell.",
+        "it": "Ogni creatura a scelta dell'incantatore in una sfera del raggio di 1,5 metri in un posizione entro gittata deve superare un tiro salvezza su Saggezza, altrimenti sarà incapacitata fino al termine del proprio turno successivo. A questo punto, dovrà ripetere la prova e, in caso di fallimento, cadrà priva di sensi per la durata dell'incantesimo. L'effetto svanisce se il bersaglio subisce danni o se qualcuno entro 1,5 metri da esso effettua un'azione per scuoterlo e farlo tornare in sé.\nLe creature che non dormono, come gli elfi, o che sono immuni all'indebolimento superano automaticamente i tiri salvezza contro l'incantesimo."
       }
     }
   },
@@ -14405,10 +14461,12 @@
     },
     "text": {
       "base": {
-        "en": "You cast sorcerous energy at one creature or object within range. Make a ranged attack roll against the target. On a hit, the target takes 1d8 damage of a type you choose: Acid, Cold, Fire, Lightning, Poison, Psychic, or Thunder.If you roll an 8 on a d8 for this spell, you can roll another d8, and add it to the damage. When you cast this spell, the maximum number of these d8s you can add to the spell's damage equals your spellcasting ability modifier."
+        "en": "You cast sorcerous energy at one creature or object within range. Make a ranged attack roll against the target. On a hit, the target takes 1d8 damage of a type you choose: Acid, Cold, Fire, Lightning, Poison, Psychic, or Thunder.\nIf you roll an 8 on a d8 for this spell, you can roll another d8, and add it to the damage. When you cast this spell, the maximum number of these d8s you can add to the spell's damage equals your spellcasting ability modifier.",
+        "it": "L'incantatore proietta energia stregonesca verso una creatura o un oggetto entro gittata, effettuando un tiro per colpire a distanza contro il bersaglio. Se il colpo va a segno, il bersaglio subisce 1d8 danni di un tipo a scelta tra: acido, freddo, fuoco, fulmine, psichici, tuono o veleno.\nSe l'incantatore ottiene il risultato 8 su un d8, può tirare un altro d8 e aggiungere il risultato ai danni. Quando lancia l'incantesimo, l'incantatore può aggiungere ai danni dell'incantesimo un numero di d8 pari al suo modificatore di caratteristica da incantatore."
       },
       "upgrade": {
-        "en": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
+        "en": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
+        "it": "I danni aumentano di 1d8 quando l'incantatore raggiunge il 5˚ livello (2d8), l'11˚ livello (3d8) e il 17˚ livello (4d8)."
       }
     }
   },
@@ -16185,7 +16243,8 @@
     },
     "text": {
       "base": {
-        "en": "This spell creates a circular, horizontal plane of force, 3 feet in diameter and 1 inch thick, that floats 3 feet above the ground in an unoccupied space of your choice that you can see within range. The disk remains for the duration and can hold up to 500 pounds. If more weight is placed on it, the spell ends, and everything on the disk falls to the ground.The disk is immobile while you are within 20 feet of it. If you move more than 20 feet away from it, the disk follows you so that it remains within 20 feet of you. It can move across uneven terrain, up or down stairs, slopes and the like, but it can't cross an elevation change of 10 feet or more. For example, the disk can't move across a 10-foot-deep pit, nor could it leave such a pit if it was created at the bottom.If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the spell ends."
+        "en": "This spell creates a circular, horizontal plane of force, 3 feet in diameter and 1 inch thick, that floats 3 feet above the ground in an unoccupied space of your choice that you can see within range. The disk remains for the duration and can hold up to 500 pounds. If more weight is placed on it, the spell ends, and everything on the disk falls to the ground.\nThe disk is immobile while you are within 20 feet of it. If you move more than 20 feet away from it, the disk follows you so that it remains within 20 feet of you. It can move across uneven terrain, up or down stairs, slopes and the like, but it can't cross an elevation change of 10 feet or more. For example, the disk can't move across a 10-foot-deep pit, nor could it leave such a pit if it was created at the bottom.\nIf you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the spell ends.",
+        "it": "Questo incantesimo crea un piano circolare e orizzontale di forza del diametro di 90 centimetri e spessore di 2,5 centimetri, che fluttua 90 centimetri sopra il terreno in uno spazio libero a scelta dell'incantatore entro gittata e che è in grado di vedere. Questo disco permane per la durata dell'incantesimo e può sostenere fino a 250 kg. Se si aggiunge ulteriore peso, l'incantesimo termina e tutto ciò che si trovava sul disco precipita a terra.\nIl disco rimane immobile se l'incantatore si trova entro 6 metri da esso. Se l'incantatore si allontana a più di 6 metri, il disco lo segue per rimanere entro 6 metri da lui. Può muoversi sul terreno dissestato, lungo scalinate, pendii e terreni simili, ma non può superare un dislivello pari o superiore a 3 metri. Per esempio, il disco non può attraversare una fossa profonda 3 metri o uscirne se si trovasse sul fondo.\nL'incantesimo termina se l'incantatore si allontana di più di 30 metri dal disco (normalmente accade perché il disco non può superare un ostacolo per seguirlo)."
       }
     }
   },
@@ -16231,7 +16290,8 @@
     },
     "text": {
       "base": {
-        "en": "You manifest a minor wonder within range. You create one of the effects below within range. If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time. Altered Eyes. You alter the appearance of your eyes for 1 minute. Booming Voice. Your voice booms up to three times as loud as normal for 1 minute. For the duration, you have Advantage on Charisma (Intimidation) checks. Fire Play. You cause flames to flicker, brighten, dim, or change color for 1 minute. Invisible Hand. You instantaneously cause an unlocked door or window to fly open or slam shut. Phantom Sound. You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers. Tremors. You cause harmless tremors in the ground for 1 minute."
+        "en": "You manifest a minor wonder within range. You create one of the effects below within range. If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time. \n**Altered Eyes.** You alter the appearance of your eyes for 1 minute.\n**Booming Voice.** Your voice booms up to three times as loud as normal for 1 minute. For the duration, you have Advantage on Charisma (Intimidation) checks.\n**Fire Play.** You cause flames to flicker, brighten, dim, or change color for 1 minute.\n**Invisible Hand.** You instantaneously cause an unlocked door or window to fly open or slam shut.\n**Phantom Sound.** You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.\n**Tremors.** You cause harmless tremors in the ground for 1 minute.",
+        "it": "L'incantatore genera una meraviglia minore entro gittata, oltre a uno degli effetti elencati di seguito. Se l'incantatore lancia questo incantesimo più volte, può tenere attivi contemporaneamente fino a tre dei suoi effetti dalla durata di 1 minuto.\n**Mano invisibile.** L'incantatore fa in modo che una porta o una finestra non chiusa a chiave si spalanchi o si chiuda di colpo da sola.\n**Occhi alterati.** L'incantatore altera l'aspetto dei suoi occhi per 1 minuto.\n**Suono spettrale.** L'incantatore crea un suono improvviso che ha origine da un punto entro gittata a sua scelta, come un rombo di tuono, il verso di un corvo o un mormorio sinistro.\n**Tremiti.** L'incantatore genera un tremito innocuo sul terreno per 1 minuto.\n**Trucchetto col fuoco.** L'incantatore fa in modo che una fiamma tremi, si intensifichi, si affievolisca o cambi colore per 1 minuto.\n**Voce tonante.** La voce dell'incantatore rimbomba con potenza tre volte superiore rispetto al normale per 1 minuto. Per la durata dell'incantesimo, dispone di vantaggio alle provedi Carisma (Intimidire)."
       }
     }
   },
@@ -16358,10 +16418,12 @@
     },
     "text": {
       "base": {
-        "en": "Your strike rings with thunder that is audible within 300 feet of you, and the target takes an extra 2d6 Thunder damage from the attack. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and have the Prone condition."
+        "en": "Your strike rings with thunder that is audible within 300 feet of you, and the target takes an extra 2d6 Thunder damage from the attack. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and have the Prone condition.",
+        "it": "Il colpo sferrato dall'incantatore risuona di un rombo tonante udibile entro 90 metri e l'attacco infligge al bersaglio 2d6 danni da tuono extra. Inoltre, se il bersaglio è una creatura, deve superare un tiro salvezza su Forza, altrimenti è spinto 3 metri lontano dall'incantatore e cade a terra prono."
       },
       "upgrade": {
-        "en": "The damage increases by 1d6 for each spell slot level above 1."
+        "en": "The damage increases by 1d6 for each spell slot level above 1.",
+        "it": "I danni aumentano di 1d6 per ogni slot di livello superiore al 1˚."
       }
     }
   },
@@ -16976,10 +17038,12 @@
     },
     "text": {
       "base": {
-        "en": "You unleash a string of insults laced with subtle enchantments at one creature you can see or hear within range. The target must succeed on a Wisdom saving throw or take 1d6 Psychic damage and have Disadvantage on the next attack roll it makes before the end of its next turn."
+        "en": "You unleash a string of insults laced with subtle enchantments at one creature you can see or hear within range. The target must succeed on a Wisdom saving throw or take 1d6 Psychic damage and have Disadvantage on the next attack roll it makes before the end of its next turn.",
+        "it": "L'incantatore pronuncia una sequenza di insulti mescolati a impercettibili ammaliamenti contro una creatura entro gittata che è in grado di vedere o di sentire. Il bersaglio deve superare un tiro salvezza su Saggezza, altrimenti subisce 1d6 danni psichici e svantaggio al tiro per colpire successivo che effettua prima della fine del suo turno successivo."
       },
       "upgrade": {
-        "en": "The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6)."
+        "en": "The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
+        "it": "I danni aumentano di 1d6 quando l'incantatore raggiunge il 5˚ livello (2d6), l'11˚ livello (3d6) e il 17˚ livello (4d6)."
       }
     }
   },
@@ -17760,10 +17824,12 @@
     },
     "text": {
       "base": {
-        "en": "Burning radiance erupts from you in a 5-foot Emanation. Each creature of your choice that you can see in it must succeed on a Constitution saving throw or take 1d6 Radiant damage."
+        "en": "Burning radiance erupts from you in a 5-foot Emanation. Each creature of your choice that you can see in it must succeed on a Constitution saving throw or take 1d6 Radiant damage.",
+        "it": "Dall'incantatore fuoriesce una radiosità bruciante in un'emanazione di 1,5 metri. Ogni creatura a sua scelta che è in grado di vedere deve superare un tiro salvezza su Costituzione, altrimenti subisce 1d6 danni radiosi."
       },
       "upgrade": {
-        "en": "The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6)."
+        "en": "The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
+        "it": "I danni aumentano di 1d6 quando l'incantatore raggiunge il 5˚ livello (2d6), l'11˚ livello (3d6) e il 17˚ livello (4d6)."
       }
     }
   },
@@ -17844,10 +17910,12 @@
     },
     "text": {
       "base": {
-        "en": "The target takes an extra 1d6 Necrotic damage from the attack, and it must succeed on a Wisdom saving throw or have the Frightened condition until the spell ends. At the end of each of its turns, the Frightened target repeats the save, ending the spell on itself on a success."
+        "en": "The target takes an extra 1d6 Necrotic damage from the attack, and it must succeed on a Wisdom saving throw or have the Frightened condition until the spell ends. At the end of each of its turns, the Frightened target repeats the save, ending the spell on itself on a success.",
+        "it": "L'attacco infligge 1d6 danni necrotici extra al bersaglio, che deve superare un tiro salvezza su Saggezza, altrimenti è spaventato fino al termine dell'incantesimo. Alla fine di ogni suo turno, il bersaglio ripete il tiro salvezza e, se lo supera, termina l'incantesimo su di sé."
       },
       "upgrade": {
-        "en": "The damage increases by 1d6 for each spell slot level above 1."
+        "en": "The damage increases by 1d6 for each spell slot level above 1.",
+        "it": "I danni aumentano di 1d6 per ogni slot di livello superiore al 1˚."
       }
     }
   },
