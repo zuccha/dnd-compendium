@@ -244,7 +244,7 @@
     "melee": true,
     "name": {
       "en": "Light Hammer",
-      "it": "Martello leggero"
+      "it": "Martello Leggero"
     },
     "notes": "",
     "properties": ["throw", "light"],
@@ -387,7 +387,7 @@
     "melee": true,
     "name": {
       "en": "Greatclub",
-      "it": "Randello pesante"
+      "it": "Randello Pesante"
     },
     "notes": "",
     "properties": ["two-handed"],
@@ -454,7 +454,7 @@
     "melee": false,
     "name": {
       "en": "Shortbow",
-      "it": "Arco corto"
+      "it": "Arco Corto"
     },
     "notes": "",
     "properties": ["two-handed", "ammunition"],
@@ -509,7 +509,7 @@
     "melee": false,
     "name": {
       "en": "Light Crossbow",
-      "it": "Balestra leggera"
+      "it": "Balestra Leggera"
     },
     "notes": "",
     "properties": ["ammunition", "two-handed", "loading"],
@@ -707,7 +707,7 @@
     "melee": true,
     "name": {
       "en": "Greataxe",
-      "it": "Ascia bipenne"
+      "it": "Ascia Bipenne"
     },
     "notes": "",
     "properties": ["two-handed", "heavy"],
@@ -741,7 +741,7 @@
     "melee": true,
     "name": {
       "en": "Battleaxe",
-      "it": "Ascia da battaglia"
+      "it": "Ascia da Battaglia"
     },
     "notes": "",
     "properties": ["versatile"],
@@ -840,7 +840,7 @@
     "melee": true,
     "name": {
       "en": "Lance",
-      "it": "Lancia da cavaliere"
+      "it": "Lancia da Cavaliere"
     },
     "notes": "",
     "properties": ["reach", "two-handed", "heavy"],
@@ -907,7 +907,7 @@
     "melee": true,
     "name": {
       "en": "Warhammer",
-      "it": "Martello da guerra"
+      "it": "Martello da Guerra"
     },
     "notes": "",
     "properties": ["versatile"],
@@ -940,7 +940,7 @@
     "melee": true,
     "name": {
       "en": "Morningstar",
-      "it": "Mazza chiodata"
+      "it": "Mazza Chiodata"
     },
     "notes": "",
     "properties": [],
@@ -1072,7 +1072,7 @@
     "melee": true,
     "name": {
       "en": "Shortsword",
-      "it": "Spada corta"
+      "it": "Spada Corta"
     },
     "notes": "",
     "properties": ["finesse", "light"],
@@ -1106,7 +1106,7 @@
     "melee": true,
     "name": {
       "en": "Longsword",
-      "it": "Spada lunga"
+      "it": "Spada Lunga"
     },
     "notes": "",
     "properties": ["versatile"],
@@ -1262,7 +1262,7 @@
     "melee": true,
     "name": {
       "en": "War Pick",
-      "it": "Piccone da guerra"
+      "it": "Piccone da Guerra"
     },
     "notes": "",
     "properties": ["versatile"],
@@ -1295,7 +1295,7 @@
     "melee": false,
     "name": {
       "en": "Longbow",
-      "it": "Arco lungo"
+      "it": "Arco Lungo"
     },
     "notes": "",
     "properties": ["ammunition", "two-handed", "heavy"],
@@ -1350,7 +1350,7 @@
     "melee": false,
     "name": {
       "en": "Hand Crossbow",
-      "it": "Balestra a mano"
+      "it": "Balestra a Mano"
     },
     "notes": "",
     "properties": ["ammunition", "loading", "light"],
@@ -1405,7 +1405,7 @@
     "melee": false,
     "name": {
       "en": "Heavy Crossbow",
-      "it": "Balestra pesante"
+      "it": "Balestra Pesante"
     },
     "notes": "",
     "properties": ["ammunition", "heavy", "loading", "two-handed"],
