@@ -99,7 +99,8 @@ function isDndWeaponVisible(
     // Mastery
     filters.masteries.some((m) => weapon.mastery === m) &&
     // Properties
-    filters.properties.some((p) => weapon.properties.includes(p)) &&
+    (!weapon.properties.length ||
+      filters.properties.some((p) => weapon.properties.includes(p))) &&
     // Magic
     {
       negative: !weapon.magic,
