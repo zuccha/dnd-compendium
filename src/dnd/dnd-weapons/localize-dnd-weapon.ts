@@ -39,6 +39,7 @@ export default function localizeDndWeapon(weapon: DndWeapon, i18n: I18n) {
       book: weapon.source.book,
       page: i18n.ti("dnd.weapon.source.page", `${weapon.source.page}`),
     },
+    type: i18n.t(`dnd.weapon.type.${weapon.type}`),
     weight:
       `${weapon.weight[i18n.system].value} ` +
       i18n.tp(

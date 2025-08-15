@@ -328,7 +328,7 @@ const dndI18n = {
     "dnd.weapon.property.versatile": "Versatile",
     "dnd.weapon.property.versatile.damage": "Versatile (<1>)", // <1> = damage
     "dnd.weapon.source.page": "p. <1>", // 1 = page
-    "dnd.weapon.type.martial": "Guerra",
+    "dnd.weapon.type.martial": "Da Guerra",
     "dnd.weapon.type.simple": "Semplice",
     "dnd.weapon.weight": "Peso",
 
