@@ -1,5 +1,6 @@
 import { z } from "zod/v4";
 import { i18nDistanceSchema } from "../../i18n/i18n-distance";
+import { i18nNumberSchema } from "../../i18n/i18n-number";
 import { i18nStringSchema } from "../../i18n/i18n-string";
 import { range } from "../../utils/array";
 import { dndClassSchema } from "./dnd-class";
@@ -84,7 +85,7 @@ export const dndSpellSchema = z.object({
   school: dndSpellSchoolSchema,
   source: z.object({
     book: z.string(),
-    page: z.number(),
+    page: i18nNumberSchema,
   }),
   text: z.object({
     base: i18nStringSchema,

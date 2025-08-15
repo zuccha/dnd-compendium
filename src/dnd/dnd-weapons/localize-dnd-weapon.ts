@@ -1,3 +1,4 @@
+import { localizeI18nNumber } from "../../i18n/i18n-number";
 import { localizeI18nString } from "../../i18n/i18n-string";
 import type { I18n } from "../../i18n/use-i18n";
 import type { DndWeapon } from "../models/dnd-weapon";
@@ -37,7 +38,10 @@ export default function localizeDndWeapon(weapon: DndWeapon, i18n: I18n) {
     ranged: weapon.ranged,
     source: {
       book: weapon.source.book,
-      page: i18n.ti("dnd.weapon.source.page", `${weapon.source.page}`),
+      page: i18n.ti(
+        "dnd.weapon.source.page",
+        `${localizeI18nNumber(weapon.source.page, i18n.language)}`,
+      ),
     },
     type: i18n.t(`dnd.weapon.type.${weapon.type}`),
     weight:

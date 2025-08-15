@@ -1,3 +1,4 @@
+import { localizeI18nNumber } from "../../i18n/i18n-number";
 import { localizeI18nString } from "../../i18n/i18n-string";
 import { type I18n } from "../../i18n/use-i18n";
 import type { DndSpell } from "../models/dnd-spell";
@@ -110,7 +111,10 @@ export default function localizeDndSpell(spell: DndSpell, i18n: I18n) {
     school: i18n.t(`dnd.spell_school.${spell.school}`),
     source: {
       book: spell.source.book,
-      page: i18n.ti("dnd.spell.source.page", `${spell.source.page}`),
+      page: i18n.ti(
+        "dnd.spell.source.page",
+        `${localizeI18nNumber(spell.source.page, i18n.language)}`,
+      ),
     },
     text: spell.text.upgrade
       ? localizeI18nString(spell.text.base, i18n.language) +

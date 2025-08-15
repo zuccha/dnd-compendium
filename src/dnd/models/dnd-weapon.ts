@@ -1,5 +1,6 @@
 import z from "zod/v4";
 import { i18nDistanceSchema } from "../../i18n/i18n-distance";
+import { i18nNumberSchema } from "../../i18n/i18n-number";
 import { i18nStringSchema } from "../../i18n/i18n-string";
 import { i18nWeightSchema } from "../../i18n/i18n-weight";
 import { dndDamageTypeSchema } from "./dnd-damage-type";
@@ -78,7 +79,7 @@ export const dndWeaponSchema = z.object({
   ranged: z.boolean(),
   source: z.object({
     book: z.string(),
-    page: z.number(),
+    page: i18nNumberSchema,
   }),
   type: dndWeaponTypeSchema,
   weight: i18nWeightSchema,
