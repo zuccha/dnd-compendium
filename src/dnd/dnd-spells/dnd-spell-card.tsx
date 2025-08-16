@@ -20,7 +20,7 @@ export type DndSpellCardProps = {
   spell: DndSpell;
 };
 
-export const dndCardBackgroundColor = "orange.50";
+export const dndCardBackgroundColor = "white";
 export const dndCardBorderColor = "gray.700";
 export const dndCardTextColor = "black";
 export const dndCardTextColorInverted = "gray.50";
@@ -56,7 +56,7 @@ export default memo(function DndSpellCard({
   return (
     <VStack
       bgColor={dndCardBorderColor}
-      borderRadius="0.75em"
+      // borderRadius="0.75em"
       color={dndCardTextColor}
       fontFamily="Bookinsanity"
       gap="0.2em"
