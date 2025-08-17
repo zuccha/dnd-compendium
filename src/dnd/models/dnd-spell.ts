@@ -12,7 +12,7 @@ import { dndTimeSchema } from "./dnd-time";
 
 export const dndSpellLevelSchema = z.number().int().min(0).max(9);
 
-export const dndSpellLevels = range(9);
+export const dndSpellLevels = range(10);
 
 export type DndSpellLevel = z.infer<typeof dndSpellLevelSchema>;
 
